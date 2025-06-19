@@ -1,103 +1,169 @@
+"use client";
+
+import Link from "next/link";
 import Image from "next/image";
+import { FaCheckCircle } from "react-icons/fa";
+import { FaUsers, FaGlobeAfrica, FaLaptopHouse, FaHandshake } from "react-icons/fa";
+import { MdEventAvailable } from "react-icons/md";
+import { useEffect, useState } from "react";
 
-export default function Home() {
+// Dummy testimonials for demo
+const testimonials = [
+  {
+    name: "Sipho M.",
+    quote: "Our team's productivity and morale skyrocketed after the TBAE event. Highly recommended!",
+    company: "Johannesburg FinTech",
+  },
+  {
+    name: "Janine K.",
+    quote: "Their facilitators made the event fun, inclusive, and meaningful. We'll book again!",
+    company: "Cape Town Creatives",
+  },
+  {
+    name: "Thabo N.",
+    quote: "Virtual team building actually brought our remote teams closer together. Brilliant!",
+    company: "Durban Digital",
+  },
+];
+
+export default function HomePage() {
+  // Animation: Fade in hero text
+  const [showHero, setShowHero] = useState(false);
+  useEffect(() => {
+    setShowHero(true);
+  }, []);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-400 text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between gap-12">
+          {/* Logo & Tagline */}
+          <div className="flex-1">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/logo.png"
+              alt="TBAE Logo"
+              width={220}
+              height={90}
+              className="mb-8"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <h1 className={`text-4xl md:text-5xl font-extrabold leading-tight mb-6 transition-all duration-700 ease-in-out ${showHero ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+              Team Building <span className="text-green-300">that Moves Your Team Forward</span>
+            </h1>
+            <p className="mb-8 text-lg text-white/90 max-w-xl">
+              Professional team building events and facilitation across South Africa — in-person and virtual, tailored for your company’s needs and success.
+            </p>
+            <Link href="/contact" className="inline-block bg-green-400 hover:bg-green-500 text-blue-900 font-bold px-6 py-3 rounded-lg shadow-lg transition">
+              Book Your Event
+            </Link>
+          </div>
+          {/* Hero Image */}
+          <div className="hidden md:block flex-1">
+            <Image
+              src="/team-hero.jpg"
+              alt="Team building event"
+              width={500}
+              height={360}
+              className="rounded-xl shadow-xl"
+            />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* Decorative wave */}
+        <svg className="absolute bottom-0 left-0 w-full h-16 text-white" viewBox="0 0 1440 320"><path fill="currentColor" fillOpacity="1" d="M0,64L60,90.7C120,117,240,171,360,186.7C480,203,600,181,720,154.7C840,128,960,96,1080,117.3C1200,139,1320,213,1380,250.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      </section>
+
+      {/* Intro / About */}
+      <section className="bg-white py-14 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4 text-blue-700">Why TBAE?</h2>
+          <p className="text-lg text-gray-600 mb-6">
+            We’re a mobile team building facilitation company, operating in Cape Town, Johannesburg, Pretoria, Durban, and nationwide. 
+            <span className="hidden md:inline"> We also deliver customized virtual team building for remote teams, making connection and collaboration possible wherever you are.</span>
+          </p>
+          <div className="flex flex-col md:flex-row justify-center gap-8 mt-8">
+            <div className="flex-1 flex flex-col items-center">
+              <FaGlobeAfrica className="w-12 h-12 text-green-400 mb-2" />
+              <span className="font-bold text-blue-700">National Coverage</span>
+              <p className="text-sm text-gray-500">Cape Town, Johannesburg, Pretoria, Durban, and beyond</p>
+            </div>
+            <div className="flex-1 flex flex-col items-center">
+              <FaLaptopHouse className="w-12 h-12 text-cyan-400 mb-2" />
+              <span className="font-bold text-blue-700">Virtual Events</span>
+              <p className="text-sm text-gray-500">Fun and effective experiences for remote teams</p>
+            </div>
+            <div className="flex-1 flex flex-col items-center">
+              <MdEventAvailable className="w-12 h-12 text-green-400 mb-2" />
+              <span className="font-bold text-blue-700">Any Group Size</span>
+              <p className="text-sm text-gray-500">From startups to multinationals, all are welcome</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services/Features */}
+      <section className="bg-blue-50 py-14 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">Our Services</h2>
+          <div className="grid gap-10 md:grid-cols-3">
+            <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+              <FaUsers className="w-12 h-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Facilitated Team Building</h3>
+              <p className="text-gray-600 text-center">Expertly crafted in-person sessions that build trust, communication, and unity—wherever your team is.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+              <FaLaptopHouse className="w-12 h-12 text-cyan-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Virtual Team Building</h3>
+              <p className="text-gray-600 text-center">Remote doesn’t mean disconnected! Fun, impactful, and customized virtual experiences for global teams.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+              <FaHandshake className="w-12 h-12 text-green-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Custom Events & Workshops</h3>
+              <p className="text-gray-600 text-center">Have a unique vision? We’ll partner with you to design the perfect event for your goals and people.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-14 px-6 bg-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-blue-700 mb-6">What Our Clients Say</h2>
+          <div className="flex flex-col md:flex-row gap-6 justify-center">
+            {testimonials.map((t, idx) => (
+              <div
+                key={idx}
+                className="bg-gradient-to-br from-cyan-50 to-green-100 rounded-xl shadow-md px-6 py-8 flex-1"
+              >
+                <div className="flex items-center gap-2 justify-center mb-4">
+                  <FaCheckCircle className="text-green-400" />
+                  <span className="font-bold text-blue-700">{t.name}</span>
+                </div>
+                <blockquote className="text-gray-700 italic mb-2">“{t.quote}”</blockquote>
+                <span className="text-xs text-gray-500">{t.company}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-400 py-12 px-6">
+        <div className="max-w-2xl mx-auto flex flex-col items-center">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4 text-center">
+            Ready to energize your team?
+          </h2>
+          <p className="text-white/90 text-center mb-6 max-w-lg">
+            Get in touch for a free consultation or quote. Let’s build your next unforgettable team event together!
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-green-400 hover:bg-green-500 text-blue-900 font-bold px-8 py-3 rounded-lg shadow-lg transition"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

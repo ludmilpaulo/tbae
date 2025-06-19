@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Event, GalleryImage, Testimonial
+from .models import About, Event, GalleryImage, Homepage, Testimonial
 
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
@@ -17,3 +17,12 @@ class GalleryImageSerializer(serializers.ModelSerializer):
         model = GalleryImage
         fields = "__all__"
 
+class AboutSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = About
+        fields = '__all__'
+
+class HomepageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Homepage
+        fields = '__all__'
