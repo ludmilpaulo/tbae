@@ -2,32 +2,17 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaCheckCircle } from "react-icons/fa";
 import { FaUsers, FaGlobeAfrica, FaLaptopHouse, FaHandshake } from "react-icons/fa";
 import { MdEventAvailable } from "react-icons/md";
 import { useEffect, useState } from "react";
+import ClientsSection from "@/components/ClientsSection";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
-// Dummy testimonials for demo
-const testimonials = [
-  {
-    name: "Sipho M.",
-    quote: "Our team's productivity and morale skyrocketed after the TBAE event. Highly recommended!",
-    company: "Johannesburg FinTech",
-  },
-  {
-    name: "Janine K.",
-    quote: "Their facilitators made the event fun, inclusive, and meaningful. We'll book again!",
-    company: "Cape Town Creatives",
-  },
-  {
-    name: "Thabo N.",
-    quote: "Virtual team building actually brought our remote teams closer together. Brilliant!",
-    company: "Durban Digital",
-  },
-];
+// HERO IMAGE: /public/team-hero.jpg
+// LOGO: /public/logo.png
+// CLIENT LOGOS: /public/clients/*.png
 
 export default function HomePage() {
-  // Animation: Fade in hero text
   const [showHero, setShowHero] = useState(false);
   useEffect(() => {
     setShowHero(true);
@@ -73,7 +58,7 @@ export default function HomePage() {
         <svg className="absolute bottom-0 left-0 w-full h-16 text-white" viewBox="0 0 1440 320"><path fill="currentColor" fillOpacity="1" d="M0,64L60,90.7C120,117,240,171,360,186.7C480,203,600,181,720,154.7C840,128,960,96,1080,117.3C1200,139,1320,213,1380,250.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
       </section>
 
-      {/* Intro / About */}
+      {/* Why TBAE */}
       <section className="bg-white py-14 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 text-blue-700">Why TBAE?</h2>
@@ -125,29 +110,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Clients Section */}
+      <ClientsSection />
+
+      {/* Testimonials Section */}
       <section className="py-14 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-blue-700 mb-6">What Our Clients Say</h2>
-          <div className="flex flex-col md:flex-row gap-6 justify-center">
-            {testimonials.map((t, idx) => (
-              <div
-                key={idx}
-                className="bg-gradient-to-br from-cyan-50 to-green-100 rounded-xl shadow-md px-6 py-8 flex-1"
-              >
-                <div className="flex items-center gap-2 justify-center mb-4">
-                  <FaCheckCircle className="text-green-400" />
-                  <span className="font-bold text-blue-700">{t.name}</span>
-                </div>
-                <blockquote className="text-gray-700 italic mb-2">“{t.quote}”</blockquote>
-                <span className="text-xs text-gray-500">{t.company}</span>
-              </div>
-            ))}
-          </div>
+          <TestimonialsCarousel />
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA Section */}
       <section className="bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-400 py-12 px-6">
         <div className="max-w-2xl mx-auto flex flex-col items-center">
           <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4 text-center">
