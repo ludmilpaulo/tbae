@@ -1,28 +1,26 @@
-// types/venue.ts
-export type Venue = {
+export interface Province {
   id: number;
   name: string;
+}
+export interface Town {
+  id: number;
+  name: string;
+  province: Province;
+}
+export interface VenueImage {
+  id: number;
   image: string;
+  caption?: string;
+}
+export interface Venue {
+  id: number;
+  name: string;
   address: string;
-  description?: string;
-  region: string;
-};
-
-// mock data (replace with API fetch later)
-const VENUES: Venue[] = [
-  {
-    id: 1,
-    name: "Cape Town Waterfront",
-    image: "/venues/capetown.jpg",
-    address: "Waterfront, Cape Town",
-    region: "Western Cape",
-  },
-  {
-    id: 2,
-    name: "Kimberley Big Hole",
-    image: "/venues/kimberley.jpg",
-    address: "Big Hole, Kimberley",
-    region: "Northern Cape",
-  },
-  // ...more venues
-];
+  province: Province;
+  town: Town;
+  description: string;
+  details?: string;
+  latitude?: number;
+  longitude?: number;
+  images: VenueImage[];
+}

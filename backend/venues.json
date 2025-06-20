@@ -1,0 +1,116 @@
+[
+  {
+    "model": "venues.province",
+    "pk": 1,
+    "fields": { "name": "Western Cape" }
+  },
+  {
+    "model": "venues.province",
+    "pk": 2,
+    "fields": { "name": "Gauteng" }
+  },
+  {
+    "model": "venues.province",
+    "pk": 3,
+    "fields": { "name": "KwaZulu-Natal" }
+  },
+  {
+    "model": "venues.province",
+    "pk": 4,
+    "fields": { "name": "Eastern Cape" }
+  },
+
+  { "model": "venues.town", "pk": 1, "fields": { "name": "Cape Town", "province": 1 } },
+  { "model": "venues.town", "pk": 2, "fields": { "name": "Stellenbosch", "province": 1 } },
+  { "model": "venues.town", "pk": 3, "fields": { "name": "Johannesburg", "province": 2 } },
+  { "model": "venues.town", "pk": 4, "fields": { "name": "Pretoria", "province": 2 } },
+  { "model": "venues.town", "pk": 5, "fields": { "name": "Durban", "province": 3 } },
+  { "model": "venues.town", "pk": 6, "fields": { "name": "East London", "province": 4 } },
+
+  {
+    "model": "venues.venue",
+    "pk": 1,
+    "fields": {
+      "name": "Table Mountain Venue",
+      "province": 1,
+      "town": 1,
+      "description": "A breathtaking venue at the base of Table Mountain.",
+      "details": "Perfect for outdoor team building.",
+      "latitude": -33.9628,
+      "longitude": 18.4098
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 2,
+    "fields": {
+      "name": "Stellenbosch Wine Estate",
+      "province": 1,
+      "town": 2,
+      "description": "Elegant estate surrounded by vineyards.",
+      "details": "Ideal for executive retreats.",
+      "latitude": -33.9382,
+      "longitude": 18.8648
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 3,
+    "fields": {
+      "name": "Sandton Conference Centre",
+      "province": 2,
+      "town": 3,
+      "description": "Modern city venue for corporate events.",
+      "details": "Full amenities and secure parking.",
+      "latitude": -26.1076,
+      "longitude": 28.0567
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 4,
+    "fields": {
+      "name": "Menlyn Maine Arena",
+      "province": 2,
+      "town": 4,
+      "description": "High-capacity indoor venue in Pretoria.",
+      "details": "State-of-the-art facilities.",
+      "latitude": -25.7842,
+      "longitude": 28.2755
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 5,
+    "fields": {
+      "name": "Durban Beachfront Pavilion",
+      "province": 3,
+      "town": 5,
+      "description": "Beachfront venue with ocean views.",
+      "details": "Ideal for large outdoor gatherings.",
+      "latitude": -29.8587,
+      "longitude": 31.0218
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 6,
+    "fields": {
+      "name": "East London Riverside Lodge",
+      "province": 4,
+      "town": 6,
+      "description": "Riverside venue surrounded by natural beauty.",
+      "details": "Excellent for adventure team building.",
+      "latitude": -33.0153,
+      "longitude": 27.9116
+    }
+  },
+
+  { "model": "venues.venueimage", "pk": 1, "fields": { "venue": 1, "image": "venues/images/table_mountain_1.jpg", "caption": "Main entrance", "order": 0 } },
+  { "model": "venues.venueimage", "pk": 2, "fields": { "venue": 1, "image": "venues/images/table_mountain_2.jpg", "caption": "Garden view", "order": 1 } },
+  { "model": "venues.venueimage", "pk": 3, "fields": { "venue": 2, "image": "venues/images/stellenbosch_1.jpg", "caption": "Vineyard", "order": 0 } },
+  { "model": "venues.venueimage", "pk": 4, "fields": { "venue": 3, "image": "venues/images/sandton_1.jpg", "caption": "Conference hall", "order": 0 } },
+  { "model": "venues.venueimage", "pk": 5, "fields": { "venue": 4, "image": "venues/images/menlyn_1.jpg", "caption": "Arena exterior", "order": 0 } },
+  { "model": "venues.venueimage", "pk": 6, "fields": { "venue": 5, "image": "venues/images/durban_1.jpg", "caption": "Ocean view", "order": 0 } },
+  { "model": "venues.venueimage", "pk": 7, "fields": { "venue": 6, "image": "venues/images/east_london_1.jpg", "caption": "Riverside deck", "order": 0 } }
+]

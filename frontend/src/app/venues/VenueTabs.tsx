@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { Venue } from "@/types/venue";
 
-// Example props for regions and venues
 interface VenueTabsProps {
   regions: string[];
   venues: Venue[];
@@ -13,7 +12,8 @@ interface VenueTabsProps {
 export default function VenueTabs({ regions, venues }: VenueTabsProps) {
   const [activeRegion, setActiveRegion] = useState(regions[0]);
 
-  const filteredVenues = venues.filter((v) => v.region === activeRegion);
+  // If you want region == province.name (recommended), adjust here:
+  const filteredVenues = venues.filter((v) => v.province.name === activeRegion);
 
   return (
     <div className="w-full">
@@ -35,24 +35,32 @@ export default function VenueTabs({ regions, venues }: VenueTabsProps) {
       {/* Venues */}
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filteredVenues.length === 0 ? (
-          <div className="col-span-full text-center text-gray-500">No venues available for this region.</div>
+          <div className="col-span-full text-center text-gray-500">
+            No venues available for this region.
+          </div>
         ) : (
-          filteredVenues.map((venue) => (
-            <div key={venue.id} className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
-              <Image
-                src={venue.image}
-                alt={venue.name}
-                width={340}
-                height={180}
-                className="rounded-lg mb-3 object-cover w-full h-[180px] bg-gray-100"
-              />
-              <h3 className="text-lg font-bold text-blue-700 mb-1">{venue.name}</h3>
-              <p className="text-sm text-gray-500 mb-2">{venue.address}</p>
-              {venue.description && (
-                <p className="text-xs text-gray-400 text-center">{venue.description}</p>
-              )}
-            </div>
-          ))
+          filteredVenues.map((venue) => {
+            // Get first image (if any)
+            const firstImg = venue.images?.[0]?.image || "/no-image.png";
+            return (
+              <div key={venue.id} className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center">
+                <div className="w-full h-[180px] relative mb-3">
+                  <Image
+                    src={firstImg}
+                    alt={venue.name}
+                    fill
+                    className="rounded-lg object-cover w-full h-[180px] bg-gray-100"
+                    sizes="(max-width: 768px) 100vw, 340px"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-blue-700 mb-1">{venue.name}</h3>
+                <p className="text-sm text-gray-500 mb-2">{venue.address}</p>
+                {venue.description && (
+                  <p className="text-xs text-gray-400 text-center">{venue.description}</p>
+                )}
+              </div>
+            );
+          })
         )}
       </div>
     </div>
