@@ -3,9 +3,7 @@
 import { useState } from "react";
 import { useSubmitContactMutation } from "@/redux/services/contactApi";
 import Image from "next/image";
-
 import Link from "next/link";
-
 import {
   FaFacebookF,
   FaInstagram,
@@ -24,7 +22,9 @@ export default function ContactPage() {
   });
   const [submitContact, { isLoading, isSuccess, isError }] = useSubmitContactMutation();
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+  function handleChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
@@ -37,9 +37,20 @@ export default function ContactPage() {
   return (
     <main className="max-w-xl mx-auto px-4 py-12">
       <div className="flex flex-col items-center mb-8">
-        <Image src="/logo.png" alt="TBAE Logo" width={76} height={76} className="mb-3" />
-        <h1 className="text-4xl font-extrabold text-blue-700 mb-3">Contact Us</h1>
-        <p className="text-gray-600 text-center">We’re here to help! Send us your enquiry, suggestion, or request and our team will get back to you promptly.</p>
+        <Image
+          src="/logo.png"
+          alt="TBAE Logo"
+          width={76}
+          height={76}
+          className="mb-3"
+          priority
+        />
+        <h1 className="text-4xl font-extrabold text-blue-700 mb-3 text-center">
+          Contact Us
+        </h1>
+        <p className="text-gray-600 text-center">
+          We’re here to help! Send us your enquiry, suggestion, or request and our team will get back to you promptly.
+        </p>
       </div>
       <div className="bg-white rounded-2xl shadow-lg p-8">
         {isSuccess ? (
@@ -103,34 +114,101 @@ export default function ContactPage() {
           </form>
         )}
       </div>
+
+      {/* Contact details and Social Icons */}
       <div className="mt-10 text-center text-gray-500 text-sm">
-        <div>Or email us at <a href="mailto:info@tbae.co.za" className="text-blue-600 underline">info@tbae.co.za</a></div>
-        <div>Tel: <a href="tel:+27117651693" className="text-blue-600 underline">+27 11 765 1693</a></div>
-        <div className="flex gap-3 justify-center mt-4">
-          {/* Add social icons as needed */}
-          <h2 className="text-xl font-bold mb-2">Connect with us</h2>
-                    <div className="flex gap-6 mt-2">
-                      <Link href="https://facebook.com/" target="_blank" aria-label="Facebook">
-                        <FaFacebookF className="w-10 h-10 rounded-full p-2 bg-[#3b5998] hover:scale-110 transition transform duration-200" />
-                      </Link>
-                      <Link href="https://instagram.com/" target="_blank" aria-label="Instagram">
-                        <FaInstagram className="w-10 h-10 rounded-full p-2 bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:scale-110 transition transform duration-200" />
-                      </Link>
-                      <Link href="https://tumblr.com/" target="_blank" aria-label="Tumblr">
-                        <FaTumblr className="w-10 h-10 rounded-full p-2 bg-[#65c8fa] hover:scale-110 transition transform duration-200" />
-                      </Link>
-                      <Link href="https://pinterest.com/" target="_blank" aria-label="Pinterest">
-                        <FaPinterestP className="w-10 h-10 rounded-full p-2 bg-[#cb2027] hover:scale-110 transition transform duration-200" />
-                      </Link>
-                      <Link href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
-                        <FaLinkedinIn className="w-10 h-10 rounded-full p-2 bg-[#0077b5] hover:scale-110 transition transform duration-200" />
-                      </Link>
-                      <Link href="https://youtube.com/" target="_blank" aria-label="YouTube">
-                        <FaYoutube className="w-10 h-10 rounded-full p-2 bg-[#ff0000] hover:scale-110 transition transform duration-200" />
-                      </Link>
-                    </div>
+        <div>
+          Or email us at{" "}
+          <a
+            href="mailto:info@tbae.co.za"
+            className="text-blue-600 underline"
+          >
+            info@tbae.co.za
+          </a>
+        </div>
+        <div>
+          Tel:{" "}
+          <a
+            href="tel:+27117651693"
+            className="text-blue-600 underline"
+          >
+            +27 11 765 1693
+          </a>
+        </div>
+        <h2 className="text-xl font-bold my-6 text-blue-700">Connect with us</h2>
+        <div className="flex flex-wrap gap-4 justify-center items-center mt-2">
+          <SocialIcon
+            href="https://facebook.com/"
+            ariaLabel="Facebook"
+            className="bg-[#3b5998] hover:ring-[#3b5998]/40"
+          >
+            <FaFacebookF />
+          </SocialIcon>
+          <SocialIcon
+            href="https://instagram.com/"
+            ariaLabel="Instagram"
+            className="bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:ring-pink-400/40"
+          >
+            <FaInstagram />
+          </SocialIcon>
+          <SocialIcon
+            href="https://tumblr.com/"
+            ariaLabel="Tumblr"
+            className="bg-[#65c8fa] hover:ring-[#65c8fa]/40"
+          >
+            <FaTumblr />
+          </SocialIcon>
+          <SocialIcon
+            href="https://pinterest.com/"
+            ariaLabel="Pinterest"
+            className="bg-[#cb2027] hover:ring-[#cb2027]/40"
+          >
+            <FaPinterestP />
+          </SocialIcon>
+          <SocialIcon
+            href="https://linkedin.com/"
+            ariaLabel="LinkedIn"
+            className="bg-[#0077b5] hover:ring-[#0077b5]/40"
+          >
+            <FaLinkedinIn />
+          </SocialIcon>
+          <SocialIcon
+            href="https://youtube.com/"
+            ariaLabel="YouTube"
+            className="bg-[#ff0000] hover:ring-[#ff0000]/40"
+          >
+            <FaYoutube />
+          </SocialIcon>
         </div>
       </div>
     </main>
+  );
+}
+
+/**
+ * Social icon button – Accessible, styled, and animated
+ */
+function SocialIcon({
+  href,
+  ariaLabel,
+  className,
+  children,
+}: {
+  href: string;
+  ariaLabel: string;
+  className: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={ariaLabel}
+      className={`w-10 h-10 flex items-center justify-center rounded-full text-white shadow-md p-2 hover:scale-110 hover:ring-4 transition-all duration-200 text-2xl ${className}`}
+      tabIndex={0}
+    >
+      {children}
+    </Link>
   );
 }

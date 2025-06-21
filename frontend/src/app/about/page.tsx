@@ -3,23 +3,19 @@
 import { useGetAboutQuery, useGetStatsQuery, useGetTimelineQuery, useGetTeamQuery } from "@/redux/services/aboutApi";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaTiktok,
+  FaWhatsapp,
+  FaPinterestP,
+} from "react-icons/fa6"; // Use Fa6 for best coverage (install if needed)
 
-// Social icon map (adjust SVGs as needed)
-const icons = {
-  facebook: "/social/facebook.svg",
-  twitter: "/social/twitter.svg",
-  instagram: "/social/instagram.svg",
-  linkedin: "/social/linkedin.svg",
-  youtube: "/social/youtube.svg",
-  tiktok: "/social/tiktok.svg",
-  whatsapp: "/social/whatsapp.svg",
-  pinterest: "/social/pinterest.svg",
-};
-
-// Utility to strip HTML tags from backend content (for security & UX)
 function stripHtmlTags(html: string | undefined) {
   if (!html) return "";
-  // Replace block tags with line breaks, then remove tags
   return html
     .replace(/<\/(p|li|ul|ol|h[1-6]|div)>/gi, "\n")
     .replace(/<li>/gi, "• ")
@@ -27,6 +23,39 @@ function stripHtmlTags(html: string | undefined) {
     .replace(/\n\s*\n/g, "\n")
     .trim();
 }
+
+type SocialKey =
+  | "facebook_url"
+  | "twitter_url"
+  | "instagram_url"
+  | "linkedin_url"
+  | "youtube_url"
+  | "tiktok_url"
+  | "whatsapp_url"
+  | "pinterest_url";
+
+const SOCIAL_ICON_MAP: Record<SocialKey, React.ReactNode> = {
+  facebook_url: <FaFacebookF className="w-6 h-6" />,
+  twitter_url: <FaTwitter className="w-6 h-6" />,
+  instagram_url: <FaInstagram className="w-6 h-6" />,
+  linkedin_url: <FaLinkedinIn className="w-6 h-6" />,
+  youtube_url: <FaYoutube className="w-6 h-6" />,
+  tiktok_url: <FaTiktok className="w-6 h-6" />,
+  whatsapp_url: <FaWhatsapp className="w-6 h-6" />,
+  pinterest_url: <FaPinterestP className="w-6 h-6" />,
+};
+
+// Colorful styles for each network:
+const SOCIAL_COLOR_MAP: Record<SocialKey, string> = {
+  facebook_url: "bg-[#3b5998] hover:ring-[#3b5998]/40",
+  twitter_url: "bg-[#1da1f2] hover:ring-[#1da1f2]/40",
+  instagram_url: "bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:ring-pink-400/40",
+  linkedin_url: "bg-[#0077b5] hover:ring-[#0077b5]/40",
+  youtube_url: "bg-[#ff0000] hover:ring-[#ff0000]/40",
+  tiktok_url: "bg-gradient-to-r from-black via-pink-600 to-gray-800 hover:ring-pink-400/40",
+  whatsapp_url: "bg-[#25d366] hover:ring-[#25d366]/40",
+  pinterest_url: "bg-[#cb2027] hover:ring-[#cb2027]/40",
+};
 
 export default function AboutPage() {
   const { data: about } = useGetAboutQuery();
@@ -42,28 +71,26 @@ export default function AboutPage() {
         <div className="text-lg text-gray-700 leading-relaxed whitespace-pre-line mb-6">
           {stripHtmlTags(about?.content)}
         </div>
-        <div className="flex flex-wrap gap-3 mt-4">
+        {/* Socials */}
+        <div className="flex flex-wrap gap-4 mt-4">
           {about &&
-            Object.entries(about)
+            (Object.entries(about) as [SocialKey, string | null][])
               .filter(([k, v]) => k.endsWith("_url") && v)
-              .map(([k, url]) => (
-                <a
-                  key={k}
-                  href={url as string}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-50 p-2 rounded-full hover:bg-blue-100 shadow transition"
-                  aria-label={k.replace("_url", "")}
-                >
-                  <Image
-                    src={icons[k.replace("_url", "") as keyof typeof icons] || "/logo.png"}
-                    alt={k.replace("_url", "")}
-                    width={32}
-                    height={32}
-                    className="object-contain"
-                  />
-                </a>
-              ))}
+              .map(([k, url]) =>
+                url ? (
+                  <a
+                    key={k}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-11 h-11 flex items-center justify-center rounded-full text-white shadow-md p-2 transition-all duration-200 text-2xl focus:outline-none focus:ring-2 focus:ring-blue-300 ${SOCIAL_COLOR_MAP[k]}`}
+                    aria-label={k.replace("_url", "")}
+                    tabIndex={0}
+                  >
+                    {SOCIAL_ICON_MAP[k]}
+                  </a>
+                ) : null
+              )}
         </div>
       </section>
 
