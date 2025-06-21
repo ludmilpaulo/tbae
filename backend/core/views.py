@@ -1,11 +1,9 @@
 from rest_framework import viewsets
 from rest_framework.viewsets import ModelViewSet
-from .models import About, Event, GalleryImage, Homepage, Testimonial
-from .serializers import AboutSerializer, EventSerializer, GalleryImageSerializer, HomepageSerializer, TestimonialSerializer
+from .models import About, GalleryImage, Homepage, Testimonial
+from .serializers import AboutSerializer, GalleryImageSerializer, HomepageSerializer, TestimonialSerializer
 
-class EventViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Event.objects.all().order_by("-date")
-    serializer_class = EventSerializer
+
 
 class TestimonialViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Testimonial.objects.all()

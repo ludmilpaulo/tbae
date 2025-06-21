@@ -1,10 +1,24 @@
 from rest_framework import serializers
-from .models import About, Event, GalleryImage, Homepage, Testimonial
+from .models import About, GalleryImage, Homepage, Testimonial
+# backend/faq/serializers.py
 
-class EventSerializer(serializers.ModelSerializer):
+from .models import FAQ, FAQCategory
+
+class FAQCategorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = Event
-        fields = "__all__"
+        model = FAQCategory
+        fields = ["id", "name", "order"]
+
+class FAQSerializer(serializers.ModelSerializer):
+    category = FAQCategorySerializer(read_only=True)
+    category_id = serializers.PrimaryKeyRelatedField(
+        queryset=FAQCategory.objects.all(), source="category", write_only=True, required=False
+    )
+
+    class Meta:
+        model = FAQ
+        fields = ["id", "category", "category_id", "question", "answer", "order", "is_active"]
+
 
 class TestimonialSerializer(serializers.ModelSerializer):
     class Meta:

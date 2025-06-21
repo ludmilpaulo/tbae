@@ -1,0 +1,560 @@
+[
+  {
+    "model": "core.faq",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "question": "What does TBAE stand for?",
+      "answer": "TBAE stands for Team Building and Events. We specialise in organizing team building activities and events for organizations across South Africa.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "question": "How long has TBAE been operating?",
+      "answer": "TBAE has been facilitating team building and events since 2005.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "question": "Where is TBAE based?",
+      "answer": "Our head office is in Johannesburg, but we offer team building and events nationwide.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "question": "How do I book a team building event?",
+      "answer": "You can book via our website, by emailing info@tbae.co.za, or by calling our office directly.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 5,
+    "fields": {
+      "category": 2,
+      "question": "What payment methods do you accept?",
+      "answer": "We accept EFT, credit card, and company purchase orders.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "question": "Do you require a deposit to secure a booking?",
+      "answer": "Yes, a 50% deposit is required to confirm your booking. The balance is due before the event date.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "question": "Can I get a quotation before booking?",
+      "answer": "Absolutely! You can request a quote online or contact our team for a tailored proposal.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 8,
+    "fields": {
+      "category": 3,
+      "question": "Do you provide venues?",
+      "answer": "Yes, TBAE offers a wide selection of venues across South Africa to suit all types of team building events.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 9,
+    "fields": {
+      "category": 3,
+      "question": "Can we use our own venue?",
+      "answer": "Yes, we can facilitate events at your premises or a venue of your choice.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 10,
+    "fields": {
+      "category": 3,
+      "question": "Is there a cost difference for different venues?",
+      "answer": "Venue costs vary depending on location, size, and available facilities. Our team will advise you based on your requirements.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 11,
+    "fields": {
+      "category": 3,
+      "question": "Do your venues offer catering?",
+      "answer": "Most of our venues provide catering options. Specific menus and pricing will be included in your proposal.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 12,
+    "fields": {
+      "category": 3,
+      "question": "Are there venues in all major cities?",
+      "answer": "Yes, we have partner venues in Johannesburg, Cape Town, Durban, Pretoria, and many more locations.",
+      "order": 5,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 13,
+    "fields": {
+      "category": 4,
+      "question": "What types of team building activities do you offer?",
+      "answer": "We offer indoor, outdoor, virtual, and customized activities for all group sizes and objectives.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 14,
+    "fields": {
+      "category": 4,
+      "question": "Can the activities be tailored to our company’s objectives?",
+      "answer": "Yes, all activities can be tailored to address your team’s specific goals.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 15,
+    "fields": {
+      "category": 4,
+      "question": "Do you provide facilitators for the activities?",
+      "answer": "Every event includes professional facilitators to guide and motivate your group.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 16,
+    "fields": {
+      "category": 4,
+      "question": "Can activities be conducted outdoors?",
+      "answer": "Yes, we offer many exciting outdoor team building options across South Africa.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 17,
+    "fields": {
+      "category": 5,
+      "question": "Do you offer virtual team building events?",
+      "answer": "Yes, our virtual events are designed to engage remote teams and build stronger connections online.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 18,
+    "fields": {
+      "category": 5,
+      "question": "What platforms do you use for virtual events?",
+      "answer": "We use Zoom, Microsoft Teams, and Google Meet, depending on your preference.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 19,
+    "fields": {
+      "category": 5,
+      "question": "Do virtual activities require special software?",
+      "answer": "No special software is needed beyond a standard video conferencing platform.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 20,
+    "fields": {
+      "category": 6,
+      "question": "What outdoor activities are most popular?",
+      "answer": "Our Amazing Race, Survivor, and Sports Day events are especially popular for outdoor team building.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 21,
+    "fields": {
+      "category": 6,
+      "question": "Are outdoor activities weather dependent?",
+      "answer": "Yes, weather may impact certain activities. We always provide alternative indoor options if needed.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 22,
+    "fields": {
+      "category": 6,
+      "question": "What should we bring to outdoor events?",
+      "answer": "Comfortable clothing, sunblock, and a great attitude! Any special requirements will be provided in advance.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 23,
+    "fields": {
+      "category": 7,
+      "question": "Do you have packages for large companies?",
+      "answer": "Yes, we offer scalable packages and pricing for both small and large corporate groups.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 24,
+    "fields": {
+      "category": 7,
+      "question": "Are there special rates for non-profits?",
+      "answer": "We are happy to discuss special rates for NPOs—please contact us for more details.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 25,
+    "fields": {
+      "category": 7,
+      "question": "Can you organize events for international teams?",
+      "answer": "Absolutely, we have experience working with multinational clients both in-person and virtually.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 26,
+    "fields": {
+      "category": 8,
+      "question": "What health and safety measures are in place?",
+      "answer": "We follow all government guidelines and ensure your team’s safety is our top priority.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 27,
+    "fields": {
+      "category": 8,
+      "question": "Do you provide first aid on site?",
+      "answer": "Yes, all our facilitators are trained in first aid and safety protocols.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 28,
+    "fields": {
+      "category": 8,
+      "question": "Is there medical assistance available during events?",
+      "answer": "We have first aid kits on site and emergency protocols for all venues.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 29,
+    "fields": {
+      "category": 9,
+      "question": "What time should we arrive for our event?",
+      "answer": "Arrival times vary by event. Your event coordinator will provide details in advance.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 30,
+    "fields": {
+      "category": 9,
+      "question": "Is food provided during events?",
+      "answer": "Catering can be arranged as part of your package. Please discuss any dietary requirements with your coordinator.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 31,
+    "fields": {
+      "category": 9,
+      "question": "Can we bring our own refreshments?",
+      "answer": "Most venues allow you to bring your own refreshments. Check with your event coordinator to confirm.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 32,
+    "fields": {
+      "category": 10,
+      "question": "What is your cancellation policy?",
+      "answer": "Cancellations made more than 7 days before the event will receive a full refund. Less than 7 days may incur charges.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 33,
+    "fields": {
+      "category": 10,
+      "question": "Can I reschedule my booking?",
+      "answer": "Yes, rescheduling is possible subject to availability. Please contact your coordinator as soon as possible.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 34,
+    "fields": {
+      "category": 10,
+      "question": "How are refunds processed?",
+      "answer": "Refunds are processed to your original payment method and typically take 3-5 business days.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 35,
+    "fields": {
+      "category": 11,
+      "question": "Are your events accessible for people with disabilities?",
+      "answer": "We strive to make all events accessible. Please inform us of any specific needs so we can accommodate your group.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 36,
+    "fields": {
+      "category": 11,
+      "question": "Can I bring a guide dog to the event?",
+      "answer": "Yes, guide dogs are welcome at all our venues.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 37,
+    "fields": {
+      "category": 11,
+      "question": "Do you provide sign language interpreters?",
+      "answer": "Interpreters can be arranged upon request, subject to availability.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "core.faq",
+    "pk": 38,
+    "fields": {
+      "category": 12,
+      "question": "How do I contact TBAE support?",
+      "answer": "You can reach us by email at info@tbae.co.za, or by calling our office at +27 11 609 2234.",
+      "order": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 39,
+    "fields": {
+      "category": 12,
+      "question": "Can I request a custom package?",
+      "answer": "Absolutely! We are happy to create a bespoke package tailored to your needs.",
+      "order": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 40,
+    "fields": {
+      "category": 12,
+      "question": "Is there support available after hours?",
+      "answer": "Our team monitors emails after hours and will respond as quickly as possible to urgent queries.",
+      "order": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 41,
+    "fields": {
+      "category": 1,
+      "question": "How far in advance should I book?",
+      "answer": "We recommend booking at least 2-4 weeks in advance to secure your preferred date and venue.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 42,
+    "fields": {
+      "category": 4,
+      "question": "Do you offer team building for schools or youth groups?",
+      "answer": "Yes, we have special packages for schools, universities, and youth organizations.",
+      "order": 5,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 43,
+    "fields": {
+      "category": 4,
+      "question": "Can you organize multi-day retreats?",
+      "answer": "Absolutely! We can arrange overnight and multi-day team building experiences.",
+      "order": 6,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 44,
+    "fields": {
+      "category": 6,
+      "question": "What is included in an outdoor event package?",
+      "answer": "Our packages typically include facilitation, venue, catering, and all equipment needed for your chosen activities.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 45,
+    "fields": {
+      "category": 7,
+      "question": "Do you offer discounts for repeat clients?",
+      "answer": "We value our loyal clients and offer special discounts for repeat business. Please inquire for details.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 46,
+    "fields": {
+      "category": 9,
+      "question": "Is parking available at your venues?",
+      "answer": "Most of our venues offer secure parking on-site. Please confirm with your coordinator.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 47,
+    "fields": {
+      "category": 12,
+      "question": "How quickly will I receive a response to my query?",
+      "answer": "We strive to respond to all inquiries within one business day.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 48,
+    "fields": {
+      "category": 8,
+      "question": "Do you conduct risk assessments for activities?",
+      "answer": "Yes, we assess all activities and venues to ensure maximum safety.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 49,
+    "fields": {
+      "category": 11,
+      "question": "Can you accommodate guests with special dietary needs?",
+      "answer": "Of course! Please let us know any requirements in advance.",
+      "order": 4,
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.faq",
+    "pk": 50,
+    "fields": {
+      "category": 12,
+      "question": "Do you offer references or testimonials?",
+      "answer": "Yes, we can provide references from previous satisfied clients.",
+      "order": 5,
+      "is_active": true
+    }
+  }
+]

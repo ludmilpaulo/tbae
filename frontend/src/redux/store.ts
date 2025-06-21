@@ -6,6 +6,7 @@ import aboutReducer from "./slices/aboutSlice";
 import homepageReducer from "./slices/homepageSlice";
 import { galleryApi } from './services/galleryApi';
 import { venuesApi } from "./services/venuesApi";
+import { faqApi } from "./services/faqApi";
 
 export const store = configureStore({
   reducer: {
@@ -14,13 +15,15 @@ export const store = configureStore({
     gallery: galleryReducer,
     about: aboutReducer,
     homepage: homepageReducer,
+    [faqApi.reducerPath]: faqApi.reducer,
     [galleryApi.reducerPath]: galleryApi.reducer,
     [venuesApi.reducerPath]: venuesApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware()
       .concat(galleryApi.middleware)
-      .concat(venuesApi.middleware),
+      .concat(venuesApi.middleware)
+      .concat(faqApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("bookings/", include("bookings.urls")),
     path("gallery/", include("gallery.urls")),
+    path('api/', include('core.urls')),
     path('venues/', include('venues.urls')),  # Add this line for the venues API
 ]
 

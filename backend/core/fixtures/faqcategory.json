@@ -1,0 +1,62 @@
+[
+  {
+    "model": "core.faqcategory",
+    "pk": 1,
+    "fields": { "name": "General", "order": 1 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 2,
+    "fields": { "name": "Booking & Payments", "order": 2 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 3,
+    "fields": { "name": "Venues", "order": 3 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 4,
+    "fields": { "name": "Team Building Activities", "order": 4 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 5,
+    "fields": { "name": "Virtual Events", "order": 5 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 6,
+    "fields": { "name": "Outdoor Events", "order": 6 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 7,
+    "fields": { "name": "Corporate Packages", "order": 7 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 8,
+    "fields": { "name": "Health & Safety", "order": 8 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 9,
+    "fields": { "name": "On the Day", "order": 9 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 10,
+    "fields": { "name": "Cancellations & Refunds", "order": 10 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 11,
+    "fields": { "name": "Accessibility", "order": 11 }
+  },
+  {
+    "model": "core.faqcategory",
+    "pk": 12,
+    "fields": { "name": "Contact & Support", "order": 12 }
+  }
+]

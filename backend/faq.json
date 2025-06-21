@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "category": "General",
+    "question": "What does TBAE stand for?",
+    "answer": "TBAE stands for Team Building and Events, a company specializing in group activities for corporate and private clients."
+  },
+  {
+    "id": 2,
+    "category": "General",
+    "question": "Where is TBAE based?",
+    "answer": "TBAE's head office is in Johannesburg, but we operate nationwide across South Africa."
+  },
+  {
+    "id": 3,
+    "category": "General",
+    "question": "How long has TBAE been operating?",
+    "answer": "TBAE has been facilitating successful team building events for over six years."
+  },
+  {
+    "id": 4,
+    "category": "General",
+    "question": "What makes TBAE unique?",
+    "answer": "TBAE customizes every team building experience to suit your organization’s culture and objectives, offering a variety of engaging activities."
+  },
+  {
+    "id": 5,
+    "category": "General",
+    "question": "Who can participate in TBAE events?",
+    "answer": "Our events are suitable for corporate teams, schools, non-profits, sports teams, and private groups."
+  },
+  {
+    "id": 6,
+    "category": "General",
+    "question": "What is the main goal of team building?",
+    "answer": "Team building aims to improve communication, collaboration, trust, and morale within a group."
+  },
+  {
+    "id": 7,
+    "category": "General",
+    "question": "How do I contact TBAE?",
+    "answer": "You can reach us via our website contact form, by email, or by phone at the numbers listed on our Contact page."
+  },
+  {
+    "id": 8,
+    "category": "General",
+    "question": "Do you offer free consultations?",
+    "answer": "Yes, we offer free consultations to help you select the best activities and venues for your team."
+  },
+  {
+    "id": 9,
+    "category": "General",
+    "question": "Do you operate outside South Africa?",
+    "answer": "While our main focus is South Africa, we can arrange events in neighboring countries upon request."
+  },
+  {
+    "id": 10,
+    "category": "General",
+    "question": "Can I request references from past clients?",
+    "answer": "Absolutely! We’re happy to provide references or testimonials from previous satisfied clients."
+  },
+  {
+    "id": 11,
+    "category": "Booking & Payments",
+    "question": "How do I book an event?",
+    "answer": "You can book online, call our office, or request a quote from any event or venue page."
+  },
+  {
+    "id": 12,
+    "category": "Booking & Payments",
+    "question": "What information do I need to provide to book?",
+    "answer": "You’ll need the event date, group size, preferred activities, venue location, and any special requirements."
+  },
+  {
+    "id": 13,
+    "category": "Booking & Payments",
+    "question": "How far in advance should I book?",
+    "answer": "We recommend booking at least 2-4 weeks in advance for the best availability."
+  },
+  {
+    "id": 14,
+    "category": "Booking & Payments",
+    "question": "Can I change my booking after confirmation?",
+    "answer": "Yes, subject to availability and our change policy. Please contact us as soon as possible to make changes."
+  },
+  {
+    "id": 15,
+    "category": "Booking & Payments",
+    "question": "Do you require a deposit?",
+    "answer": "Yes, a deposit is required to secure your booking. The amount depends on the event and venue."
+  },
+  {
+    "id": 16,
+    "category": "Booking & Payments",
+    "question": "How can I pay?",
+    "answer": "We accept EFT, credit cards, and company purchase orders. Full payment details will be provided in your invoice."
+  },
+  {
+    "id": 17,
+    "category": "Booking & Payments",
+    "question": "Can I get a refund if I cancel?",
+    "answer": "Refunds are subject to our cancellation policy. Please see our terms or contact us for more details."
+  },
+  {
+    "id": 18,
+    "category": "Booking & Payments",
+    "question": "Can I book for a small group?",
+    "answer": "Yes, we cater to groups of all sizes, from 5 to 500+ participants."
+  },
+  {
+    "id": 19,
+    "category": "Booking & Payments",
+    "question": "Do you offer corporate account facilities?",
+    "answer": "Yes, we offer account facilities for regular corporate clients. Contact us for details."
+  },
+  {
+    "id": 20,
+    "category": "Booking & Payments",
+    "question": "How do I receive my invoice?",
+    "answer": "Invoices are emailed to you after your booking is confirmed."
+  },
+  {
+    "id": 21,
+    "category": "Venues & Events",
+    "question": "Where do you offer team building events?",
+    "answer": "We offer events at venues in all major cities and provinces, as well as at your own location if suitable."
+  },
+  {
+    "id": 22,
+    "category": "Venues & Events",
+    "question": "Do you offer events at client offices?",
+    "answer": "Yes, we can host many activities at your office or a location of your choice."
+  },
+  {
+    "id": 23,
+    "category": "Venues & Events",
+    "question": "What if it rains?",
+    "answer": "We offer indoor alternatives or rescheduling options in the event of bad weather."
+  },
+  {
+    "id": 24,
+    "category": "Venues & Events",
+    "question": "Are your events suitable for large groups?",
+    "answer": "Yes, we can accommodate groups from 5 to over 500 participants."
+  },
+  {
+    "id": 25,
+    "category": "Venues & Events",
+    "question": "How long does a typical event last?",
+    "answer": "Most events last 2–4 hours, but full-day and multi-day options are available."
+  },
+  {
+    "id": 26,
+    "category": "Venues & Events",
+    "question": "Can you organize overnight retreats?",
+    "answer": "Yes, we partner with venues that offer accommodation for overnight or multi-day events."
+  },
+  {
+    "id": 27,
+    "category": "Venues & Events",
+    "question": "Do you provide transportation?",
+    "answer": "We can arrange transportation for your group on request at an additional cost."
+  },
+  {
+    "id": 28,
+    "category": "Venues & Events",
+    "question": "Can we choose our own venue?",
+    "answer": "Yes, you can suggest a venue or choose from our recommended list."
+  },
+  {
+    "id": 29,
+    "category": "Venues & Events",
+    "question": "Are your venues wheelchair accessible?",
+    "answer": "Many of our venues are accessible. Please let us know your requirements when booking."
+  },
+  {
+    "id": 30,
+    "category": "Venues & Events",
+    "question": "Are there indoor venue options?",
+    "answer": "Yes, we offer both indoor and outdoor venue options."
+  },
+  {
+    "id": 31,
+    "category": "Activities",
+    "question": "What types of activities do you offer?",
+    "answer": "We offer a variety of activities including Amazing Race, Survivor, Minute to Win It, problem-solving challenges, creative workshops, and more."
+  },
+  {
+    "id": 32,
+    "category": "Activities",
+    "question": "Can you create a custom activity for our company?",
+    "answer": "Absolutely! We love designing bespoke team building experiences."
+  },
+  {
+    "id": 33,
+    "category": "Activities",
+    "question": "Are your activities physically demanding?",
+    "answer": "We have activities suitable for all fitness levels and can adapt events to suit your group."
+  },
+  {
+    "id": 34,
+    "category": "Activities",
+    "question": "Can we mix different activities in one event?",
+    "answer": "Yes, we can combine multiple activities into a tailored program."
+  },
+  {
+    "id": 35,
+    "category": "Activities",
+    "question": "Do you offer indoor team building options?",
+    "answer": "Yes, we offer a wide range of indoor activities for all weather and seasons."
+  },
+  {
+    "id": 36,
+    "category": "Activities",
+    "question": "Do you offer creative team building?",
+    "answer": "Yes, our creative activities include art challenges, drumming, cooking classes, and more."
+  },
+  {
+    "id": 37,
+    "category": "Activities",
+    "question": "Can activities be adapted for people with disabilities?",
+    "answer": "Yes, we can adapt most activities to accommodate special needs. Please inform us in advance."
+  },
+  {
+    "id": 38,
+    "category": "Activities",
+    "question": "Are there activities for non-English speakers?",
+    "answer": "Our facilitators can adapt instructions for non-English speakers or provide translation if needed."
+  },
+  {
+    "id": 39,
+    "category": "Activities",
+    "question": "Are the activities competitive or collaborative?",
+    "answer": "We offer both competitive and collaborative activities depending on your team’s preference."
+  },
+  {
+    "id": 40,
+    "category": "Activities",
+    "question": "Do you offer virtual team building activities?",
+    "answer": "Yes, we offer a selection of virtual and hybrid activities for remote teams."
+  },
+  {
+    "id": 41,
+    "category": "Safety",
+    "question": "What safety measures are in place?",
+    "answer": "All our facilitators are trained in first aid and our events are risk assessed for safety."
+  },
+  {
+    "id": 42,
+    "category": "Safety",
+    "question": "Are your facilitators qualified?",
+    "answer": "Yes, our facilitators are experienced professionals with relevant qualifications."
+  },
+  {
+    "id": 43,
+    "category": "Safety",
+    "question": "What if someone gets injured?",
+    "answer": "First aid will be administered immediately and emergency services called if needed. We recommend all participants have personal medical insurance."
+  },
+  {
+    "id": 44,
+    "category": "Safety",
+    "question": "Is there insurance for your events?",
+    "answer": "Yes, TBAE holds public liability insurance for all official events."
+  },
+  {
+    "id": 45,
+    "category": "Safety",
+    "question": "Are there any age restrictions?",
+    "answer": "Our events are suitable for ages 16 and up unless otherwise specified."
+  },
+  {
+    "id": 46,
+    "category": "Safety",
+    "question": "What should participants wear?",
+    "answer": "We recommend comfortable clothing and shoes suitable for outdoor or indoor activities."
+  },
+  {
+    "id": 47,
+    "category": "Safety",
+    "question": "What about medical emergencies?",
+    "answer": "We have first aid kits and trained staff at every event. Please notify us of any specific medical needs."
+  },
+  {
+    "id": 48,
+    "category": "Safety",
+    "question": "Are there any risks involved in team building activities?",
+    "answer": "All activities are risk-assessed, and safety is our priority. You will be informed of any specific risks prior to the event."
+  },
+  {
+    "id": 49,
+    "category": "Safety",
+    "question": "Is alcohol allowed during the event?",
+    "answer": "Alcohol policies depend on the venue and event type. Please check with us when booking."
+  },
+  {
+    "id": 50,
+    "category": "Safety",
+    "question": "Are there any prohibited items?",
+    "answer": "Weapons, illegal substances, and items that pose a safety risk are strictly prohibited."
+  }
+]
