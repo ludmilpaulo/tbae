@@ -7,6 +7,13 @@ from .models import Client
 from rest_framework import serializers
 from rest_framework import serializers
 from .models import Stat, TimelineEvent, TeamMember, About
+from .models import ContactRequest
+
+class ContactRequestSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ContactRequest
+        fields = ['id', 'name', 'email', 'phone', 'message', 'created_at', 'responded']
+        read_only_fields = ['id', 'created_at', 'responded']
 
 class StatSerializer(serializers.ModelSerializer):
     class Meta:

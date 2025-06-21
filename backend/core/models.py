@@ -97,7 +97,16 @@ class About(models.Model):
 
     def __str__(self):
         return "About Page Content"
+class ContactRequest(models.Model):
+    name = models.CharField(max_length=120)
+    email = models.EmailField()
+    phone = models.CharField(max_length=32, blank=True)
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    responded = models.BooleanField(default=False)
 
+    def __str__(self):
+        return f"{self.name} - {self.email}"
 
 class Homepage(models.Model):
     bannerTitle = models.CharField(max_length=100)

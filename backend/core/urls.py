@@ -1,6 +1,8 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
+from .contact_views import ContactRequestCreateView
+
 from .about_views import AboutDetailView, StatListView, TeamMemberListView, TimelineEventListView
 
 from .client_views import ClientListAPIView
@@ -16,6 +18,7 @@ router.register(r'homepage', HomepageViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path("contact/", ContactRequestCreateView.as_view(), name="contact-request"),
     path("about/", AboutDetailView.as_view(), name="about"),
     path("about/stats/", StatListView.as_view(), name="about-stats"),
     path("about/timeline/", TimelineEventListView.as_view(), name="about-timeline"),
