@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Booking Confirmation</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #222;">
+  <div style="max-width:520px; margin:0 auto; border-radius:12px; box-shadow:0 4px 24px #008ad511;">
+    <div style="background:linear-gradient(90deg,#3b82f6,#06b6d4 70%,#38bdf8);padding:30px 0 10px;text-align:center;">
+      <img src="{{ company_logo }}" alt="TBAE Logo" style="height:52px;margin-bottom:10px;">
+      <h1 style="color:#fff;margin:0;">Booking Confirmation</h1>
+    </div>
+    <div style="padding:32px;background:white;">
+      <h2 style="color:#3b82f6;">Thank you, {{ booking.name }}!</h2>
+      <p>
+        Your booking for <strong>{{ venue.name }}</strong> is confirmed.<br>
+        <b>Check-in:</b> {{ booking.check_in }}<br>
+        <b>Check-out:</b> {{ booking.check_out }}<br>
+        <b>Guests:</b> {{ booking.group_size }}<br>
+        <b>Reference:</b> #{{ booking.id }}
+      </p>
+      <h3 style="color:#16a34a;">Booking Summary</h3>
+      <table style="width:100%;margin:18px 0 20px;border-collapse:collapse;">
+        <tr>
+          <td style="padding:6px;">Venue:</td>
+          <td style="padding:6px;"><b>{{ venue.name }}</b></td>
+        </tr>
+        <tr>
+          <td style="padding:6px;">Location:</td>
+          <td style="padding:6px;">{{ venue.town.name }}, {{ venue.province.name }}</td>
+        </tr>
+        <tr>
+          <td style="padding:6px;">Daily Rate:</td>
+          <td style="padding:6px;">R {{ price_per_day }}</td>
+        </tr>
+        <tr>
+          <td style="padding:6px;">Nights:</td>
+          <td style="padding:6px;">{{ nights }}</td>
+        </tr>
+        <tr>
+          <td style="padding:6px;font-weight:bold;">Total:</td>
+          <td style="padding:6px;font-weight:bold;">R {{ total }}</td>
+        </tr>
+      </table>
+      <p style="margin:20px 0 0;color:#444;">
+        If you have any questions, reply to this email or call us at {{ company_phone }}.<br>
+        <b>We look forward to hosting your team!</b>
+      </p>
+    </div>
+    <div style="background:#f1f5f9;color:#888;padding:16px;text-align:center;border-radius:0 0 12px 12px;">
+      &copy; {{ company }}<br>
+      <a href="mailto:{{ company_email }}" style="color:#06b6d4;">{{ company_email }}</a>
+    </div>
+  </div>
+</body>
+</html>

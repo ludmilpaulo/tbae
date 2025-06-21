@@ -19,6 +19,7 @@ class Venue(models.Model):
     name = models.CharField(max_length=200)
     province = models.ForeignKey(Province, on_delete=models.PROTECT, related_name='venues')
     town = models.ForeignKey(Town, on_delete=models.PROTECT, related_name='venues')
+    price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     description = models.TextField(blank=True)
     details = models.TextField(blank=True)
     latitude = models.FloatField(null=True, blank=True)

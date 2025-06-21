@@ -1,17 +1,21 @@
 import VenueGallery from "./VenueGallery";
 import VenueMap from "./VenueMap";
-import { Venue } from "@/types/venue"; // ← Import your strict Venue type
+import { Venue } from "@/types/venue";
+import Link from "next/link";
+
 
 interface VenueDetailsModalProps {
   open: boolean;
   venue: Venue | null;
   onClose: () => void;
+  onBookVenue?: (venue: Venue) => void; // Pass booking logic/modal trigger here
 }
 
 export default function VenueDetailsModal({
   open,
   venue,
   onClose,
+ 
 }: VenueDetailsModalProps) {
   if (!open || !venue) return null;
   return (
@@ -31,17 +35,29 @@ export default function VenueDetailsModal({
           <strong>Details: </strong>
           {venue.details}
         </div>
+        {venue.price && (
+          <div className="mb-4 text-green-700 text-lg font-bold">
+            From: {new Intl.NumberFormat("en-ZA", { style: "currency", currency: "ZAR" }).format(Number(venue.price))}
+          </div>
+        )}
         {venue.latitude && venue.longitude && (
           <VenueMap lat={venue.latitude} lng={venue.longitude} />
         )}
-        <div className="flex justify-end mt-4">
-          <button
+        <div className="flex justify-end mt-4 gap-2">
+        <Link
+            href={`/venues/${venue.id}/book`}
+            className="bg-gradient-to-r from-green-400 via-cyan-400 to-blue-600 text-white font-bold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition text-center"
+        >
+            Book Venue
+        </Link>
+        <button
             className="bg-gradient-to-r from-blue-600 via-green-400 to-cyan-400 text-white font-bold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition"
             onClick={onClose}
-          >
+        >
             Close
-          </button>
+        </button>
         </div>
+
       </div>
     </div>
   );

@@ -1,18 +1,16 @@
 "use client";
+import { Venue } from "@/types/venue";
 import { useState, useEffect } from "react";
 
 // Use your actual Venue type from your project for perfect type safety!
-export interface Venue {
-  id: number;
-  name: string;
-  // ...any other props you need
+
+
+export interface QuoteModalProps {
+  open: boolean;
+  onClose: () => void;
+  venue?: Venue | null;
 }
 
-interface QuoteModalProps {
-  open: boolean;
-  venue: Venue | null;
-  onClose: () => void;
-}
 
 export default function QuoteModal({ open, venue, onClose }: QuoteModalProps) {
   const [sent, setSent] = useState(false);

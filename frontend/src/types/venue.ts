@@ -16,6 +16,7 @@ export interface Venue {
   id: number;
   name: string;
   address: string;
+  price:number;
   province: Province;
   town: Town;
   description: string;

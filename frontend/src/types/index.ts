@@ -6,6 +6,7 @@ export interface Event {
   date: string;
 }
 
+// src/types/index.ts
 export interface Testimonial {
   id: number;
   name: string;

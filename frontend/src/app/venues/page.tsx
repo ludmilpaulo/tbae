@@ -16,6 +16,7 @@ import VenueDetailsModal from "./VenueDetailsModal";
 import QuoteModal from "@/components/QuoteModal";
 
 import { Venue } from "@/types/venue";
+import { useRouter } from "next/navigation";
 
 export default function VenuesPage() {
   // Redux queries
@@ -40,6 +41,8 @@ export default function VenuesPage() {
   const [selectedVenue, setSelectedVenue] = useState<Venue | null>(null);
   const [quoteVenue, setQuoteVenue] = useState<Venue | null>(null);
 
+  const router = useRouter();
+
   // Handle auto-select of first province/town
   useEffect(() => {
     if (provinces.length && (province === null || !provinces.some(p => p.id === province))) {
@@ -53,12 +56,23 @@ export default function VenuesPage() {
     }
   }, [towns, town]);
 
+  // Optional: Scroll to top when opening details modal (great for mobile)
+  useEffect(() => {
+    if (selectedVenue) window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [selectedVenue]);
+
   // Filter by search
   const filteredVenues = venues.filter(
     v =>
       v.name.toLowerCase().includes(search.toLowerCase()) ||
       v.description.toLowerCase().includes(search.toLowerCase())
   );
+
+  // Book Venue handler
+  const handleBookVenue = (venue: Venue) => {
+    // Route to /venues/[id]/book page
+    router.push(`/venues/${venue.id}/book`);
+  };
 
   // Loading and error
   if (loadingProvinces || loadingTowns || loadingVenues)
@@ -98,6 +112,8 @@ export default function VenuesPage() {
               venue={venue}
               onDetails={() => setSelectedVenue(venue)}
               onQuote={() => setQuoteVenue(venue)}
+              // Optional: Uncomment to show "Book Venue" on each card:
+              // onBook={() => handleBookVenue(venue)}
             />
           ))}
         </div>
@@ -108,7 +124,13 @@ export default function VenuesPage() {
       )}
 
       {/* Modals */}
-      <VenueDetailsModal open={!!selectedVenue} venue={selectedVenue} onClose={() => setSelectedVenue(null)} />
+     <VenueDetailsModal
+        open={!!selectedVenue}
+        venue={selectedVenue}
+        onClose={() => setSelectedVenue(null)}
+       onBookVenue={handleBookVenue}
+        />
+
       <QuoteModal open={!!quoteVenue} venue={quoteVenue} onClose={() => setQuoteVenue(null)} />
     </main>
   );

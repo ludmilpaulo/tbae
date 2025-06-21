@@ -40,8 +40,21 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'venues',
+    'bookings',
+    'gallery',
+    "django_filters",
     'core',
 ]
+
+# settings.py
+
+REST_FRAMEWORK = {
+    # ...other settings...
+    "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend"
+    ]
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,3 +142,13 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+DEFAULT_FROM_EMAIL = "info@tbae.co.za"   # Use your email
+EMAIL_HOST = "smtp.yourprovider.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "info@tbae.co.za"
+EMAIL_HOST_PASSWORD = "your_password"
+EMAIL_USE_TLS = True
+

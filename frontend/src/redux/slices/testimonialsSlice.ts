@@ -1,19 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-interface Testimonial {
-  id: number;
-  name: string;
-  feedback: string;
-  avatar: string;
-}
-
+import { Testimonial } from "@/types";
+// Use this in your slice state/async thunk, e.g.:
 interface TestimonialsState {
   data: Testimonial[];
   loading: boolean;
   error: string | null;
 }
-
 const initialState: TestimonialsState = {
   data: [],
   loading: false,
