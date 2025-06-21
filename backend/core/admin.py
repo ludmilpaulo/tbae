@@ -1,7 +1,7 @@
 # backend/faq/admin.py
 
 from django.contrib import admin
-from .models import FAQ, FAQCategory
+from .models import FAQ, Client, FAQCategory
 
 @admin.register(FAQCategory)
 class FAQCategoryAdmin(admin.ModelAdmin):
@@ -15,3 +15,9 @@ class FAQAdmin(admin.ModelAdmin):
     list_filter = ("category", "is_active")
     ordering = ("category__order", "order")
     search_fields = ("question", "answer")
+
+@admin.register(Client)
+class ClientAdmin(admin.ModelAdmin):
+    list_display = ("name", "order", "website")
+    list_editable = ("order",)
+    search_fields = ("name",)

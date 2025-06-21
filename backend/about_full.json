@@ -1,0 +1,140 @@
+[
+  {
+    "model": "core.about",
+    "pk": 1,
+    "fields": {
+      "content": "<h2 class=\"text-2xl font-bold text-blue-700 mb-3\">About TBAE</h2>\n<p class=\"mb-4\">TBAE (Team Building Activities & Events) is South Africa’s leading corporate team building provider. Our mission is to inspire, connect, and empower organizations through innovative, professionally-facilitated activities and events.</p>\n<ul class=\"list-disc list-inside text-gray-600 mb-4\">\n  <li>Over 15 years of industry-leading experience</li>\n  <li>Trusted by 500+ top companies</li>\n  <li>Nationwide reach: Johannesburg, Cape Town, Durban & more</li>\n  <li>Tailored solutions for every business need</li>\n</ul>\n<p class=\"text-lg font-semibold text-blue-700\">Let us unlock your team’s potential!</p>",
+      "facebook_url": "https://facebook.com/tbaeza",
+      "twitter_url": "https://twitter.com/tbaeza",
+      "instagram_url": "https://instagram.com/tbaeza",
+      "linkedin_url": "https://linkedin.com/company/tbae",
+      "youtube_url": "https://youtube.com/@TBAESouthAfrica",
+      "tiktok_url": "https://tiktok.com/@tbaeza",
+      "whatsapp_url": "https://wa.me/27111234567",
+      "pinterest_url": "https://pinterest.com/tbae"
+    }
+  },
+
+  {
+    "model": "core.stat",
+    "pk": 1,
+    "fields": {
+      "label": "Events Organized",
+      "value": 1250,
+      "order": 1
+    }
+  },
+  {
+    "model": "core.stat",
+    "pk": 2,
+    "fields": {
+      "label": "Happy Clients",
+      "value": 500,
+      "order": 2
+    }
+  },
+  {
+    "model": "core.stat",
+    "pk": 3,
+    "fields": {
+      "label": "Team Building Experts",
+      "value": 22,
+      "order": 3
+    }
+  },
+  {
+    "model": "core.stat",
+    "pk": 4,
+    "fields": {
+      "label": "Years in Business",
+      "value": 15,
+      "order": 4
+    }
+  },
+
+  {
+    "model": "core.timelineevent",
+    "pk": 1,
+    "fields": {
+      "year": 2010,
+      "title": "TBAE Founded",
+      "desc": "Our journey begins in Johannesburg, with a mission to transform corporate teams.",
+      "order": 1
+    }
+  },
+  {
+    "model": "core.timelineevent",
+    "pk": 2,
+    "fields": {
+      "year": 2012,
+      "title": "National Expansion",
+      "desc": "Expanded to Cape Town, Durban, and Pretoria, offering events countrywide.",
+      "order": 2
+    }
+  },
+  {
+    "model": "core.timelineevent",
+    "pk": 3,
+    "fields": {
+      "year": 2017,
+      "title": "1,000th Event Milestone",
+      "desc": "Celebrated our 1,000th team building event with a major corporate client.",
+      "order": 3
+    }
+  },
+  {
+    "model": "core.timelineevent",
+    "pk": 4,
+    "fields": {
+      "year": 2023,
+      "title": "Virtual & Hybrid Events",
+      "desc": "Launched innovative virtual and hybrid team building solutions for a new era.",
+      "order": 4
+    }
+  },
+
+  {
+    "model": "core.teammember",
+    "pk": 1,
+    "fields": {
+      "name": "Sibongile Mthembu",
+      "role": "Chief Facilitator",
+      "photo": "team/sibongile.jpg",
+      "bio": "Sibongile brings over 10 years’ experience in experiential learning and corporate facilitation. She’s passionate about team growth and innovative leadership.",
+      "order": 1
+    }
+  },
+  {
+    "model": "core.teammember",
+    "pk": 2,
+    "fields": {
+      "name": "Michael van der Merwe",
+      "role": "Event Director",
+      "photo": "team/michael.jpg",
+      "bio": "Michael oversees all event logistics, ensuring each experience is seamless and memorable. He’s a problem-solver and creative planner.",
+      "order": 2
+    }
+  },
+  {
+    "model": "core.teammember",
+    "pk": 3,
+    "fields": {
+      "name": "Fatima Patel",
+      "role": "Client Success Manager",
+      "photo": "team/fatima.jpg",
+      "bio": "Fatima is the heart of our client service, committed to understanding your needs and exceeding expectations.",
+      "order": 3
+    }
+  },
+  {
+    "model": "core.teammember",
+    "pk": 4,
+    "fields": {
+      "name": "James Nkosi",
+      "role": "Lead Facilitator",
+      "photo": "team/james.jpg",
+      "bio": "James specializes in outdoor and adventure events, bringing high energy and expert safety standards to every project.",
+      "order": 4
+    }
+  }
+]

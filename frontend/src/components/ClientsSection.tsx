@@ -3,21 +3,10 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-
-// Client logo data
-const clients = [
-  { name: "Standard Bank", logo: "/clients/standardbank.png" },
-  { name: "Shoprite", logo: "/clients/shoprite.png" },
-  { name: "Vodacom", logo: "/clients/vodacom.png" },
-  { name: "Nedbank", logo: "/clients/nedbank.png" },
-  { name: "Discovery", logo: "/clients/discovery.png" },
-  { name: "Pick n Pay", logo: "/clients/picknpay.png" },
-  { name: "Sanlam", logo: "/clients/sanlam.png" },
-  { name: "MTN", logo: "/clients/mtn.png" },
-  // ...add as many as you want
-];
+import { useGetClientsQuery } from "@/redux/services/clientApi";
 
 export default function ClientsSection() {
+  const { data: clients = [] } = useGetClientsQuery();
   const [isHovered, setIsHovered] = useState(false);
   const [carouselWidth, setCarouselWidth] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -30,7 +19,7 @@ export default function ClientsSection() {
     if (trackRef.current) {
       setCarouselWidth(trackRef.current.scrollWidth / 2);
     }
-  }, []);
+  }, [clients]);
 
   useEffect(() => {
     if (!carouselWidth) return;

@@ -3,6 +3,39 @@ from .models import About, GalleryImage, Homepage, Testimonial
 # backend/faq/serializers.py
 
 from .models import FAQ, FAQCategory
+from .models import Client
+from rest_framework import serializers
+from rest_framework import serializers
+from .models import Stat, TimelineEvent, TeamMember, About
+
+class StatSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Stat
+        fields = ['id', 'label', 'value']
+
+class TimelineEventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TimelineEvent
+        fields = ['id', 'year', 'title', 'desc']
+
+class TeamMemberSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TeamMember
+        fields = ['id', 'name', 'role', 'photo', 'bio']
+
+class AboutSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = About
+        fields = [
+            'id', 'content', 'facebook_url', 'twitter_url', 'instagram_url',
+            'linkedin_url', 'youtube_url', 'tiktok_url', 'whatsapp_url', 'pinterest_url'
+        ]
+
+
+class ClientSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Client
+        fields = ["id", "name", "logo", "website", "order"]
 
 class FAQCategorySerializer(serializers.ModelSerializer):
     class Meta:

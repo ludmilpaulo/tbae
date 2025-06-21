@@ -48,9 +48,71 @@ class GalleryImage(models.Model):
     title = models.CharField(max_length=100)
     alt = models.CharField(max_length=200, blank=True)
 
+class Stat(models.Model):
+    label = models.CharField(max_length=100)
+    value = models.PositiveIntegerField()
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order', 'label']
+
+    def __str__(self):
+        return f"{self.label} ({self.value})"
+
+class TimelineEvent(models.Model):
+    year = models.PositiveIntegerField()
+    title = models.CharField(max_length=150)
+    desc = models.TextField()
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order', 'year']
+
+    def __str__(self):
+        return f"{self.year}: {self.title}"
+
+class TeamMember(models.Model):
+    name = models.CharField(max_length=80)
+    role = models.CharField(max_length=100)
+    photo = models.ImageField(upload_to="team/")
+    bio = models.TextField(blank=True, null=True)
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order', 'name']
+
+    def __str__(self):
+        return self.name
+
 class About(models.Model):
     content = models.TextField()
+    facebook_url = models.URLField(blank=True, null=True)
+    twitter_url = models.URLField(blank=True, null=True)
+    instagram_url = models.URLField(blank=True, null=True)
+    linkedin_url = models.URLField(blank=True, null=True)
+    youtube_url = models.URLField(blank=True, null=True)
+    tiktok_url = models.URLField(blank=True, null=True)
+    whatsapp_url = models.URLField(blank=True, null=True)
+    pinterest_url = models.URLField(blank=True, null=True)
+
+    def __str__(self):
+        return "About Page Content"
+
 
 class Homepage(models.Model):
     bannerTitle = models.CharField(max_length=100)
     bannerImage = models.ImageField(upload_to='homepage/')
+    
+    
+    
+class Client(models.Model):
+    name = models.CharField(max_length=120, unique=True)
+    logo = models.ImageField(upload_to='clients/')
+    website = models.URLField(blank=True, null=True)
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order', 'name']
+
+    def __str__(self):
+        return self.name
