@@ -41,8 +41,8 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.company})"
-    
-    
+
+
 class GalleryImage(models.Model):
     url = models.ImageField(upload_to="gallery/")
     title = models.CharField(max_length=100)
@@ -111,9 +111,9 @@ class ContactRequest(models.Model):
 class Homepage(models.Model):
     bannerTitle = models.CharField(max_length=100)
     bannerImage = models.ImageField(upload_to='homepage/')
-    
-    
-    
+
+
+
 class Client(models.Model):
     name = models.CharField(max_length=120, unique=True)
     logo = models.ImageField(upload_to='clients/')
