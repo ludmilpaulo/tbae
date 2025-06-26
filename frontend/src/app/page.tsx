@@ -26,7 +26,7 @@ export default function HomePage() {
           {/* Logo & Tagline */}
           <div className="flex-1">
             <Image
-              src="/video.mp4"
+              src="/logo.png"
               alt="TBAE Logo"
               width={220}
               height={90}
@@ -45,13 +45,18 @@ export default function HomePage() {
           </div>
           {/* Hero Image */}
           <div className="hidden md:block flex-1">
-            <Image
-              src="/team-hero.jpg"
-              alt="Team building event"
-              width={500}
-              height={360}
-              className="rounded-xl shadow-xl"
-            />
+            <video
+  src="/video.mp4"
+   className="w-full h-auto object-cover"
+  autoPlay
+  muted
+  loop
+  playsInline
+  poster="/logo.png" // optional, fallback image before video loads
+>
+  Sorry, your browser does not support embedded videos.
+</video>
+
           </div>
         </div>
         {/* Decorative wave */}

@@ -1,1 +1,234 @@
-[]
+[
+  {
+    "model": "venues.town",
+    "pk": 1,
+    "fields": {
+      "name": "Activities",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 2,
+    "fields": {
+      "name": "Alberton",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 3,
+    "fields": {
+      "name": "Centurion",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 4,
+    "fields": {
+      "name": "Eastrand",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 5,
+    "fields": {
+      "name": "Kemptonpark",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 6,
+    "fields": {
+      "name": "Lanseria",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 7,
+    "fields": {
+      "name": "Midrand",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 8,
+    "fields": {
+      "name": "Muldersdrift",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 9,
+    "fields": {
+      "name": "Pretoria",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 10,
+    "fields": {
+      "name": "Pretoriaeast",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 11,
+    "fields": {
+      "name": "Sandton",
+      "province": 1
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 12,
+    "fields": {
+      "name": "Activities",
+      "province": 2
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 13,
+    "fields": {
+      "name": "Activities",
+      "province": 3
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 14,
+    "fields": {
+      "name": "Bloemfontein",
+      "province": 3
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 15,
+    "fields": {
+      "name": "Parys",
+      "province": 3
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 16,
+    "fields": {
+      "name": "Activities",
+      "province": 4
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 17,
+    "fields": {
+      "name": "Activities",
+      "province": 5
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 18,
+    "fields": {
+      "name": "Activities",
+      "province": 6
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 19,
+    "fields": {
+      "name": "Dullstroom",
+      "province": 6
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 20,
+    "fields": {
+      "name": "Nelspruit",
+      "province": 6
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 21,
+    "fields": {
+      "name": "Witbank",
+      "province": 6
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 22,
+    "fields": {
+      "name": "Activities",
+      "province": 7
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 23,
+    "fields": {
+      "name": "Activities",
+      "province": 8
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 24,
+    "fields": {
+      "name": "Activities",
+      "province": 9
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 25,
+    "fields": {
+      "name": "Capetown",
+      "province": 9
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 26,
+    "fields": {
+      "name": "Durbanville",
+      "province": 9
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 27,
+    "fields": {
+      "name": "Overberg",
+      "province": 9
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 28,
+    "fields": {
+      "name": "Stellenbosch",
+      "province": 9
+    }
+  },
+  {
+    "model": "venues.town",
+    "pk": 29,
+    "fields": {
+      "name": "Winelands",
+      "province": 9
+    }
+  }
+]

@@ -1,1 +1,2060 @@
-[]
+[
+  {
+    "model": "venues.venue",
+    "pk": 1,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Alberton, Gauteng",
+      "province": 1,
+      "town": 2,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 2,
+    "fields": {
+      "name": "Rietvlei Lifestyle Centre Team Building Venue",
+      "province": 1,
+      "town": 2,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 3,
+    "fields": {
+      "name": "Sha-Mani Lodge  Team Building Venue",
+      "province": 1,
+      "town": 2,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 4,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Centurion, Gauteng",
+      "province": 1,
+      "town": 3,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 5,
+    "fields": {
+      "name": "42 on King Guesthouse Team Building Venue in Centurion",
+      "province": 1,
+      "town": 3,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 6,
+    "fields": {
+      "name": "23 on Riverside Team Building Venue in Centurion",
+      "province": 1,
+      "town": 3,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 7,
+    "fields": {
+      "name": "Centurion Lake Hotel Team Building Venue in Centurion",
+      "province": 1,
+      "town": 3,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 8,
+    "fields": {
+      "name": "The Royal Elephant Hotel Team Building Venue in Centurion",
+      "province": 1,
+      "town": 3,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 9,
+    "fields": {
+      "name": "The River Place Country Estate Team Building Venue in Centurion",
+      "province": 1,
+      "town": 3,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 10,
+    "fields": {
+      "name": "Velmore Hotel Estate Team Building Venue in Centurion",
+      "province": 1,
+      "town": 3,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 11,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in  the East Rand region of Gauteng",
+      "province": 1,
+      "town": 4,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 12,
+    "fields": {
+      "name": "Barnyard Theatre Emperors Palace Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 13,
+    "fields": {
+      "name": "Blue Mango Lodge Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 14,
+    "fields": {
+      "name": "Destiny Exclusive Hotel Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 15,
+    "fields": {
+      "name": "Emperor's Palace Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 16,
+    "fields": {
+      "name": "Le Chateau Guest House Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 17,
+    "fields": {
+      "name": "The Mannah Guest Lodge Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 18,
+    "fields": {
+      "name": "Protea Hotel O R Tambo Airport Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 19,
+    "fields": {
+      "name": "Rietvlei Lifestyle Centre Team Building Venue",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 20,
+    "fields": {
+      "name": "Sha-Mani Lodge  Team Building Venue",
+      "province": 1,
+      "town": 4,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 21,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Kempton Park on the East Rand",
+      "province": 1,
+      "town": 5,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 22,
+    "fields": {
+      "name": "Barnyard Theatre Emperors Palace Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 5,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 23,
+    "fields": {
+      "name": "Blue Mango Lodge Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 5,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 24,
+    "fields": {
+      "name": "Emperor's Palace Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 5,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 25,
+    "fields": {
+      "name": "Destiny Exclusive Hotel Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 5,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 26,
+    "fields": {
+      "name": "Le Chateau Guest House Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 5,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 27,
+    "fields": {
+      "name": "The Mannah Guest Lodge Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 5,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 28,
+    "fields": {
+      "name": "Protea Hotel O R Tambo Airport Team Building Venue in Kempton Park",
+      "province": 1,
+      "town": 5,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 29,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Lanseria, Gauteng",
+      "province": 1,
+      "town": 6,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 30,
+    "fields": {
+      "name": "Shumba Valley Team Building Venue in Lanseria",
+      "province": 1,
+      "town": 6,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 31,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Midrand, Gauteng",
+      "province": 1,
+      "town": 7,
+      "description": "Should these venues not be convenient or suitable for your team building in event in Midrand, we can either find you an alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 32,
+    "fields": {
+      "name": "Crowthorne Lodge Team Building Venue in  Midrand",
+      "province": 1,
+      "town": 7,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 33,
+    "fields": {
+      "name": "Midrand Conference Centre Team Building Venue in  Midrand",
+      "province": 1,
+      "town": 7,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 34,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Muldersdrift Gauteng",
+      "province": 1,
+      "town": 8,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 35,
+    "fields": {
+      "name": "Valverde Team Building Venue in Muldersdrift",
+      "province": 1,
+      "town": 8,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 36,
+    "fields": {
+      "name": "26D South Team Building Venue in Muldersdrift",
+      "province": 1,
+      "town": 8,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 37,
+    "fields": {
+      "name": "Avianto Team Building Venue in Muldersdrift",
+      "province": 1,
+      "town": 8,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 38,
+    "fields": {
+      "name": "Glenburn Lodge Team Building Venue in Muldersdrift",
+      "province": 1,
+      "town": 8,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 39,
+    "fields": {
+      "name": "Bush Willow Tented Camp Team Building Venue in Muldersdrift",
+      "province": 1,
+      "town": 8,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 40,
+    "fields": {
+      "name": "Cradle Moon Lakeside Lodge Team Building Venue in Muldersdrift",
+      "province": 1,
+      "town": 8,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 41,
+    "fields": {
+      "name": "Misty Hills Country Hotel Team Building Venue in Muldersdrift",
+      "province": 1,
+      "town": 8,
+      "description": ". ​",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 42,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Pretoria, Gauteng",
+      "province": 1,
+      "town": 9,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 43,
+    "fields": {
+      "name": "Barnyard Theatre Pretoria Team Building Venue in Pretoria East",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 44,
+    "fields": {
+      "name": "Blos Cafe Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 45,
+    "fields": {
+      "name": "Nt’Shonalanga Valley Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 46,
+    "fields": {
+      "name": "Roodevallei Team Building Venue in Pretoria East",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 47,
+    "fields": {
+      "name": "Saint George Hotel Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 48,
+    "fields": {
+      "name": "Shades of Summer Boutique Hotel Team Building Venue",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 49,
+    "fields": {
+      "name": "Kievits Kroon Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 50,
+    "fields": {
+      "name": "Die Bos Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 51,
+    "fields": {
+      "name": "Bosboma Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 52,
+    "fields": {
+      "name": "Zebra Country Lodge Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 53,
+    "fields": {
+      "name": "Farm Inn Country Hotel Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 54,
+    "fields": {
+      "name": "Protea Hotel Fire and Ice Team Building Venue in Menlyn, Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 55,
+    "fields": {
+      "name": "Purple Cow Restaurant Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 56,
+    "fields": {
+      "name": "Menlyn Boutique Hotel Team Building Venue in Pretoria",
+      "province": 1,
+      "town": 9,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 57,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Pretoria East, Gauteng",
+      "province": 1,
+      "town": 10,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 58,
+    "fields": {
+      "name": "Roodevallei Team Building Venue in Pretoria East",
+      "province": 1,
+      "town": 10,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 59,
+    "fields": {
+      "name": "La Vie Lente Team Building Venue in Pretoria East",
+      "province": 1,
+      "town": 10,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 60,
+    "fields": {
+      "name": "Barnyard Theatre Pretoria Team Building Venue in Pretoria East",
+      "province": 1,
+      "town": 10,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 61,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in  Sandton, Johannesburg",
+      "province": 1,
+      "town": 11,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 62,
+    "fields": {
+      "name": "Barnyard Theatre Cresta Team Building Venue in Randburg",
+      "province": 1,
+      "town": 11,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 63,
+    "fields": {
+      "name": "Barnyard Theatre Rivonia Team Building Venue in Rivonia",
+      "province": 1,
+      "town": 11,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 64,
+    "fields": {
+      "name": "Browns of Rivonia Team Building Venue in Sandton, Gauteng",
+      "province": 1,
+      "town": 11,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 65,
+    "fields": {
+      "name": "Rivonia Recreation Club Team Building Venue in Rivonia, Sandton",
+      "province": 1,
+      "town": 11,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 66,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Bloemfontein, Free State",
+      "province": 3,
+      "town": 14,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 67,
+    "fields": {
+      "name": "Leopards and Lace Team Building Venue in Bloemfontein",
+      "province": 3,
+      "town": 14,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 68,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Parys, Free State",
+      "province": 3,
+      "town": 15,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 69,
+    "fields": {
+      "name": "Hadeda Creek Team Building Venue in Parys",
+      "province": 3,
+      "town": 15,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 70,
+    "fields": {
+      "name": "Pont De Val Riverside Escape  Team Building Venue in Parys",
+      "province": 3,
+      "town": 15,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 71,
+    "fields": {
+      "name": "Stonehenge in Africa Team Building Venue in Parys",
+      "province": 3,
+      "town": 15,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 72,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Dullstroom Mpumalanga",
+      "province": 6,
+      "town": 19,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 73,
+    "fields": {
+      "name": "Walkersons Hotel and Spa Team Building Venue",
+      "province": 6,
+      "town": 19,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 74,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Nelspruit Mpumalanga",
+      "province": 6,
+      "town": 20,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 75,
+    "fields": {
+      "name": "Nou's Toeka Team Building Venue in Nelspruit",
+      "province": 6,
+      "town": 20,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 76,
+    "fields": {
+      "name": "Ingwenyama Team Building Venue in White River",
+      "province": 6,
+      "town": 20,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 77,
+    "fields": {
+      "name": "Bundu Lodge Team Building Venue in Nelspruit",
+      "province": 6,
+      "town": 20,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 78,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Witbank Mpumalanga",
+      "province": 6,
+      "town": 21,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 79,
+    "fields": {
+      "name": "Meulstroom Lodge Team Building Venue in Witbank",
+      "province": 6,
+      "town": 21,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 80,
+    "fields": {
+      "name": "Olifants River Lodge Team Building Venue in Witbank",
+      "province": 6,
+      "town": 21,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 81,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Cape Town, Western Cape",
+      "province": 9,
+      "town": 25,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 82,
+    "fields": {
+      "name": "Altydgedacht Wine Estate  Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 83,
+    "fields": {
+      "name": "Aquila Private Game Reserve Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 84,
+    "fields": {
+      "name": "ATKV Goudini Spa Team Building Venue in Rawsonville, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 85,
+    "fields": {
+      "name": "Barnyard Theatre Cape Town Team Building Venue in Tyger Valley",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 86,
+    "fields": {
+      "name": "Blue Rock Restaurant Team Building Venue in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 87,
+    "fields": {
+      "name": "Bread Cafe Team Building Venue in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 88,
+    "fields": {
+      "name": "Cafe Mambo Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 89,
+    "fields": {
+      "name": "Century City Conference Centre Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 90,
+    "fields": {
+      "name": "Commodore Hotel Team Building Venue in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 91,
+    "fields": {
+      "name": "Dolphin Beach Hotel Team Building Venue in Table View in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 92,
+    "fields": {
+      "name": "Erinvale Estate Hotel Team Building Venue in Somerset West",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 93,
+    "fields": {
+      "name": "Groot Constantia Wine Estate Team Building Venue in Constantia in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 94,
+    "fields": {
+      "name": "Helderberg Farm Team Building Venue in Somerset West",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 95,
+    "fields": {
+      "name": "Hotel Mandela Rhodes Place Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 96,
+    "fields": {
+      "name": "Karmanel Function Venue Team Building Venue in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 97,
+    "fields": {
+      "name": "Kelvin Grove Club  Team Building Venue in Newlands, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 98,
+    "fields": {
+      "name": "Krystal Beach Hotel Team Building Venue",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 99,
+    "fields": {
+      "name": "Lagoon Beach Hotel Team Building Venue",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 100,
+    "fields": {
+      "name": "Monkey Valley Resort Team Building Venue in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 101,
+    "fields": {
+      "name": "Morgenrust Team Building Venue in Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 102,
+    "fields": {
+      "name": "Piekenierskloof Mountain Lodge Team Building Venue in Citrusdal",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 103,
+    "fields": {
+      "name": "Protea Hotel President Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 104,
+    "fields": {
+      "name": "Protea Hotel Fire and Ice!  Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 105,
+    "fields": {
+      "name": "Protea Hotel Tyger Valley Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 106,
+    "fields": {
+      "name": "Radisson Blu Hotel Waterfront Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 107,
+    "fields": {
+      "name": "Riebeek Valley Hotel Team Building Venue in Riebeek West, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 108,
+    "fields": {
+      "name": "River Club Team Building Venue in  Observatory, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 109,
+    "fields": {
+      "name": "Saggy Stone Villager Pub and Grill Team Building Venue in Claremont, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 110,
+    "fields": {
+      "name": "Sante Hotel Team Building Venue in Paarl, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 111,
+    "fields": {
+      "name": "Shelley Point Hotel Team Building Venue in St Helena Bay, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 112,
+    "fields": {
+      "name": "The Lord Charles Hotel Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 113,
+    "fields": {
+      "name": "The Range Team Building Venue in  Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 114,
+    "fields": {
+      "name": "Three Cities Le Franschhoek Hotel Team Building Venue in Franschhoek",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 115,
+    "fields": {
+      "name": "Weltevreden Estate Team Building Venue in Riebeek West, Cape Town",
+      "province": 9,
+      "town": 25,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 116,
+    "fields": {
+      "name": "Zevenwacht Wine Estate Team Building Venue",
+      "province": 9,
+      "town": 25,
+      "description": "More about TBAE's team building events in Cape Town",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 117,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Durbanville, Cape Town",
+      "province": 9,
+      "town": 26,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 118,
+    "fields": {
+      "name": "D'urbanmist Team Building Venue in Durbanville, Cape Town",
+      "province": 9,
+      "town": 26,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 119,
+    "fields": {
+      "name": "Hillcrest Quarry Team Building Venue in Durbanville, Cape Town",
+      "province": 9,
+      "town": 26,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 120,
+    "fields": {
+      "name": "Kolping Team Building Venue in Durbanville",
+      "province": 9,
+      "town": 26,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 121,
+    "fields": {
+      "name": "Meerendal Wine EstateTeam Building Venue in Durbanville, Cape Town",
+      "province": 9,
+      "town": 26,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 122,
+    "fields": {
+      "name": "Poplars Restaurant Team Building Venue in Durbanville, Cape Town",
+      "province": 9,
+      "town": 26,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 123,
+    "fields": {
+      "name": "Ruslamere Team Building Venue in Durbanville",
+      "province": 9,
+      "town": 26,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 124,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in the Overberg region of the Western Cape.",
+      "province": 9,
+      "town": 27,
+      "description": "Should these venues not be convenient or suitable for your event, we can either find you an   alternative venue or you can arrange your own venue and we will come there.",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 125,
+    "fields": {
+      "name": "Arabella Team Building Venue",
+      "province": 9,
+      "town": 27,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 126,
+    "fields": {
+      "name": "Inn on Highlands Team Building Venue",
+      "province": 9,
+      "town": 27,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 127,
+    "fields": {
+      "name": "Houw Hoek Hotel Team Building Venue in Overberg",
+      "province": 9,
+      "town": 27,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 128,
+    "fields": {
+      "name": "The Caledon Team Building Venue in Overberg",
+      "province": 9,
+      "town": 27,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 129,
+    "fields": {
+      "name": "Sea Villa Glen Craig Team Building Venue",
+      "province": 9,
+      "town": 27,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 130,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Stellenbosch, Western Cape",
+      "province": 9,
+      "town": 28,
+      "description": "Click Here for Team Building  in Cape Town",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 131,
+    "fields": {
+      "name": "Helderberg Farm Team Building Venue in Stellenbosch",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 132,
+    "fields": {
+      "name": "Lanzerac Hotel & Spa Team Building Venue in Stellenbosch",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 133,
+    "fields": {
+      "name": "De Zalze LodgeTeam Building Venue in Stellenbosch",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 134,
+    "fields": {
+      "name": "Devon Valley Hotel Team Building Venue in Stellenbosch",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 135,
+    "fields": {
+      "name": "Devonvale Golf and Wine EstateTeam Building Venue in Stellenbosch",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 136,
+    "fields": {
+      "name": "Le Pommier Wine Estate Team Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "Mountain Breeze Resort Team Building Venue in Stellenbosch, Cape Town\n          Experience the unique ambience of this tranquil forest setting in the heart of the Stellenbosch winelands. Far from the maddening crowd, yet close enough to explore the many natural beauties of the Cape, as well as the diverse cultural experiences of Cape Town, Stellenbosch, Paarl, Franschhoek and surrounds. \n\n\n\nProtea Hotel by Marriott Stellenbosch Team Building Venue in Stellenbosch, Cape Town\n                Nestled in one of South Africa's most charming towns, the Protea Hotel by Marriott Stellenbosch offers travelers a thoughtful escape in the Western Cape Winelands. Embrace the beautiful Stellenbosch hotel near local wineries and find an accommodating haven. The guest rooms and suites are notable for their size and amenities; inquire about the apartment-style accommodations for extra room and features like fully equipped kitchens.\n\n\n\nWeltevreden Estate Team Building Venue in Stellenbosch, Cape Town\n                Weltevreden Estate  represents the undiscovered gem at the foot of Stellenbosch's magnificent  Simonsberg Mountain. With its proud heritage components, this beautiful setting  embodies the culmination of a dream. Weltevreden offers a range of possibilities in respect of  function venues and team building facilities, with the concept of creating a  truly outstanding experience. Able to host up to 120 guests and featuring  unique kiosk-style dining. A private and intimate banqueting chamber seating 20  guests is suited for quaint affairs such as kitchen teas, anniversary dinners  or small business meeting. \n \n\nCafe Mambo Building Venue in Stellenbosch, Cape Town\n                Weltevreden Estate  represents the undiscovered gem at the foot of Stellenbosch's magnificent  Simonsberg Mountain. With its proud heritage components, this beautiful setting  embodies the culmination of a dream. Weltevreden offers a range of possibilities in respect of  function venues and team building facilities, with the concept of creating a  truly outstanding experience. Able to host up to 120 guests and featuring  unique kiosk-style dining. A private and intimate banqueting chamber seating 20  guests is suited for quaint affairs such as kitchen teas, anniversary dinners  or small business meeting. \n \n\nSimonsberg Cafe Team Building Venue in Stellenbosch, Cape Town\n                The Simonsberg Café boasts beautiful views of the DelVera garden with Table Mountain in the background, delicious food and a cozy fireplace for winter and a fairytale garden to enjoy in summer. In the heart of the Winelands, Delvera is an exquisite venue with a tranquil atmosphere that lends itself to the ideal venue for your team building. Delvera has a farm atmosphere, beautiful gardens and breathtaking views of Table and Simonsberg Mountains, vineyards, and fynbos, making it ideal for every sort of celebration.....\n\n\n\nHawksmoor House Team Building Venue in Stellenbosch, Cape Town\n                Hawksmoor House is located on a 220- hectare wine farm, Matjieskuil, near Stellenbosch in the Cape Winelands. A meticulously restored Cape Dutch country retreat, Hawksmoor offers Guest House accommodation in 15 en-suite rooms, beautifully and individually decorated with exquisite antiques. Hawksmoor House occupies a stunning location amidst vineyards with an expansive view from the verandah towards the beloved Table Mountain.....\n\n\nSpier Wine Farm Building Venue in Stellenbosch, Cape Town\n                Village-style buildings, lush lawns and spacious rooms situated next to the calming Eerste River are the defining characteristics of the 4-star Spier Hotel.  As one of the first in South Africa to be awarded the Fair Trade in Tourism SA accreditation, the hotel has been recognised as a pioneer in responsible tourism. In 2011, we also won the top award in the Doing It All category at the Condé Nast Traveler World Saver Awards. At Spier  constantly strives to find innovative ways for the business to succeed in balance with the environment and society....",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 137,
+    "fields": {
+      "name": "Mountain Breeze Resort Team Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 138,
+    "fields": {
+      "name": "Protea Hotel by Marriott Stellenbosch Team Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 139,
+    "fields": {
+      "name": "Weltevreden Estate Team Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 140,
+    "fields": {
+      "name": "Cafe Mambo Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 141,
+    "fields": {
+      "name": "Simonsberg Cafe Team Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "Hawksmoor House Team Building Venue in Stellenbosch, Cape Town\n                Hawksmoor House is located on a 220- hectare wine farm, Matjieskuil, near Stellenbosch in the Cape Winelands. A meticulously restored Cape Dutch country retreat, Hawksmoor offers Guest House accommodation in 15 en-suite rooms, beautifully and individually decorated with exquisite antiques. Hawksmoor House occupies a stunning location amidst vineyards with an expansive view from the verandah towards the beloved Table Mountain.....",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 142,
+    "fields": {
+      "name": "Hawksmoor House Team Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 143,
+    "fields": {
+      "name": "Spier Wine Farm Building Venue in Stellenbosch, Cape Town",
+      "province": 9,
+      "town": 28,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 144,
+    "fields": {
+      "name": "Some of the  corporate team building  venues used by TBAE situated in Winelands, Western Cape",
+      "province": 9,
+      "town": 29,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 145,
+    "fields": {
+      "name": "Devon Valley Hotel Team Building Venue in Stellenbosch",
+      "province": 9,
+      "town": 29,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 146,
+    "fields": {
+      "name": "Three Cities Le Franschhoek Hotel Team Building Venue in Franschhoek",
+      "province": 9,
+      "town": 29,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  },
+  {
+    "model": "venues.venue",
+    "pk": 147,
+    "fields": {
+      "name": "Zandvliet Wine Estate Team Building Venue in Ashton",
+      "province": 9,
+      "town": 29,
+      "description": "",
+      "details": "",
+      "price": null,
+      "latitude": null,
+      "longitude": null
+    }
+  }
+]

@@ -1,96 +1,156 @@
-import sys, os, json
+import os
+import sys
+import json
 from bs4 import BeautifulSoup
 
-def clean_image(src):
-    src = src.strip().lstrip("/")
-    if src.startswith("images/"):
-        return f"venues/images/{os.path.basename(src)}"
-    if src.startswith("venues/images/"):
-        return src
-    return f"venues/images/{os.path.basename(src)}"
+# ----- CONFIG -----
+# Adjust these as needed for your setup
+PROVINCE_FILES = [
+    ("Eastern Cape", "venues-eastern-cape.htm"),
+    ("Free State", "venues-free-state.htm"),
+    ("Gauteng", "venues-gauteng.htm"),
+    ("KwaZulu-Natal", "venues-kwazulu-natal.htm"),
+    ("Limpopo", "venues-limpopo.htm"),
+    ("Mpumalanga", "venues-mpumalanga.htm"),
+    ("Northern Cape", "venues-northern-cape.htm"),
+    ("North West", "venues-northwest.htm"),
+    ("Western Cape", "venues-western-cape.htm"),
+]
+BASE_PATH = "/Users/ludmil/Desktop/Apps/tbae.co.za/public_html"
+MEDIA_DIR = "media/venues/images"
 
-def main(html_files):
-    provinces, towns, venues, venue_images = [], [], [], []
-    prov_idx, town_idx, venue_idx, img_idx = 1, 1, 1, 1
-    prov_map, town_map = {}, {}
-    for html_file in html_files:
-        with open(html_file, "r", encoding="utf-8") as f:
-            soup = BeautifulSoup(f, "html.parser")
-        # Assume province name is in title or h1, fallback to filename
-        province = None
-        for h in soup.find_all(["h1", "h2"]):
-            if "Venues" in h.text:
-                province = h.text.replace(" Venues", "").strip()
-                break
-        if not province:
-            province = os.path.basename(html_file).split("-")[1].replace(".htm", "").replace("_", " ").title()
-        if province not in prov_map:
-            prov_map[province] = prov_idx
-            provinces.append({
-                "model": "venues.province",
-                "pk": prov_idx,
-                "fields": {"name": province}
-            })
-            prov_idx += 1
-        # Find all venue blocks
-        for block in soup.find_all("div", class_="venueblock"):
-            # Town
-            town = block.find("span", class_="town")
-            town_name = town.text.strip() if town else "Unknown"
-            town_key = (town_name, province)
-            if town_key not in town_map:
-                town_map[town_key] = town_idx
-                towns.append({
-                    "model": "venues.town",
-                    "pk": town_idx,
-                    "fields": {
-                        "name": town_name,
-                        "province": prov_map[province]
-                    }
-                })
-                town_idx += 1
-            # Venue name
-            vname = block.find("span", class_="venuename") or block.find("h3")
-            venue_name = vname.text.strip() if vname else "Unknown Venue"
-            description = block.find("div", class_="description")
-            desc = description.text.strip() if description else ""
-            details = block.find("div", class_="details")
-            det = details.text.strip() if details else ""
+# These will be filled
+province_map = {}  # name -> id
+town_map = {}      # (name, province) -> id
+venue_map = {}     # (name, town, province) -> id
+
+provinces, towns, venues, venue_images = [], [], [], []
+province_id, town_id, venue_id, image_id = 1, 1, 1, 1
+
+def get_province_id(name):
+    global province_id
+    if name not in province_map:
+        province_map[name] = province_id
+        provinces.append({
+            "model": "core.province",
+            "pk": province_id,
+            "fields": {"name": name}
+        })
+        province_id += 1
+    return province_map[name]
+
+def get_town_id(name, province_name):
+    global town_id
+    key = (name, province_name)
+    if key not in town_map:
+        town_map[key] = town_id
+        towns.append({
+            "model": "core.town",
+            "pk": town_id,
+            "fields": {"name": name, "province": get_province_id(province_name)}
+        })
+        town_id += 1
+    return town_map[key]
+
+def extract_venues_from_file(province_name, filename):
+    global venue_id, image_id
+    html_path = os.path.join(BASE_PATH, filename)
+    with open(html_path, "r", encoding="utf-8") as f:
+        soup = BeautifulSoup(f, "html.parser")
+    # Find venue blocks
+    # Each file is slightly different. Usually venues are listed in <table>, sometimes <div>s.
+    # Try to find all venue tables:
+    tables = soup.find_all("table")
+    for table in tables:
+        rows = table.find_all("tr")
+        for row in rows:
+            cells = row.find_all(["td", "th"])
+            if len(cells) < 2:
+                continue
+            # First cell = maybe image, second = venue/town/desc
+            town_name, venue_name, description, images = "", "", "", []
+            # Try: extract town from heading above?
+            # We'll try to find <b> or <h3> for town
+            b = row.find("b")
+            if b:
+                town_name = b.text.strip()
+            # Try to extract venue name, sometimes in <a>, sometimes bold, sometimes just text
+            venue_link = row.find("a")
+            if venue_link:
+                venue_name = venue_link.text.strip()
+            else:
+                # Maybe the first bold
+                bolds = row.find_all("b")
+                if len(bolds) > 1:
+                    venue_name = bolds[1].text.strip()
+            # Fallback: use whole text minus image
+            if not venue_name:
+                texts = [t for t in row.stripped_strings]
+                if texts:
+                    venue_name = texts[0]
+            # Description (try get all text in cell except name)
+            if len(cells) > 1:
+                description = " ".join([t for t in cells[1].stripped_strings if t != venue_name])
             # Images
-            images = []
-            for img in block.find_all("img"):
-                img_src = img.get("src") or ""
-                img_caption = img.get("alt") or ""
-                images.append((img_src, img_caption))
+            for img in row.find_all("img"):
+                img_src = img.get("src")
+                if img_src and "venues/" in img_src:
+                    filename = os.path.basename(img_src)
+                    images.append(filename)
+            # Town fallback: Sometimes in the cell text
+            if not town_name:
+                # Try previous <h3> or <h2>
+                prev = row.find_previous(["h2", "h3"])
+                if prev:
+                    town_name = prev.text.strip()
+            # Clean
+            venue_name = venue_name.strip().replace("\n", " ")
+            town_name = town_name.strip().replace("\n", " ")
+            description = description.strip()
+            if not (venue_name and town_name):
+                continue
+            # Add venue
+            v_key = (venue_name, town_name, province_name)
+            if v_key in venue_map:
+                continue
+            venue_map[v_key] = venue_id
             venues.append({
-                "model": "venues.venue",
-                "pk": venue_idx,
+                "model": "core.venue",
+                "pk": venue_id,
                 "fields": {
                     "name": venue_name,
-                    "province": prov_map[province],
-                    "town": town_map[town_key],
-                    "description": desc,
-                    "details": det,
-                    "latitude": None,
-                    "longitude": None,
+                    "province": get_province_id(province_name),
+                    "town": get_town_id(town_name, province_name),
                     "price": None,
+                    "description": description,
+                    "details": "",
+                    "latitude": None,
+                    "longitude": None
                 }
             })
-            for img_src, caption in images:
+            # Images for venue
+            for img_file in images:
                 venue_images.append({
-                    "model": "venues.venueimage",
-                    "pk": img_idx,
+                    "model": "core.venueimage",
+                    "pk": image_id,
                     "fields": {
-                        "venue": venue_idx,
-                        "image": clean_image(img_src),
-                        "caption": caption,
-                        "order": img_idx
+                        "venue": venue_id,
+                        "image": f"venues/images/{img_file}",
+                        "caption": "",
+                        "order": image_id
                     }
                 })
-                img_idx += 1
-            venue_idx += 1
+                image_id += 1
+            venue_id += 1
 
-    # Write fixtures
+def main():
+    for province_name, filename in PROVINCE_FILES:
+        if not os.path.exists(os.path.join(BASE_PATH, filename)):
+            print(f"Missing: {filename}")
+            continue
+        extract_venues_from_file(province_name, filename)
+
+    # Write output files
     for name, data in [
         ("provinces.json", provinces),
         ("towns.json", towns),
@@ -102,7 +162,4 @@ def main(html_files):
         print(f"Wrote {len(data)} objects to {name}")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python extract_venues.py venues-*.htm [teambuilding-venues.htm ...]")
-        sys.exit(1)
-    main(sys.argv[1:])
+    main()

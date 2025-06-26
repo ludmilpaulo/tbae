@@ -20,6 +20,11 @@ images: {
         pathname: '/vi/**',
       },
       {
+        protocol: 'https',
+        hostname: 'africarise.pythonanywhere.com',
+        pathname: '/media/**'
+      },
+      {
         protocol: 'http',
         hostname: 'localhost',
         port: '8000',

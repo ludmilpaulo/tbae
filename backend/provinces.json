@@ -3,70 +3,63 @@
     "model": "venues.province",
     "pk": 1,
     "fields": {
-      "name": "Corporate Team Building in the Eastern Cape"
+      "name": "Gauteng"
     }
   },
   {
     "model": "venues.province",
     "pk": 2,
     "fields": {
-      "name": "Corporate Team Building in Free State"
+      "name": "Eastern Cape"
     }
   },
   {
     "model": "venues.province",
     "pk": 3,
     "fields": {
-      "name": "Corporate Team Building in Gauteng"
+      "name": "Free State"
     }
   },
   {
     "model": "venues.province",
     "pk": 4,
     "fields": {
-      "name": "Corporate Team Building in KwaZulu Natal"
+      "name": "Kwazulu Natal"
     }
   },
   {
     "model": "venues.province",
     "pk": 5,
     "fields": {
-      "name": "Corporate Team Building in the Limpopo Province"
+      "name": "Limpopo"
     }
   },
   {
     "model": "venues.province",
     "pk": 6,
     "fields": {
-      "name": "Corporate Team Building in Mpumalanga"
+      "name": "Mpumalanga"
     }
   },
   {
     "model": "venues.province",
     "pk": 7,
     "fields": {
-      "name": "Corporate Team Building in the Northern Cape Province"
+      "name": "Northern Cape"
     }
   },
   {
     "model": "venues.province",
     "pk": 8,
     "fields": {
-      "name": "Corporate Team Building in the North West Province"
+      "name": "Northwest"
     }
   },
   {
     "model": "venues.province",
     "pk": 9,
     "fields": {
-      "name": "Corporate Team Building in Western Cape"
-    }
-  },
-  {
-    "model": "venues.province",
-    "pk": 10,
-    "fields": {
-      "name": "Corporate Team Building"
+      "name": "Western Cape"
     }
   }
 ]
