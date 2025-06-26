@@ -1,0 +1,2042 @@
+[
+  {
+    "model": "core.testimonial",
+    "pk": 1,
+    "fields": {
+      "name": "Zainie Chetty",
+      "company": "Hollard Insurance",
+      "text": "\"A HUGE thank you to all for the teambuilding events. The  facilitators were friendly and did an amazing job. The team had loads of fun,  and lots of laughter.We had very  good feedback and there was nothing the team mentioned that could have been  done better, in fact this was one of the best team building sessions that we  had. From our  team we say a Huge Thank You to the facilitators for their brilliant work. Zuma  as we called him is such an amazing person and a great Dancer. Keep up the  good work.\" -",
+      "feedback": "\"A HUGE thank you to all for the teambuilding events. The  facilitators were friendly and did an amazing job. The team had loads of fun,  and lots of laughter.We had very  good feedback and there was nothing the team mentioned that could have been  done better, in fact this was one of the best team building sessions that we  had. From our  team we say a Huge Thank You to the facilitators for their brilliant work. Zuma  as we called him is such an amazing person and a great Dancer. Keep up the  good work.\" -",
+      "avatar": "testimonials/hollard-insurance-team-building-testimonial.jpg",
+      "image": "testimonials/hollard-insurance-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 2,
+    "fields": {
+      "name": "-     Minette Jansen van Vuuren",
+      "company": "Bible Society of South Africa",
+      "text": "“Thank you for the guys facilitating us this afternoon. They were great.”",
+      "feedback": "“Thank you for the guys facilitating us this afternoon. They were great.”",
+      "avatar": "testimonials/bible-society-south-africa2.jpg",
+      "image": "testimonials/bible-society-south-africa2.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 3,
+    "fields": {
+      "name": "-     Jerome",
+      "company": "ETV",
+      "text": "“Your professionalism, your personality and just all round friendliness made everything SUCH A HUGE SUCCESS!!! I appreciate every effort you’ve put in to making everyday a massive WIN!!!”",
+      "feedback": "“Your professionalism, your personality and just all round friendliness made everything SUCH A HUGE SUCCESS!!! I appreciate every effort you’ve put in to making everyday a massive WIN!!!”",
+      "avatar": "testimonials/etv-team-building-event.jpg",
+      "image": "testimonials/etv-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 4,
+    "fields": {
+      "name": "Alpha Studies",
+      "company": "",
+      "text": "\"Thank you so much for today! Your team was outstanding and the kids had a blast!\n\t\t\t  We appreciate all your time and effort! - Monica,",
+      "feedback": "\"Thank you so much for today! Your team was outstanding and the kids had a blast!\n\t\t\t  We appreciate all your time and effort! - Monica,",
+      "avatar": "testimonials/alpha-study-centre2.jpg",
+      "image": "testimonials/alpha-study-centre2.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 5,
+    "fields": {
+      "name": "",
+      "company": "Dalberg Advisors",
+      "text": "“ Wanted to extend a note of thanks, the team loved the game, passion and enthusiasm. I am so grateful to you and your team for the hard work – all the best and I look forward to working with you in the future. “ - Jady Samuel",
+      "feedback": "“ Wanted to extend a note of thanks, the team loved the game, passion and enthusiasm. I am so grateful to you and your team for the hard work – all the best and I look forward to working with you in the future. “ - Jady Samuel",
+      "avatar": "testimonials/dalberg-advisors-small.jpg",
+      "image": "testimonials/dalberg-advisors-small.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 6,
+    "fields": {
+      "name": "",
+      "company": "SNC Lavalin",
+      "text": "“ On behalf of Seye and myself we would like to thank TBAE for an awesome evening. We really had a great time. “ - Loren Abrahams",
+      "feedback": "“ On behalf of Seye and myself we would like to thank TBAE for an awesome evening. We really had a great time. “ - Loren Abrahams",
+      "avatar": "testimonials/snc-lavalin-small.jpg",
+      "image": "testimonials/snc-lavalin-small.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 7,
+    "fields": {
+      "name": "",
+      "company": "Cape Town Flight Training Centre",
+      "text": "“ I would like to thank you and your team for assisting us – we had such an amazing time! “ - Oraya Laemkaew",
+      "feedback": "“ I would like to thank you and your team for assisting us – we had such an amazing time! “ - Oraya Laemkaew",
+      "avatar": "testimonials/cape-town-flight-training-centre-small.jpg",
+      "image": "testimonials/cape-town-flight-training-centre-small.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 8,
+    "fields": {
+      "name": "Charl Woest",
+      "company": "Refinery Stores",
+      "text": "“Thank you very much :) . It was a lovely day & we had so much fun! “ -",
+      "feedback": "“Thank you very much :) . It was a lovely day & we had so much fun! “ -",
+      "avatar": "testimonials/refinery-small.jpg",
+      "image": "testimonials/refinery-small.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 9,
+    "fields": {
+      "name": "Zach Kiarie",
+      "company": "Fairtrade South Africa",
+      "text": "Excellent!! We enjoyed every moment! We will definitely look out for TBAE again -",
+      "feedback": "Excellent!! We enjoyed every moment! We will definitely look out for TBAE again -",
+      "avatar": "testimonials/fairtrade-south-africa.jpg",
+      "image": "testimonials/fairtrade-south-africa.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 10,
+    "fields": {
+      "name": "Jacky",
+      "company": "Distell",
+      "text": "Wow, what a truly lovely day and conference as a whole! Thanks again for all your efforts and for helping us out at last minute. Will definitely recommend you and your team. -",
+      "feedback": "Wow, what a truly lovely day and conference as a whole! Thanks again for all your efforts and for helping us out at last minute. Will definitely recommend you and your team. -",
+      "avatar": "testimonials/distell-team-building-testimonial.jpg",
+      "image": "testimonials/distell-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 11,
+    "fields": {
+      "name": "Carmen Thomas",
+      "company": "Imperial Managed Solutions",
+      "text": "We thoroughly enjoyed collaborating with you and your team and hope to do so again in the near future.",
+      "feedback": "We thoroughly enjoyed collaborating with you and your team and hope to do so again in the near future.",
+      "avatar": "testimonials/imperial-logistics-testimonial.jpg",
+      "image": "testimonials/imperial-logistics-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 12,
+    "fields": {
+      "name": "Chantal Olivier",
+      "company": "Rohloff Group",
+      "text": "Thank you for the arrangements with the event – all went well and great fun was had by all! -",
+      "feedback": "Thank you for the arrangements with the event – all went well and great fun was had by all! -",
+      "avatar": "testimonials/rohloff-group.jpg",
+      "image": "testimonials/rohloff-group.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 13,
+    "fields": {
+      "name": "Banele",
+      "company": "Old Mutual",
+      "text": "A big thank you for all your help with this event. Devon Valley was great,everything was up to standard,from the venue,food and service. Ian and team were fantastic as usual, please pass my appreciation to them.",
+      "feedback": "A big thank you for all your help with this event. Devon Valley was great,everything was up to standard,from the venue,food and service. Ian and team were fantastic as usual, please pass my appreciation to them.",
+      "avatar": "testimonials/old-mutual-testimonial.jpg",
+      "image": "testimonials/old-mutual-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 14,
+    "fields": {
+      "name": "Barbara Meisel \t\t\t- Brick Art Construction",
+      "company": "",
+      "text": "What a fantastic experience we all had with Dumi and Bongani. They were perfect hosts and my team laughed for hours. Thank you for all the arrangements and effort you put in to this. I will definitely recommend TBAE to everyone, and look forward to booking our next team build with you.",
+      "feedback": "What a fantastic experience we all had with Dumi and Bongani. They were perfect hosts and my team laughed for hours. Thank you for all the arrangements and effort you put in to this. I will definitely recommend TBAE to everyone, and look forward to booking our next team build with you.",
+      "avatar": "testimonials/brick-art-construction.jpg",
+      "image": "testimonials/brick-art-construction.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 15,
+    "fields": {
+      "name": "Tina Taje",
+      "company": "",
+      "text": "I just wanted to say thank you so much for Saturday. It was so much fun and the staff loved it.",
+      "feedback": "I just wanted to say thank you so much for Saturday. It was so much fun and the staff loved it.",
+      "avatar": "testimonials/vfs-global-team-building.jpg",
+      "image": "testimonials/vfs-global-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 16,
+    "fields": {
+      "name": "Angelique de wet",
+      "company": "Financial Manager, Randeor",
+      "text": "Thank you so much for a great Teambuilding again. Your fascilitators remembered the school and they had a ball. They are great fascilitators and work well with everyone.",
+      "feedback": "Thank you so much for a great Teambuilding again. Your fascilitators remembered the school and they had a ball. They are great fascilitators and work well with everyone.",
+      "avatar": "testimonials/randeor.jpg",
+      "image": "testimonials/randeor.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 17,
+    "fields": {
+      "name": "Kerryn Lee",
+      "company": "Financial Manager, Tarsus",
+      "text": "We would like to say a big thank you to your team for facilitating our Minute to win-it session this afternoon. Your team was absolutely fantastic and really re-ignited our teams’ energy after a busy audit season.",
+      "feedback": "We would like to say a big thank you to your team for facilitating our Minute to win-it session this afternoon. Your team was absolutely fantastic and really re-ignited our teams’ energy after a busy audit season.",
+      "avatar": "testimonials/tarsus.jpg",
+      "image": "testimonials/tarsus.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 18,
+    "fields": {
+      "name": "Gillian Docherty",
+      "company": "",
+      "text": "Thank you very much, we had a lot of fun, we really enjoyed all  the activities and your facilitator was great.",
+      "feedback": "Thank you very much, we had a lot of fun, we really enjoyed all  the activities and your facilitator was great.",
+      "avatar": "testimonials/novo-nordisk-team-building-event.jpg",
+      "image": "testimonials/novo-nordisk-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 19,
+    "fields": {
+      "name": "Nosipho Phewa",
+      "company": "AfroCentric Health",
+      "text": "\"Please express our gratitude to the facilitators for hosting  the best teambuilding ever. The team definitely had fun on the day.\"",
+      "feedback": "\"Please express our gratitude to the facilitators for hosting  the best teambuilding ever. The team definitely had fun on the day.\"",
+      "avatar": "testimonials/afrocentric-health-team-building-event.jpg",
+      "image": "testimonials/afrocentric-health-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 20,
+    "fields": {
+      "name": "Veronica  Kgautlhe",
+      "company": "Barclays Life Botswana",
+      "text": "\"We would like to express our most  sincere gratitude to you for all  your assistance throughout .The team building was a huge success; everyone says  they had so much fun .Wayne and Zuma did an amazing job as facilitators, tell  them to keep up the good job!!!\"",
+      "feedback": "\"We would like to express our most  sincere gratitude to you for all  your assistance throughout .The team building was a huge success; everyone says  they had so much fun .Wayne and Zuma did an amazing job as facilitators, tell  them to keep up the good job!!!\"",
+      "avatar": "testimonials/barclays-bank-botswana-team-building.jpg",
+      "image": "testimonials/barclays-bank-botswana-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 21,
+    "fields": {
+      "name": "Michelle de Vos",
+      "company": "FNB",
+      "text": "\"Thank you for you guys, we really had fun. It was awesome  the food, the entertainment, wow\"",
+      "feedback": "\"Thank you for you guys, we really had fun. It was awesome  the food, the entertainment, wow\"",
+      "avatar": "testimonials/fnb-team-building.jpg",
+      "image": "testimonials/fnb-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 22,
+    "fields": {
+      "name": "Laren  Ramkhelawan",
+      "company": "JSE",
+      "text": "\"Thank you for arranging the Team building event on  Friday. Everything went well and everyone had fun.\n\t    Wayne & Tebogo are great facilitators and kept us  entertained.\"",
+      "feedback": "\"Thank you for arranging the Team building event on  Friday. Everything went well and everyone had fun.\n\t    Wayne & Tebogo are great facilitators and kept us  entertained.\"",
+      "avatar": "testimonials/jse-team-building-event.jpg",
+      "image": "testimonials/jse-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 23,
+    "fields": {
+      "name": "Morne Roux",
+      "company": "Woolworths",
+      "text": "\"I would just like to say Thank you from me and my team for a very well  organised event yesterday. To say we laughed a lot would be a understatement and each and every  one of my people came and said Thank you afterwards for the fun we had. We will definitely be making use of your services again as there is a  few of the other events we really want to do.\"",
+      "feedback": "\"I would just like to say Thank you from me and my team for a very well  organised event yesterday. To say we laughed a lot would be a understatement and each and every  one of my people came and said Thank you afterwards for the fun we had. We will definitely be making use of your services again as there is a  few of the other events we really want to do.\"",
+      "avatar": "testimonials/woolworths-team-building-testimonial.jpg",
+      "image": "testimonials/woolworths-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 24,
+    "fields": {
+      "name": "Belinda Sneddon",
+      "company": "Training  and Development Specialist, Imperial Logistics",
+      "text": "\"Wayne  was amazing! Thank you so much!\n\t    The  guys had such a great time!\"",
+      "feedback": "\"Wayne  was amazing! Thank you so much!\n\t    The  guys had such a great time!\"",
+      "avatar": "testimonials/imperial-logistics-testimonial.jpg",
+      "image": "testimonials/imperial-logistics-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 25,
+    "fields": {
+      "name": "Prof. Sophie M. Mogotlane",
+      "company": "Sefako Makgatho Health Sciences University",
+      "text": "\"But wow. Your team was awesome.  Everybody has not enjoyed themselves that much. Thank and thank you again.\"",
+      "feedback": "\"But wow. Your team was awesome.  Everybody has not enjoyed themselves that much. Thank and thank you again.\"",
+      "avatar": "testimonials/sefako-makgatho-health-sciences-university.jpg",
+      "image": "testimonials/sefako-makgatho-health-sciences-university.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 26,
+    "fields": {
+      "name": "Shelly Kupferman",
+      "company": "Master  Builders KwaZulu-Natal",
+      "text": "\"Thanks again for all your hard work.  We had a fabulous  day thanks to you and your team.\"",
+      "feedback": "\"Thanks again for all your hard work.  We had a fabulous  day thanks to you and your team.\"",
+      "avatar": "testimonials/master-builders-team-building-event.jpg",
+      "image": "testimonials/master-builders-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 27,
+    "fields": {
+      "name": "Andrea  Stoman",
+      "company": "Mineral  Sands Resources (Pty) Ltd",
+      "text": "\"Ek wil net se die teambuilding  was baie lekker, ons het dit verskriklik geniet.\"",
+      "feedback": "\"Ek wil net se die teambuilding  was baie lekker, ons het dit verskriklik geniet.\"",
+      "avatar": "testimonials/msr-team-building.jpg",
+      "image": "testimonials/msr-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 28,
+    "fields": {
+      "name": "Ingrid Blignaut",
+      "company": "Danone",
+      "text": "\"Thank you so much for  a lovely teambuilding session.  Everyone enjoyed it thoroughly.\"",
+      "feedback": "\"Thank you so much for  a lovely teambuilding session.  Everyone enjoyed it thoroughly.\"",
+      "avatar": "testimonials/danone-team-building-event.jpg",
+      "image": "testimonials/danone-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 29,
+    "fields": {
+      "name": "Nkosi Nhlapo",
+      "company": "Mandate Group",
+      "text": "\"Thank you for last weeks team build it was awesome, Phumlani  and Wayne were world class and the delegates thoroughly enjoyed it.\"",
+      "feedback": "\"Thank you for last weeks team build it was awesome, Phumlani  and Wayne were world class and the delegates thoroughly enjoyed it.\"",
+      "avatar": "testimonials/mandate-group-team-building-testimonial.jpg",
+      "image": "testimonials/mandate-group-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 30,
+    "fields": {
+      "name": "Henry Hill",
+      "company": "Academia Residence | Stellenbosch University",
+      "text": "\"Ek wil net by  voorbaat dankie sê vir die spanbou sessie wat julle vir ons  aangebied het op die 19de Januarie. Almal betrokke het dit ongelooflik baie  geniet, en ek kan met sekerheid sê dat ons ons  gestelde uitkomstes vir die dag bereik het.\"",
+      "feedback": "\"Ek wil net by  voorbaat dankie sê vir die spanbou sessie wat julle vir ons  aangebied het op die 19de Januarie. Almal betrokke het dit ongelooflik baie  geniet, en ek kan met sekerheid sê dat ons ons  gestelde uitkomstes vir die dag bereik het.\"",
+      "avatar": "testimonials/academia-team-building-testimonial.jpg",
+      "image": "testimonials/academia-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 31,
+    "fields": {
+      "name": "Bilquees Dawood",
+      "company": "RisCura",
+      "text": "\"I would just like to convey our  thanks on behalf of our company, RisCura. Everyone thoroughly enjoyed the  murder mystery event ,it was lots of fun, and the facilitator was awesome. Everything really worked out  well.\"",
+      "feedback": "\"I would just like to convey our  thanks on behalf of our company, RisCura. Everyone thoroughly enjoyed the  murder mystery event ,it was lots of fun, and the facilitator was awesome. Everything really worked out  well.\"",
+      "avatar": "testimonials/riscura-team-building-event.jpg",
+      "image": "testimonials/riscura-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 32,
+    "fields": {
+      "name": "Sanette van Aswegen",
+      "company": "Steinhoff",
+      "text": "\"On behalf  of the company, I would like to extend my sincere thanks for a truly world  class experience. We were pleased with the service we’ve receive - their  professionalism and ability exceeded our expectations. Such a commitment  to great customer service is to be commended. It could  not have gone any better and far exceeded any of our expectations.   Our  people had a blast and enjoyed every minute. Your team did an outstanding  job, please convey the special thank you to Wayne & Tebogo.  We  will always be grateful for all that they have done.  I sincerely hope our  paths cross in the future once more.\"",
+      "feedback": "\"On behalf  of the company, I would like to extend my sincere thanks for a truly world  class experience. We were pleased with the service we’ve receive - their  professionalism and ability exceeded our expectations. Such a commitment  to great customer service is to be commended. It could  not have gone any better and far exceeded any of our expectations.   Our  people had a blast and enjoyed every minute. Your team did an outstanding  job, please convey the special thank you to Wayne & Tebogo.  We  will always be grateful for all that they have done.  I sincerely hope our  paths cross in the future once more.\"",
+      "avatar": "testimonials/steinhoff-team-building-event.jpg",
+      "image": "testimonials/steinhoff-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 33,
+    "fields": {
+      "name": "Shantal  Govender",
+      "company": "Medscheme",
+      "text": "\"The  staff had a wonderful time.\n\t    The  food was great and the murder mystery game was awesome.\"",
+      "feedback": "\"The  staff had a wonderful time.\n\t    The  food was great and the murder mystery game was awesome.\"",
+      "avatar": "testimonials/medscheme-logo.jpg",
+      "image": "testimonials/medscheme-logo.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 34,
+    "fields": {
+      "name": "Lynda  Kirkland",
+      "company": "St Peter's College",
+      "text": "\"Please pass  our thanks on to the team who came out yesterday and hosted the Drumming  session, it was awesome.\"",
+      "feedback": "\"Please pass  our thanks on to the team who came out yesterday and hosted the Drumming  session, it was awesome.\"",
+      "avatar": "testimonials/st-peters-college-team-building.jpg",
+      "image": "testimonials/st-peters-college-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 35,
+    "fields": {
+      "name": "Loren Randall-Düvel",
+      "company": "TFG  Internal Audit",
+      "text": "\"I  just wanted to thank you and the team for great teambuilding session Ian ran  for us. We all had so much fun, taking some of us back to our roots and making  some of us step out of the normal.\"",
+      "feedback": "\"I  just wanted to thank you and the team for great teambuilding session Ian ran  for us. We all had so much fun, taking some of us back to our roots and making  some of us step out of the normal.\"",
+      "avatar": "testimonials/tfg-internal-audit-team-building.jpg",
+      "image": "testimonials/tfg-internal-audit-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 36,
+    "fields": {
+      "name": "Marco",
+      "company": "Old Mutual Investment Group (Pty) Limited",
+      "text": "\"On behalf of the team, I would like to extend my sincere thanks for a  truly world class experience. It could not have gone any better and far  exceeded any of my expectations leading up to it. I knew it was going to be fun but I was not able to foresee just how  much of a blast it was going to be. Ian and the team really pulled out all the  stops and made us feel very comfortable and prepared for each activity. Your  team did an outstanding job and I sincerely hope our paths cross in the future  once more. Thank you once again for giving us a really special year end!\"",
+      "feedback": "\"On behalf of the team, I would like to extend my sincere thanks for a  truly world class experience. It could not have gone any better and far  exceeded any of my expectations leading up to it. I knew it was going to be fun but I was not able to foresee just how  much of a blast it was going to be. Ian and the team really pulled out all the  stops and made us feel very comfortable and prepared for each activity. Your  team did an outstanding job and I sincerely hope our paths cross in the future  once more. Thank you once again for giving us a really special year end!\"",
+      "avatar": "testimonials/old-mutual-investment-goup-team-building.jpg",
+      "image": "testimonials/old-mutual-investment-goup-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 37,
+    "fields": {
+      "name": "Debbie  Du Plessis",
+      "company": "African Bank",
+      "text": "\"Just wanted to thank you and the  team for today, it was a great experience!\n\t    James and Zuma were superb.\"",
+      "feedback": "\"Just wanted to thank you and the  team for today, it was a great experience!\n\t    James and Zuma were superb.\"",
+      "avatar": "testimonials/african-bank-team-building-event.jpg",
+      "image": "testimonials/african-bank-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 38,
+    "fields": {
+      "name": "Dr Carola  Kirchner",
+      "company": "Namibian  Project Coordinator, Benguala Current Convention",
+      "text": "\"I just  wanted to thank you for arranging this team building session. We benefited  tremendously from this and I would recommend this to anyone. Ian is a fantastic  facilitator.\"",
+      "feedback": "\"I just  wanted to thank you for arranging this team building session. We benefited  tremendously from this and I would recommend this to anyone. Ian is a fantastic  facilitator.\"",
+      "avatar": "testimonials/benguela-current-convention.jpg",
+      "image": "testimonials/benguela-current-convention.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 39,
+    "fields": {
+      "name": "Lebo Maphosa",
+      "company": "NNR",
+      "text": "\"Thank you once more for being of  assistance. I would like to express my  satisfactory by complimenting the two facilitators who were assigned to us, Mr  James and Mr Tebogo. The two gentlemen are  experienced, they have done a sterling job, and were able to stir my team to  the right direction. The activities were appropriate and fit so well to our  theme. Words cannot express the huge  impact they left on us, my management team were so impressed and cannot stop  talking about the sterling job they have done. Well done. Thanks TBAE for the great  service, you are the best and super professional. Looking forward to working with  you in future.\"",
+      "feedback": "\"Thank you once more for being of  assistance. I would like to express my  satisfactory by complimenting the two facilitators who were assigned to us, Mr  James and Mr Tebogo. The two gentlemen are  experienced, they have done a sterling job, and were able to stir my team to  the right direction. The activities were appropriate and fit so well to our  theme. Words cannot express the huge  impact they left on us, my management team were so impressed and cannot stop  talking about the sterling job they have done. Well done. Thanks TBAE for the great  service, you are the best and super professional. Looking forward to working with  you in future.\"",
+      "avatar": "testimonials/nnr-team-building.jpg",
+      "image": "testimonials/nnr-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 40,
+    "fields": {
+      "name": "Gabi",
+      "company": "Hogan Lovells",
+      "text": "\"Thank you for all the arrangements.  Everything went on very well  and the facilitator was very good. The team enjoyed the day.\"",
+      "feedback": "\"Thank you for all the arrangements.  Everything went on very well  and the facilitator was very good. The team enjoyed the day.\"",
+      "avatar": "testimonials/hogan-lovells-team-building-event.jpg",
+      "image": "testimonials/hogan-lovells-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 41,
+    "fields": {
+      "name": "Miche Poggenpoel| Credit Controller | Club Travel Corporate",
+      "company": "",
+      "text": "\"Once again I would just like to say thank you for everything. Saturday  went off so well and everyone enjoyed themselves. It was such a beautiful day  to just be outside on that grass and chill. The staff was so friendly and  helpful in everything that needed to be done everything was on time, we didn’t  have to wait.\"",
+      "feedback": "\"Once again I would just like to say thank you for everything. Saturday  went off so well and everyone enjoyed themselves. It was such a beautiful day  to just be outside on that grass and chill. The staff was so friendly and  helpful in everything that needed to be done everything was on time, we didn’t  have to wait.\"",
+      "avatar": "testimonials/clubtravel-team-building-event.jpg",
+      "image": "testimonials/clubtravel-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 42,
+    "fields": {
+      "name": "Kay",
+      "company": "Adapt  IT Johannesburg",
+      "text": "\"Thank  you for organizing everything last week for our team building event, it was a  fruitful day filled with lots of fun for everyone.\"",
+      "feedback": "\"Thank  you for organizing everything last week for our team building event, it was a  fruitful day filled with lots of fun for everyone.\"",
+      "avatar": "testimonials/adapt-it-team-building-testimonial.jpg",
+      "image": "testimonials/adapt-it-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 43,
+    "fields": {
+      "name": "Elzane Maritz",
+      "company": "ONE Insurance",
+      "text": "\"\n\t    We would like to thank you and especially your two hosts  that facilitated the minute to win it team building on Friday.  It was an  absolute amazing success and James & Monde had our team in stitches and  everyone had a wonderful time! We will definitely make use of your organization in future  and thank you once again for assisting us!\"",
+      "feedback": "\"\n\t    We would like to thank you and especially your two hosts  that facilitated the minute to win it team building on Friday.  It was an  absolute amazing success and James & Monde had our team in stitches and  everyone had a wonderful time! We will definitely make use of your organization in future  and thank you once again for assisting us!\"",
+      "avatar": "testimonials/one-insurance-team-building.jpg",
+      "image": "testimonials/one-insurance-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 44,
+    "fields": {
+      "name": "Esteani  Marx",
+      "company": "Lightstone Property",
+      "text": "\"Many thanks for the Team Building today, \n\t    It was really great and James was awesome!\"",
+      "feedback": "\"Many thanks for the Team Building today, \n\t    It was really great and James was awesome!\"",
+      "avatar": "testimonials/lightstone-property-team-building.jpg",
+      "image": "testimonials/lightstone-property-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 45,
+    "fields": {
+      "name": "Nolubabalo  Hlwatika",
+      "company": "FNB",
+      "text": "\"Thank you to you and your professional team for the great  service and energy put in at yesterday’s team building event. We thoroughly  enjoyed the activities and enthusiasm your team displayed. Everything was set  up on time and ran smoothly.\"",
+      "feedback": "\"Thank you to you and your professional team for the great  service and energy put in at yesterday’s team building event. We thoroughly  enjoyed the activities and enthusiasm your team displayed. Everything was set  up on time and ran smoothly.\"",
+      "avatar": "testimonials/fnb-team-building.jpg",
+      "image": "testimonials/fnb-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 46,
+    "fields": {
+      "name": "Camilla",
+      "company": "Phillips",
+      "text": "\"A quick  note to say thanks for your flexibility today and that James and Tebogo were  absolutely amazing. They had us in laughter, fun and with a few deep  words of advice. I think we all loved them.\"",
+      "feedback": "\"A quick  note to say thanks for your flexibility today and that James and Tebogo were  absolutely amazing. They had us in laughter, fun and with a few deep  words of advice. I think we all loved them.\"",
+      "avatar": "testimonials/phillips-team-building.jpg",
+      "image": "testimonials/phillips-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 47,
+    "fields": {
+      "name": "Yu-Feng McConnachie",
+      "company": "Sasol Group Services",
+      "text": "\"I just wanted to give you feedback on the Minute to Win It  event we held earlier today. It was fantastic!  The team had such fun and if you  could have heard the cheering!  From the word “go” James and the team were  full of energy and it really made all the difference to the event. The  activities were fun and there was not a team member that did not want to get  involved, everyone was excited to participate. I must say all in all it has been a wonderful experience  dealing with TBAE.\"",
+      "feedback": "\"I just wanted to give you feedback on the Minute to Win It  event we held earlier today. It was fantastic!  The team had such fun and if you  could have heard the cheering!  From the word “go” James and the team were  full of energy and it really made all the difference to the event. The  activities were fun and there was not a team member that did not want to get  involved, everyone was excited to participate. I must say all in all it has been a wonderful experience  dealing with TBAE.\"",
+      "avatar": "testimonials/sasol-group-team-building.jpg",
+      "image": "testimonials/sasol-group-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 48,
+    "fields": {
+      "name": "Derick Rhodenburg",
+      "company": "Coca Cola Peninsula Beverages",
+      "text": "\"From CCPB we would like to thank  TBAE, especially Ian and his team, for the services provided.\n\t\t  The team was quite complimentary  of the day and events as it unfolded.\"",
+      "feedback": "\"From CCPB we would like to thank  TBAE, especially Ian and his team, for the services provided.\n\t\t  The team was quite complimentary  of the day and events as it unfolded.\"",
+      "avatar": "testimonials/coca-cola-team-building-event.jpg",
+      "image": "testimonials/coca-cola-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 49,
+    "fields": {
+      "name": "Riana Potgieter",
+      "company": "On The Dot",
+      "text": "\"Thank you for a successfull day. The employees enjoyed it tremendously and the facilitator is excellent, her enthusiasm and energy made everything even more enjoyable.\"",
+      "feedback": "\"Thank you for a successfull day. The employees enjoyed it tremendously and the facilitator is excellent, her enthusiasm and energy made everything even more enjoyable.\"",
+      "avatar": "testimonials/on-the-dot-team-building-event.jpg",
+      "image": "testimonials/on-the-dot-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 50,
+    "fields": {
+      "name": "Christelle  Van der Westhuizen",
+      "company": "Change Manager, RAM Hand-to-Hand Couriers",
+      "text": "\"We  thoroughly enjoyed the activities that James and Wayne facilitated on the 28th  of March. James has great energy and creates the right mood for the  activities.\"",
+      "feedback": "\"We  thoroughly enjoyed the activities that James and Wayne facilitated on the 28th  of March. James has great energy and creates the right mood for the  activities.\"",
+      "avatar": "testimonials/ram-team-building-event.jpg",
+      "image": "testimonials/ram-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 51,
+    "fields": {
+      "name": "Ms Yollanda Majokweni",
+      "company": "South African Reserve Bank",
+      "text": "Thank you all for a wonderful day on Friday! It was awesome! I have no words explain it but what you must know we enjoyed  ourselves and Thank you for that. We enjoyed!",
+      "feedback": "Thank you all for a wonderful day on Friday! It was awesome! I have no words explain it but what you must know we enjoyed  ourselves and Thank you for that. We enjoyed!",
+      "avatar": "testimonials/sarb-team-building.jpg",
+      "image": "testimonials/sarb-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 52,
+    "fields": {
+      "name": "Liza  Ruthenberg | HR &amp; Payroll  Administrator | MMD  Mineral Sizing (Africa) (Pty) Ltd",
+      "company": "",
+      "text": "\"I would just like to thank James,  Onkgopotse and Masego for Friday.\n\t    They were wonderful facilitators and  we really hope to meet with them again in future!\"",
+      "feedback": "\"I would just like to thank James,  Onkgopotse and Masego for Friday.\n\t    They were wonderful facilitators and  we really hope to meet with them again in future!\"",
+      "avatar": "testimonials/mmd-team-building-testimonial.jpg",
+      "image": "testimonials/mmd-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 53,
+    "fields": {
+      "name": "William Van Wyk",
+      "company": "Morebo",
+      "text": "\" just wanted to say thank  you for the time and effort you and your team has spent in ensuring the Morebo  team building event at the Indaba Hotel was a massive success. The staff maintained a  positive attitude and ensured we felt welcome during our visit. Everyone  treated us with dignity and respect. I was amazed at the consistency in their  performance and willingness to go the extra mile. The staff was well groomed  and took pride as representatives of the TBAE.\"",
+      "feedback": "\" just wanted to say thank  you for the time and effort you and your team has spent in ensuring the Morebo  team building event at the Indaba Hotel was a massive success. The staff maintained a  positive attitude and ensured we felt welcome during our visit. Everyone  treated us with dignity and respect. I was amazed at the consistency in their  performance and willingness to go the extra mile. The staff was well groomed  and took pride as representatives of the TBAE.\"",
+      "avatar": "testimonials/morebo-team-building.jpg",
+      "image": "testimonials/morebo-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 54,
+    "fields": {
+      "name": "Chantal Du Plessis",
+      "company": "Lumacon",
+      "text": "\"I just wanted to thank your team  James and George for the awesome experience they gave us. We learned a lot on  Saturday. Our aim is to complete your outcome based activities during our  growing phase we are busy with.\"",
+      "feedback": "\"I just wanted to thank your team  James and George for the awesome experience they gave us. We learned a lot on  Saturday. Our aim is to complete your outcome based activities during our  growing phase we are busy with.\"",
+      "avatar": "testimonials/lumacon-teambuilding-event.jpg",
+      "image": "testimonials/lumacon-teambuilding-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 55,
+    "fields": {
+      "name": "Melanie Swanepoel",
+      "company": "Project Manager, The Conference Company",
+      "text": "\"The delegates thoroughly enjoyed the  amazing race. I know a lot of the delegates were not keen on taking part, and  wondered if they could skip, I was really surprised that most did take part. Thank you so much for organising  & we will definitely recommend you to others.\"",
+      "feedback": "\"The delegates thoroughly enjoyed the  amazing race. I know a lot of the delegates were not keen on taking part, and  wondered if they could skip, I was really surprised that most did take part. Thank you so much for organising  & we will definitely recommend you to others.\"",
+      "avatar": "testimonials/pkf-team-building.jpg",
+      "image": "testimonials/pkf-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 56,
+    "fields": {
+      "name": "Karl Diedricks",
+      "company": "Bidvest Bank",
+      "text": "\"We had a fantastic event, the TBAE facilitators were excellent. \n\t    Thanks for making our event fun and hassle free!\"",
+      "feedback": "\"We had a fantastic event, the TBAE facilitators were excellent. \n\t    Thanks for making our event fun and hassle free!\"",
+      "avatar": "testimonials/bidvest-bank-team-building.jpg",
+      "image": "testimonials/bidvest-bank-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 57,
+    "fields": {
+      "name": "Lauren Nel",
+      "company": "Empro Academy",
+      "text": "\"Please would you be so kind as to thank James and Wayne for  us once again.  We at Empro Academy had a splendid time.  They were  organised, professional and so much fun. We will definately be using you in the future for all our  other teambuilding activities as well.\"",
+      "feedback": "\"Please would you be so kind as to thank James and Wayne for  us once again.  We at Empro Academy had a splendid time.  They were  organised, professional and so much fun. We will definately be using you in the future for all our  other teambuilding activities as well.\"",
+      "avatar": "testimonials/empro-academy-team-building.jpg",
+      "image": "testimonials/empro-academy-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 58,
+    "fields": {
+      "name": "Bianca Phillips",
+      "company": "Cape Town Central City Improvement District (CCID)",
+      "text": "\"And  a huge thank you to you and Ian for an awesome team build!!! We thoroughly  enjoyed ourselves. I have never laughed so much in my life. The games were  perfect, everything was just perfect.\"",
+      "feedback": "\"And  a huge thank you to you and Ian for an awesome team build!!! We thoroughly  enjoyed ourselves. I have never laughed so much in my life. The games were  perfect, everything was just perfect.\"",
+      "avatar": "testimonials/cid-team-building.jpg",
+      "image": "testimonials/cid-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 59,
+    "fields": {
+      "name": "Debbie",
+      "company": "LTSA",
+      "text": "\"I just wanted to say a big thank you for your staff that  facilitated our Event at the Karridene on Friday, 10th November. We have received such positive feedback – so we have many  happy staff members. The guys were excellent I must say – kept us entertained and  on our toes the whole time. Please convey our  gratitude to them.\"",
+      "feedback": "\"I just wanted to say a big thank you for your staff that  facilitated our Event at the Karridene on Friday, 10th November. We have received such positive feedback – so we have many  happy staff members. The guys were excellent I must say – kept us entertained and  on our toes the whole time. Please convey our  gratitude to them.\"",
+      "avatar": "testimonials/ltsa-team-building.jpg",
+      "image": "testimonials/ltsa-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 60,
+    "fields": {
+      "name": "Lizbe McCallum",
+      "company": "Consolidated Medical Services",
+      "text": "\"I would  like to thank TBAE for the great teambuilding activities presented by, Chris  and his co- facilitator on, Friday 03 November 2017.  Everybody  had an amazing a time.\"",
+      "feedback": "\"I would  like to thank TBAE for the great teambuilding activities presented by, Chris  and his co- facilitator on, Friday 03 November 2017.  Everybody  had an amazing a time.\"",
+      "avatar": "testimonials/consildated-medical-services.gif",
+      "image": "testimonials/consildated-medical-services.gif"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 61,
+    "fields": {
+      "name": "Astrid",
+      "company": "BP",
+      "text": "\"Thank you to the team for facilitating the event yesterday. The staff had loads of fun.\"",
+      "feedback": "\"Thank you to the team for facilitating the event yesterday. The staff had loads of fun.\"",
+      "avatar": "testimonials/bp-team-building.jpg",
+      "image": "testimonials/bp-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 62,
+    "fields": {
+      "name": "Cyril Chetty",
+      "company": "Gradidge-Mahura Investments",
+      "text": "\"A big thank you to you and your  team for our team building activity last week Friday. All our staff enjoyed the  activities.\"",
+      "feedback": "\"A big thank you to you and your  team for our team building activity last week Friday. All our staff enjoyed the  activities.\"",
+      "avatar": "testimonials/gradidge-mahura.jpg",
+      "image": "testimonials/gradidge-mahura.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 63,
+    "fields": {
+      "name": "Daleen Maritz",
+      "company": "Aon  South Africa (Pty) Ltd",
+      "text": "\"Just want to say a BIG thank you – Duncan and Dipuo were  awesome.  Lots of fun and laughter. If you can please forward your thanks to the 2 of them.\"",
+      "feedback": "\"Just want to say a BIG thank you – Duncan and Dipuo were  awesome.  Lots of fun and laughter. If you can please forward your thanks to the 2 of them.\"",
+      "avatar": "testimonials/aon-team-building.jpg",
+      "image": "testimonials/aon-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 64,
+    "fields": {
+      "name": "Tandi Rouse",
+      "company": "Medscheme",
+      "text": "\"On behalf of  the AfroCentric Project Management Team, I would just say like to say Thank you  so much for the great team building sessions you planned for us. We thoroughly  enjoyed them both.  Our team is split between 2 locations(JHB and CPT) so  before we did not have a strong team spirit and we were not working as well as  we should have been together. I can tell  you now, relationships have improved a lot. Your team was  very professional.  We had a lot of fun!!!\"",
+      "feedback": "\"On behalf of  the AfroCentric Project Management Team, I would just say like to say Thank you  so much for the great team building sessions you planned for us. We thoroughly  enjoyed them both.  Our team is split between 2 locations(JHB and CPT) so  before we did not have a strong team spirit and we were not working as well as  we should have been together. I can tell  you now, relationships have improved a lot. Your team was  very professional.  We had a lot of fun!!!\"",
+      "avatar": "testimonials/medscheme-logo.jpg",
+      "image": "testimonials/medscheme-logo.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 65,
+    "fields": {
+      "name": "Marilize Arendse",
+      "company": "Administrator at The  Haven Head Office",
+      "text": "\"The  Haven staff would like to thank you for an amazing day. They  enjoyed everything especially the auction.\n\t    The  spirits was good and they had a great time mingling with staff they don’t  usually get to see.\"",
+      "feedback": "\"The  Haven staff would like to thank you for an amazing day. They  enjoyed everything especially the auction.\n\t    The  spirits was good and they had a great time mingling with staff they don’t  usually get to see.\"",
+      "avatar": "testimonials/the-haven-night-shelter.jpg",
+      "image": "testimonials/the-haven-night-shelter.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 66,
+    "fields": {
+      "name": "Zintathu",
+      "company": "SM Xulu",
+      "text": "\"Thank you so much for everything. Friday  was a wonderful day for our team all thanx to Phumlani and  Onkgopotse for their  fun activities  they are the best. Special thank you also goes to Kholofelo and her team the food was  divine and their service was excellent.\"",
+      "feedback": "\"Thank you so much for everything. Friday  was a wonderful day for our team all thanx to Phumlani and  Onkgopotse for their  fun activities  they are the best. Special thank you also goes to Kholofelo and her team the food was  divine and their service was excellent.\"",
+      "avatar": "testimonials/sm-xulu-team-building.jpg",
+      "image": "testimonials/sm-xulu-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 67,
+    "fields": {
+      "name": "Nola Muir",
+      "company": "Discovery",
+      "text": "\"The event was great thanks! The guys really enjoyed it and are already asking when  the next Team Build will be ;-) \n\t\t  The facilitators and staff at the venue were also  amazing! Especially OG and Eugene. Thanks again for everything.\"",
+      "feedback": "\"The event was great thanks! The guys really enjoyed it and are already asking when  the next Team Build will be ;-) \n\t\t  The facilitators and staff at the venue were also  amazing! Especially OG and Eugene. Thanks again for everything.\"",
+      "avatar": "testimonials/discovery-team-building.jpg",
+      "image": "testimonials/discovery-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 68,
+    "fields": {
+      "name": "Caroline  Bracegirdle",
+      "company": "CA Technologies",
+      "text": "\"Just a quick note to say Thank You  to your team for Friday. Our group had so much fun!\"",
+      "feedback": "\"Just a quick note to say Thank You  to your team for Friday. Our group had so much fun!\"",
+      "avatar": "testimonials/ca-technologies-team-building.jpg",
+      "image": "testimonials/ca-technologies-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 69,
+    "fields": {
+      "name": "Keenan Hans",
+      "company": "VFS Global",
+      "text": "\"The  team building was good very well organized, thanks a lot to you and your team.\"",
+      "feedback": "\"The  team building was good very well organized, thanks a lot to you and your team.\"",
+      "avatar": "testimonials/vfs-global-team-building.jpg",
+      "image": "testimonials/vfs-global-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 70,
+    "fields": {
+      "name": "Lauren Gleeson",
+      "company": "Korbicom",
+      "text": "\"We just wanted to say  another MASSIVE thank you for everything you did yesterday.  We have had wonderful  feedback and could not have done it without you.  You were all extremely  professional and energetic and a pleasure to work with.\"",
+      "feedback": "\"We just wanted to say  another MASSIVE thank you for everything you did yesterday.  We have had wonderful  feedback and could not have done it without you.  You were all extremely  professional and energetic and a pleasure to work with.\"",
+      "avatar": "testimonials/korbicom-team-building-testimonial.jpg",
+      "image": "testimonials/korbicom-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 71,
+    "fields": {
+      "name": "Pranesha Girdhari",
+      "company": "Medscheme",
+      "text": "\"Thank you for assisting with our teambuilding, it was a huge success!\"",
+      "feedback": "\"Thank you for assisting with our teambuilding, it was a huge success!\"",
+      "avatar": "testimonials/medscheme-team-building.jpg",
+      "image": "testimonials/medscheme-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 72,
+    "fields": {
+      "name": "Raycene Mokoily",
+      "company": "Telesure Group Services",
+      "text": "\"Thank you very much for an  awesome teambuilding. A big thank you to Duncan and  Eugene for making our day fun.\"",
+      "feedback": "\"Thank you very much for an  awesome teambuilding. A big thank you to Duncan and  Eugene for making our day fun.\"",
+      "avatar": "testimonials/telesure-team-building.jpg",
+      "image": "testimonials/telesure-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 73,
+    "fields": {
+      "name": "Christa Crous",
+      "company": "Sign and Seal Labels",
+      "text": "\"Thank you so much for organising  the drumming.  Our team had a blast and the 2x Facilitators were  exceptional. We appreciate your  professionalism!\"",
+      "feedback": "\"Thank you so much for organising  the drumming.  Our team had a blast and the 2x Facilitators were  exceptional. We appreciate your  professionalism!\"",
+      "avatar": "testimonials/sign-and-sea-labels.jpg",
+      "image": "testimonials/sign-and-sea-labels.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 74,
+    "fields": {
+      "name": "Dr. Soritha Coetzer",
+      "company": "Research Physician, Synexus Clinical  Research SA (Pty) Ltd",
+      "text": "\"On behalf of everyone at Synexus I just want to thank you  for a great teambuilding! Everyone enjoyed the event tremendously! The 2  “police officers” done an awesome job! Thanks for all the arrangements done by you!\"",
+      "feedback": "\"On behalf of everyone at Synexus I just want to thank you  for a great teambuilding! Everyone enjoyed the event tremendously! The 2  “police officers” done an awesome job! Thanks for all the arrangements done by you!\"",
+      "avatar": "testimonials/synexis-team-building-testimonial.jpg",
+      "image": "testimonials/synexis-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 75,
+    "fields": {
+      "name": "Claire Everatt",
+      "company": "Head of Valuations",
+      "text": "\"Thanks  – yes we had great fun – I’ve had lots of happy people past my door today. Your team were  excellent and handled our party very well – the venue and food were also great!\"\n\t\t    -",
+      "feedback": "\"Thanks  – yes we had great fun – I’ve had lots of happy people past my door today. Your team were  excellent and handled our party very well – the venue and food were also great!\"\n\t\t    -",
+      "avatar": "testimonials/eris-property-group.jpg",
+      "image": "testimonials/eris-property-group.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 76,
+    "fields": {
+      "name": "Jo Denysschen",
+      "company": "Administrator, Numeric",
+      "text": "\"Thank you  for all your organising. We had a  wonderful time.\"",
+      "feedback": "\"Thank you  for all your organising. We had a  wonderful time.\"",
+      "avatar": "testimonials/numeric.jpg",
+      "image": "testimonials/numeric.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 77,
+    "fields": {
+      "name": "Mandy",
+      "company": "Capfin",
+      "text": "\"Thank you so much for assisting us on Friday. Chris is a great facilitator. I am so pleased that he managed to link the challenges to  the Insights colours as I suggested.\"",
+      "feedback": "\"Thank you so much for assisting us on Friday. Chris is a great facilitator. I am so pleased that he managed to link the challenges to  the Insights colours as I suggested.\"",
+      "avatar": "testimonials/capfin-team-building-testimonial.jpg",
+      "image": "testimonials/capfin-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 78,
+    "fields": {
+      "name": "Marita Meredith",
+      "company": "Office manager",
+      "text": "\"The event went very well. Thank you very much for your great  assistance in this regard. It was a huge success.\"",
+      "feedback": "\"The event went very well. Thank you very much for your great  assistance in this regard. It was a huge success.\"",
+      "avatar": "testimonials/broll-team-building-testimonial.jpg",
+      "image": "testimonials/broll-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 79,
+    "fields": {
+      "name": "Sam Pretorius",
+      "company": "School Counsellor, Weizmann Primary School",
+      "text": "\"Thank  you so much for the report and for the amazing day of facilitation you and your  team did with our children - they really had a blast! Looking  forward to working together in the future.\"",
+      "feedback": "\"Thank  you so much for the report and for the amazing day of facilitation you and your  team did with our children - they really had a blast! Looking  forward to working together in the future.\"",
+      "avatar": "testimonials/weizmann-primary-school.jpg",
+      "image": "testimonials/weizmann-primary-school.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 80,
+    "fields": {
+      "name": "Monica",
+      "company": "Remgro Limited",
+      "text": "\"We  really had an awesome day yesterday and would like to thank you for the  excellent way your team has handled our employees. We  really appreciate it and would gladly recommend you to anyone!\"",
+      "feedback": "\"We  really had an awesome day yesterday and would like to thank you for the  excellent way your team has handled our employees. We  really appreciate it and would gladly recommend you to anyone!\"",
+      "avatar": "testimonials/remgro-team-building-event.jpg",
+      "image": "testimonials/remgro-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 81,
+    "fields": {
+      "name": "Maria Maraz",
+      "company": "The De Beers Group of Companies",
+      "text": "\"Just to let you know that the drumming and the art  workshop were an absolute hit!  Everyone enjoyed both very much and are  still talking about the teambuilding today.  Your facilitators were  excellent and we would recommend them gladly!\"",
+      "feedback": "\"Just to let you know that the drumming and the art  workshop were an absolute hit!  Everyone enjoyed both very much and are  still talking about the teambuilding today.  Your facilitators were  excellent and we would recommend them gladly!\"",
+      "avatar": "testimonials/de-beers-team-building-event.jpg",
+      "image": "testimonials/de-beers-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 82,
+    "fields": {
+      "name": "Phyllis  Ledwaba",
+      "company": "Executive    PA to Finance Director, Comair",
+      "text": "\"I’d just like to thank you and your team for a wonderful  day. Duncan, James and Eugene were absolutely fantastic and my  team had a wonderful day. The venue was also nice and we were well taken care of. I will most definitely recommend you guys to anyone that  needs such a day.\"",
+      "feedback": "\"I’d just like to thank you and your team for a wonderful  day. Duncan, James and Eugene were absolutely fantastic and my  team had a wonderful day. The venue was also nice and we were well taken care of. I will most definitely recommend you guys to anyone that  needs such a day.\"",
+      "avatar": "testimonials/comair-team-building.jpg",
+      "image": "testimonials/comair-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 83,
+    "fields": {
+      "name": "Monica Smit",
+      "company": "Africawide Shared Services",
+      "text": "\"I have had very positive feedback  from the candidates about the team building on Friday - thank you!\"",
+      "feedback": "\"I have had very positive feedback  from the candidates about the team building on Friday - thank you!\"",
+      "avatar": "testimonials/africa-wide-team-building.jpg",
+      "image": "testimonials/africa-wide-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 84,
+    "fields": {
+      "name": "Buyie Chamane",
+      "company": "Mondi",
+      "text": "\"The team really enjoyed the  activities, each and every one and it was so difficult to even predict the  effects of the activities.  Mission accomplished so thank you very much.\"",
+      "feedback": "\"The team really enjoyed the  activities, each and every one and it was so difficult to even predict the  effects of the activities.  Mission accomplished so thank you very much.\"",
+      "avatar": "testimonials/mondi-team-building.jpg",
+      "image": "testimonials/mondi-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 85,
+    "fields": {
+      "name": "Liezl Maree",
+      "company": "Sanlam",
+      "text": "\"I would like to thank you and Ian for a wonderful day on Friday.  Myself and my whole team had a fabulous time with the Challenge and some really  good laughs. I hope we get to do this again sometime. Thanks for all your assistance and making our year end function  a memorable one.\"",
+      "feedback": "\"I would like to thank you and Ian for a wonderful day on Friday.  Myself and my whole team had a fabulous time with the Challenge and some really  good laughs. I hope we get to do this again sometime. Thanks for all your assistance and making our year end function  a memorable one.\"",
+      "avatar": "testimonials/sanlam-testimonial.jpg",
+      "image": "testimonials/sanlam-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 86,
+    "fields": {
+      "name": "Rachel",
+      "company": "Motheo Construction Group",
+      "text": "\"On behalf of the whole team, we would like  to say Thank you . Thank You. Thank you… for treating us to a spectacular team  building session on Friday, 18 November 2016. Hylie, Thank you for the hospitality and  the house is just … Truly 'Amazing ' ! We felt right at home. The food was  fantastic and truly filling, I think the excitement got the better of our  appetite though… thanks to James 'workouts'. We would also like to say thank you to  James, for being a super fantastic and fabulous facilitator. He truly inspired  us and taught us a lot. He is too… Amazing! Sonja, and Mari – Thank you for all your  prompt responses and organizing this for us in such short notice. May all your work be truly blessed and we  surely will recommend your teambuilding to whoever needs it.\"",
+      "feedback": "\"On behalf of the whole team, we would like  to say Thank you . Thank You. Thank you… for treating us to a spectacular team  building session on Friday, 18 November 2016. Hylie, Thank you for the hospitality and  the house is just … Truly 'Amazing ' ! We felt right at home. The food was  fantastic and truly filling, I think the excitement got the better of our  appetite though… thanks to James 'workouts'. We would also like to say thank you to  James, for being a super fantastic and fabulous facilitator. He truly inspired  us and taught us a lot. He is too… Amazing! Sonja, and Mari – Thank you for all your  prompt responses and organizing this for us in such short notice. May all your work be truly blessed and we  surely will recommend your teambuilding to whoever needs it.\"",
+      "avatar": "testimonials/motheo-construction-group.jpg",
+      "image": "testimonials/motheo-construction-group.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 87,
+    "fields": {
+      "name": "Dipuo Chaka",
+      "company": "Membership Manager |  Ambledown Financial Services (Pty) Ltd",
+      "text": "\"Thank you very much on your assistance in making our teambuilding a  success.\"",
+      "feedback": "\"Thank you very much on your assistance in making our teambuilding a  success.\"",
+      "avatar": "testimonials/ambledown-team-building-event.jpg",
+      "image": "testimonials/ambledown-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 88,
+    "fields": {
+      "name": "",
+      "company": "It was awesome; we really  enjoyed every second and I know the rest of the team as well.\"",
+      "text": "\"Thank you so much to you and JP’s team.",
+      "feedback": "\"Thank you so much to you and JP’s team.",
+      "avatar": "testimonials/onthedot-team-building.jpg",
+      "image": "testimonials/onthedot-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 89,
+    "fields": {
+      "name": "Kegomoditswe Ruele",
+      "company": "Botswana Meat Corporation",
+      "text": "\"Thank you  for hosting our team building, we really had a great time and we travelled  safely back home.\"",
+      "feedback": "\"Thank you  for hosting our team building, we really had a great time and we travelled  safely back home.\"",
+      "avatar": "testimonials/bmc-team-building.jpg",
+      "image": "testimonials/bmc-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 90,
+    "fields": {
+      "name": "Claudia Macnabe",
+      "company": "FNB - GRC Department",
+      "text": "\"We would like to thank you and  the team Hylie and James.  We truly had an awesome time with the potjiekos  challenge. The Ice Breaker games was fun  and it did bring unity and understanding amongst the guys in the office. Just to let you know for our  next team building we will definitely make use of your team. Thank you for all your efforts  and time.\"",
+      "feedback": "\"We would like to thank you and  the team Hylie and James.  We truly had an awesome time with the potjiekos  challenge. The Ice Breaker games was fun  and it did bring unity and understanding amongst the guys in the office. Just to let you know for our  next team building we will definitely make use of your team. Thank you for all your efforts  and time.\"",
+      "avatar": "testimonials/fnb-team-building-testimonial.jpg",
+      "image": "testimonials/fnb-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 91,
+    "fields": {
+      "name": "Khanya Ngcezu",
+      "company": "Imperial Health Sciences",
+      "text": "\"My people had super super!!!!!!!!! Fun.\"",
+      "feedback": "\"My people had super super!!!!!!!!! Fun.\"",
+      "avatar": "testimonials/ihs-team-building.jpg",
+      "image": "testimonials/ihs-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 92,
+    "fields": {
+      "name": "Jana Cihak",
+      "company": "Kuehne + Nagel",
+      "text": "\"Many thanks for your assistance in  our Team Building event, it was enjoy by all involved. I’m sure we will be in touch for  future events.\"",
+      "feedback": "\"Many thanks for your assistance in  our Team Building event, it was enjoy by all involved. I’m sure we will be in touch for  future events.\"",
+      "avatar": "testimonials/kuehne-and-nagel-team-building.jpg",
+      "image": "testimonials/kuehne-and-nagel-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 93,
+    "fields": {
+      "name": "Petro Brand",
+      "company": "Avery Dennison Consulting",
+      "text": "\"We would  like to thank you for making our team building events special.\"",
+      "feedback": "\"We would  like to thank you for making our team building events special.\"",
+      "avatar": "testimonials/avery-denisson-team-building.jpg",
+      "image": "testimonials/avery-denisson-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 94,
+    "fields": {
+      "name": "Bells Nxumalo",
+      "company": "DBSA",
+      "text": "\"Thank you so so much. Hylie Thank you  for hosting us on Friday . The feedback is awesome the people had fun, too much  laughter.\"",
+      "feedback": "\"Thank you so so much. Hylie Thank you  for hosting us on Friday . The feedback is awesome the people had fun, too much  laughter.\"",
+      "avatar": "testimonials/dbsa-team-building-event.jpg",
+      "image": "testimonials/dbsa-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 95,
+    "fields": {
+      "name": "Gail  Bester",
+      "company": "Manager – Credit  Control, Merchant Factors",
+      "text": "\"A  big thank you from MERCHANT  FACTORS for the excellent team building  event  on Friday 15 July 2016 at our offices - Chris  and Alain   organised the event brilliantly and our staff enjoyed it immensely. Please  give a huge “thank  you “ to Chris and Alain from us.\"",
+      "feedback": "\"A  big thank you from MERCHANT  FACTORS for the excellent team building  event  on Friday 15 July 2016 at our offices - Chris  and Alain   organised the event brilliantly and our staff enjoyed it immensely. Please  give a huge “thank  you “ to Chris and Alain from us.\"",
+      "avatar": "testimonials/merchant-factors-team-building.jpg",
+      "image": "testimonials/merchant-factors-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 96,
+    "fields": {
+      "name": "Theo Govender",
+      "company": "SAB Miller",
+      "text": "\"I Just wanted to say Thank you for the awesome  day yesterday.  It was really great and the team enjoyed themselves a  lot.  Please convey my appreciation to Hayley and her crew.  They  were awesome.\"",
+      "feedback": "\"I Just wanted to say Thank you for the awesome  day yesterday.  It was really great and the team enjoyed themselves a  lot.  Please convey my appreciation to Hayley and her crew.  They  were awesome.\"",
+      "avatar": "testimonials/sab-miller-testimonial.jpg",
+      "image": "testimonials/sab-miller-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 97,
+    "fields": {
+      "name": "Joy Hutchinson",
+      "company": "Executive PA to Manufacturing And Engineering Directors, AVI Ltd",
+      "text": "\"A big thank you for our event on  Friday. I am only getting positive feedback from our staff.  They really  enjoyed it tremendously.\"",
+      "feedback": "\"A big thank you for our event on  Friday. I am only getting positive feedback from our staff.  They really  enjoyed it tremendously.\"",
+      "avatar": "testimonials/avi-team-building.jpg",
+      "image": "testimonials/avi-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 98,
+    "fields": {
+      "name": "Sylver Naik",
+      "company": "Actuarial &amp; Insurance Solutions, Deloitte &amp; Touche",
+      "text": "\"The team thoroughly enjoyed the teambuilding event. The facilitators  Eugene and Phil were absolutely marvellous.\" -",
+      "feedback": "\"The team thoroughly enjoyed the teambuilding event. The facilitators  Eugene and Phil were absolutely marvellous.\" -",
+      "avatar": "testimonials/deloitte-team-building-testimonial.jpg",
+      "image": "testimonials/deloitte-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 99,
+    "fields": {
+      "name": "Refiloe",
+      "company": "Jess and Everlyn, International Finance Corporation World Bank Group",
+      "text": "\"We would like to express our gratitude for an excellent event. The  facilitators were very good and they had very interesting activities for the  team. The ladies had a wonderful time. Looking forward to working with you again.\" -",
+      "feedback": "\"We would like to express our gratitude for an excellent event. The  facilitators were very good and they had very interesting activities for the  team. The ladies had a wonderful time. Looking forward to working with you again.\" -",
+      "avatar": "testimonials/ifc-team-building.jpg",
+      "image": "testimonials/ifc-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 100,
+    "fields": {
+      "name": "- Pieter Oosthuysen",
+      "company": "Senior Project Manager",
+      "text": "\"It was an excellent day, your team  was well equipped and motivated for the day. Our teams had a lot of fun whilst  building communication and trust skills and we definitely benefited from the  day.\"",
+      "feedback": "\"It was an excellent day, your team  was well equipped and motivated for the day. Our teams had a lot of fun whilst  building communication and trust skills and we definitely benefited from the  day.\"",
+      "avatar": "testimonials/murray-and-roberts-team-building.jpg",
+      "image": "testimonials/murray-and-roberts-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 101,
+    "fields": {
+      "name": "Shannon  Carmichael",
+      "company": "Executive PA, Ingram Micro  Southern Africa",
+      "text": "\"Compliments to the guys that set-up and host the activities,  they are very professional absolute pleasure and money well spent. Thanks once again to your team.\" -",
+      "feedback": "\"Compliments to the guys that set-up and host the activities,  they are very professional absolute pleasure and money well spent. Thanks once again to your team.\" -",
+      "avatar": "testimonials/ingram-micro-team-building.jpg",
+      "image": "testimonials/ingram-micro-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 102,
+    "fields": {
+      "name": "Janean Klopper",
+      "company": "District  Administrator",
+      "text": "BAIE, BAIE DANKIE VIR EEN  AWESOME EVENT!!! Almal het dit ongelooflik baie  geniet en kla lekker vanoggend van seer spiere waar hulle nie eers geweet het  spiere is – LOL. Ons sal julle definitief  aanbeveel!",
+      "feedback": "BAIE, BAIE DANKIE VIR EEN  AWESOME EVENT!!! Almal het dit ongelooflik baie  geniet en kla lekker vanoggend van seer spiere waar hulle nie eers geweet het  spiere is – LOL. Ons sal julle definitief  aanbeveel!",
+      "avatar": "testimonials/sab-team-building-testimonial.jpg",
+      "image": "testimonials/sab-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 103,
+    "fields": {
+      "name": "Neelo Khan Forrest",
+      "company": "Trade Ocean",
+      "text": "\"The  teambuilding was awesome and so was Ian.\"",
+      "feedback": "\"The  teambuilding was awesome and so was Ian.\"",
+      "avatar": "testimonials/trade-ocean-team-building-testimonial.jpg",
+      "image": "testimonials/trade-ocean-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 104,
+    "fields": {
+      "name": "Sarah Van Aardt",
+      "company": "South African Council for Natural Scientific Professions",
+      "text": "“The training was excellent in  spite of the weather! Good venue, the facilitators were very good and the  catering was also well presented and tasty.  We have learnt a lot.”",
+      "feedback": "“The training was excellent in  spite of the weather! Good venue, the facilitators were very good and the  catering was also well presented and tasty.  We have learnt a lot.”",
+      "avatar": "testimonials/sacnasp-team-building-testimonial.jpg",
+      "image": "testimonials/sacnasp-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 105,
+    "fields": {
+      "name": "Tebogo T Sekame",
+      "company": "Stanlib",
+      "text": "\"It is  very difficult to impress the senior management, but your team did it. We all  had a great time.\n\t    I was  not disappointed with nothing. The food , the activities were great. I have  already told a few people regarding the event.\"",
+      "feedback": "\"It is  very difficult to impress the senior management, but your team did it. We all  had a great time.\n\t    I was  not disappointed with nothing. The food , the activities were great. I have  already told a few people regarding the event.\"",
+      "avatar": "testimonials/stanlib-team-building-event.jpg",
+      "image": "testimonials/stanlib-team-building-event.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 106,
+    "fields": {
+      "name": "Candice",
+      "company": "Customer Service Centre, Vector Logistic Solutions",
+      "text": "\"Thanks so much for arranging everything for us on Friday  past. My team really enjoyed everything and it was great fun. Looking forward to using you guys in the future.\"",
+      "feedback": "\"Thanks so much for arranging everything for us on Friday  past. My team really enjoyed everything and it was great fun. Looking forward to using you guys in the future.\"",
+      "avatar": "testimonials/vector-logostics-team-building.jpg",
+      "image": "testimonials/vector-logostics-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 107,
+    "fields": {
+      "name": "Janine Combrinck",
+      "company": "Embassy of the Kingdom of The Netherlands",
+      "text": "\"Please thank your team we had an amazing day and good  feedback from all the staff.\"",
+      "feedback": "\"Please thank your team we had an amazing day and good  feedback from all the staff.\"",
+      "avatar": "testimonials/netherland-embassy-testimonial.jpg",
+      "image": "testimonials/netherland-embassy-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 108,
+    "fields": {
+      "name": "Joan Gordon-Davis",
+      "company": "Deputy Principal",
+      "text": "\"I just wanted to say thank you for our excellent Team Building exercise  this morning. (We had great fun in the shade!!!!). Great fun was had by all of us and a very big thank you to Eugene and KG  for the wonderful way that they handled the team building. They were very good  and a pleasure to work with!\"",
+      "feedback": "\"I just wanted to say thank you for our excellent Team Building exercise  this morning. (We had great fun in the shade!!!!). Great fun was had by all of us and a very big thank you to Eugene and KG  for the wonderful way that they handled the team building. They were very good  and a pleasure to work with!\"",
+      "avatar": "testimonials/alberview-primary-team-building.jpg",
+      "image": "testimonials/alberview-primary-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 109,
+    "fields": {
+      "name": "Matshediso  Mohlala",
+      "company": "National Health Laboratory Service",
+      "text": "\"Thank you thank you so much for  the job well done, thank you to Dipuo and Duncan.....the day was a success.  Much appreciated.\"",
+      "feedback": "\"Thank you thank you so much for  the job well done, thank you to Dipuo and Duncan.....the day was a success.  Much appreciated.\"",
+      "avatar": "testimonials/national-health-laboratory-service.jpg",
+      "image": "testimonials/national-health-laboratory-service.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 110,
+    "fields": {
+      "name": "Mmakopa  Mosalo| Senior  Financial Assistant | CIB Insurance Administrators",
+      "company": "",
+      "text": "\"I  just wanted to say thank you so so much for a fantastic Survivor team  building event last Friday!!!! Everyone  had a great time, we enjoyed every minute of the day. The whole day was filled  with fun and laughter, never a dull moment. The  facilitators were able to keep us engaged and involved throughout. Eugene  is absolutely the best, you can really tell he loves what he does. Big thanks  to him. The  day was a huge success, will definitely tell everyone I meet about your company  and will recommend TBAE to our other departments to consider for future events.\"",
+      "feedback": "\"I  just wanted to say thank you so so much for a fantastic Survivor team  building event last Friday!!!! Everyone  had a great time, we enjoyed every minute of the day. The whole day was filled  with fun and laughter, never a dull moment. The  facilitators were able to keep us engaged and involved throughout. Eugene  is absolutely the best, you can really tell he loves what he does. Big thanks  to him. The  day was a huge success, will definitely tell everyone I meet about your company  and will recommend TBAE to our other departments to consider for future events.\"",
+      "avatar": "testimonials/cib-team-building-testimonial.jpg",
+      "image": "testimonials/cib-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 111,
+    "fields": {
+      "name": "Amy  Harding | Manager | Business Development | Alexander Forbes",
+      "company": "",
+      "text": "\"Extend our thanks for a superb event last week. The TBAE crew were  fantastic – organised, great hosts, and good fun, and the venue was great – as  was the food. Everyone seemed to have a fantastic time and I would most  definitely recommend TBAE in future!\"",
+      "feedback": "\"Extend our thanks for a superb event last week. The TBAE crew were  fantastic – organised, great hosts, and good fun, and the venue was great – as  was the food. Everyone seemed to have a fantastic time and I would most  definitely recommend TBAE in future!\"",
+      "avatar": "testimonials/alexander-forbes-testimonial.jpg",
+      "image": "testimonials/alexander-forbes-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 112,
+    "fields": {
+      "name": "Celia",
+      "company": "Allan Gray",
+      "text": "\"We thoroughly enjoyed the Murder Mystery  on Friday night.\n\t    Please  thank Ian on our behalf.\"",
+      "feedback": "\"We thoroughly enjoyed the Murder Mystery  on Friday night.\n\t    Please  thank Ian on our behalf.\"",
+      "avatar": "testimonials/allan-gray-team-building-testimonial.jpg",
+      "image": "testimonials/allan-gray-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 113,
+    "fields": {
+      "name": "Renet vd Merwe",
+      "company": "Wild Events",
+      "text": "Thank you very much for hosting a successful event. My  client thoroughly enjoyed the teambuilding activities.",
+      "feedback": "Thank you very much for hosting a successful event. My  client thoroughly enjoyed the teambuilding activities.",
+      "avatar": "testimonials/wild-team-building-testimonial.jpg",
+      "image": "testimonials/wild-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 114,
+    "fields": {
+      "name": "Leana Potgieter",
+      "company": "Senior Consultant, Nexus Forensic Services",
+      "text": "Ons wil net  graag baie dankie se vir die lekker middag wat KG en Fred vir ons fasiliteer  het Vrydag.\n\t\t\t  Almal het  dit baie geniet as gevolg van hulle aanbieding daarvan!\n\t    Ons sal  verseker weer van julle gebruik maak as so iets gereel moet word.",
+      "feedback": "Ons wil net  graag baie dankie se vir die lekker middag wat KG en Fred vir ons fasiliteer  het Vrydag.\n\t\t\t  Almal het  dit baie geniet as gevolg van hulle aanbieding daarvan!\n\t    Ons sal  verseker weer van julle gebruik maak as so iets gereel moet word.",
+      "avatar": "testimonials/nexus-team-building.jpg",
+      "image": "testimonials/nexus-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 115,
+    "fields": {
+      "name": "Koketso Mlambo",
+      "company": "Shipping Administrator, Saab Grintek Defence",
+      "text": "On behalf of everybody that attended the team building session  yesterday, we would like to thank you very much for being patient with us and  for organising the event. We shall spread the word about your company and hope you get  more business from our company. The level of  excellence and professionalism was outstanding, we really really enjoyed  ourselves and the facilitators that were provided were very good and  entertaining.",
+      "feedback": "On behalf of everybody that attended the team building session  yesterday, we would like to thank you very much for being patient with us and  for organising the event. We shall spread the word about your company and hope you get  more business from our company. The level of  excellence and professionalism was outstanding, we really really enjoyed  ourselves and the facilitators that were provided were very good and  entertaining.",
+      "avatar": "testimonials/saab-team-building-testimonial.jpg",
+      "image": "testimonials/saab-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 116,
+    "fields": {
+      "name": "Simone Mason | Executive Assistant to  Mark Woodgate",
+      "company": "Head of IDA | Infrastructure Services Africa",
+      "text": "Thank your company, TBAE,  for the excellent service you gave us in assisting with booking and hosting one  of the elements of our IDA Team Build! We chose the Murder Mystery Event offered by TBAE, which was  hosted by Zane Stadler. Zane was charismatic, on time &  dynamic. Everyone thoroughly enjoyed it. The costume props went  down a charm! We could not stop laughing at one another! So, thank you VERY MUCH once again for your great service.",
+      "feedback": "Thank your company, TBAE,  for the excellent service you gave us in assisting with booking and hosting one  of the elements of our IDA Team Build! We chose the Murder Mystery Event offered by TBAE, which was  hosted by Zane Stadler. Zane was charismatic, on time &  dynamic. Everyone thoroughly enjoyed it. The costume props went  down a charm! We could not stop laughing at one another! So, thank you VERY MUCH once again for your great service.",
+      "avatar": "testimonials/absa-team-building-testimonial.jpg",
+      "image": "testimonials/absa-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 117,
+    "fields": {
+      "name": "Mpho Pule | Senior OD &amp;  Change Advisor l World Vision Southern Africa Regional Office (SARO)",
+      "company": "",
+      "text": "The activities were  thoroughly enjoyed by everyone, and I just want to thank you and the  facilitators on behalf of everyone. \n        I look forward to working with you again in the future.",
+      "feedback": "The activities were  thoroughly enjoyed by everyone, and I just want to thank you and the  facilitators on behalf of everyone. \n        I look forward to working with you again in the future.",
+      "avatar": "testimonials/world-vision-team-building.jpg",
+      "image": "testimonials/world-vision-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 118,
+    "fields": {
+      "name": "Zanele Mathabela. HR Practitioner",
+      "company": "Inland Region",
+      "text": "\"Thank you to Fred and the crew  for being patient and their professionalism, we had loads of FUN !!\"",
+      "feedback": "\"Thank you to Fred and the crew  for being patient and their professionalism, we had loads of FUN !!\"",
+      "avatar": "testimonials/nandos-team-building-testimonial.jpg",
+      "image": "testimonials/nandos-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 119,
+    "fields": {
+      "name": "Antoinette",
+      "company": "Tanker Repair Division",
+      "text": "\"Just want to say a big thank you  to TBAE for making our team building day such a huge success that was enjoyed  by everyone. The facilitators were amazing at  getting everyone involved and everyone left the day full of smiles. Thanks again for an  unforgettable day.\"",
+      "feedback": "\"Just want to say a big thank you  to TBAE for making our team building day such a huge success that was enjoyed  by everyone. The facilitators were amazing at  getting everyone involved and everyone left the day full of smiles. Thanks again for an  unforgettable day.\"",
+      "avatar": "testimonials/tanker-repair-division-testimonial.jpg",
+      "image": "testimonials/tanker-repair-division-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 120,
+    "fields": {
+      "name": "Abel Dantyi",
+      "company": "Communications Assistant. SAMWUMED",
+      "text": "\"We would like to say thank you a wonderful and  uplifting team building, it was amazing and unforgettable.\"",
+      "feedback": "\"We would like to say thank you a wonderful and  uplifting team building, it was amazing and unforgettable.\"",
+      "avatar": "testimonials/samwumed-team-building-testimonial.jpg",
+      "image": "testimonials/samwumed-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 121,
+    "fields": {
+      "name": "Nomsa  Fakude",
+      "company": "Cummins  Business Services",
+      "text": "\"Tooooooo wonderful, thanks to you and your team for fulfilling our day.\"",
+      "feedback": "\"Tooooooo wonderful, thanks to you and your team for fulfilling our day.\"",
+      "avatar": "testimonials/cummins-team-building-testimonial.jpg",
+      "image": "testimonials/cummins-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 122,
+    "fields": {
+      "name": "Nozipho  Khumalo",
+      "company": "Marketing  Manager, Southgate Mall",
+      "text": "\"Thank  you so much for the hospitality and professional service the Southgate Team was  treated to for our team building last week.\n\t    We  truly appreciate it and will definitely refer your services in the future.\"",
+      "feedback": "\"Thank  you so much for the hospitality and professional service the Southgate Team was  treated to for our team building last week.\n\t    We  truly appreciate it and will definitely refer your services in the future.\"",
+      "avatar": "testimonials/southgate-mall-testimonial.jpg",
+      "image": "testimonials/southgate-mall-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 123,
+    "fields": {
+      "name": "Michaela Walbrugh | Administrator",
+      "company": "KEY Accounts | Firespec Systems",
+      "text": "\"Thank you! Thank you! Thank you! We all had sooo much fun.\n\t    Thank you for all your help and thanks  to Anton and Bobby for a wonderful afternoon.\"",
+      "feedback": "\"Thank you! Thank you! Thank you! We all had sooo much fun.\n\t    Thank you for all your help and thanks  to Anton and Bobby for a wonderful afternoon.\"",
+      "avatar": "testimonials/firespec-systems-testimonial.jpg",
+      "image": "testimonials/firespec-systems-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 124,
+    "fields": {
+      "name": "Pam",
+      "company": "MMI Holdings  Limited",
+      "text": "\"Thank you so much for everything and  many thanks to Ian aswell, we had fun everybody enjoyed the games , I  will definitely recommend your company to my other colleagues. Looking forward to doing business with you in  the near future.\"",
+      "feedback": "\"Thank you so much for everything and  many thanks to Ian aswell, we had fun everybody enjoyed the games , I  will definitely recommend your company to my other colleagues. Looking forward to doing business with you in  the near future.\"",
+      "avatar": "testimonials/mmi-holdings-team-building-testimonial.jpg",
+      "image": "testimonials/mmi-holdings-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 125,
+    "fields": {
+      "name": "Zoleka",
+      "company": "Drs Burger Radiologists",
+      "text": "\"On behalf of Drs Burger Radiologists, I would  like to personally thank you and your crew for hosting a fantastic teambuilding  event.\n\t    There was a perfect combination of mental and  physical challenges and each team member could contribute to completing each  stage.  Being able to tailor the event exactly to my group's needs was a  great experience and no request was too difficult for your crew. The  staff members running the event were extremely enthusiastic and easy to work  with. The buffet spread was outstanding and was enjoyed by all, big ups  to the chefs. People kept telling me how much fun they had and  how different this type of event was for a social function.\"",
+      "feedback": "\"On behalf of Drs Burger Radiologists, I would  like to personally thank you and your crew for hosting a fantastic teambuilding  event.\n\t    There was a perfect combination of mental and  physical challenges and each team member could contribute to completing each  stage.  Being able to tailor the event exactly to my group's needs was a  great experience and no request was too difficult for your crew. The  staff members running the event were extremely enthusiastic and easy to work  with. The buffet spread was outstanding and was enjoyed by all, big ups  to the chefs. People kept telling me how much fun they had and  how different this type of event was for a social function.\"",
+      "avatar": "testimonials/drs-burger-team-building-testimonial.jpg",
+      "image": "testimonials/drs-burger-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 126,
+    "fields": {
+      "name": "Rachel van den Berg | Risk Monitoring Officer | MFC",
+      "company": "a division of  Nedbank",
+      "text": "\"From  the Risk and Compliance team, thank you so much for a wonderful fun filled day.\n\t\t  Your  staff were so kind and friendly to the whole time. Made us really feel welcome and  made us enjoy every inch of the day.\n\t    So  again I would like to thank you from the bottom of our hearts.\"",
+      "feedback": "\"From  the Risk and Compliance team, thank you so much for a wonderful fun filled day.\n\t\t  Your  staff were so kind and friendly to the whole time. Made us really feel welcome and  made us enjoy every inch of the day.\n\t    So  again I would like to thank you from the bottom of our hearts.\"",
+      "avatar": "testimonials/mfc-team-building-testimonial.jpg",
+      "image": "testimonials/mfc-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 127,
+    "fields": {
+      "name": "Nomsa Letsoalo",
+      "company": "Secretary to CFO &amp; SM-Finance, HCPSA",
+      "text": "\"I would like to thank you for all the assistance you provided in  organizing our conference/teambuilding.\n\t\t  Please pass my gratitude to Kagiso and Eugene…\"",
+      "feedback": "\"I would like to thank you for all the assistance you provided in  organizing our conference/teambuilding.\n\t\t  Please pass my gratitude to Kagiso and Eugene…\"",
+      "avatar": "testimonials/hpcsa-team-building-testimonial.jpg",
+      "image": "testimonials/hpcsa-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 128,
+    "fields": {
+      "name": "Angelique",
+      "company": "SA Natural Products",
+      "text": "\"Thank you so much for everything, the facilitators  were great and everyone thoroughly enjoyed the activities!\"",
+      "feedback": "\"Thank you so much for everything, the facilitators  were great and everyone thoroughly enjoyed the activities!\"",
+      "avatar": "testimonials/sa-natural-products-testimonial.jpg",
+      "image": "testimonials/sa-natural-products-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 129,
+    "fields": {
+      "name": "Anthea Sithole",
+      "company": "ESD Service Owner, ITS Business  Solutions Support, MMI Holdings  Limited",
+      "text": "\"I  would like to thank you and your team for a well planned team building.   My team thoroughly enjoyed themselves but also learnt an invaluable message  about working as a team.\"",
+      "feedback": "\"I  would like to thank you and your team for a well planned team building.   My team thoroughly enjoyed themselves but also learnt an invaluable message  about working as a team.\"",
+      "avatar": "testimonials/mmi-holdings-team-building-testimonial.jpg",
+      "image": "testimonials/mmi-holdings-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 130,
+    "fields": {
+      "name": "Mafeno Phora",
+      "company": "Marketing &amp; Client  Liaison, Centre for Business Management",
+      "text": "\"Thanks Mari for the great experience our  guys had at Magalies Manor.\"",
+      "feedback": "\"Thanks Mari for the great experience our  guys had at Magalies Manor.\"",
+      "avatar": "testimonials/unisa-team-building-testimonial.jpg",
+      "image": "testimonials/unisa-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 131,
+    "fields": {
+      "name": "Chantelle Adams l Team Leader l Financial Reporting: Umbrella Funds l Operations &amp; Administration l LIFE | Alexander Forbes",
+      "company": "",
+      "text": "\"Just wanted to thank you for the  great team building yesterday. Your staff did a really good job!!!\"",
+      "feedback": "\"Just wanted to thank you for the  great team building yesterday. Your staff did a really good job!!!\"",
+      "avatar": "testimonials/alexander-forbes-team-building.jpg",
+      "image": "testimonials/alexander-forbes-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 132,
+    "fields": {
+      "name": "Sylla Dulobo |  Administrative Advanced | DAF | Ernst &amp; Young Mozambique",
+      "company": "",
+      "text": "\"I’d like to thank you and all the team for the excelente  activities you did with us.\n\t    Our company and teams really enjoyed. I hope we get a chance to  work together again in a near future.\"",
+      "feedback": "\"I’d like to thank you and all the team for the excelente  activities you did with us.\n\t    Our company and teams really enjoyed. I hope we get a chance to  work together again in a near future.\"",
+      "avatar": "testimonials/ernst-and-young-team-building-testimonial.jpg",
+      "image": "testimonials/ernst-and-young-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 133,
+    "fields": {
+      "name": "Stephanie  Chellan│ Communication Manager",
+      "company": "",
+      "text": "\"Thanks for your response and for a  fun-filled event. It went down SO well!\n\t    Thanks again for all your assistance.  Don’t be surprised if we contact you in the future so the same thing can be set  up for another team!\"",
+      "feedback": "\"Thanks for your response and for a  fun-filled event. It went down SO well!\n\t    Thanks again for all your assistance.  Don’t be surprised if we contact you in the future so the same thing can be set  up for another team!\"",
+      "avatar": "testimonials/etc-solutions-team-building-testimonials.jpg",
+      "image": "testimonials/etc-solutions-team-building-testimonials.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 134,
+    "fields": {
+      "name": "Jacqui Smal",
+      "company": "International Admin Controller, Distell  Group Ltd",
+      "text": "\"I just wanted to say thank you from Distell International for a  wonderful team building event yesterday.  Everyone had a wonderful time  and Ian & partner were great with the crowd.\"",
+      "feedback": "\"I just wanted to say thank you from Distell International for a  wonderful team building event yesterday.  Everyone had a wonderful time  and Ian & partner were great with the crowd.\"",
+      "avatar": "testimonials/distell-team-building-testimonial.jpg",
+      "image": "testimonials/distell-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 135,
+    "fields": {
+      "name": "Ilna",
+      "company": "2Go",
+      "text": "\"Thanks so much. We had a blast today!\n\t\t  Ian was great and got the team to all play along  and have fun.\n\t    Will definitely get in touch again for our next  team building event.\"",
+      "feedback": "\"Thanks so much. We had a blast today!\n\t\t  Ian was great and got the team to all play along  and have fun.\n\t    Will definitely get in touch again for our next  team building event.\"",
+      "avatar": "testimonials/2go-team-building-testimonial.jpg",
+      "image": "testimonials/2go-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 136,
+    "fields": {
+      "name": "Andrea Cox",
+      "company": "SABMiller plc",
+      "text": "\"I just wanted to say thank you so much  to you and the team for such a wonderful Team Building Experience. We all had  such a great time! Everyone was involved and there was something for everyone. We will be recommending your service.\"",
+      "feedback": "\"I just wanted to say thank you so much  to you and the team for such a wonderful Team Building Experience. We all had  such a great time! Everyone was involved and there was something for everyone. We will be recommending your service.\"",
+      "avatar": "testimonials/sab-miller-testimonial.jpg",
+      "image": "testimonials/sab-miller-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 137,
+    "fields": {
+      "name": "Leatitia Pelzer",
+      "company": "Tega Industries South Africa (Pty) Ltd",
+      "text": "\"I  would just like to thank you for the all the arrangements etc. you made to  ensure that our Bosberaad was a success. I complement you and your team on  punctuality and professionalism. I am sure that we will make use of your  services for other events in the near future.\"",
+      "feedback": "\"I  would just like to thank you for the all the arrangements etc. you made to  ensure that our Bosberaad was a success. I complement you and your team on  punctuality and professionalism. I am sure that we will make use of your  services for other events in the near future.\"",
+      "avatar": "testimonials/tega-team-building-testimonial.jpg",
+      "image": "testimonials/tega-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 138,
+    "fields": {
+      "name": "Amanda",
+      "company": "CapeGate Shopping Centre",
+      "text": "\"I just want to say thank you for  organising a lovely team building day.  Despite it being scorching (and us  being so unfit!) a great time was had by all.  The two facilitators were  also lovely and we had a good giggle.\"",
+      "feedback": "\"I just want to say thank you for  organising a lovely team building day.  Despite it being scorching (and us  being so unfit!) a great time was had by all.  The two facilitators were  also lovely and we had a good giggle.\"",
+      "avatar": "testimonials/capegate-team-building-testimonial.jpg",
+      "image": "testimonials/capegate-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 139,
+    "fields": {
+      "name": "Yasmin Ahmed",
+      "company": "Facilities Manager: Head Office Campus, Woolworths Real Estate Development",
+      "text": "\"Thank  you for facilitating this lovely day.\n\t\t\t  The  team had a day of fun and excitement and cannot stop talking about the event.\n\t    Keep  it up.\"",
+      "feedback": "\"Thank  you for facilitating this lovely day.\n\t\t\t  The  team had a day of fun and excitement and cannot stop talking about the event.\n\t    Keep  it up.\"",
+      "avatar": "testimonials/woolworths-team-building-testimonial.jpg",
+      "image": "testimonials/woolworths-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 140,
+    "fields": {
+      "name": "Quinton",
+      "company": "NGK Ceramics",
+      "text": "\"Thank you once again for  arranging such a good team building not only for our department, but also for  the rest of operation departments ( Production- Firing and LSH).\"",
+      "feedback": "\"Thank you once again for  arranging such a good team building not only for our department, but also for  the rest of operation departments ( Production- Firing and LSH).\"",
+      "avatar": "testimonials/ngk-ceramics-team-building-testimonial.jpg",
+      "image": "testimonials/ngk-ceramics-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 141,
+    "fields": {
+      "name": "Jackie",
+      "company": "Eversdal Primary School",
+      "text": "\"Please convey our thanks to Robert and his team that did  our team building on Saturday. \n\t\t  We all had fun and our principal reported that  he found it very useful to see his staff in action.\"",
+      "feedback": "\"Please convey our thanks to Robert and his team that did  our team building on Saturday. \n\t\t  We all had fun and our principal reported that  he found it very useful to see his staff in action.\"",
+      "avatar": "testimonials/eversdal-primary-school.jpg",
+      "image": "testimonials/eversdal-primary-school.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 142,
+    "fields": {
+      "name": "Debbie Moodley",
+      "company": "Human Resources, Saint-Gobain Delegation, South Africa",
+      "text": "\"Just a note to express our thanks  for the wonderful Minute to Win it team building exercise that your company  facilitated during December 2013. Very professionally co-ordinated,  friendly and exceptionally competent facilitators. We had a blast.\n\t    Thank you and looking forward to  working with you going forward.\"",
+      "feedback": "\"Just a note to express our thanks  for the wonderful Minute to Win it team building exercise that your company  facilitated during December 2013. Very professionally co-ordinated,  friendly and exceptionally competent facilitators. We had a blast.\n\t    Thank you and looking forward to  working with you going forward.\"",
+      "avatar": "testimonials/saint-goban-testimonial.jpg",
+      "image": "testimonials/saint-goban-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 143,
+    "fields": {
+      "name": "Nondumiso",
+      "company": "Free State Legislature",
+      "text": "\"Just  wanted to tell you that yesterday we had an awesome, great and wonderful day  with your team. It was a really wonderful day for me and fellow  colleagues.\"",
+      "feedback": "\"Just  wanted to tell you that yesterday we had an awesome, great and wonderful day  with your team. It was a really wonderful day for me and fellow  colleagues.\"",
+      "avatar": "testimonials/free-state-legislature-team-building.jpg",
+      "image": "testimonials/free-state-legislature-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 144,
+    "fields": {
+      "name": "Lauren  MOORE",
+      "company": "Sanofi Pasteur",
+      "text": "\"I  just wanted to say thank you so much for arranging and getting your guys to us  at such notice.  We had a really fun time and Fred and Duncan were very  accommodating and professional.\"",
+      "feedback": "\"I  just wanted to say thank you so much for arranging and getting your guys to us  at such notice.  We had a really fun time and Fred and Duncan were very  accommodating and professional.\"",
+      "avatar": "testimonials/sonafi-pasteur-team-building-testimonial.jpg",
+      "image": "testimonials/sonafi-pasteur-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 145,
+    "fields": {
+      "name": "Luleka Sibandu",
+      "company": "Alstom",
+      "text": "\"I want to take this  opportunity to thank you and your wonderful Team for a fantastic Team Building  event you organized for our organization on Friday. Judging  by the excitement and comments from the people who attended, it was  really outstanding, out of this world.\"",
+      "feedback": "\"I want to take this  opportunity to thank you and your wonderful Team for a fantastic Team Building  event you organized for our organization on Friday. Judging  by the excitement and comments from the people who attended, it was  really outstanding, out of this world.\"",
+      "avatar": "testimonials/alstom-team-building-testimonial.jpg",
+      "image": "testimonials/alstom-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 146,
+    "fields": {
+      "name": "Angela Tromp",
+      "company": "CONCO",
+      "text": "\"Everything went great, Saturday’s team building was better than  last year, everyone had fun all round.\"",
+      "feedback": "\"Everything went great, Saturday’s team building was better than  last year, everyone had fun all round.\"",
+      "avatar": "testimonials/conco-team-building-testimonial.jpg",
+      "image": "testimonials/conco-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 147,
+    "fields": {
+      "name": "Vimla",
+      "company": "FNB",
+      "text": "\"Just  want to say Thank you for all your assistance with our Team Building. It  was a Fun Day and a huge success!.\"",
+      "feedback": "\"Just  want to say Thank you for all your assistance with our Team Building. It  was a Fun Day and a huge success!.\"",
+      "avatar": "testimonials/fnb-team-building-testimonial.jpg",
+      "image": "testimonials/fnb-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 148,
+    "fields": {
+      "name": "David",
+      "company": "Lonmin Group",
+      "text": "\"Hope you are well. I just want thanking  everybody that make our 2days at the Conference centre so great we had a  great  time and some fun.\"",
+      "feedback": "\"Hope you are well. I just want thanking  everybody that make our 2days at the Conference centre so great we had a  great  time and some fun.\"",
+      "avatar": "testimonials/lonmin-group-testimonial.jpg",
+      "image": "testimonials/lonmin-group-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 149,
+    "fields": {
+      "name": "Terry",
+      "company": "Incredible  Solutions",
+      "text": "\"I would just like to thank you and your  team for the wonderful day on Friday. \n\t\t  There was lots of fun, laughter and  competition. The company morale was great. A big thanks to your facilitators  and  'camera man' \"",
+      "feedback": "\"I would just like to thank you and your  team for the wonderful day on Friday. \n\t\t  There was lots of fun, laughter and  competition. The company morale was great. A big thanks to your facilitators  and  'camera man' \"",
+      "avatar": "testimonials/incredible-solutions-testimonial.jpg",
+      "image": "testimonials/incredible-solutions-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 150,
+    "fields": {
+      "name": "Thirza Stevens",
+      "company": "Project Assistant, SAICA Member    Services",
+      "text": "\"A heartfelt and massive thank you to you (on the admin side) and to Ian  for an absolutely awesome teambuilding session on Friday.  Everything was  so professionally arranged and went off without a hitch. We had tons of fun, side-splitting laughter and a healthy dose of  competitiveness!\"",
+      "feedback": "\"A heartfelt and massive thank you to you (on the admin side) and to Ian  for an absolutely awesome teambuilding session on Friday.  Everything was  so professionally arranged and went off without a hitch. We had tons of fun, side-splitting laughter and a healthy dose of  competitiveness!\"",
+      "avatar": "testimonials/saica-team-building-event-testimonial.jpg",
+      "image": "testimonials/saica-team-building-event-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 151,
+    "fields": {
+      "name": "Annabel  Bean",
+      "company": "Edcon",
+      "text": "\"This  is an official Thank You note to you and your teams for the wonderful job that  you did at our executive conference last week.  You brought your expertise  and experience to the table, but also listened to what we were looking for and  were flexible in the actual execution as you deemed necessary.  I am very  grateful that you partnered with us, and look forward to working with you again  in the future.\"",
+      "feedback": "\"This  is an official Thank You note to you and your teams for the wonderful job that  you did at our executive conference last week.  You brought your expertise  and experience to the table, but also listened to what we were looking for and  were flexible in the actual execution as you deemed necessary.  I am very  grateful that you partnered with us, and look forward to working with you again  in the future.\"",
+      "avatar": "testimonials/edcon-team-building-testimonial.jpg",
+      "image": "testimonials/edcon-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 152,
+    "fields": {
+      "name": "Dineo",
+      "company": "Setshaba Research Centre",
+      "text": "\"I  would like to give appreciation to you and your team, they did a wonderful job  and treated us well.\"",
+      "feedback": "\"I  would like to give appreciation to you and your team, they did a wonderful job  and treated us well.\"",
+      "avatar": "testimonials/sethaba-team-building-testimonial.jpg",
+      "image": "testimonials/sethaba-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 153,
+    "fields": {
+      "name": "Mpadi Giddie",
+      "company": "Credit Control Manager, Sefalana Cash and Carry Limited",
+      "text": "\"Just to say a big THANK YOU to you and your team! Frederick & his crew did a great job indeed, and very  professional! They came on time and did their thing! Everyone was extremely  happy and all we are getting right now from the conference delegates is nothing  but positive feedback!\"",
+      "feedback": "\"Just to say a big THANK YOU to you and your team! Frederick & his crew did a great job indeed, and very  professional! They came on time and did their thing! Everyone was extremely  happy and all we are getting right now from the conference delegates is nothing  but positive feedback!\"",
+      "avatar": "testimonials/sefalana-cash-and-carry.jpg",
+      "image": "testimonials/sefalana-cash-and-carry.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 154,
+    "fields": {
+      "name": "Christelle Prinsloo (on behalf of each staff member of Ermelo  Campus",
+      "company": "GS College)",
+      "text": "\"Just want to thank you for the professional,  competent and enthusiastic team which you send to Ermelo for GS College's team  building event. They were organised and professional at all  times - doing their job with big smiles on their faces.  And they put big  smiles of enjoyment and fun on our faces also. Each staff member enjoyed the day and appreciate  your team's efforts.\"",
+      "feedback": "\"Just want to thank you for the professional,  competent and enthusiastic team which you send to Ermelo for GS College's team  building event. They were organised and professional at all  times - doing their job with big smiles on their faces.  And they put big  smiles of enjoyment and fun on our faces also. Each staff member enjoyed the day and appreciate  your team's efforts.\"",
+      "avatar": "testimonials/gs-college-team-building-testimonial.jpg",
+      "image": "testimonials/gs-college-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 155,
+    "fields": {
+      "name": "Sue Bailey and Eudene Pretorius",
+      "company": "Quintiles",
+      "text": "\"Thank You very much for everything.\n\t    Working with Mari was fun! She was helpful and friendly, and nothing was ever a problem.\"",
+      "feedback": "\"Thank You very much for everything.\n\t    Working with Mari was fun! She was helpful and friendly, and nothing was ever a problem.\"",
+      "avatar": "testimonials/quintiles-team-building-testimonial.jpg",
+      "image": "testimonials/quintiles-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 156,
+    "fields": {
+      "name": "Gugu Sithole",
+      "company": "Deputy Director : Ministry, The DTI",
+      "text": "\"I  must say we had a time of our lives, everything went well.\"",
+      "feedback": "\"I  must say we had a time of our lives, everything went well.\"",
+      "avatar": "testimonials/dti-team-building-testimonial.jpg",
+      "image": "testimonials/dti-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 157,
+    "fields": {
+      "name": "Ursula Beeby",
+      "company": "Vision View Productions",
+      "text": "\"Thank you to your amazing  team, they are Professional, Friendly, Passionate and Patient  we had  loadsa fun and our weakness as a company has been pointed out, So thumbs up to You and your Team.\"",
+      "feedback": "\"Thank you to your amazing  team, they are Professional, Friendly, Passionate and Patient  we had  loadsa fun and our weakness as a company has been pointed out, So thumbs up to You and your Team.\"",
+      "avatar": "testimonials/vision-view-productions-team-building.jpg",
+      "image": "testimonials/vision-view-productions-team-building.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 158,
+    "fields": {
+      "name": "Revaan",
+      "company": "Metropolitan",
+      "text": "\"We would just like to say a HUGE THANKS to you and Ian for our team  building yesterday, it was great fun and everyone thoroughly enjoyed themselves.\"",
+      "feedback": "\"We would just like to say a HUGE THANKS to you and Ian for our team  building yesterday, it was great fun and everyone thoroughly enjoyed themselves.\"",
+      "avatar": "testimonials/metropolitan-team-building-testimonial.jpg",
+      "image": "testimonials/metropolitan-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 159,
+    "fields": {
+      "name": "Zodwa",
+      "company": "University of Limpopo",
+      "text": "\"We  had a lovely day. We will definitely use you guys in future again.\"",
+      "feedback": "\"We  had a lovely day. We will definitely use you guys in future again.\"",
+      "avatar": "testimonials/university-of-limpopo-testimonial.jpg",
+      "image": "testimonials/university-of-limpopo-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 160,
+    "fields": {
+      "name": "Mbulelo",
+      "company": "JB Marks Education Trust Fund",
+      "text": "\"The team  buliding event went very well the team had a really good time. Thank you for  the great experience.\"",
+      "feedback": "\"The team  buliding event went very well the team had a really good time. Thank you for  the great experience.\"",
+      "avatar": "testimonials/jbmarks-education-team-building-testimonial.jpg",
+      "image": "testimonials/jbmarks-education-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 161,
+    "fields": {
+      "name": "Natalie",
+      "company": "JTI",
+      "text": "\"Thank you for putting together  our team builder, it was a great day and everyone had a fantastic time!\"",
+      "feedback": "\"Thank you for putting together  our team builder, it was a great day and everyone had a fantastic time!\"",
+      "avatar": "testimonials/jti-team-building-testimonial.jpg",
+      "image": "testimonials/jti-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 162,
+    "fields": {
+      "name": "Christopher  Naidoo",
+      "company": "Allan Gray",
+      "text": "\"A big thank you for a great teambuilding  event. Ian and his team were fantastic. The team had a great time!\"",
+      "feedback": "\"A big thank you for a great teambuilding  event. Ian and his team were fantastic. The team had a great time!\"",
+      "avatar": "testimonials/allan-gray-team-building-testimonial.jpg",
+      "image": "testimonials/allan-gray-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 163,
+    "fields": {
+      "name": "Karin Nel",
+      "company": "Grandmark International Pretoria",
+      "text": "\"I just wanted to drop you a note to say thank you very much for the nice  day we had on Saturday.  It really was a pleasure working with your  company.  Your guys were friendly, helpful and very organised. Thank you once again for all your assistance and making our teambuilding  day such a huge success.\"",
+      "feedback": "\"I just wanted to drop you a note to say thank you very much for the nice  day we had on Saturday.  It really was a pleasure working with your  company.  Your guys were friendly, helpful and very organised. Thank you once again for all your assistance and making our teambuilding  day such a huge success.\"",
+      "avatar": "testimonials/grandmark-team-building-testimonials.jpg",
+      "image": "testimonials/grandmark-team-building-testimonials.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 164,
+    "fields": {
+      "name": "\"\t    Brenda   Sampson",
+      "company": "Pioneer Foods",
+      "text": "\"Thank you so much for a well   organised team building event! \t\t\t  Ian knew exactly how to handle   the Finance group, he was great. We were received well, the venue was stunning   and the food so enjoyable!  We also had great fun playing the different games. (I received very positive feedback from all in the group   today).\n\t    Once again, thank you and enjoy   your day tomorrow!",
+      "feedback": "\"Thank you so much for a well   organised team building event! \t\t\t  Ian knew exactly how to handle   the Finance group, he was great. We were received well, the venue was stunning   and the food so enjoyable!  We also had great fun playing the different games. (I received very positive feedback from all in the group   today).\n\t    Once again, thank you and enjoy   your day tomorrow!",
+      "avatar": "testimonials/pioneer-foods-team-building-testimonial.jpg",
+      "image": "testimonials/pioneer-foods-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 165,
+    "fields": {
+      "name": "Thandeka  Buthelezi",
+      "company": "Sasol",
+      "text": "\"Thank  you for the teambuilding event on Monday. \n\t\t\t  All  the participants thoroughly enjoyed it: from the amusing ice-breaker to the fun  and interactive games. \n\t    The  day was very eventful and definitely served as a great  platform to network and bond.\"",
+      "feedback": "\"Thank  you for the teambuilding event on Monday. \n\t\t\t  All  the participants thoroughly enjoyed it: from the amusing ice-breaker to the fun  and interactive games. \n\t    The  day was very eventful and definitely served as a great  platform to network and bond.\"",
+      "avatar": "testimonials/sasol-team-building-quote.jpg",
+      "image": "testimonials/sasol-team-building-quote.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 166,
+    "fields": {
+      "name": "Tapiwa",
+      "company": "Sonke Gender Justice Network",
+      "text": "\"Many thanks to you for your   support throughout. We had a great time with Ian and it was fun. My team really   enjoyed it :-)\n\t\tAlso we had an amazing venue and   accommodation. Thumbs up to you!\"",
+      "feedback": "\"Many thanks to you for your   support throughout. We had a great time with Ian and it was fun. My team really   enjoyed it :-)\n\t\tAlso we had an amazing venue and   accommodation. Thumbs up to you!\"",
+      "avatar": "testimonials/sonke-genderjustice-network-testimonial.jpg",
+      "image": "testimonials/sonke-genderjustice-network-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 167,
+    "fields": {
+      "name": "Quinton",
+      "company": "NGK Ceramics",
+      "text": "\"On behalf of all our members, we want to thank you for a memorable team   building. Members are still talking about it and consider this as   the best team building   ever. Thank you for all your patience and I am proud to say, TBAE, \"you are the   best\".  Please thank Ian and his assistants for making the day very FUNTASTIC   for members. We are busy looking   at the photos and how we wish to be there again.\"",
+      "feedback": "\"On behalf of all our members, we want to thank you for a memorable team   building. Members are still talking about it and consider this as   the best team building   ever. Thank you for all your patience and I am proud to say, TBAE, \"you are the   best\".  Please thank Ian and his assistants for making the day very FUNTASTIC   for members. We are busy looking   at the photos and how we wish to be there again.\"",
+      "avatar": "testimonials/ngk-ceramics-team-building-testimonial.jpg",
+      "image": "testimonials/ngk-ceramics-team-building-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 168,
+    "fields": {
+      "name": "Sinethemba   Ntantiso",
+      "company": "Engen Petroleum Limited",
+      "text": "\"Just wanted to say thank again, the teambuilding   exercise was great and the team really enjoyed it.\"",
+      "feedback": "\"Just wanted to say thank again, the teambuilding   exercise was great and the team really enjoyed it.\"",
+      "avatar": "testimonials/engen-movie-making-testimonial.jpg",
+      "image": "testimonials/engen-movie-making-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 169,
+    "fields": {
+      "name": "Ilse   Schickerling",
+      "company": "",
+      "text": "\"On behalf of Glenburn   Lodge I wish to just thank you for a very successful and enjoyable Staff   Teambuilding.\n\t\t\t  Despite the rain that   we had on the day everyone truly enjoyed themselves and we have your team to   thank for that.\n\t\t\t  We look forward to   engaging with you in future with regards to Conference Teambuildings, etc. on   our property which we believe will be just as successful as the one we had for   our staff.\n\t    Again, thank you so   very much. You have a rocking team!\"",
+      "feedback": "\"On behalf of Glenburn   Lodge I wish to just thank you for a very successful and enjoyable Staff   Teambuilding.\n\t\t\t  Despite the rain that   we had on the day everyone truly enjoyed themselves and we have your team to   thank for that.\n\t\t\t  We look forward to   engaging with you in future with regards to Conference Teambuildings, etc. on   our property which we believe will be just as successful as the one we had for   our staff.\n\t    Again, thank you so   very much. You have a rocking team!\"",
+      "avatar": "testimonials/glenburn-lodge-testimonial.jpg",
+      "image": "testimonials/glenburn-lodge-testimonial.jpg"
+    }
+  },
+  {
+    "model": "core.testimonial",
+    "pk": 170,
+    "fields": {
+      "name": "",
+      "company": "Videos | Team Building Exercises | Team Building Activities | Virtual Team Building | Pretoria Team Building | Johannesburg Team Building | Cape Town Team Building | Durban Team Building | Clients | What is Team Building? | Sitemap | Privacy | Terms & Conditions |",
+      "text": "Home |",
+      "feedback": "Home |",
+      "avatar": "testimonials/tbae-newsletter.gif",
+      "image": "testimonials/tbae-newsletter.gif"
+    }
+  }
+]

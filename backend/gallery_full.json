@@ -1,0 +1,120 @@
+[
+  {
+    "model": "gallery.gallerycategory",
+    "pk": 101,
+    "fields": {
+      "name": "Videos",
+      "display_name": "Videos"
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 1,
+    "fields": {
+      "event": 10001,
+      "youtube_url": "https://www.youtube.com/embed/9xCct5XahJY",
+      "caption": "TBAE is a completely mobile team building facilitation company offering team building in South Africa including Cape Town , Johannesburg , Pretoria , Durban as well as team building in the United States . We are able to facilitate our mobile team building themes at any suitable venue (provided the venue allows team building). In addition, we are also able to offer highly competitive venue hire, catering and accommodation packages at certain venues where we’ve previously hosted events.TBAE offers interactive team building activities that are adventurous, but safe.",
+      "order": 1
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 2,
+    "fields": {
+      "event": 10002,
+      "youtube_url": "https://www.youtube.com/embed/plFk_Pd37FI",
+      "caption": "TBAE Virtual Team Building - Remote Team Building",
+      "order": 2
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 3,
+    "fields": {
+      "event": 10003,
+      "youtube_url": "https://www.youtube.com/embed/-rX2vReS1xs",
+      "caption": "Corporate Fun Day and Karaoke Challenge Team Building facilitated by TBAE for SNC Lavalin at Lagoon Beach Hotel in Cape Town, Western Cape. TBAE’s Corporate Fun Day team building activity is a versatile event that can easily be customized to suit your team and the occasion. In this activity, teams compete against each other in a combination of some of our most popular team building exercises. The exercises are highly interactive and offers active spectator participation.",
+      "order": 3
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 4,
+    "fields": {
+      "event": 10004,
+      "youtube_url": "https://www.youtube.com/embed/MpmS1Silumw",
+      "caption": "Boxcart Building and Racing is one of the newest additions to TBAE's team building activities. It was facilitated for NGK Ceramics at Karmanel Function Venue in Cape Town . The Box Cart Building and Racing activity combines creativity, technical precision, leadership, communication and a dose of bravery and fitness for a few. The teams are then provided with all the necessary components to create and complete the Box Cart. The team then get to work deciding who will design and apply the finishing touches to the 'bodywork', design and paint the drivers racing top as well as script a team song.",
+      "order": 4
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 5,
+    "fields": {
+      "event": 10005,
+      "youtube_url": "https://www.youtube.com/embed/HLbiaLXsFBE",
+      "caption": "The Charity Build A Bike Theme is one of TBAE's newer team building events on offer from TBAE, this build a bike team building was facilitated for Allan Gray at Erinvale Estate Hotel team building venue in Somerset West, Cape Town, Western Cape.",
+      "order": 5
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 6,
+    "fields": {
+      "event": 10006,
+      "youtube_url": "https://www.youtube.com/embed/zYwqrDZDVcU",
+      "caption": "This Minute To Win It themed team building activity was facilitated for Balwin Properties at Hillcrest team building venue in Durbanville, Cape Town, Western Cape. TBAE’s Minute To Win It team building activity is inspired by the Minute to Win It international game show franchise. This activity gets everybody involved and is great fun for spectators and participators alike.",
+      "order": 6
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 7,
+    "fields": {
+      "event": 10007,
+      "youtube_url": "https://www.youtube.com/embed/-IO7uq6bUAA",
+      "caption": "SA Mini Olympics team building activity that was facilitated for Refinery Stores at Ruslamere in Durbanville , Cape Town , Western Cape.",
+      "order": 7
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 8,
+    "fields": {
+      "event": 10008,
+      "youtube_url": "https://www.youtube.com/embed/jboG21WDzjI",
+      "caption": "Laughter Games team building activity facilitated for Momentum at Bellvile Cricket Club in Cape Town , Western Cape. TBAE’s Laughter Games team building activity is designed to do just what it’s name suggest, to cause laughter, a lot of laughter. In this activity teams compete against each other in a combination of team building exercises, especially chosen because of the fun and laughter they create.",
+      "order": 8
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 9,
+    "fields": {
+      "event": 10009,
+      "youtube_url": "https://www.youtube.com/embed/CZatJfGRN-c",
+      "caption": "Outcome Based Team Building facilitated for a group from ETV at Green Point Park in Cape Town , Western Cape. TBAE’s specific outcome based team building activities are geared towards the participants achieving specific learning outcomes from the team building event. Learning outcomes are statements that describe what a participant will be able to do as a result of the activity. Clearly stated learning outcomes help team members understand what is expected of them and helps the facilitator to focus on precisely what you want your team to achieve by the end of the team building event.",
+      "order": 9
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 10,
+    "fields": {
+      "event": 10010,
+      "youtube_url": "https://www.youtube.com/embed/-ScTe71BdKY",
+      "caption": "This Boeresport team building event was facilitated for Helpmekaar Kollege in Johannesburg . Some possible outcomes of the Boeresport Games team building activity include teamwork, communication, leadership, cooperation, goal setting, creative thinking, decision making, problem solving, resilience, time management and trust.",
+      "order": 10
+    }
+  },
+  {
+    "model": "gallery.galleryvideo",
+    "pk": 11,
+    "fields": {
+      "event": 10011,
+      "youtube_url": "https://www.youtube.com/embed/iFWK56Cxc_o",
+      "caption": "Hyundai Automotive SA's Minute To Win It Team Building at The Lakes Hotel in Benoni , Gauteng. The Minute To Win It challenges are completed using everyday household objects such as elastic bands, paper cups, empty cans, balloons and toilet paper. Careful strategy is required as the team has to decide which members are going to attempt to complete which challenge. Points are awarded for each challenge and the team with the highest points at the end of the day is declared the winning team of the Minute To Win It event.",
+      "order": 11
+    }
+  }
+]

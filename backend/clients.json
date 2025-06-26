@@ -1,0 +1,5673 @@
+[
+  
+  {
+    "model": "core.client",
+    "pk": 9,
+    "fields": {
+      "name": "1LifeDirect",
+      "logo": "clients/1lifedirect.jpg",
+      "website": "",
+      "order": 9
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 10,
+    "fields": {
+      "name": "2Go Murder Mystery",
+      "logo": "clients/2go-team-building-event.jpg",
+      "website": "clients/2go-interactive.htm",
+      "order": 10
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 11,
+    "fields": {
+      "name": "32 South Team Building",
+      "logo": "clients/images/32-south.jpg",
+      "website": "clients/32-south.htm",
+      "order": 11
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 12,
+    "fields": {
+      "name": "A1L Realizations (Vodacom)",
+      "logo": "clients/a1l.jpg",
+      "website": "",
+      "order": 12
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 13,
+    "fields": {
+      "name": "ABSA",
+      "logo": "clients/absa-1.jpg",
+      "website": "clients/absa.htm",
+      "order": 13
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 14,
+    "fields": {
+      "name": "ABB",
+      "logo": "clients/abb.jpg",
+      "website": "",
+      "order": 14
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 15,
+    "fields": {
+      "name": "Aberdare Cables Minute To Win It",
+      "logo": "clients/images/aberdare-cables.jpg",
+      "website": "clients/aberdare-cables.htm",
+      "order": 15
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 16,
+    "fields": {
+      "name": "ABI Team Building",
+      "logo": "clients/images/abi.jpg",
+      "website": "clients/abi.htm",
+      "order": 16
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 17,
+    "fields": {
+      "name": "Absolute Containers",
+      "logo": "clients/absolute-containers.jpg",
+      "website": "clients/2go-interactive.htm",
+      "order": 17
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 18,
+    "fields": {
+      "name": "accenture",
+      "logo": "clients/accenture.jpg",
+      "website": "",
+      "order": 18
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 19,
+    "fields": {
+      "name": "AEL Mining Services",
+      "logo": "clients/images/ael-mining-services.jpg",
+      "website": "clients/ael-mining-services.htm",
+      "order": 19
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 20,
+    "fields": {
+      "name": "ADIDAS Team Building",
+      "logo": "clients/images/adidas.jpg",
+      "website": "clients/adidas.htm",
+      "order": 20
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 21,
+    "fields": {
+      "name": "A-Plus Communication",
+      "logo": "clients/aplus-communication.jpg",
+      "website": "",
+      "order": 21
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 22,
+    "fields": {
+      "name": "AEC Amersham",
+      "logo": "clients/aec.jpg",
+      "website": "",
+      "order": 22
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 23,
+    "fields": {
+      "name": "AECI Team Building",
+      "logo": "clients/images/aeci.jpg",
+      "website": "clients/aeci.htm",
+      "order": 23
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 24,
+    "fields": {
+      "name": "Aerosud Team Building",
+      "logo": "clients/aerosud.jpg",
+      "website": "",
+      "order": 24
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 25,
+    "fields": {
+      "name": "Adapt IT",
+      "logo": "clients/images/adapt-it.jpg",
+      "website": "clients/adapt-it.htm",
+      "order": 25
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 26,
+    "fields": {
+      "name": "AFMS Group Team Building",
+      "logo": "clients/images/afms-group.jpg",
+      "website": "clients/afms-group.htm",
+      "order": 26
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 27,
+    "fields": {
+      "name": "AFGRI",
+      "logo": "clients/afgri.jpg",
+      "website": "",
+      "order": 27
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 28,
+    "fields": {
+      "name": "Africa Health Placements Team Building",
+      "logo": "clients/images/africa-health-placements.jpg",
+      "website": "clients/africa-health-placements.htm",
+      "order": 28
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 29,
+    "fields": {
+      "name": "African Bank Team Building",
+      "logo": "clients/images/african-bank.jpg",
+      "website": "clients/african-bank.htm",
+      "order": 29
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 30,
+    "fields": {
+      "name": "afrisam",
+      "logo": "clients/afrisam.jpg",
+      "website": "",
+      "order": 30
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 31,
+    "fields": {
+      "name": "Afrocentric ",
+      "logo": "clients/images/afrocentric.jpg",
+      "website": "clients/afrocentric.htm",
+      "order": 31
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 32,
+    "fields": {
+      "name": "Air Traffic and Navigation Services ",
+      "logo": "clients/images/air-traffic-and-navigation-services.jpg",
+      "website": "clients/air-traffic-and-navigation-services.htm",
+      "order": 32
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 33,
+    "fields": {
+      "name": "Alere",
+      "logo": "clients/alere-team-building-events.jpg",
+      "website": "clients/alere.htm",
+      "order": 33
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 34,
+    "fields": {
+      "name": "All Port Cargo Services",
+      "logo": "clients/all-port-cargo-services.jpg",
+      "website": "events-14/all-port-cargo-services-murder-mystery.htm",
+      "order": 34
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 35,
+    "fields": {
+      "name": "Alliance Media",
+      "logo": "clients/alliance.jpg",
+      "website": "",
+      "order": 35
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 36,
+    "fields": {
+      "name": "Alexander Forbes",
+      "logo": "clients/alexanderforbes.jpg",
+      "website": "clients/alexander-forbes.htm",
+      "order": 36
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 37,
+    "fields": {
+      "name": "Allan Gray",
+      "logo": "clients/allan-gray-team-building.jpg",
+      "website": "clients/allan-gray.htm",
+      "order": 37
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 38,
+    "fields": {
+      "name": "Allergan Pharmaceuticals ",
+      "logo": "clients/images/allergan-pharmaceuticals.jpg",
+      "website": "clients/allergan-pharmaceuticals.htm",
+      "order": 38
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 39,
+    "fields": {
+      "name": "Alpha Study Centre",
+      "logo": "clients/images/alpha-study-centre.jpg",
+      "website": "clients/alpha-study-centre.htm",
+      "order": 39
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 40,
+    "fields": {
+      "name": "Alstom",
+      "logo": "clients/alstom-team-building-event.jpg",
+      "website": "",
+      "order": 40
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 41,
+    "fields": {
+      "name": "Amajuba District Municipality",
+      "logo": "clients/amajuba-dm-2.jpg",
+      "website": "",
+      "order": 41
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 42,
+    "fields": {
+      "name": "Amazon Minute to Win It",
+      "logo": "clients/amazon-minute-to-win-it.jpg",
+      "website": "clients/amazon.htm",
+      "order": 42
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 43,
+    "fields": {
+      "name": "Ambledown Financial Services Team Building",
+      "logo": "clients/images/ambledown-financial-services.jpg",
+      "website": "clients/ambledown-financial-serivces.htm",
+      "order": 43
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 44,
+    "fields": {
+      "name": "Amdocs Team Building Events with TBAE",
+      "logo": "clients/amdocs.jpg",
+      "website": "clients/amdocs.htm",
+      "order": 44
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 45,
+    "fields": {
+      "name": "Anglo American",
+      "logo": "clients/images/american-tower-corporation.jpg",
+      "website": "clients/american-tower-corporation.htm",
+      "order": 45
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 46,
+    "fields": {
+      "name": "ANB Bank ",
+      "logo": "clients/images/anb-bank.jpg",
+      "website": "clients/anb-treasury.htm",
+      "order": 46
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 47,
+    "fields": {
+      "name": "anglogold",
+      "logo": "clients/anglogold.jpg",
+      "website": "",
+      "order": 47
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 48,
+    "fields": {
+      "name": "Anova Health Institute",
+      "logo": "clients/anova.jpg",
+      "website": "clients/anova-health-institute.htm",
+      "order": 48
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 49,
+    "fields": {
+      "name": "AON Benfield Team Building",
+      "logo": "clients/images/angor.jpg",
+      "website": "clients/angor-property-specialists.htm",
+      "order": 49
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 50,
+    "fields": {
+      "name": "AON Hewitt",
+      "logo": "clients/aon-hewitt-team-building-event.jpg",
+      "website": "clients/aon-hewitt.htm",
+      "order": 50
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 51,
+    "fields": {
+      "name": "ARPM Consulting",
+      "logo": "clients/images/arpm-consulting.jpg",
+      "website": "clients/arpm-consulting.htm",
+      "order": 51
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 52,
+    "fields": {
+      "name": "Aspen International",
+      "logo": "clients/aspen-international-team-building.jpg",
+      "website": "clients/aspen-international.htm",
+      "order": 52
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 53,
+    "fields": {
+      "name": "auditor general",
+      "logo": "clients/auditor-general.jpg",
+      "website": "",
+      "order": 53
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 54,
+    "fields": {
+      "name": "Auto General",
+      "logo": "clients/auto-general.jpg",
+      "website": "clients/auto-general.htm",
+      "order": 54
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 55,
+    "fields": {
+      "name": "Auto Pedigree Team Building",
+      "logo": "clients/images/auto-pedigree.jpg",
+      "website": "clients/auto-pedigree.htm",
+      "order": 55
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 56,
+    "fields": {
+      "name": "Auric Auto BMW",
+      "logo": "clients/auric-auto-bmw-team-building-event.jpg",
+      "website": "",
+      "order": 56
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 57,
+    "fields": {
+      "name": "australian high commission",
+      "logo": "clients/aus-1.jpg",
+      "website": "clients/australian-high-commision.htm",
+      "order": 57
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 58,
+    "fields": {
+      "name": "avakash",
+      "logo": "clients/avakash.jpg",
+      "website": "",
+      "order": 58
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 59,
+    "fields": {
+      "name": "Avon",
+      "logo": "clients/avon-team-building.jpg",
+      "website": "clients/avon.htm",
+      "order": 59
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 60,
+    "fields": {
+      "name": "Avis Fleet Team Building",
+      "logo": "clients/images/avis-fleet.jpg",
+      "website": "clients/avis-fleet.htm",
+      "order": 60
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 61,
+    "fields": {
+      "name": "Aveng Grinaker Team Building",
+      "logo": "clients/images/aveng-grinaker.jpg",
+      "website": "clients/aveng-grinaker.htm",
+      "order": 61
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 62,
+    "fields": {
+      "name": "Aveng Trident Steel Team Building",
+      "logo": "clients/images/aveng-trident-steel.jpg",
+      "website": "clients/aveng-trident-steel.htm",
+      "order": 62
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 63,
+    "fields": {
+      "name": "Averda Team Building",
+      "logo": "clients/images/averda.jpg",
+      "website": "clients/averda.htm",
+      "order": 63
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 64,
+    "fields": {
+      "name": "Avery Dennison Team Building",
+      "logo": "clients/images/avery-dennison.jpg",
+      "website": "clients/avery-dennison.htm",
+      "order": 64
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 65,
+    "fields": {
+      "name": "Axis Communication",
+      "logo": "clients/axis-communication-team-building.jpg",
+      "website": "clients/axis-communications.htm",
+      "order": 65
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 66,
+    "fields": {
+      "name": "Amajuba Dm",
+      "logo": "clients/amajuba-dm.jpg",
+      "website": "",
+      "order": 66
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 67,
+    "fields": {
+      "name": "Amka Products Team Building",
+      "logo": "clients/images/amka-products.jpg",
+      "website": "clients/amka-products.htm",
+      "order": 67
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 68,
+    "fields": {
+      "name": "Amadeus Team Building",
+      "logo": "clients/images/amadeus.jpg",
+      "website": "clients/amadeus.htm",
+      "order": 68
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 69,
+    "fields": {
+      "name": "Alberville Primary",
+      "logo": "clients/alberview-primary-team-building.jpg",
+      "website": "",
+      "order": 69
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 70,
+    "fields": {
+      "name": "Africa Sunoil Team Building",
+      "logo": "clients/images/africa-sunoil.jpg",
+      "website": "clients/african-sunoil.htm",
+      "order": 70
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 71,
+    "fields": {
+      "name": "Africawide",
+      "logo": "clients/africa-wide-team-building.jpg",
+      "website": "",
+      "order": 71
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 72,
+    "fields": {
+      "name": "Balwin Properties Team Building",
+      "logo": "clients/images/balwin-properties.jpg",
+      "website": "clients/balwin-properties.htm",
+      "order": 72
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 73,
+    "fields": {
+      "name": "BankservAfrica Team Building",
+      "logo": "clients/images/bankservafrica.jpg",
+      "website": "clients/bankservafrica.htm",
+      "order": 73
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 74,
+    "fields": {
+      "name": "BASF Team Building",
+      "logo": "clients/basf.jpg",
+      "website": "clients/basf.htm",
+      "order": 74
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 75,
+    "fields": {
+      "name": "Barclays Bank of Botswana Team Building",
+      "logo": "clients/images/barclays-botswana.jpg",
+      "website": "clients/barcleys-bank-botswana.htm",
+      "order": 75
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 76,
+    "fields": {
+      "name": "Barclays Life Botswana Team Building",
+      "logo": "clients/images/barclays-botswana.jpg",
+      "website": "clients/barcleys-life-botswana.htm",
+      "order": 76
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 77,
+    "fields": {
+      "name": "BCE Foodservice",
+      "logo": "clients/bce-foodservice.jpg",
+      "website": "",
+      "order": 77
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 78,
+    "fields": {
+      "name": "BedRock",
+      "logo": "clients/bedrock.jpg",
+      "website": "",
+      "order": 78
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 79,
+    "fields": {
+      "name": "Benguela Current Convention Team Building",
+      "logo": "clients/images/benguela-current-convention.jpg",
+      "website": "clients/benguela-current-convention.htm",
+      "order": 79
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 80,
+    "fields": {
+      "name": "Bible Society of South Africa Team Building",
+      "logo": "clients/images/bible-society-south-africa.jpg",
+      "website": "clients/bible-society-of-south-africa.htm",
+      "order": 80
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 81,
+    "fields": {
+      "name": "Bidvest Bank",
+      "logo": "clients/images/bidvest-bank.jpg",
+      "website": "clients/bidvest-bank.htm",
+      "order": 81
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 82,
+    "fields": {
+      "name": "Bon Accord",
+      "logo": "clients/bonaccord.jpg",
+      "website": "",
+      "order": 82
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 83,
+    "fields": {
+      "name": "Botswana Life Team Building",
+      "logo": "clients/images/botswana-life.jpg",
+      "website": "clients/botswana-life.htm",
+      "order": 83
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 84,
+    "fields": {
+      "name": "Botswana Meat Commission Team Building",
+      "logo": "clients/images/botswana=meat-commission.jpg",
+      "website": "clients/botswana-meat-commission.htm",
+      "order": 84
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 85,
+    "fields": {
+      "name": "BPSA Team Building",
+      "logo": "clients/images/bpsa.jpg",
+      "website": "clients/bpsa.htm",
+      "order": 85
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 86,
+    "fields": {
+      "name": "Brakpan Bus Company Team Building",
+      "logo": "clients/images/brakpan-bus-company.jpg",
+      "website": "clients/brakpan-bus-company.htm",
+      "order": 86
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 87,
+    "fields": {
+      "name": "Brandbox Media",
+      "logo": "clients/brandbox.jpg",
+      "website": "",
+      "order": 87
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 88,
+    "fields": {
+      "name": "Brick Art Construction Team Building",
+      "logo": "clients/images/brick-art-construction.jpg",
+      "website": "clients/brick-art-construction.htm",
+      "order": 88
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 89,
+    "fields": {
+      "name": "Brink Cohen Le Roux",
+      "logo": "clients/brink-cohen-leroux.jpg",
+      "website": "",
+      "order": 89
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 90,
+    "fields": {
+      "name": "British American Tobacco Team Building",
+      "logo": "clients/british-american-tobacco.jpg",
+      "website": "",
+      "order": 90
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 91,
+    "fields": {
+      "name": "Broadband Infraco",
+      "logo": "clients/broadbrand-infraco-team-building.jpg",
+      "website": "clients/broadband-infraco.htm",
+      "order": 91
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 92,
+    "fields": {
+      "name": "Broll Facilities Management Team Building",
+      "logo": "clients/images/broll.jpg",
+      "website": "clients/broll-facilities-management.htm",
+      "order": 92
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 93,
+    "fields": {
+      "name": "builders warehouse",
+      "logo": "clients/builders-warehouse.jpg",
+      "website": "",
+      "order": 93
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 94,
+    "fields": {
+      "name": "Buongiorno Team Building",
+      "logo": "clients/buongiorno.jpg",
+      "website": "clients/buongiorno.htm",
+      "order": 94
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 95,
+    "fields": {
+      "name": "Business Connexion",
+      "logo": "clients/business-connexion-team-building.jpg",
+      "website": "",
+      "order": 95
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 96,
+    "fields": {
+      "name": "Business Partners Team Building",
+      "logo": "clients/images/business-partners.jpg",
+      "website": "clients/business-partners.htm",
+      "order": 96
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 97,
+    "fields": {
+      "name": "Business Systems Group",
+      "logo": "clients/bsg.jpg",
+      "website": "",
+      "order": 97
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 98,
+    "fields": {
+      "name": "Bvelela Engineering",
+      "logo": "clients/bvelela-engineering-team-building-event.jpg",
+      "website": "",
+      "order": 98
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 99,
+    "fields": {
+      "name": "Cape Conferences",
+      "logo": "clients/capeconferences.jpg",
+      "website": "",
+      "order": 99
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 100,
+    "fields": {
+      "name": "CapeGate Shopping Centre",
+      "logo": "clients/capegate-shopping-centre-team-building.jpg",
+      "website": "",
+      "order": 100
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 101,
+    "fields": {
+      "name": "Capfin Murder Mystery",
+      "logo": "clients/images/capfin.jpg",
+      "website": "clients/capfin.htm",
+      "order": 101
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 102,
+    "fields": {
+      "name": "Carlson Wagonlit Travel",
+      "logo": "clients/carlson-wagonlit-travel.jpg",
+      "website": "",
+      "order": 102
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 103,
+    "fields": {
+      "name": "Carnival City Casino",
+      "logo": "clients/carnival-city-casino.jpg",
+      "website": "",
+      "order": 103
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 104,
+    "fields": {
+      "name": "Carel Du Toit",
+      "logo": "clients/carel-du-toit.jpg",
+      "website": "",
+      "order": 104
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 105,
+    "fields": {
+      "name": "Cell C Team Building",
+      "logo": "clients/images/cellc.jpg",
+      "website": "clients/cell-c.htm",
+      "order": 105
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 106,
+    "fields": {
+      "name": "Ceres",
+      "logo": "clients/ceres.jpg",
+      "website": "",
+      "order": 106
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 107,
+    "fields": {
+      "name": "Chatz Connect Team Building",
+      "logo": "clients/images/chatz-connect.jpg",
+      "website": "clients/chatz-connect.htm",
+      "order": 107
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 108,
+    "fields": {
+      "name": "Chevron South Africa",
+      "logo": "clients/chevron-team-building-event.jpg",
+      "website": "clients/chevron.htm",
+      "order": 108
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 109,
+    "fields": {
+      "name": "Cisco",
+      "logo": "clients/images/cipla-medpro.jpg",
+      "website": "clients/cipla-medpro.htm",
+      "order": 109
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 110,
+    "fields": {
+      "name": "Clyde and Co Team Building",
+      "logo": "clients/images/clyde-and-co.jpg",
+      "website": "clients/clyde-and-co.htm",
+      "order": 110
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 111,
+    "fields": {
+      "name": "CONCO",
+      "logo": "clients/conco.jpg",
+      "website": "clients/conco.htm",
+      "order": 111
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 112,
+    "fields": {
+      "name": "Communicare Team Building",
+      "logo": "clients/communicare-team-building-event.jpg",
+      "website": "clients/communicare.htm",
+      "order": 112
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 113,
+    "fields": {
+      "name": "Constantia Insurance Company Team Building",
+      "logo": "clients/images/constantia-insurance-company.jpg",
+      "website": "clients/constantia-insurance-company.htm",
+      "order": 113
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 114,
+    "fields": {
+      "name": "Consulta Direct",
+      "logo": "clients/consulta-direct-team-building.jpg",
+      "website": "consulta-direct-team-building.htm",
+      "order": 114
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 115,
+    "fields": {
+      "name": "Coaching for Hope Team Building",
+      "logo": "clients/images/coaching-for-hope.jpg",
+      "website": "clients/coaching-for-hope.htm",
+      "order": 115
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 116,
+    "fields": {
+      "name": "Coca-Cola Peninsula Beverages Team Building",
+      "logo": "clients/images/coca-cola-peninsula-beverages.jpg",
+      "website": "clients/images/coca-cola-peninsula-beverages.jpg",
+      "order": 116
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 117,
+    "fields": {
+      "name": "Cornwall Hill College",
+      "logo": "clients/images/cornwall-hill-college.jpg",
+      "website": "clients/cornwall-hill-college.htm",
+      "order": 117
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 118,
+    "fields": {
+      "name": "Colgate",
+      "logo": "clients/colgate.jpg",
+      "website": "",
+      "order": 118
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 119,
+    "fields": {
+      "name": "Consolidated Medical Services Team Building",
+      "logo": "clients/images/consolidated-medical-services.jpg",
+      "website": "clients/consolidated-medical-services.htm",
+      "order": 119
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 120,
+    "fields": {
+      "name": "Credit Guarantee",
+      "logo": "clients/credit-guarantee-team-building.jpg",
+      "website": "clients/credit-guarantee.htm",
+      "order": 120
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 121,
+    "fields": {
+      "name": "CrediCor",
+      "logo": "clients/credicor.jpg",
+      "website": "",
+      "order": 121
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 122,
+    "fields": {
+      "name": "Crede Oils Team Building",
+      "logo": "clients/crede-oils.jpg",
+      "website": "clients/crede-oils.htm",
+      "order": 122
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 123,
+    "fields": {
+      "name": "CSIR",
+      "logo": "clients/csir.jpg",
+      "website": "",
+      "order": 123
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 124,
+    "fields": {
+      "name": "CTI",
+      "logo": "clients/cti-team-building-event.jpg",
+      "website": "clients/cti.htm",
+      "order": 124
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 125,
+    "fields": {
+      "name": "Cummins Business Services",
+      "logo": "clients/cummins-business-services.jpg",
+      "website": "",
+      "order": 125
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 126,
+    "fields": {
+      "name": "CIB Insurance",
+      "logo": "clients/cib-team-building-testimonial.jpg",
+      "website": "",
+      "order": 126
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 127,
+    "fields": {
+      "name": "Cobol Finance Team Building",
+      "logo": "clients/images/cobol-finance.jpg",
+      "website": "clients/cobol-finance.htm",
+      "order": 127
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 128,
+    "fields": {
+      "name": "Comair",
+      "logo": "clients/comair-team-building.jpg",
+      "website": "",
+      "order": 128
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 129,
+    "fields": {
+      "name": "CA Technologies",
+      "logo": "clients/ca-technologies-team-building.jpg",
+      "website": "",
+      "order": 129
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 130,
+    "fields": {
+      "name": "CCID",
+      "logo": "clients/cid-team-building.jpg",
+      "website": "",
+      "order": 130
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 131,
+    "fields": {
+      "name": "DA Caucus Team Building",
+      "logo": "clients/images/da.jpg",
+      "website": "clients/da-caucus.htm",
+      "order": 131
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 132,
+    "fields": {
+      "name": "DataCentrix",
+      "logo": "clients/datacentrix.jpg",
+      "website": "clients/dataorbis.htm",
+      "order": 132
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 133,
+    "fields": {
+      "name": "Daikin Airconditioning Team Building",
+      "logo": "clients/images/daikin-air-conditioning.jpg",
+      "website": "clients/daikin-airconditioning.htm",
+      "order": 133
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 134,
+    "fields": {
+      "name": "Danone Team Building",
+      "logo": "clients/images/danone.jpg",
+      "website": "clients/danone.htm",
+      "order": 134
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 135,
+    "fields": {
+      "name": "Data Orbis Team Building",
+      "logo": "clients/dataorbis.jpg",
+      "website": "clients/dataorbis.htm",
+      "order": 135
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 136,
+    "fields": {
+      "name": "DBSA",
+      "logo": "clients/dbsa-team-building.jpg",
+      "website": "clients/dbsa.htm",
+      "order": 136
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 137,
+    "fields": {
+      "name": "Death Community of Cape Town",
+      "logo": "clients/Death Community of Cape Town.jpg",
+      "website": "clients/deaf-community-of-cape-town.htm",
+      "order": 137
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 138,
+    "fields": {
+      "name": "De Beers",
+      "logo": "clients/debeers.jpg",
+      "website": "clients/de-beers.htm",
+      "order": 138
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 139,
+    "fields": {
+      "name": "Department of Home Affairs",
+      "logo": "clients/images/department-of-home-affairs.jpg",
+      "website": "clients/department-of-home-affairs.htm",
+      "order": 139
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 140,
+    "fields": {
+      "name": "Dirco Team Building",
+      "logo": "clients/department-of-international-relations.jpg",
+      "website": "clients/dirco.htm",
+      "order": 140
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 141,
+    "fields": {
+      "name": "De Jongh Paneelkloppers Team Building",
+      "logo": "clients/images/de-jonghs-paneelkloppers.jpg",
+      "website": "clients/de-jonghs-paneelkloppers.htm",
+      "order": 141
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 142,
+    "fields": {
+      "name": "Department of Agriculture Team Building",
+      "logo": "clients/department-of-agriculture.jpg",
+      "website": "",
+      "order": 142
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 143,
+    "fields": {
+      "name": "Deloitte",
+      "logo": "clients/deloitte.jpg",
+      "website": "clients/deloitte.htm",
+      "order": 143
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 144,
+    "fields": {
+      "name": "Debswana Team Building",
+      "logo": "clients/debswana.jpg",
+      "website": "",
+      "order": 144
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 145,
+    "fields": {
+      "name": "Democratic Alliance Team Building",
+      "logo": "clients/images/da.jpg",
+      "website": "clients/democratic-alliance.htm",
+      "order": 145
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 146,
+    "fields": {
+      "name": "Dentons Team Building",
+      "logo": "clients/images/dentons.jpg",
+      "website": "clients/dentons.htm",
+      "order": 146
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 147,
+    "fields": {
+      "name": "department of social development",
+      "logo": "clients/department-of-social-development.jpg",
+      "website": "",
+      "order": 147
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 148,
+    "fields": {
+      "name": "Department of Trade and Industry",
+      "logo": "clients/dti-team-building-event.jpg",
+      "website": "clients/dti.htm",
+      "order": 148
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 149,
+    "fields": {
+      "name": "deu",
+      "logo": "clients/deu.jpg",
+      "website": "",
+      "order": 149
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 150,
+    "fields": {
+      "name": "Discovery Health",
+      "logo": "clients/dicovery-health.jpg",
+      "website": "clients/discovery-health.htm",
+      "order": 150
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 151,
+    "fields": {
+      "name": "Distell International",
+      "logo": "clients/distell-team-building-event.jpg",
+      "website": "clients/distell.htm",
+      "order": 151
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 152,
+    "fields": {
+      "name": "DirectAxis",
+      "logo": "clients/direct-axis.jpg",
+      "website": "",
+      "order": 152
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 153,
+    "fields": {
+      "name": "Direct Leisure Golf Distributors Team Building",
+      "logo": "clients/images/direct-leisure.jpg",
+      "website": "clients/direct-leisure-golf-distributors.htm",
+      "order": 153
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 154,
+    "fields": {
+      "name": "Discovery",
+      "logo": "clients/discovery.jpg",
+      "website": "",
+      "order": 154
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 155,
+    "fields": {
+      "name": "DigiCentre",
+      "logo": "clients/DigiCentre.jpg",
+      "website": "",
+      "order": 155
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 156,
+    "fields": {
+      "name": "Disabled People South Africa",
+      "logo": "clients/disabled-people-south-africa-team-building.jpg",
+      "website": "clients/dpsa.htm",
+      "order": 156
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 157,
+    "fields": {
+      "name": "Donaldson Filtration Systems Team Building",
+      "logo": "clients/images/donaldson-filtration-systems.jpg",
+      "website": "clients/donaldson-filtration-systems.htm",
+      "order": 157
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 158,
+    "fields": {
+      "name": "Dr Olga Coetzee",
+      "logo": "clients/dr-olga-coetzee-team-building-event.jpg",
+      "website": "clients/dr-olga-coetzee.htm",
+      "order": 158
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 159,
+    "fields": {
+      "name": "Drs Burger Radiologists",
+      "logo": "clients/drs-burger-team-building.jpg",
+      "website": "clients/drs-burger-radiologists.htm",
+      "order": 159
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 160,
+    "fields": {
+      "name": "Dr Pethla's Medical Practise",
+      "logo": "clients/dr-pethla-medical-practise.jpg",
+      "website": "clients/dr-pethlas-medical-practice.htm",
+      "order": 160
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 161,
+    "fields": {
+      "name": "Driefontein Gold Mine",
+      "logo": "clients/driefontein.jpg",
+      "website": "",
+      "order": 161
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 162,
+    "fields": {
+      "name": "Duferco Steel Processing Team Building",
+      "logo": "clients/duferco.jpg",
+      "website": "clients/duferco.htm",
+      "order": 162
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 163,
+    "fields": {
+      "name": "EB Solutions",
+      "logo": "clients/eb-solutions.jpg",
+      "website": "",
+      "order": 163
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 164,
+    "fields": {
+      "name": "EchoChem Pumps",
+      "logo": "clients/echochem.jpg",
+      "website": "",
+      "order": 164
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 165,
+    "fields": {
+      "name": "Eclipse",
+      "logo": "clients/eclipse-tv.jpg",
+      "website": "",
+      "order": 165
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 166,
+    "fields": {
+      "name": "Ed-U-College Team Building",
+      "logo": "clients/images/ed-u-college.jpg",
+      "website": "clients/ed-u-college-qwa-qwa.htm",
+      "order": 166
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 167,
+    "fields": {
+      "name": "Edcon",
+      "logo": "clients/Edcon.jpg",
+      "website": "clients/edcon.htm",
+      "order": 167
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 168,
+    "fields": {
+      "name": "Edward Snell & Co",
+      "logo": "clients/edward-snell.jpg",
+      "website": "",
+      "order": 168
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 169,
+    "fields": {
+      "name": "Ekurhuleni East TVET College Team Building",
+      "logo": "clients/images/ekurhuleni-east-tvet-college.jpg",
+      "website": "clients/ekurhuleni-east-tvet-college.htm",
+      "order": 169
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 170,
+    "fields": {
+      "name": "Ekurhuleni Metro Team Building",
+      "logo": "clients/ekhuruleni-metro.jpg",
+      "website": "events-14/ekurhuleni-metro-amazing-race-team-building.htm",
+      "order": 170
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 171,
+    "fields": {
+      "name": "Elan Communications",
+      "logo": "clients/elan-comminications.jpg",
+      "website": "",
+      "order": 171
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 172,
+    "fields": {
+      "name": "Embassy of the Netherlands",
+      "logo": "clients/embassy-netherlands.jpg",
+      "website": "",
+      "order": 172
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 173,
+    "fields": {
+      "name": "Empro Academy Team Building",
+      "logo": "clients/images/empro-academy.jpg",
+      "website": "clients/empro-academy.htm",
+      "order": 173
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 174,
+    "fields": {
+      "name": "Enviroserve",
+      "logo": "clients/Enviroserv Team Building Event.jpg",
+      "website": "clients/enviroserv.htm",
+      "order": 174
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 175,
+    "fields": {
+      "name": "ENM Trading",
+      "logo": "clients/enm.jpg",
+      "website": "",
+      "order": 175
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 176,
+    "fields": {
+      "name": "Engen",
+      "logo": "clients/engen-team-building.jpg",
+      "website": "clients/engen.htm",
+      "order": 176
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 177,
+    "fields": {
+      "name": "EOH Team Building",
+      "logo": "clients/images/eoh.jpg",
+      "website": "clients/eoh.htm",
+      "order": 177
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 178,
+    "fields": {
+      "name": "Ephraim Mogale Municipality Team Building",
+      "logo": "clients/images/ephraim-mogale-municipality.jpg",
+      "website": "",
+      "order": 178
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 179,
+    "fields": {
+      "name": "Ergosystem Team Building",
+      "logo": "clients/ergosystem.jpg",
+      "website": "clients/ergosystem.htm",
+      "order": 179
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 180,
+    "fields": {
+      "name": "Eris Property Group Team Building",
+      "logo": "clients/images/eris-property-group.jpg",
+      "website": "clients/eris-property-group.htm",
+      "order": 180
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 181,
+    "fields": {
+      "name": "Ernst & Young",
+      "logo": "clients/ey.jpg",
+      "website": "clients/ernst-and-young.htm",
+      "order": 181
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 182,
+    "fields": {
+      "name": "Ernst and Young Team Building Mozambique",
+      "logo": "clients/ernst-and-young-team-building.jpg",
+      "website": "clients/ernst-and-young-mozambique.htm",
+      "order": 182
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 183,
+    "fields": {
+      "name": "eskom",
+      "logo": "clients/eskom-logo.jpg",
+      "website": "clients/eskom.htm",
+      "order": 183
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 184,
+    "fields": {
+      "name": "Esco Group",
+      "logo": "clients/esco-group-team-building-event.jpg",
+      "website": "clients/esco.htm",
+      "order": 184
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 185,
+    "fields": {
+      "name": "ETC Solutions",
+      "logo": "clients/etc-solutions-team-building.jpg",
+      "website": "clients/etc-solutions.htm",
+      "order": 185
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 186,
+    "fields": {
+      "name": "ETV Team Building",
+      "logo": "clients/etv.jpg",
+      "website": "clients/etv.htm",
+      "order": 186
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 187,
+    "fields": {
+      "name": "Eve Graham Marketing Service",
+      "logo": "clients/eve-graham-marketing-service.jpg",
+      "website": "",
+      "order": 187
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 188,
+    "fields": {
+      "name": "Evonik Degussa Afrika",
+      "logo": "clients/evonik-degussa-afrika.jpg",
+      "website": "",
+      "order": 188
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 189,
+    "fields": {
+      "name": "Exxaro",
+      "logo": "clients/exxaro.jpg",
+      "website": "clients/exxaro.htm",
+      "order": 189
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 190,
+    "fields": {
+      "name": "Event Marche Team Building",
+      "logo": "clients/images/event-marche.jpg",
+      "website": "clients/event-marche.htm",
+      "order": 190
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 191,
+    "fields": {
+      "name": "Eversdal Primary School Team Building",
+      "logo": "clients/images/eversdal-primary-school.jpg",
+      "website": "clients/eversdal-primary-school.htm",
+      "order": 191
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 192,
+    "fields": {
+      "name": "expro gulf",
+      "logo": "clients/expro-gulf-3.jpg",
+      "website": "clients/expro-gulf.htm",
+      "order": 192
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 193,
+    "fields": {
+      "name": "Experian",
+      "logo": "clients/experian.jpg",
+      "website": "clients/experian.htm",
+      "order": 193
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 194,
+    "fields": {
+      "name": "Faculty Training Institute Team Building",
+      "logo": "clients/faculty-training-institute.jpg",
+      "website": "events-13/faculty-training-institute.htm",
+      "order": 194
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 195,
+    "fields": {
+      "name": "Falke",
+      "logo": "clients/falke-team-building-event.jpg",
+      "website": "clients/falke.htm",
+      "order": 195
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 196,
+    "fields": {
+      "name": "Fairtrade South African Network Team Building",
+      "logo": "clients/images/fairtrade-south-africa.jpg",
+      "website": "clients/fairtrade-south-african-netowork.htm",
+      "order": 196
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 197,
+    "fields": {
+      "name": "FDP",
+      "logo": "clients/fpd.jpg",
+      "website": "clients/fpd.htm",
+      "order": 197
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 198,
+    "fields": {
+      "name": "Fedhealth Team Building",
+      "logo": "clients/fedhealth.jpg",
+      "website": "clients/fedhealth.htm",
+      "order": 198
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 199,
+    "fields": {
+      "name": "FFG Risk Solutions Team Building",
+      "logo": "clients/images/ffg-risk-solutions.jpg",
+      "website": "clients/ffg-risk-solutions.htm",
+      "order": 199
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 200,
+    "fields": {
+      "name": "FHI360 Team Building",
+      "logo": "clients/images/fhi360.jpg",
+      "website": "clients/fhi360.htm",
+      "order": 200
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 201,
+    "fields": {
+      "name": "fin-q team building actvity",
+      "logo": "clients/finq.jpg",
+      "website": "",
+      "order": 201
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 202,
+    "fields": {
+      "name": "supercare",
+      "logo": "clients/supercare.jpg",
+      "website": "",
+      "order": 202
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 203,
+    "fields": {
+      "name": "Fitch Solutions Team Building",
+      "logo": "clients/images/fitch-solutions.jpg",
+      "website": "clients/fitch-solutions.htm",
+      "order": 203
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 204,
+    "fields": {
+      "name": "Firespec Systems",
+      "logo": "clients/firespec-systems-team-building.jpg",
+      "website": "",
+      "order": 204
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 205,
+    "fields": {
+      "name": "First Rand",
+      "logo": "clients/first-rand.jpg",
+      "website": "",
+      "order": 205
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 206,
+    "fields": {
+      "name": "Fix Auto Team Building",
+      "logo": "clients/images/fix-auto.jpg",
+      "website": "clients/fix-auto.htm",
+      "order": 206
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 207,
+    "fields": {
+      "name": "FNB",
+      "logo": "clients/fnb.jpg",
+      "website": "clients/first-national-bank.htm",
+      "order": 207
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 208,
+    "fields": {
+      "name": "FM Solutions Team Building",
+      "logo": "clients/images/fm-solutions.jpg",
+      "website": "clients/fm-solutions.htm",
+      "order": 208
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 209,
+    "fields": {
+      "name": "Foschini Team Building",
+      "logo": "clients/foschini.jpg",
+      "website": "clients/foschini-group.htm",
+      "order": 209
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 210,
+    "fields": {
+      "name": "Free State Cricket Union Team Building",
+      "logo": "clients/images/free-state-cricket-union.jpg",
+      "website": "clients/future-packaging.htm",
+      "order": 210
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 211,
+    "fields": {
+      "name": "Free State Legislature Team Building",
+      "logo": "clients/free-state-legislature-team-building.jpg",
+      "website": "clients/future-packaging.htm",
+      "order": 211
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 212,
+    "fields": {
+      "name": "Future Packaging Team Building",
+      "logo": "clients/future-packaging.jpg",
+      "website": "clients/future-packaging.htm",
+      "order": 212
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 213,
+    "fields": {
+      "name": "GeoSense Team Building",
+      "logo": "clients/geosense.jpg",
+      "website": "clients/geosense.htm",
+      "order": 213
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 214,
+    "fields": {
+      "name": "GE South Africa",
+      "logo": "clients/ge-south-africa.jpg",
+      "website": "",
+      "order": 214
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 215,
+    "fields": {
+      "name": "GEMS",
+      "logo": "clients/gems-team-building-event.jpg",
+      "website": "clients/gems.htm",
+      "order": 215
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 216,
+    "fields": {
+      "name": "Generator and Plant Hire  Team Building",
+      "logo": "clients/images/generator-and-plant-hire.jpg",
+      "website": "clients/generator-and-plant-hire.htm",
+      "order": 216
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 217,
+    "fields": {
+      "name": "Gibb Team Building",
+      "logo": "clients/gibb.jpg",
+      "website": "clients/gibb.htm",
+      "order": 217
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 218,
+    "fields": {
+      "name": "Gibela Rail Transport Consortium Team Building",
+      "logo": "clients/images/gibela.png",
+      "website": "clients/gibela-rail-transport-consortium.htm",
+      "order": 218
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 219,
+    "fields": {
+      "name": "Gijima",
+      "logo": "clients/gijima.jpg",
+      "website": "",
+      "order": 219
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 220,
+    "fields": {
+      "name": "Glacier Team Building",
+      "logo": "clients/glacier.jpg",
+      "website": "clients/glacier-financial-solutions.htm",
+      "order": 220
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 221,
+    "fields": {
+      "name": "Glen21 Entertainment",
+      "logo": "clients/images/glen21-entertainment.jpg",
+      "website": "clients/glen21-entertainment.htm",
+      "order": 221
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 222,
+    "fields": {
+      "name": "Glenburn Lodge",
+      "logo": "clients/glenburn-lodge-team-building.jpg",
+      "website": "clients/glenburn-lodge.htm",
+      "order": 222
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 223,
+    "fields": {
+      "name": "golden vision optometrist",
+      "logo": "clients/goldenvision-logo.jpg",
+      "website": "",
+      "order": 223
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 224,
+    "fields": {
+      "name": "Good Hope Studies Team Building",
+      "logo": "clients/images/good-hope-studies.jpg",
+      "website": "clients/good-hope-studies.htm",
+      "order": 224
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 225,
+    "fields": {
+      "name": "Grandslots Team Building",
+      "logo": "clients/images/grandslots.jpg",
+      "website": "clients/grandslots.htm",
+      "order": 225
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 226,
+    "fields": {
+      "name": "Graylink Team Building",
+      "logo": "clients/graylink.jpg",
+      "website": "clients/graylink.htm",
+      "order": 226
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 227,
+    "fields": {
+      "name": "Gradidge-Mahura Investments Team Building",
+      "logo": "clients/images/gradidge-mahura-investments.jpg",
+      "website": "clients/gradidge-mahura-investments.htm",
+      "order": 227
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 228,
+    "fields": {
+      "name": "Grandmark International Team Building Event Pretoria",
+      "logo": "clients/grandmark-team-building-event.jpg",
+      "website": "",
+      "order": 228
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 229,
+    "fields": {
+      "name": "GS College",
+      "logo": "clients/gs-college-team-building.jpg",
+      "website": "",
+      "order": 229
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 230,
+    "fields": {
+      "name": "Guardrisk Team Building",
+      "logo": "clients/images/guardrisk.jpg",
+      "website": "clients/guardrisk.htm",
+      "order": 230
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 231,
+    "fields": {
+      "name": "Heineken Team Building",
+      "logo": "clients/images/heineken.jpg",
+      "website": "clients/heineken.htm",
+      "order": 231
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 232,
+    "fields": {
+      "name": "Helpmekaar Kollege Team Building",
+      "logo": "clients/images/helpmekaar-kollege.jpg",
+      "website": "clients/helpmekaar-kollege.htm",
+      "order": 232
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 233,
+    "fields": {
+      "name": "Henkel Team Building",
+      "logo": "clients/images/henkel.jpg",
+      "website": "clients/henkel.htm",
+      "order": 233
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 234,
+    "fields": {
+      "name": "Hertex Team Building",
+      "logo": "clients/images/hertex.jpg",
+      "website": "clients/hertex.htm",
+      "order": 234
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 235,
+    "fields": {
+      "name": "HPCSA",
+      "logo": "clients/hpcsa-team-building-event.jpg",
+      "website": "clients/hpcsa.htm",
+      "order": 235
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 236,
+    "fields": {
+      "name": "Huawei Technologies",
+      "logo": "clients/huawei-technologies.jpg",
+      "website": "",
+      "order": 236
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 237,
+    "fields": {
+      "name": "Hyundai Automotive SA Team Building",
+      "logo": "clients/images/hyundai.jpg",
+      "website": "clients/hyundai-automotive-sa.htm",
+      "order": 237
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 238,
+    "fields": {
+      "name": "ICASA",
+      "logo": "clients/icasa-team-building-event.jpg",
+      "website": "clients/icasa.htm",
+      "order": 238
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 239,
+    "fields": {
+      "name": "icas",
+      "logo": "clients/icas.jpg",
+      "website": "",
+      "order": 239
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 240,
+    "fields": {
+      "name": "Idexx Laboratories Team Building",
+      "logo": "clients/images/idexx-laboratories.jpg",
+      "website": "clients/idexx-laboratories.htm",
+      "order": 240
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 241,
+    "fields": {
+      "name": "Iemas Financial Services",
+      "logo": "clients/iemas-financial-services.jpg",
+      "website": "clients/iemas-financial-services.htm",
+      "order": 241
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 242,
+    "fields": {
+      "name": "IFC Team Building",
+      "logo": "clients/images/ifc.jpg",
+      "website": "clients/ifc.htm",
+      "order": 242
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 243,
+    "fields": {
+      "name": "IHS Investments Team Building",
+      "logo": "clients/images/ihs-investments.jpg",
+      "website": "clients/ihs-investments.htm",
+      "order": 243
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 244,
+    "fields": {
+      "name": "Imbumba Aganang Facilities Management Team Building",
+      "logo": "clients/images/imbumba-aganang.jpg",
+      "website": "clients/imbuma-aganang-facilities-management.htm",
+      "order": 244
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 245,
+    "fields": {
+      "name": "Imperial Logistics",
+      "logo": "clients/imperial-logistics-team-building-event.jpg",
+      "website": "clients/imperial-managed-logistics.htm",
+      "order": 245
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 246,
+    "fields": {
+      "name": "Incredible Solutions",
+      "logo": "clients/incredible-solutions-team-building.jpg",
+      "website": "clients/incredible-solutions.htm",
+      "order": 246
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 247,
+    "fields": {
+      "name": "Indawo Cape Team Building",
+      "logo": "clients/images/indawo-cape.jpg",
+      "website": "clients/indawo-cape.htm",
+      "order": 247
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 248,
+    "fields": {
+      "name": "Ingenuit",
+      "logo": "clients/ingenuit.jpg",
+      "website": "",
+      "order": 248
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 249,
+    "fields": {
+      "name": "Internet Solutions Team Building",
+      "logo": "clients/images/internet-solutions.jpg",
+      "website": "clients/internet-solutions.htm",
+      "order": 249
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 250,
+    "fields": {
+      "name": "Investec Team Building",
+      "logo": "clients/investec.jpg",
+      "website": "clients/investec.htm",
+      "order": 250
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 251,
+    "fields": {
+      "name": "Inovo Telecoms Team Building",
+      "logo": "clients/images/inovo-telecoms.jpg",
+      "website": "clients/inovo.htm",
+      "order": 251
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 252,
+    "fields": {
+      "name": "IQ Business",
+      "logo": "clients/images/iq-business.jpg",
+      "website": "clients/iq-business.htm",
+      "order": 252
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 253,
+    "fields": {
+      "name": "Itec",
+      "logo": "clients/itec.jpg",
+      "website": "clients/itec.htm",
+      "order": 253
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 254,
+    "fields": {
+      "name": "IT Productions",
+      "logo": "clients/it-productions.jpg",
+      "website": "",
+      "order": 254
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 255,
+    "fields": {
+      "name": "Ingram Micro",
+      "logo": "clients/ingram-micro-team-building.jpg",
+      "website": "",
+      "order": 255
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 256,
+    "fields": {
+      "name": "JB Marks Education Trust Fund",
+      "logo": "clients/jbmarks-education-team-building-event.jpg",
+      "website": "",
+      "order": 256
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 257,
+    "fields": {
+      "name": "Jemstep By Invesco Team Building",
+      "logo": "clients/images/jemstep-by-invesco.jpg",
+      "website": "clients/jhi-properties.htm",
+      "order": 257
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 258,
+    "fields": {
+      "name": "JHI Properties Corporate Fun Day",
+      "logo": "clients/jhi-properties-team-building-event.jpg",
+      "website": "clients/jhi-properties.htm",
+      "order": 258
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 259,
+    "fields": {
+      "name": "johnson controls",
+      "logo": "clients/johnson-logo.jpg",
+      "website": "",
+      "order": 259
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 260,
+    "fields": {
+      "name": "Jotun Paints SA",
+      "logo": "clients/jotun-paints-sa.jpg",
+      "website": "clients/jotun-paints.htm",
+      "order": 260
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 261,
+    "fields": {
+      "name": "Jozua Naude Primary School Team Building",
+      "logo": "clients/jozua-naude.jpg",
+      "website": "clients/jozua-naude-primary-school.htm",
+      "order": 261
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 262,
+    "fields": {
+      "name": "JSE Team Building",
+      "logo": "clients/images/jse.jpg",
+      "website": "clients/jse.htm",
+      "order": 262
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 263,
+    "fields": {
+      "name": "JTI",
+      "logo": "clients/jti-team-building-event.jpg",
+      "website": "",
+      "order": 263
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 264,
+    "fields": {
+      "name": "Juta and Company",
+      "logo": "clients/juta-team-building-event.jpg",
+      "website": "clients/juta.htm",
+      "order": 264
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 265,
+    "fields": {
+      "name": "Kagiso Trust Investments",
+      "logo": "clients/kagiso-trust.jpg",
+      "website": "",
+      "order": 265
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 266,
+    "fields": {
+      "name": "kelly group",
+      "logo": "clients/kelly.jpg",
+      "website": "",
+      "order": 266
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 267,
+    "fields": {
+      "name": "Kellogs",
+      "logo": "clients/kellogs.jpg",
+      "website": "",
+      "order": 267
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 268,
+    "fields": {
+      "name": "Keyrus Team Building",
+      "logo": "clients/images/keyrus.jpg",
+      "website": "clients/keyrus.htm",
+      "order": 268
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 269,
+    "fields": {
+      "name": "Kimberly Clark Team Building",
+      "logo": "clients/images/kimberly-clark.jpg",
+      "website": "clients/kimberly-clark.htm",
+      "order": 269
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 270,
+    "fields": {
+      "name": "Klein Karoo Seed Marketing",
+      "logo": "clients/klein-karoo.jpg",
+      "website": "",
+      "order": 270
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 271,
+    "fields": {
+      "name": "Khoisan Gourmet",
+      "logo": "clients/images/khoisan-gourmet.jpg",
+      "website": "clients/khoisan-gourmet.htm",
+      "order": 271
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 272,
+    "fields": {
+      "name": "Korbicom",
+      "logo": "clients/images/korbicom.jpg",
+      "website": "clients/korbicom.htm",
+      "order": 272
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 273,
+    "fields": {
+      "name": "KPMG",
+      "logo": "clients/kpmg.jpg",
+      "website": "clients/kpmg.htm",
+      "order": 273
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 274,
+    "fields": {
+      "name": "Kuhene and Nagel",
+      "logo": "clients/kuehne-and-nagel-team-building.jpg",
+      "website": "clients/kuehne-and-nagel.htm",
+      "order": 274
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 275,
+    "fields": {
+      "name": "Kuhle Solutions Team Building",
+      "logo": "clients/images/kuhle-solutions.jpg",
+      "website": "clients/kuhle-solutions.htm",
+      "order": 275
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 276,
+    "fields": {
+      "name": "La Dolce Vita Guest House Team Building",
+      "logo": "clients/la-dolce-vita.jpg",
+      "website": "clients/la-dolce-vita-guest-house.htm",
+      "order": 276
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 277,
+    "fields": {
+      "name": "Lancewood Team Building",
+      "logo": "clients/images/lancewood.jpg",
+      "website": "clients/lancewood.htm",
+      "order": 277
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 278,
+    "fields": {
+      "name": "ledwaba mazwai",
+      "logo": "clients/ledwaba.jpg",
+      "website": "",
+      "order": 278
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 279,
+    "fields": {
+      "name": "LexisNexis Team Building",
+      "logo": "clients/images/lexis-nexis.jpg",
+      "website": "clients/lexisnexis.htm",
+      "order": 279
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 280,
+    "fields": {
+      "name": "LEDA Team Building",
+      "logo": "clients/images/leda.jpg",
+      "website": "clients/lion-roars.htm",
+      "order": 280
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 281,
+    "fields": {
+      "name": "Liberty Life",
+      "logo": "clients/liberty-life.jpg",
+      "website": "clients/liberty-life.htm",
+      "order": 281
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 282,
+    "fields": {
+      "name": "Lion Roars Team Building",
+      "logo": "clients/images/lion-roars.jpg",
+      "website": "clients/lion-roars.htm",
+      "order": 282
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 283,
+    "fields": {
+      "name": "Life Line Team Building",
+      "logo": "clients/images/life-line.jpg",
+      "website": "clients/life-line.htm",
+      "order": 283
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 284,
+    "fields": {
+      "name": "Ligno Tech SA Team Building",
+      "logo": "clients/images/ligno-tech-sa.jpg",
+      "website": "clients/ligno-teach-sa.htm",
+      "order": 284
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 285,
+    "fields": {
+      "name": "Lightstone Property Team Building",
+      "logo": "clients/images/lightstone-property.jpg",
+      "website": "clients/lightstone-property.htm",
+      "order": 285
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 286,
+    "fields": {
+      "name": "Lincoln Lubrication Team Building",
+      "logo": "clients/images/lincoln-lubrication.jpg",
+      "website": "clients/lincoln-lubrication.htm",
+      "order": 286
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 287,
+    "fields": {
+      "name": "Lonmin Group",
+      "logo": "clients/lonmin-group-team-building.jpg",
+      "website": "",
+      "order": 287
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 288,
+    "fields": {
+      "name": "L'Oreal",
+      "logo": "clients/Loreal Team Building Event.jpg",
+      "website": "",
+      "order": 288
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 289,
+    "fields": {
+      "name": "Lufthansa",
+      "logo": "clients/lufthansa.jpg",
+      "website": "clients/lufthansa.htm",
+      "order": 289
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 290,
+    "fields": {
+      "name": "Lumacon",
+      "logo": "clients/images/lumacon.jpg",
+      "website": "clients/lumacon-air-conditioning.htm",
+      "order": 290
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 291,
+    "fields": {
+      "name": "M2TD Consulting Team Building",
+      "logo": "clients/images/m2td-consulting.jpg",
+      "website": "clients/m2td.htm",
+      "order": 291
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 292,
+    "fields": {
+      "name": "Malcolm Lyons and Brivik Team Building",
+      "logo": "clients/images/malcolm-lyons-brivik.jpg",
+      "website": "clients/malcolm-lyons-brivik.htm",
+      "order": 292
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 293,
+    "fields": {
+      "name": "Marsh Africa",
+      "logo": "clients/marsh-team-building-event.jpg",
+      "website": "clients/marsh.htm",
+      "order": 293
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 294,
+    "fields": {
+      "name": "Marite Property Adminisatrators Team Building",
+      "logo": "clients/images/marite.jpg",
+      "website": "clients/marite-property-administrators.htm",
+      "order": 294
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 295,
+    "fields": {
+      "name": "Matthew Goniwe School of Leadership and Governance",
+      "logo": "clients/matthew-goniwe-school.jpg",
+      "website": "clients/matthew-goniwe-school.htm",
+      "order": 295
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 296,
+    "fields": {
+      "name": "Massmart Team Building",
+      "logo": "clients/images/massmart.jpg",
+      "website": "clients/massmart.htm",
+      "order": 296
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 297,
+    "fields": {
+      "name": "Master Builders Team Building",
+      "logo": "clients/images/master-builders.jpg",
+      "website": "clients/master-builders.htm",
+      "order": 297
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 298,
+    "fields": {
+      "name": "MBA North Team Building",
+      "logo": "clients/mba-north.jpg",
+      "website": "clients/mba.htm",
+      "order": 298
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 299,
+    "fields": {
+      "name": "McKinsey and Company Team Building",
+      "logo": "clients/images/mckinsey-and-company.jpg",
+      "website": "clients/mckinsey-and-company.htm",
+      "order": 299
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 300,
+    "fields": {
+      "name": "Medscheme",
+      "logo": "clients/medscheme.jpg",
+      "website": "clients/medscheme.htm",
+      "order": 300
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 301,
+    "fields": {
+      "name": "Metropolitan",
+      "logo": "clients/metropolitan.jpg",
+      "website": "clients/metropolitan.htm",
+      "order": 301
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 302,
+    "fields": {
+      "name": "Mérieux NutriSciences Team Building",
+      "logo": "clients/images/merieux-nutrisciences.jpg",
+      "website": "clients/merieux-nutrisciences.htm",
+      "order": 302
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 303,
+    "fields": {
+      "name": "Mercantile Bank Team Building",
+      "logo": "clients/images/mercantile-bank.jpg",
+      "website": "clients/mercantile-bank.htm",
+      "order": 303
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 304,
+    "fields": {
+      "name": "medi-clinic",
+      "logo": "clients/mediclinic-logo.jpg",
+      "website": "",
+      "order": 304
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 305,
+    "fields": {
+      "name": "Merchant Commercial Finance Team Building",
+      "logo": "clients/images/merchant.jpg",
+      "website": "events-16/merchant-commercial-finance-minute-to-win-it-team-building-cape-town.htm",
+      "order": 305
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 306,
+    "fields": {
+      "name": "Metso",
+      "logo": "clients/metso-team-building-event.jpg",
+      "website": "clients/metso.htm",
+      "order": 306
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 307,
+    "fields": {
+      "name": "Methodist Homes Team Building",
+      "logo": "clients/images/methodist-homes.jpg",
+      "website": "clients/methodist-homes.htm",
+      "order": 307
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 308,
+    "fields": {
+      "name": "mintek teambuild",
+      "logo": "clients/mintek-logo.jpg",
+      "website": "",
+      "order": 308
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 309,
+    "fields": {
+      "name": "mitek",
+      "logo": "clients/mitek.jpg",
+      "website": "",
+      "order": 309
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 310,
+    "fields": {
+      "name": "MIBCO",
+      "logo": "clients/mibco.jpg",
+      "website": "",
+      "order": 310
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 311,
+    "fields": {
+      "name": "Microsoft SA Team Building",
+      "logo": "clients/images/microsoft-sa.jpg",
+      "website": "clients/microsoft-sa.htm",
+      "order": 311
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 312,
+    "fields": {
+      "name": "Mineworkers Provident Fund",
+      "logo": "clients/mineworkers-provident-fund.jpg",
+      "website": "",
+      "order": 312
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 313,
+    "fields": {
+      "name": "MMI Holdings",
+      "logo": "clients/mmi-holdings-team-building.jpg",
+      "website": "clients/mmi-holdings.htm",
+      "order": 313
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 314,
+    "fields": {
+      "name": "MMD Mineral Sizing Africa Team Building",
+      "logo": "clients/images/mmd.jpg",
+      "website": "clients/mmd.htm",
+      "order": 314
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 315,
+    "fields": {
+      "name": "MMK Engineers and Project Managers Team Building",
+      "logo": "clients/images/mmk-engineers-and-project-managers.jpg",
+      "website": "clients/mmk-engineers-and-project-managers.htm",
+      "order": 315
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 316,
+    "fields": {
+      "name": "M-Net",
+      "logo": "clients/mnet-team-building-event.jpg",
+      "website": "clients/mnet.htm",
+      "order": 316
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 317,
+    "fields": {
+      "name": "momentum teambuilding",
+      "logo": "clients/momentum.jpg",
+      "website": "clients/momentum.htm",
+      "order": 317
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 318,
+    "fields": {
+      "name": "Moro Group",
+      "logo": "clients/moro-group-team-building.jpg",
+      "website": "clients/moro-group.htm",
+      "order": 318
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 319,
+    "fields": {
+      "name": "Morula Sun Team Building",
+      "logo": "clients/morula-sun.jpg",
+      "website": "clients/morula-sun.htm",
+      "order": 319
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 320,
+    "fields": {
+      "name": "Mr Price JHB",
+      "logo": "clients/mr-price-jhb.jpg",
+      "website": "",
+      "order": 320
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 321,
+    "fields": {
+      "name": "MTN",
+      "logo": "clients/mtn-team-building-event.jpg",
+      "website": "clients/mtn.htm",
+      "order": 321
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 322,
+    "fields": {
+      "name": "Multichoice Support Hitting The Target",
+      "logo": "clients/multichoice-team-building-event.jpg",
+      "website": "clients/multichoice.htm",
+      "order": 322
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 323,
+    "fields": {
+      "name": "Murray and Roberts Team Building",
+      "logo": "clients/images/murray-and-roberts.jpg",
+      "website": "clients/murray-and-roberts.htm",
+      "order": 323
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 324,
+    "fields": {
+      "name": "Muteo Consulting Team Building",
+      "logo": "clients/images/muteo-consulting.jpg",
+      "website": "clients/muteo-consulting.htm",
+      "order": 324
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 325,
+    "fields": {
+      "name": "MFC Team Building",
+      "logo": "clients/mfc.jpg",
+      "website": "clients/mfc.htm",
+      "order": 325
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 326,
+    "fields": {
+      "name": "Morebo Team Building",
+      "logo": "clients/images/morebo-wealth.jpg",
+      "website": "clients/morebo-wealth.htm",
+      "order": 326
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 327,
+    "fields": {
+      "name": "Nandos Team Building",
+      "logo": "clients/nandos.jpg",
+      "website": "clients/nandos.htm",
+      "order": 327
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 328,
+    "fields": {
+      "name": "National Nuclear Regulator Team Building",
+      "logo": "clients/nnr-logo.jpg",
+      "website": "clients/national-nuclear-regulator.htm",
+      "order": 328
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 329,
+    "fields": {
+      "name": "Nashua East Rand",
+      "logo": "clients/nashua-east-rand.jpg",
+      "website": "",
+      "order": 329
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 330,
+    "fields": {
+      "name": "National Brands Team Building",
+      "logo": "clients/images/national-brands.jpg",
+      "website": "clients/national-brands.htm",
+      "order": 330
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 331,
+    "fields": {
+      "name": "NDEA Team Building",
+      "logo": "clients/national-department-of-environmental-affairs.jpg",
+      "website": "clients/ndea.htm",
+      "order": 331
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 332,
+    "fields": {
+      "name": "NBCRFLI Team Building",
+      "logo": "clients/images/nbcrfli.jpg",
+      "website": "clients/nbcrfi.htm",
+      "order": 332
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 333,
+    "fields": {
+      "name": "Nclose Team Building",
+      "logo": "clients/images/nclose.jpg",
+      "website": "clients/nclose.htm",
+      "order": 333
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 334,
+    "fields": {
+      "name": "Nestle Movie Making",
+      "logo": "clients/nestle-movie-making-event.jpg",
+      "website": "clients/nestle.htm",
+      "order": 334
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 335,
+    "fields": {
+      "name": "Neotel Hitting The Target",
+      "logo": "clients/neotel-hitting-the-target.jpg",
+      "website": "clients/neotel.htm",
+      "order": 335
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 336,
+    "fields": {
+      "name": "nedbank",
+      "logo": "clients/nedbank.jpg",
+      "website": "clients/nedbank.htm",
+      "order": 336
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 337,
+    "fields": {
+      "name": "Netcare",
+      "logo": "clients/netcare-1.jpg",
+      "website": "clients/netcare.htm",
+      "order": 337
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 338,
+    "fields": {
+      "name": "New Media Publishing Team Building",
+      "logo": "clients/new-media-publishing.jpg",
+      "website": "clients/new-media-publishing.htm",
+      "order": 338
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 339,
+    "fields": {
+      "name": "NGK Ceramics",
+      "logo": "clients/ngk-ceramics-team-building-event.jpg",
+      "website": "clients/ngk.htm",
+      "order": 339
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 340,
+    "fields": {
+      "name": "NHBRC Team Building",
+      "logo": "clients/nhbrc.jpg",
+      "website": "clients/nhbrc.htm",
+      "order": 340
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 341,
+    "fields": {
+      "name": "Nissan Team Building",
+      "logo": "clients/images/nissan.jpg",
+      "website": "clients/nissan.htm",
+      "order": 341
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 342,
+    "fields": {
+      "name": "Nonna Lina Restaurant",
+      "logo": "clients/images/nonna-lina-restaurant.jpg",
+      "website": "clients/nonna-lina-restaurant.htm",
+      "order": 342
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 343,
+    "fields": {
+      "name": "Novozymes",
+      "logo": "clients/Novozymes Team Building Event.jpg",
+      "website": "",
+      "order": 343
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 344,
+    "fields": {
+      "name": "North West University",
+      "logo": "clients/north-west-university-team-building-event.jpg",
+      "website": "clients/north-west-university.htm",
+      "order": 344
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 345,
+    "fields": {
+      "name": "Novartis Team Building",
+      "logo": "clients/images/novartis.jpg",
+      "website": "clients/novartis.htm",
+      "order": 345
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 346,
+    "fields": {
+      "name": "NPI Governance Consulting",
+      "logo": "clients/npi-governance-consulting.jpg",
+      "website": "clients/npi-governance-consulting.htm",
+      "order": 346
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 347,
+    "fields": {
+      "name": "NuAfrica Duty Free Shops Team Building",
+      "logo": "clients/images/nuafrica-duty-free-shops.jpg",
+      "website": "clients/nuafrica-duty-free-shops.htm",
+      "order": 347
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 348,
+    "fields": {
+      "name": "NUFAWSA",
+      "logo": "clients/nufawsa-team-building-event.jpg",
+      "website": "events-13/nufawsa-team-building-event.htm",
+      "order": 348
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 349,
+    "fields": {
+      "name": "Numeric Team Building",
+      "logo": "clients/images/numeric.jpg",
+      "website": "clients/numeric.htm",
+      "order": 349
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 350,
+    "fields": {
+      "name": "Nurcha",
+      "logo": "clients/nurcha.jpg",
+      "website": "clients/nurcha.htm",
+      "order": 350
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 351,
+    "fields": {
+      "name": "Nexus",
+      "logo": "clients/nexus-team-building.jpg",
+      "website": "",
+      "order": 351
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 352,
+    "fields": {
+      "name": "National Health Labaratory Service",
+      "logo": "clients/national-health-laboratory-service.jpg",
+      "website": "",
+      "order": 352
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 353,
+    "fields": {
+      "name": "Obelisk Energy Measurement Services Team Building",
+      "logo": "clients/images/obelisk.jpg",
+      "website": "clients/obelisk-energy-measurement-services.htm",
+      "order": 353
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 354,
+    "fields": {
+      "name": "old mutual",
+      "logo": "clients/old-mutual.jpg",
+      "website": "clients/old-mutual.htm",
+      "order": 354
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 355,
+    "fields": {
+      "name": "Omnia Team Building",
+      "logo": "clients/images/omnia.jpg",
+      "website": "clients/omnia.htm",
+      "order": 355
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 356,
+    "fields": {
+      "name": "Omnisurge Team Building",
+      "logo": "clients/images/omnisurge.jpg",
+      "website": "clients/omnisurge.htm",
+      "order": 356
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 357,
+    "fields": {
+      "name": "Onecell Community Phones",
+      "logo": "clients/onecell-community-phones.jpg",
+      "website": "",
+      "order": 357
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 358,
+    "fields": {
+      "name": "On The Dot Logistics",
+      "logo": "clients/on-the-dot-logistics.jpg",
+      "website": "clients/on-the-dot.htm",
+      "order": 358
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 359,
+    "fields": {
+      "name": "One Insurance Team Building",
+      "logo": "clients/images/one-insurance.jpg",
+      "website": "clients/one-insurance.htm",
+      "order": 359
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 360,
+    "fields": {
+      "name": "Open Learning Group Team Building",
+      "logo": "clients/images/open-learning-group.jpg",
+      "website": "clients/open-learning-group.htm",
+      "order": 360
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 361,
+    "fields": {
+      "name": "Osborne Engineers",
+      "logo": "clients/osborne-engineers.jpg",
+      "website": "",
+      "order": 361
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 362,
+    "fields": {
+      "name": "Ottobock Team Building",
+      "logo": "clients/ottobock.jpg",
+      "website": "clients/ottobock.htm",
+      "order": 362
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 363,
+    "fields": {
+      "name": "outsurance",
+      "logo": "clients/outsurance.jpg",
+      "website": "",
+      "order": 363
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 364,
+    "fields": {
+      "name": "Oxbridge Academy Team Building",
+      "logo": "clients/images/oxbridge-academy.jpg",
+      "website": "clients/oxbridge-academy.htm",
+      "order": 364
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 365,
+    "fields": {
+      "name": "Payprop",
+      "logo": "clients/payprop-team-building-event.jpg",
+      "website": "events-13/payprop-team-building-event.htm",
+      "order": 365
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 366,
+    "fields": {
+      "name": "Parker Leisure Management",
+      "logo": "clients/parker-leisure-management.jpg",
+      "website": "",
+      "order": 366
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 367,
+    "fields": {
+      "name": "Parmalat Team Building",
+      "logo": "clients/parmalat-logo.jpg",
+      "website": "clients/parmalat.htm",
+      "order": 367
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 368,
+    "fields": {
+      "name": "PRASA",
+      "logo": "clients/prasa.jpg",
+      "website": "clients/prasa.htm",
+      "order": 368
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 369,
+    "fields": {
+      "name": "PDIT",
+      "logo": "clients/pdit-team-building-event.jpg",
+      "website": "clients/pdit.htm",
+      "order": 369
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 370,
+    "fields": {
+      "name": "PEC Utility Management",
+      "logo": "clients/images/pec-utility-management.jpg",
+      "website": "clients/pec-utility-management.htm",
+      "order": 370
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 371,
+    "fields": {
+      "name": "Pepkor Team Building",
+      "logo": "clients/pepkor.jpg",
+      "website": "clients/pepkor.htm",
+      "order": 371
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 372,
+    "fields": {
+      "name": "Pernod Ricard",
+      "logo": "clients/pernod-ricard-team-building.jpg",
+      "website": "",
+      "order": 372
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 373,
+    "fields": {
+      "name": "Pepsico Simba",
+      "logo": "clients/pepsico-team-building-event.jpg",
+      "website": "clients/pepsico-simba.htm",
+      "order": 373
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 374,
+    "fields": {
+      "name": "Perdeberg group team building",
+      "logo": "clients/images/perdeberg-group.jpg",
+      "website": "clients/perdeberg-group.htm",
+      "order": 374
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 375,
+    "fields": {
+      "name": "Personal Trust",
+      "logo": "clients/images/personal-trust.jpg",
+      "website": "clients/personal-trust.htm",
+      "order": 375
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 376,
+    "fields": {
+      "name": "Philips",
+      "logo": "clients/images/philips.jpg",
+      "website": "clients/philips.htm",
+      "order": 376
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 377,
+    "fields": {
+      "name": "Phumelela Gaming Team Building",
+      "logo": "clients/phumelelagaming.jpg",
+      "website": "clients/phumelela-gaming.htm",
+      "order": 377
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 378,
+    "fields": {
+      "name": "Pioneer Foods",
+      "logo": "clients/pioneer-foods-team-building-event.jpg",
+      "website": "clients/pioneer-foods.htm",
+      "order": 378
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 379,
+    "fields": {
+      "name": "PKF Team Building",
+      "logo": "clients/images/pkf.jpg",
+      "website": "clients/pkf.htm",
+      "order": 379
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 380,
+    "fields": {
+      "name": "PPD Team Building",
+      "logo": "clients/ppd.jpg",
+      "website": "clients/ppd.htm",
+      "order": 380
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 381,
+    "fields": {
+      "name": "Pragma",
+      "logo": "clients/pragma-team-building-event.jpg",
+      "website": "clients/pragma.htm",
+      "order": 381
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 382,
+    "fields": {
+      "name": "Prodigy Finance Team Building",
+      "logo": "clients/prodigy-finance.jpg",
+      "website": "clients/prodigy-finance.htm",
+      "order": 382
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 383,
+    "fields": {
+      "name": "productivity sa",
+      "logo": "clients/productivitysa.jpg",
+      "website": "",
+      "order": 383
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 384,
+    "fields": {
+      "name": "Primedia Unlimited Team Building",
+      "logo": "clients/images/primedia-unlimited.jpg",
+      "website": "clients/primedia-unlimited.htm",
+      "order": 384
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 385,
+    "fields": {
+      "name": "Team Building Events for Product Genesis",
+      "logo": "clients/images/product-genesis.jpg",
+      "website": "clients/product-genesis.htm",
+      "order": 385
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 386,
+    "fields": {
+      "name": "Professional Providence Fund Team Building",
+      "logo": "clients/professional-providence-society.jpg",
+      "website": "clients/professional-providence-fund.htm",
+      "order": 386
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 387,
+    "fields": {
+      "name": "Provincial Government Western Cape",
+      "logo": "clients/provincial-government-western-cape.jpg",
+      "website": "",
+      "order": 387
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 388,
+    "fields": {
+      "name": "PropX",
+      "logo": "clients/propx.jpg",
+      "website": "",
+      "order": 388
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 389,
+    "fields": {
+      "name": "PSG Team Building",
+      "logo": "clients/images/psg.jpg",
+      "website": "clients/psg.htm",
+      "order": 389
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 390,
+    "fields": {
+      "name": "Public Protector Team Building",
+      "logo": "clients/public-protector.jpg",
+      "website": "clients/public-protector.htm",
+      "order": 390
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 391,
+    "fields": {
+      "name": "Public Service Co-Ordinating Bargaining Service Council",
+      "logo": "clients/images/pscbc.jpg",
+      "website": "clients/public-service-coordinating-bargaining-council.htm",
+      "order": 391
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 392,
+    "fields": {
+      "name": "PWC Team Building",
+      "logo": "clients/pricewaterhousecoopers.jpg",
+      "website": "clients/pwc.htm",
+      "order": 392
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 393,
+    "fields": {
+      "name": "Q-Kon Team Building",
+      "logo": "clients/qkon.jpg",
+      "website": "clients/q-kon.htm",
+      "order": 393
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 394,
+    "fields": {
+      "name": "Quarphix Team Building Eventd",
+      "logo": "clients/quarphix.jpg",
+      "website": "clients/quarphix.htm",
+      "order": 394
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 395,
+    "fields": {
+      "name": "Quintiles",
+      "logo": "clients/quintiles-team-building-event.jpg",
+      "website": "events-13/quintiles-minute-to-win-it.htm",
+      "order": 395
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 396,
+    "fields": {
+      "name": "Ram Couriers Team Building",
+      "logo": "clients/images/ram-couriers.jpg",
+      "website": "clients/ram-couriers.htm",
+      "order": 396
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 397,
+    "fields": {
+      "name": "Rand Merchant Bank Team Building",
+      "logo": "clients/images/rand-merchant-bank.jpg",
+      "website": "clients/rand-merchant-bank.htm",
+      "order": 397
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 398,
+    "fields": {
+      "name": "Rand Refinery",
+      "logo": "clients/rand-refinery.jpg",
+      "website": "",
+      "order": 398
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 399,
+    "fields": {
+      "name": "Rand Mutual Team Building",
+      "logo": "clients/images/rand-mutual.jpg",
+      "website": "clients/rand-mutual.htm",
+      "order": 399
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 400,
+    "fields": {
+      "name": "Rand Water",
+      "logo": "clients/rand-water-team-building-event.jpg",
+      "website": "",
+      "order": 400
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 401,
+    "fields": {
+      "name": "Randeor School Team Building",
+      "logo": "clients/images/randeor-school.jpg",
+      "website": "clients/randeor-school.htm",
+      "order": 401
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 402,
+    "fields": {
+      "name": "Ratanga Junction",
+      "logo": "clients/ratanga-junction.jpg",
+      "website": "",
+      "order": 402
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 403,
+    "fields": {
+      "name": "Rautenbach & van Niekerk Team Building",
+      "logo": "clients/images/rautenbach-van-niekerk.jpg",
+      "website": "clients/rautenbach-van-niekerk.htm",
+      "order": 403
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 404,
+    "fields": {
+      "name": "RCS Cards",
+      "logo": "clients/rcs-cards.jpg",
+      "website": "",
+      "order": 404
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 405,
+    "fields": {
+      "name": "Refinery Stores team Building",
+      "logo": "clients/images/refinery.jpg",
+      "website": "clients/refinery-stores.htm",
+      "order": 405
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 406,
+    "fields": {
+      "name": "Rendeals Four Consulting",
+      "logo": "clients/rendeals-four-consulting-team-building.jpg",
+      "website": "events-13/rendeals-four-consulting-team-building.htm",
+      "order": 406
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 407,
+    "fields": {
+      "name": "Rennies Travel",
+      "logo": "clients/rennies-travel.jpg",
+      "website": "",
+      "order": 407
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 408,
+    "fields": {
+      "name": "RGA Reinsurance",
+      "logo": "clients/rga-team-building-event.jpg",
+      "website": "clients/rga-reinsurance.htm",
+      "order": 408
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 409,
+    "fields": {
+      "name": "Riso Africa Team Building",
+      "logo": "clients/images/riso-africa.jpg",
+      "website": "clients/riso-africa.htm",
+      "order": 409
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 410,
+    "fields": {
+      "name": "Right To Care Team Building",
+      "logo": "clients/images/right-to-care.jpg",
+      "website": "clients/right-to-care.htm",
+      "order": 410
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 411,
+    "fields": {
+      "name": "Rickard Air Diffusion Team Building",
+      "logo": "clients/rickard-air-diffusion.jpg",
+      "website": "clients/rickard-air-diffusion.htm",
+      "order": 411
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 412,
+    "fields": {
+      "name": "Roadlab",
+      "logo": "clients/roadlab.jpg",
+      "website": "",
+      "order": 412
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 413,
+    "fields": {
+      "name": "Roche Team Building",
+      "logo": "clients/images/roche.jpg",
+      "website": "clients/roche.htm",
+      "order": 413
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 414,
+    "fields": {
+      "name": "Romor Electrical Team Building",
+      "logo": "clients/images/romor-electrical.jpg",
+      "website": "clients/romor-electrical.htm",
+      "order": 414
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 415,
+    "fields": {
+      "name": "Roytec Global Team Building",
+      "logo": "clients/images/roytec-global.jpg",
+      "website": "clients/roytec-global.htm",
+      "order": 415
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 416,
+    "fields": {
+      "name": "Royal Square Trading",
+      "logo": "clients/images/royal-square-trading.jpg",
+      "website": "clients/royal-square-trading.htm",
+      "order": 416
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 417,
+    "fields": {
+      "name": "Royal Netherlands Embassy Team Building",
+      "logo": "clients/images/royal-netherlands-embassy.jpg",
+      "website": "clients/royal-netherlands-embassy.htm",
+      "order": 417
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 418,
+    "fields": {
+      "name": "Rubric Consulting Team Building",
+      "logo": "clients/images/rubric-consulting.jpg",
+      "website": "clients/rubic-consulting.htm",
+      "order": 418
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 419,
+    "fields": {
+      "name": "Remgro",
+      "logo": "clients/remgro-team-building-event.jpg",
+      "website": "",
+      "order": 419
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 420,
+    "fields": {
+      "name": "SAAB Grintek Team Building",
+      "logo": "clients/images/saab-grintek.jpg",
+      "website": "clients/saab-grintek.htm",
+      "order": 420
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 421,
+    "fields": {
+      "name": "SA Natural Products",
+      "logo": "clients/sa-natural-products-team-building.jpg",
+      "website": "clients/sa-natural-products.htm",
+      "order": 421
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 422,
+    "fields": {
+      "name": "SAB Miller",
+      "logo": "clients/sab-miller-team-building-event.jpg",
+      "website": "clients/sab.htm",
+      "order": 422
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 423,
+    "fields": {
+      "name": "SA Reserve Bank",
+      "logo": "clients/sa-reserve-bank.jpg",
+      "website": "clients/south-african-reserve-bank.htm",
+      "order": 423
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 424,
+    "fields": {
+      "name": "Samancor Ferrometals Team Building",
+      "logo": "clients/samancor.jpg",
+      "website": "clients/samancor-ferro-metals.htm",
+      "order": 424
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 425,
+    "fields": {
+      "name": "SAMWUMED Team Building",
+      "logo": "clients/samwumed.jpg",
+      "website": "clients/samwumed.htm",
+      "order": 425
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 426,
+    "fields": {
+      "name": "south african national blood service",
+      "logo": "clients/south-african-national-blood-service.jpg",
+      "website": "",
+      "order": 426
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 427,
+    "fields": {
+      "name": "SA National Roads Agency",
+      "logo": "clients/sa-national-roads-agency.jpg",
+      "website": "",
+      "order": 427
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 428,
+    "fields": {
+      "name": "SA State Theatre",
+      "logo": "clients/statetheatre.jpg",
+      "website": "",
+      "order": 428
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 429,
+    "fields": {
+      "name": "sabn team building exercize",
+      "logo": "clients/sabn.jpg",
+      "website": "",
+      "order": 429
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 430,
+    "fields": {
+      "name": "SACNASP Team Building",
+      "logo": "clients/images/sacnasp.jpg",
+      "website": "clients/sacnasp.htm",
+      "order": 430
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 431,
+    "fields": {
+      "name": "south african actuaries development programme",
+      "logo": "clients/sa-actuaries-development-programme.jpg",
+      "website": "",
+      "order": 431
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 432,
+    "fields": {
+      "name": "SAB",
+      "logo": "clients/sab.jpg",
+      "website": "",
+      "order": 432
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 433,
+    "fields": {
+      "name": "Sabinet Team Building",
+      "logo": "clients/images/sabinet.jpg",
+      "website": "clients/sabinet.htm",
+      "order": 433
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 434,
+    "fields": {
+      "name": "Sefako Makgatho Health Sciences University Team Building",
+      "logo": "clients/images/sefako-makgatho-health-sciences-university.jpg",
+      "website": "clients/sefako-makgatho-health-sciences-university.htm",
+      "order": 434
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 435,
+    "fields": {
+      "name": "SAS Institute SA",
+      "logo": "clients/sas.jpg",
+      "website": "",
+      "order": 435
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 436,
+    "fields": {
+      "name": "safspec international services",
+      "logo": "clients/safspec.jpg",
+      "website": "",
+      "order": 436
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 437,
+    "fields": {
+      "name": "Saint-Goban",
+      "logo": "clients/images/saint-gobain.jpg",
+      "website": "clients/saint-gobain.htm",
+      "order": 437
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 438,
+    "fields": {
+      "name": "SANBS Team Building",
+      "logo": "clients/images/sanbs.jpg",
+      "website": "clients/sanbs.htm",
+      "order": 438
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 439,
+    "fields": {
+      "name": "Sandak Lewin Team Building",
+      "logo": "clients/sandak-lewin.jpg",
+      "website": "clients/sandak-lewin.htm",
+      "order": 439
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 440,
+    "fields": {
+      "name": "Sandvik Mining and Constuction",
+      "logo": "clients/sandvik-mining.jpg",
+      "website": "",
+      "order": 440
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 441,
+    "fields": {
+      "name": "SARS",
+      "logo": "clients/sars.jpg",
+      "website": "clients/sars.htm",
+      "order": 441
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 442,
+    "fields": {
+      "name": "SAPS Team Building",
+      "logo": "clients/saps.jpg",
+      "website": "clients/saps.htm",
+      "order": 442
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 443,
+    "fields": {
+      "name": "santam",
+      "logo": "clients/santam.jpg",
+      "website": "",
+      "order": 443
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 444,
+    "fields": {
+      "name": "SASSA",
+      "logo": "clients/sassa-team-building-event.jpg",
+      "website": "clients/sassa.htm",
+      "order": 444
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 445,
+    "fields": {
+      "name": "SATVI Team Building",
+      "logo": "clients/images/satvi.jpg",
+      "website": "clients/satvi-uct.htm",
+      "order": 445
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 446,
+    "fields": {
+      "name": "Sasol",
+      "logo": "clients/sasol-team-building-event.jpg",
+      "website": "clients/sasol.htm",
+      "order": 446
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 447,
+    "fields": {
+      "name": "SAICA",
+      "logo": "clients/saica-team-building-event.jpg",
+      "website": "clients/saica.htm",
+      "order": 447
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 448,
+    "fields": {
+      "name": "Sonafi Pasteur",
+      "logo": "clients/sonafi-pasteur-team-building.jpg",
+      "website": "",
+      "order": 448
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 449,
+    "fields": {
+      "name": "Sasfin Team Building",
+      "logo": "clients/images/sasfin.jpg",
+      "website": "clients/sasfin.htm",
+      "order": 449
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 450,
+    "fields": {
+      "name": "SATRI Team Building",
+      "logo": "clients/images/satri.jpg",
+      "website": "clients/satri.htm",
+      "order": 450
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 451,
+    "fields": {
+      "name": "sanlam",
+      "logo": "clients/sanlam.jpg",
+      "website": "clients/sanlam.htm",
+      "order": 451
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 452,
+    "fields": {
+      "name": "Scatec Solar Team Building",
+      "logo": "clients/images/sctaec-solar.jpg",
+      "website": "clients/scatec-solar.htm",
+      "order": 452
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 453,
+    "fields": {
+      "name": "Seas of Green Team Building",
+      "logo": "clients/images/seas-of-green.jpg",
+      "website": "clients/seas-of-green.htm",
+      "order": 453
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 454,
+    "fields": {
+      "name": "Sectional Title Solutions Team Building",
+      "logo": "clients/images/sectional-title-solutions.jpg",
+      "website": "clients/sectional-title-solutions.htm",
+      "order": 454
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 455,
+    "fields": {
+      "name": "Seda Platinum Incubator Team Building",
+      "logo": "clients/seda-platinum-incubator.jpg",
+      "website": "events-14/seda-platinum-incubator-team-building.htm",
+      "order": 455
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 456,
+    "fields": {
+      "name": "Sephaku Cement Team Building Eventd",
+      "logo": "clients/images/sephaku-cement.jpg",
+      "website": "clients/sephaku-cement.htm",
+      "order": 456
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 457,
+    "fields": {
+      "name": "sentech",
+      "logo": "clients/sentech.jpg",
+      "website": "clients/sentech.htm",
+      "order": 457
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 458,
+    "fields": {
+      "name": "Setshaba Research Centre",
+      "logo": "clients/sethaba-team-building-event.jpg",
+      "website": "clients/setshaba-reserach-centre.htm",
+      "order": 458
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 459,
+    "fields": {
+      "name": "Selfmed Medical Aid",
+      "logo": "clients/selfmed-medical-aid-team-building.jpg",
+      "website": "clients/selfmed-medical-aid.htm",
+      "order": 459
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 460,
+    "fields": {
+      "name": "sekela",
+      "logo": "clients/sekela.jpg",
+      "website": "",
+      "order": 460
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 461,
+    "fields": {
+      "name": "Sharonlea Primary School",
+      "logo": "clients/sharonlea-primary-school.jpg",
+      "website": "",
+      "order": 461
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 462,
+    "fields": {
+      "name": "shai and mngomezulu attorneys",
+      "logo": "clients/shai-mngomezulu-attorneys.jpg",
+      "website": "",
+      "order": 462
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 463,
+    "fields": {
+      "name": "SimonSays Communications",
+      "logo": "clients/simonsays.jpg",
+      "website": "",
+      "order": 463
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 464,
+    "fields": {
+      "name": "sibize",
+      "logo": "clients/sibize.jpg",
+      "website": "",
+      "order": 464
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 465,
+    "fields": {
+      "name": "siemens",
+      "logo": "clients/siemens.jpg",
+      "website": "",
+      "order": 465
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 466,
+    "fields": {
+      "name": "Signify Software",
+      "logo": "clients/signify-software.jpg",
+      "website": "",
+      "order": 466
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 467,
+    "fields": {
+      "name": "SIQ Pty Ltd",
+      "logo": "clients/siq.jpg",
+      "website": "",
+      "order": 467
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 468,
+    "fields": {
+      "name": "Simba Team Building",
+      "logo": "clients/images/simba.jpg",
+      "website": "clients/simba.htm",
+      "order": 468
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 469,
+    "fields": {
+      "name": "Shell Team Building",
+      "logo": "clients/shell.jpg",
+      "website": "clients/shell.htm",
+      "order": 469
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 470,
+    "fields": {
+      "name": "Silvasale Team Building",
+      "logo": "clients/images/silvasale.jpg",
+      "website": "clients/silvasale.htm",
+      "order": 470
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 471,
+    "fields": {
+      "name": "Sime Darby Hudson Knight Team Building",
+      "logo": "clients/images/sime-darby-hudson-knight.jpg",
+      "website": "clients/sime-darby-hudson-knight.htm",
+      "order": 471
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 472,
+    "fields": {
+      "name": "SORTIT Team Building",
+      "logo": "clients/sortit.jpg",
+      "website": "clients/sortit.htm",
+      "order": 472
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 473,
+    "fields": {
+      "name": "South West Gauteng College Team Building",
+      "logo": "clients/southwestgautengcollege.jpg",
+      "website": "clients/south-west-gauteng-college.htm",
+      "order": 473
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 474,
+    "fields": {
+      "name": "Southgate Mall",
+      "logo": "clients/southgate-mall-team-building.jpg",
+      "website": "",
+      "order": 474
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 475,
+    "fields": {
+      "name": "Softline",
+      "logo": "clients/softline.jpg",
+      "website": "",
+      "order": 475
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 476,
+    "fields": {
+      "name": "Sonke Gender Justice Network Team Building",
+      "logo": "clients/sonke-gender-justice-network.jpg",
+      "website": "clients/sonke-gender-justice-network.htm",
+      "order": 476
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 477,
+    "fields": {
+      "name": "Southern Business School Team Building",
+      "logo": "clients/images/southern-business-school.jpg",
+      "website": "clients/southern-business-school.htm",
+      "order": 477
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 478,
+    "fields": {
+      "name": "Stellenbosch University Team Building",
+      "logo": "clients/images/stellenbosch-university.jpg",
+      "website": "clients/stellenbosch-university.htm",
+      "order": 478
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 479,
+    "fields": {
+      "name": "SterKinekor Theatres",
+      "logo": "clients/sterkinekor-theatres.jpg",
+      "website": "",
+      "order": 479
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 480,
+    "fields": {
+      "name": "standard bank",
+      "logo": "clients/std-bank.jpg",
+      "website": "clients/standard-bank.htm",
+      "order": 480
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 481,
+    "fields": {
+      "name": "Star for Life Team Building",
+      "logo": "clients/images/star-for-life.jpg",
+      "website": "clients/star-for-life.htm",
+      "order": 481
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 482,
+    "fields": {
+      "name": "Stanchion Team Building",
+      "logo": "clients/images/stanchion.jpg",
+      "website": "clients/stanchion.htm",
+      "order": 482
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 483,
+    "fields": {
+      "name": "St Francis Care Centre Team Building",
+      "logo": "clients/images/st-francis-care-centre.jpg",
+      "website": "clients/st-francis-care-centre.htm",
+      "order": 483
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 484,
+    "fields": {
+      "name": "Sure Travel",
+      "logo": "clients/sure-travel.jpg",
+      "website": "",
+      "order": 484
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 485,
+    "fields": {
+      "name": "Sungard Systems",
+      "logo": "clients/sungard-systems-team-building.jpg",
+      "website": "clients/sungard-systems.htm",
+      "order": 485
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 486,
+    "fields": {
+      "name": "Sunshine Bakery Team Building",
+      "logo": "clients/images/sunshine-bakery.jpg",
+      "website": "clients/sunshine-bakery.htm",
+      "order": 486
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 487,
+    "fields": {
+      "name": "Swift Silliker Team Building",
+      "logo": "clients/images/swift-silliker.jpg",
+      "website": "clients/swift-silliker.htm",
+      "order": 487
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 488,
+    "fields": {
+      "name": "Syntech Team Building",
+      "logo": "clients/images/syntech.jpg",
+      "website": "clients/syntell.htm",
+      "order": 488
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 489,
+    "fields": {
+      "name": "Synexus Clinical Research",
+      "logo": "clients/images/synexus.jpg",
+      "website": "clients/synexus-clinical-research.htm",
+      "order": 489
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 490,
+    "fields": {
+      "name": "Sm Xulu Team Building",
+      "logo": "clients/sm-xulu-team-building.jpg",
+      "website": "",
+      "order": 490
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 491,
+    "fields": {
+      "name": "Syntell",
+      "logo": "clients/syntell-team-building-event.jpg",
+      "website": "clients/syntell.htm",
+      "order": 491
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 492,
+    "fields": {
+      "name": "Sefcash",
+      "logo": "clients/sefalana-cash-and-carry.jpg",
+      "website": "",
+      "order": 492
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 493,
+    "fields": {
+      "name": "Signed and Sealed Labels",
+      "logo": "clients/sign-and-sea-labels.jpg",
+      "website": "",
+      "order": 493
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 494,
+    "fields": {
+      "name": "Smollan Group",
+      "logo": "clients/smollan.jpg",
+      "website": "",
+      "order": 494
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 495,
+    "fields": {
+      "name": "SNC Lavalin Team Building",
+      "logo": "clients/images/snc-lavalin.jpg",
+      "website": "clients/snc-lavalin.htm",
+      "order": 495
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 496,
+    "fields": {
+      "name": "Spintelligent Team Building",
+      "logo": "clients/images/spintelligent.jpg",
+      "website": "clients/spintelligent.htm",
+      "order": 496
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 497,
+    "fields": {
+      "name": "SRK Consulting Team Building",
+      "logo": "clients/images/srk-consulting.jpg",
+      "website": "clients/srk-consulting.htm",
+      "order": 497
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 498,
+    "fields": {
+      "name": "Stanlib",
+      "logo": "clients/images/stanlib.jpg",
+      "website": "clients/stanlib.htm",
+      "order": 498
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 499,
+    "fields": {
+      "name": "St Peter's College",
+      "logo": "clients/images/st-peters-college.jpg",
+      "website": "clients/st-peters-college.htm",
+      "order": 499
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 500,
+    "fields": {
+      "name": "St Stithians Team Building",
+      "logo": "clients/images/st-stithians.jpg",
+      "website": "clients/st-stithians.htm",
+      "order": 500
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 501,
+    "fields": {
+      "name": "Sybrin Systems Team Building",
+      "logo": "clients/images/sybrin-systems.jpg",
+      "website": "clients/sybrin-systems.htm",
+      "order": 501
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 502,
+    "fields": {
+      "name": "T-systems",
+      "logo": "clients/t-systems.jpg",
+      "website": "",
+      "order": 502
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 503,
+    "fields": {
+      "name": "Tactile Projects Team Building",
+      "logo": "clients/images/tactile-projects.jpg",
+      "website": "clients/tactile-projects.htm",
+      "order": 503
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 504,
+    "fields": {
+      "name": "Tagtron Solutions Team Building",
+      "logo": "clients/images/tagtron-solutions.jpg",
+      "website": "clients/tagtron-solutions.htm",
+      "order": 504
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 505,
+    "fields": {
+      "name": "Tanker Repair Division Team Building",
+      "logo": "clients/images/tanker-repair-division.jpg",
+      "website": "clients/tanker-repair-division.htm",
+      "order": 505
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 506,
+    "fields": {
+      "name": "Tarsus",
+      "logo": "clients/tarsus.jpg",
+      "website": "clients/tarsus.htm",
+      "order": 506
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 507,
+    "fields": {
+      "name": "Tasima",
+      "logo": "clients/tasima.jpg",
+      "website": "",
+      "order": 507
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 508,
+    "fields": {
+      "name": "Telesure Team Building",
+      "logo": "clients/images/telesure.jpg",
+      "website": "clients/telesure.htm",
+      "order": 508
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 509,
+    "fields": {
+      "name": "Tega Industries",
+      "logo": "clients/tega-industries-team-building-event.jpg",
+      "website": "",
+      "order": 509
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 510,
+    "fields": {
+      "name": "Thales Team Building",
+      "logo": "clients/thales.jpg",
+      "website": "clients/thales.htm",
+      "order": 510
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 511,
+    "fields": {
+      "name": "The Reserve Bank",
+      "logo": "clients/sarb.jpg",
+      "website": "",
+      "order": 511
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 512,
+    "fields": {
+      "name": "the smollan group",
+      "logo": "clients/smollan-logo.jpg",
+      "website": "",
+      "order": 512
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 513,
+    "fields": {
+      "name": "Centre for Conflict Resolution Team Building",
+      "logo": "clients/centre-for-conflict-resolution.jpg",
+      "website": "clients/centre-for-conflict-resolution.htm",
+      "order": 513
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 514,
+    "fields": {
+      "name": "The Foschini Group",
+      "logo": "clients/the-foschini-group-team-building-event.jpg",
+      "website": "clients/foschini-group.htm",
+      "order": 514
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 515,
+    "fields": {
+      "name": "The Haven Night Shelter Team Building",
+      "logo": "clients/images/the-haven-night-shelter.jpg",
+      "website": "clients/the-haven-shelter.htm",
+      "order": 515
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 516,
+    "fields": {
+      "name": "The Marketing Hub",
+      "logo": "clients/images/the-marketing-hub.jpg",
+      "website": "clients/the-marketing-hub.htm",
+      "order": 516
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 517,
+    "fields": {
+      "name": "The Scientific Group Team Building",
+      "logo": "clients/the-scientific-group.jpg",
+      "website": "clients/the-scientific-group.htm",
+      "order": 517
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 518,
+    "fields": {
+      "name": "Thembisile Hani Local Municipality Team Building",
+      "logo": "clients/images/thembisile-hani-local-municipality.jpg",
+      "website": "clients/thembisile-hani-local-municipality.htm",
+      "order": 518
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 519,
+    "fields": {
+      "name": "Toga Engineering",
+      "logo": "clients/toga-engineering.jpg",
+      "website": "",
+      "order": 519
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 520,
+    "fields": {
+      "name": "Tourvest Duty Free",
+      "logo": "clients/tourvest-team-building-event.jpg",
+      "website": "clients/tourvest.htm",
+      "order": 520
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 521,
+    "fields": {
+      "name": "toyota",
+      "logo": "clients/images/toyota.jpg",
+      "website": "clients/toyota.htm",
+      "order": 521
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 522,
+    "fields": {
+      "name": "tongaat hulett",
+      "logo": "clients/tongaat-hulett.jpg",
+      "website": "",
+      "order": 522
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 523,
+    "fields": {
+      "name": "Trafalgar Minute to Win It",
+      "logo": "clients/trafalgar-team-building-event.jpg",
+      "website": "clients/trafalgar.htm",
+      "order": 523
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 524,
+    "fields": {
+      "name": "Travel Manor",
+      "logo": "clients/travel-manor.jpg",
+      "website": "",
+      "order": 524
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 525,
+    "fields": {
+      "name": "Trysome Auto Electrical",
+      "logo": "clients/trysome-auto-electrical.jpg",
+      "website": "",
+      "order": 525
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 526,
+    "fields": {
+      "name": "Trium Investments",
+      "logo": "clients/trium-investments.jpg",
+      "website": "",
+      "order": 526
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 527,
+    "fields": {
+      "name": "transit group of companies",
+      "logo": "clients/transit-logo.jpg",
+      "website": "",
+      "order": 527
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 528,
+    "fields": {
+      "name": "Travel with Flair",
+      "logo": "clients/travel-with-flair-team-building.jpg",
+      "website": "clients/travel-with-flair.htm",
+      "order": 528
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 529,
+    "fields": {
+      "name": "Transnet",
+      "logo": "clients/transnet.jpg",
+      "website": "",
+      "order": 529
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 530,
+    "fields": {
+      "name": "TSB Minute to Win It",
+      "logo": "clients/tsb-minute-to-win-it.jpg",
+      "website": "clients/tsb-sugar-holdings.htm",
+      "order": 530
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 531,
+    "fields": {
+      "name": "Twizza Team Building",
+      "logo": "clients/images/twizza.jpg",
+      "website": "clients/twizza.htm",
+      "order": 531
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 532,
+    "fields": {
+      "name": "Trade Ocean",
+      "logo": "clients/trade-ocean-team-building-testimonial.jpg",
+      "website": "",
+      "order": 532
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 533,
+    "fields": {
+      "name": "The Conference Company",
+      "logo": "clients/pkf-team-building.jpg",
+      "website": "",
+      "order": 533
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 534,
+    "fields": {
+      "name": "The Dialogue Group Team Building",
+      "logo": "clients/images/teach-for-all.jpg",
+      "website": "clients/teach-for-all.htm",
+      "order": 534
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 535,
+    "fields": {
+      "name": "Unifruitti",
+      "logo": "clients/images/unifruitti.jpg",
+      "website": "clients/unifruitti.htm",
+      "order": 535
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 536,
+    "fields": {
+      "name": "UNISA",
+      "logo": "clients/unisa-team-building.jpg",
+      "website": "clients/unisa.htm",
+      "order": 536
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 537,
+    "fields": {
+      "name": "United Herzlia School Team Building",
+      "logo": "clients/images/united-herzlia-school.jpg",
+      "website": "clients/united-herzlia-school.htm",
+      "order": 537
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 538,
+    "fields": {
+      "name": "University of Johannesburg Team Building",
+      "logo": "clients/university-of-johannesburg.jpg",
+      "website": "clients/university-of-johannesburg.htm",
+      "order": 538
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 539,
+    "fields": {
+      "name": "University of Limpopo",
+      "logo": "clients/university-of-limpopo-team-building.jpg",
+      "website": "",
+      "order": 539
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 540,
+    "fields": {
+      "name": "Unitrans Insurance Ltd",
+      "logo": "clients/unitrans-insurance-limited.jpg",
+      "website": "",
+      "order": 540
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 541,
+    "fields": {
+      "name": "UWC Team Building",
+      "logo": "clients/images/university-of-cape-town.jpg",
+      "website": "clients/uct.htm",
+      "order": 541
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 542,
+    "fields": {
+      "name": "University of Stellenbosch Team Building",
+      "logo": "clients/images/university-of-stellenbosch.jpg",
+      "website": "clients/university-of-stellenbosch.htm",
+      "order": 542
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 543,
+    "fields": {
+      "name": "US Commercial Services Team Building",
+      "logo": "clients/images/us-commercial-service.jpg",
+      "website": "clients/us-commercial-services.htm",
+      "order": 543
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 544,
+    "fields": {
+      "name": "UTC Fire and Security Team Building",
+      "logo": "clients/images/utc-fire-security.jpg",
+      "website": "clients/utc-fire-security.htm",
+      "order": 544
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 545,
+    "fields": {
+      "name": "Uvuko Civils Team Building",
+      "logo": "clients/uvukocivils.jpg",
+      "website": "clients/uvuko-civils.htm",
+      "order": 545
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 546,
+    "fields": {
+      "name": "Vaal University of Technology Team Building",
+      "logo": "clients/images/vaal-university-of-technology.jpg",
+      "website": "clients/vaal-university-of-technology.htm",
+      "order": 546
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 547,
+    "fields": {
+      "name": "Varsity College Team Building",
+      "logo": "clients/images/varsity-college.jpg",
+      "website": "clients/varsity-college.htm",
+      "order": 547
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 548,
+    "fields": {
+      "name": "Vector Logistics Team Building",
+      "logo": "clients/images/vector-logistics.jpg",
+      "website": "clients/vector-logistics.htm",
+      "order": 548
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 549,
+    "fields": {
+      "name": "VFS Global Team Building",
+      "logo": "clients/images/vfs-global.jpg",
+      "website": "clients/vfs-global.htm",
+      "order": 549
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 550,
+    "fields": {
+      "name": "Vision View Productions",
+      "logo": "clients/vision-view-productions.jpg",
+      "website": "",
+      "order": 550
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 551,
+    "fields": {
+      "name": "Virgin Active Team Building",
+      "logo": "clients/images/virgin-active.jpg",
+      "website": "clients/virgin-active.htm",
+      "order": 551
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 552,
+    "fields": {
+      "name": "Victor Nkhwashu Attorneys Team Building",
+      "logo": "clients/images/victor-nkhwashu-attorneys.jpg",
+      "website": "clients/victor-nkhwashu-attorneys.htm",
+      "order": 552
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 553,
+    "fields": {
+      "name": "Vitafoam Team Building",
+      "logo": "clients/images/vitafoam.jpg",
+      "website": "clients/vitafoam.htm",
+      "order": 553
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 554,
+    "fields": {
+      "name": "vodacom",
+      "logo": "clients/vodacom.jpg",
+      "website": "clients/vodacom.htm",
+      "order": 554
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 555,
+    "fields": {
+      "name": "Vukani Gaming Team Building",
+      "logo": "clients/images/vukani-gaming.jpg",
+      "website": "clients/vukani-gaming.htm",
+      "order": 555
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 556,
+    "fields": {
+      "name": "Vunani Fund Managers Team Building",
+      "logo": "clients/images/vunani.jpg",
+      "website": "clients/vunani-fund-managers.htm",
+      "order": 556
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 557,
+    "fields": {
+      "name": "Waltons",
+      "logo": "clients/waltons-team-building-event.jpg",
+      "website": "clients/waltons.htm",
+      "order": 557
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 558,
+    "fields": {
+      "name": "Webber Wentzel",
+      "logo": "clients/webber-wentzel-team-building-event.jpg",
+      "website": "clients/webber-wentzel.htm",
+      "order": 558
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 559,
+    "fields": {
+      "name": "Western Cape DET Team Building",
+      "logo": "clients/western-cape-det-team-building-event.jpg",
+      "website": "clients/western-cape-det.htm",
+      "order": 559
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 560,
+    "fields": {
+      "name": "Weatherford",
+      "logo": "clients/weatherford.jpg",
+      "website": "",
+      "order": 560
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 561,
+    "fields": {
+      "name": "Weizmann Primary School Team Building",
+      "logo": "clients/images/weizmann-primary-school.jpg",
+      "website": "clients/weizmann-primary-school.htm",
+      "order": 561
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 562,
+    "fields": {
+      "name": "Windscreen Distributors Team Building",
+      "logo": "clients/images/windscreen-distributors.jpg",
+      "website": "clients/windscreen-distributors.htm",
+      "order": 562
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 563,
+    "fields": {
+      "name": "W L Gore & Associates",
+      "logo": "clients/wl-gore-associates.jpg",
+      "website": "",
+      "order": 563
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 564,
+    "fields": {
+      "name": "World Vision International",
+      "logo": "clients/images/world-vision-international.jpg",
+      "website": "clients/world-vision-international.htm",
+      "order": 564
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 565,
+    "fields": {
+      "name": "Woolworths",
+      "logo": "clients/woolworths-team-building-event.jpg",
+      "website": "clients/woolworths.htm",
+      "order": 565
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 566,
+    "fields": {
+      "name": "WSP Group",
+      "logo": "clients/wsp-group-team-building-event.jpg",
+      "website": "clients/wsp-group.htm",
+      "order": 566
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 567,
+    "fields": {
+      "name": "Wild",
+      "logo": "clients/wild-team-building-testimonial.jpg",
+      "website": "",
+      "order": 567
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 568,
+    "fields": {
+      "name": "Wits University Team Building",
+      "logo": "clients/images/wits-university.jpg",
+      "website": "clients/wits-university.htm",
+      "order": 568
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 569,
+    "fields": {
+      "name": "WWF SA Team Building",
+      "logo": "clients/images/wwf.jpg",
+      "website": "clients/wwf.htm",
+      "order": 569
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 570,
+    "fields": {
+      "name": "XELSIOR Financial Services Team Building",
+      "logo": "clients/images/xselsior-financial-services.jpg",
+      "website": "clients/xselsior-financial-services.htm",
+      "order": 570
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 571,
+    "fields": {
+      "name": "Xylem Team Building",
+      "logo": "clients/images/xylem.jpg",
+      "website": "clients/xylem.htm",
+      "order": 571
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 572,
+    "fields": {
+      "name": "yola team",
+      "logo": "clients/yola.jpg",
+      "website": "",
+      "order": 572
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 573,
+    "fields": {
+      "name": "Zanenza Team Building",
+      "logo": "clients/images/zanenza.jpg",
+      "website": "clients/zanenza.htm",
+      "order": 573
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 574,
+    "fields": {
+      "name": "Ziphi Nkomo 1 Labour Hire",
+      "logo": "clients/ziphi-nkomo.jpg",
+      "website": "",
+      "order": 574
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 575,
+    "fields": {
+      "name": "Subscribe to the TBAE Newsletter",
+      "logo": "clients/tbae-newsletter.gif",
+      "website": "subscribe.htm",
+      "order": 575
+    }
+  }
+]

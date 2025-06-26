@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.animate-carousel {
+  animation: carousel-slide 40s linear infinite;
+  animation-play-state: running;
+}
+.group:hover .animate-carousel {
+  animation-play-state: paused;
+}
+@keyframes carousel-slide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+

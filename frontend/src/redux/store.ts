@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import eventsReducer from "./slices/eventsSlice";
-import testimonialsReducer from "./slices/testimonialsSlice";
+
 import galleryReducer from "./slices/gallerySlice";
 
 import homepageReducer from "./slices/homepageSlice";
@@ -9,13 +9,15 @@ import { venuesApi } from "./services/venuesApi";
 import { faqApi } from "./services/faqApi";
 import { clientApi } from './services/clientApi';
 import { aboutApi } from "./services/aboutApi";
+import { testimonialsApi } from "./services/testimonialsApi";
 
 export const store = configureStore({
   reducer: {
     events: eventsReducer,
-    testimonials: testimonialsReducer,
+    
     gallery: galleryReducer,
     homepage: homepageReducer,
+    [testimonialsApi.reducerPath]: testimonialsApi.reducer,
     [aboutApi.reducerPath]: aboutApi.reducer,
     [clientApi.reducerPath]: clientApi.reducer,
     [faqApi.reducerPath]: faqApi.reducer,
@@ -24,8 +26,9 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware()
+      .concat(testimonialsApi.middleware)
       .concat(galleryApi.middleware)
-      .concat(aboutApi.middleware)  
+      .concat(aboutApi.middleware)
       .concat(clientApi.middleware)
       .concat(venuesApi.middleware)
       .concat(faqApi.middleware),

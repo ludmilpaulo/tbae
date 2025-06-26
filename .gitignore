@@ -22,8 +22,8 @@ venv
 # Static and media files (collected/generated)
 static_cdn/
 staticfiles/
-media/
-statics/
+#media/
+#statics/
 
 # Migrations (optional – if you don’t want to track them until stable)
 */migrations/*.py

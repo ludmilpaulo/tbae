@@ -102,7 +102,8 @@ class HomepageAdmin(admin.ModelAdmin):
 
 
 @admin.register(Client)
-class ClientAdmin(SortableAdminMixin, admin.ModelAdmin):
+class ClientAdmin(admin.ModelAdmin):  # remove SortableAdminMixin if not needed!
     list_display = ('name', 'website', 'order')
     ordering = ('order',)
     search_fields = ('name', 'website')
+

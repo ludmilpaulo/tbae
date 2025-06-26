@@ -26,7 +26,7 @@ export default function HomePage() {
           {/* Logo & Tagline */}
           <div className="flex-1">
             <Image
-              src="/logo.png"
+              src="/video.mp4"
               alt="TBAE Logo"
               width={220}
               height={90}
