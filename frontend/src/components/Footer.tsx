@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
           <div className="flex items-start gap-2">
             <MapPinIcon className="w-5 h-5 mt-1" />
-            <span>123 Event Street, Pretoria, South Africa</span>
+            <span>1st Floor, Trescoe House, Riverstone Rd, Kenilworth, Cape Town, 7945</span>
           </div>
         </div>
       </div>

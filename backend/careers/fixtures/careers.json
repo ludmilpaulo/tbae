@@ -1,177 +1,497 @@
 [
   {
     "model": "careers.career",
-    "pk": 1,
+    "pk": 8,
     "fields": {
-      "title": "Community Events Manager",
-      "location": "Johannesburg",
-      "description": "<p>Lead the planning and execution of community-focused events and popups for Debaren. <strong>Bonus:</strong> Experience with co-working venues or event promotion.</p>",
-      "requirements": "<ul><li>3+ years in event management</li><li>Strong organizational skills</li><li>Passion for networking</li></ul>",
-      "created_at": "2024-05-20T09:00:00Z"
-    }
-  },
-  {
-    "model": "careers.career",
-    "pk": 2,
-    "fields": {
-      "title": "Venue Partnerships Specialist",
+      "title": "Event Operations Manager",
       "location": "Cape Town",
-      "description": "<p>Grow Debaren’s network of creative spaces, schools, and WiFi venues. <br>Excellent opportunity for relationship-builders.</p>",
-      "requirements": "<ul><li>1+ years sales/partnership experience</li><li>Outgoing personality</li><li>Fluency in English and/or Portuguese preferred</li></ul>",
-      "created_at": "2024-05-22T13:30:00Z"
+      "description": "<p>Lead the setup, coordination, and smooth running of all live events and workshops.</p>",
+      "requirements": "<ul><li>3+ years operations experience</li><li>Team leadership</li><li>Strong time management</li></ul>",
+      "created_at": "2024-06-01T09:00:00Z"
     }
   },
   {
     "model": "careers.career",
-    "pk": 3,
+    "pk": 9,
     "fields": {
-      "title": "Frontend React Developer",
+      "title": "Client Success Specialist",
       "location": "Remote",
-      "description": "<p>Help us craft beautiful, modern UI for venue discovery and event management using Next.js and React.</p>",
-      "requirements": "<ul><li>2+ years experience with React/Next.js</li><li>Portfolio of web apps</li><li>Attention to detail</li></ul>",
-      "created_at": "2024-05-25T15:00:00Z"
+      "description": "<p>Support our partners and clients before, during, and after their events to maximize satisfaction.</p>",
+      "requirements": "<ul><li>Excellent communication</li><li>Problem-solving</li><li>Empathy for clients</li></ul>",
+      "created_at": "2024-06-02T10:20:00Z"
     }
   },
   {
     "model": "careers.career",
-    "pk": 4,
+    "pk": 10,
     "fields": {
-      "title": "Marketing & Content Coordinator",
+      "title": "Corporate Sales Lead",
+      "location": "Johannesburg",
+      "description": "<p>Target corporate clients for large-scale bookings, custom workshops, and brand partnerships.</p>",
+      "requirements": "<ul><li>B2B sales experience</li><li>Network in corporate sector</li><li>Confident presenter</li></ul>",
+      "created_at": "2024-06-03T11:00:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 11,
+    "fields": {
+      "title": "Finance & Payroll Officer",
+      "location": "Cape Town",
+      "description": "<p>Process payroll, handle monthly reconciliations, and ensure all financial records are up to date.</p>",
+      "requirements": "<ul><li>Bookkeeping or accounting diploma</li><li>Experience with Xero/Sage</li><li>Attention to detail</li></ul>",
+      "created_at": "2024-06-04T13:30:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 12,
+    "fields": {
+      "title": "Logistics Coordinator",
       "location": "Durban",
-      "description": "<p>Drive user engagement across social media, email, and web content. Help tell Debaren's story and build our community.</p>",
-      "requirements": "<ul><li>2+ years digital marketing</li><li>Experience with Instagram, TikTok, and newsletters</li><li>Excellent writing skills</li></ul>",
-      "created_at": "2024-05-27T12:00:00Z"
+      "description": "<p>Ensure all equipment, supplies, and people are in the right place at the right time for every event.</p>",
+      "requirements": "<ul><li>Valid driver’s license</li><li>Strong organizer</li><li>Flexible hours</li></ul>",
+      "created_at": "2024-06-05T08:00:00Z"
     }
   },
   {
     "model": "careers.career",
-    "pk": 5,
+    "pk": 13,
     "fields": {
-      "title": "Operations Coordinator",
-      "location": "Pretoria",
-      "description": "<p>Coordinate venue onboarding, support logistics, and ensure top quality for all Debaren partners and clients.</p>",
-      "requirements": "<ul><li>2+ years in admin/operations</li><li>Strong communicator</li><li>Experience in events or hospitality a plus</li></ul>",
-      "created_at": "2024-05-27T13:45:00Z"
+      "title": "Graphic Designer",
+      "location": "Cape Town",
+      "description": "<p>Create event branding, digital assets, flyers, and social media graphics for marketing and events.</p>",
+      "requirements": "<ul><li>Portfolio of design work</li><li>Adobe Suite</li><li>Attention to visual detail</li></ul>",
+      "created_at": "2024-06-05T09:45:00Z"
     }
   },
   {
     "model": "careers.career",
-    "pk": 6,
+    "pk": 14,
     "fields": {
-      "title": "Education Partnerships Lead",
-      "location": "Port Elizabeth",
-      "description": "<p>Develop relationships with schools and universities for creative space sharing, workshops, and events.</p>",
-      "requirements": "<ul><li>Experience working with education sector</li><li>Strong networking skills</li><li>Proactive, self-driven</li></ul>",
-      "created_at": "2024-05-28T08:15:00Z"
+      "title": "Photographer/Videographer",
+      "location": "Johannesburg",
+      "description": "<p>Capture live moments and create highlight reels of events for marketing and internal use.</p>",
+      "requirements": "<ul><li>Own camera gear</li><li>Event experience</li><li>Fast delivery of edited work</li></ul>",
+      "created_at": "2024-06-06T11:10:00Z"
     }
   },
   {
     "model": "careers.career",
-    "pk": 7,
+    "pk": 15,
     "fields": {
-      "title": "Full Stack Developer",
+      "title": "Digital Content Creator",
       "location": "Remote",
-      "description": "<p>Work with our tech team to build scalable APIs and web features for venue discovery and booking. Django and Next.js preferred.</p>",
-      "requirements": "<ul><li>Python (Django) and React/Next.js experience</li><li>REST API and PostgreSQL skills</li><li>Strong collaboration</li></ul>",
-      "created_at": "2024-05-29T10:00:00Z"
+      "description": "<p>Write, design, and film engaging content for web, email, and social platforms.</p>",
+      "requirements": "<ul><li>Content portfolio</li><li>Copywriting & design</li><li>Experience with short-form video</li></ul>",
+      "created_at": "2024-06-06T12:30:00Z"
     }
   },
   {
-    "model": "careers.jobapplication",
-    "pk": 1,
+    "model": "careers.career",
+    "pk": 16,
     "fields": {
-      "career": 1,
-      "language": "en",
-      "full_name": "Sipho Dlamini",
-      "email": "sipho.dlamini@example.com",
-      "resume": "resumes/sipho_cv.pdf",
-      "cover_letter": "I am passionate about community engagement and have managed several large events for local NGOs. Debaren’s vision excites me!",
-      "submitted_at": "2024-05-24T11:20:00Z",
-      "status": "submitted"
+      "title": "Legal & Compliance Officer",
+      "location": "Pretoria",
+      "description": "<p>Ensure contracts, safety, and employment regulations are met for all company activities.</p>",
+      "requirements": "<ul><li>LLB or legal degree</li><li>Compliance background</li><li>High ethics</li></ul>",
+      "created_at": "2024-06-07T10:00:00Z"
     }
   },
   {
-    "model": "careers.jobapplication",
-    "pk": 2,
+    "model": "careers.career",
+    "pk": 17,
     "fields": {
-      "career": 2,
-      "language": "pt",
-      "full_name": "Ana Pereira",
-      "email": "ana.pereira@example.com",
-      "resume": "resumes/ana_cv.pdf",
-      "cover_letter": "Tenho experiência em parcerias e vendas, com paixão por conectar espaços criativos a pessoas inovadoras.",
-      "submitted_at": "2024-05-25T09:35:00Z",
-      "status": "processing"
+      "title": "Social Media Manager",
+      "location": "Cape Town",
+      "description": "<p>Plan and execute campaigns on Instagram, Facebook, TikTok, and LinkedIn for Debaren and TBAE.</p>",
+      "requirements": "<ul><li>Campaign examples</li><li>Experience with paid ads</li><li>Trendy and creative</li></ul>",
+      "created_at": "2024-06-07T11:00:00Z"
     }
   },
   {
-    "model": "careers.jobapplication",
-    "pk": 3,
+    "model": "careers.career",
+    "pk": 18,
     "fields": {
-      "career": 3,
-      "language": "en",
-      "full_name": "Musa Ndlovu",
-      "email": "musa.ndlovu@example.com",
-      "resume": "resumes/musa_cv.pdf",
-      "cover_letter": "As a React developer, I love building intuitive interfaces. I’m excited about Debaren’s mission and want to help you scale.",
-      "submitted_at": "2024-05-26T08:55:00Z",
-      "status": "review"
+      "title": "HR Administrator",
+      "location": "Cape Town",
+      "description": "<p>Support hiring, onboarding, employee well-being, and HR records.</p>",
+      "requirements": "<ul><li>HR diploma/certificate</li><li>Confidentiality</li><li>Good people skills</li></ul>",
+      "created_at": "2024-06-08T10:45:00Z"
     }
   },
   {
-    "model": "careers.jobapplication",
-    "pk": 4,
+    "model": "careers.career",
+    "pk": 19,
     "fields": {
-      "career": 4,
-      "language": "en",
-      "full_name": "Thando Mkhize",
-      "email": "thando.mkhize@example.com",
-      "resume": "resumes/thando_cv.pdf",
-      "cover_letter": "Digital storytelling and online communities are my passion. I’d love to help Debaren grow its digital footprint.",
-      "submitted_at": "2024-05-28T14:11:00Z",
-      "status": "approved"
+      "title": "Workshop Facilitator",
+      "location": "Durban",
+      "description": "<p>Lead interactive workshops and activities for clients in-person and virtually.</p>",
+      "requirements": "<ul><li>Energetic</li><li>Public speaking</li><li>Team building experience</li></ul>",
+      "created_at": "2024-06-09T14:00:00Z"
     }
   },
   {
-    "model": "careers.jobapplication",
-    "pk": 5,
+    "model": "careers.career",
+    "pk": 20,
     "fields": {
-      "career": 5,
-      "language": "pt",
-      "full_name": "Carlos dos Santos",
-      "email": "carlos.santos@example.com",
-      "resume": "resumes/carlos_cv.pdf",
-      "cover_letter": "Trabalhei em operações e logística em empresas de eventos e posso ajudar a Debaren a garantir eficiência.",
-      "submitted_at": "2024-05-29T08:21:00Z",
-      "status": "submitted"
+      "title": "Technical Support Specialist",
+      "location": "Remote",
+      "description": "<p>Provide support for our platforms and help clients troubleshoot issues with event portals.</p>",
+      "requirements": "<ul><li>Help desk experience</li><li>Good communicator</li><li>Problem-solving skills</li></ul>",
+      "created_at": "2024-06-09T15:00:00Z"
     }
   },
   {
-    "model": "careers.jobapplication",
-    "pk": 6,
+    "model": "careers.career",
+    "pk": 21,
     "fields": {
-      "career": 6,
-      "language": "en",
-      "full_name": "Lerato Mokoena",
-      "email": "lerato.mokoena@example.com",
-      "resume": "resumes/lerato_cv.pdf",
-      "cover_letter": "I have led educational partnerships and believe in the power of creative space sharing for learning.",
-      "submitted_at": "2024-05-30T11:10:00Z",
-      "status": "processing"
+      "title": "Account Manager",
+      "location": "Cape Town",
+      "description": "<p>Maintain long-term client relationships and upsell new solutions.</p>",
+      "requirements": "<ul><li>Sales/account management experience</li><li>Excellent communicator</li><li>CRM proficiency</li></ul>",
+      "created_at": "2024-06-10T08:30:00Z"
     }
   },
   {
-    "model": "careers.jobapplication",
-    "pk": 7,
+    "model": "careers.career",
+    "pk": 22,
     "fields": {
-      "career": 7,
-      "language": "en",
-      "full_name": "Brandon Smith",
-      "email": "brandon.smith@example.com",
-      "resume": "resumes/brandon_cv.pdf",
-      "cover_letter": "My skills with Django and Next.js fit perfectly for your stack, and I’m passionate about building reliable, scalable tech.",
-      "submitted_at": "2024-05-30T13:15:00Z",
-      "status": "submitted"
+      "title": "SEO & Analytics Lead",
+      "location": "Remote",
+      "description": "<p>Boost search engine visibility and track campaign performance.</p>",
+      "requirements": "<ul><li>Google Analytics skills</li><li>SEO strategy</li><li>Reporting expertise</li></ul>",
+      "created_at": "2024-06-11T09:45:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 23,
+    "fields": {
+      "title": "Procurement Specialist",
+      "location": "Johannesburg",
+      "description": "<p>Negotiate and purchase materials, catering, and event-related services.</p>",
+      "requirements": "<ul><li>Vendor management</li><li>Budget control</li><li>Procurement track record</li></ul>",
+      "created_at": "2024-06-12T10:10:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 24,
+    "fields": {
+      "title": "CRM & Email Marketing Specialist",
+      "location": "Remote",
+      "description": "<p>Set up campaigns, manage contacts, and monitor open rates in Mailchimp or similar tools.</p>",
+      "requirements": "<ul><li>Email marketing experience</li><li>Mailchimp/HubSpot</li><li>Copywriting skills</li></ul>",
+      "created_at": "2024-06-13T11:30:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 25,
+    "fields": {
+      "title": "Quality Assurance Manager",
+      "location": "Cape Town",
+      "description": "<p>Test, review, and ensure high quality across all services and user journeys.</p>",
+      "requirements": "<ul><li>QA background</li><li>Detail-oriented</li><li>Team leadership</li></ul>",
+      "created_at": "2024-06-14T09:15:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 26,
+    "fields": {
+      "title": "Mobile App Developer",
+      "location": "Remote",
+      "description": "<p>Build and maintain mobile apps for event bookings and communication.</p>",
+      "requirements": "<ul><li>Flutter/React Native</li><li>Published apps</li><li>UI/UX sense</li></ul>",
+      "created_at": "2024-06-14T10:40:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 27,
+    "fields": {
+      "title": "Partnerships & Sponsorships Lead",
+      "location": "Cape Town",
+      "description": "<p>Formulate strategies and attract sponsors for high-profile events and campaigns.</p>",
+      "requirements": "<ul><li>B2B sponsorships</li><li>Strategic thinker</li><li>Networker</li></ul>",
+      "created_at": "2024-06-15T12:10:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 28,
+    "fields": {
+      "title": "Community Support Officer",
+      "location": "Port Elizabeth",
+      "description": "<p>Engage with users, respond to queries, and build relationships online and offline.</p>",
+      "requirements": "<ul><li>Good listener</li><li>Community management</li><li>Positive attitude</li></ul>",
+      "created_at": "2024-06-16T13:40:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 29,
+    "fields": {
+      "title": "Junior Event Planner",
+      "location": "Cape Town",
+      "description": "<p>Assist with planning, vendor coordination, and event day logistics for small and large events.</p>",
+      "requirements": "<ul><li>Admin/office experience</li><li>Fast learner</li><li>Detail-oriented</li></ul>",
+      "created_at": "2024-06-17T09:10:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 30,
+    "fields": {
+      "title": "Catering Manager",
+      "location": "Johannesburg",
+      "description": "<p>Oversee food and beverage operations for events, manage vendors and hygiene compliance.</p>",
+      "requirements": "<ul><li>Catering or F&B experience</li><li>Vendor management</li><li>Health & safety knowledge</li></ul>",
+      "created_at": "2024-06-17T11:15:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 31,
+    "fields": {
+      "title": "Facilities & Venue Manager",
+      "location": "Cape Town",
+      "description": "<p>Maintain venue readiness, coordinate repairs, and ensure excellent customer experiences.</p>",
+      "requirements": "<ul><li>Facilities management</li><li>Problem-solver</li><li>Hospitality experience a plus</li></ul>",
+      "created_at": "2024-06-18T13:00:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 32,
+    "fields": {
+      "title": "Creative Copywriter",
+      "location": "Remote",
+      "description": "<p>Write persuasive marketing content, social captions, and long-form articles.</p>",
+      "requirements": "<ul><li>Impeccable English</li><li>Creative portfolio</li><li>Attention to detail</li></ul>",
+      "created_at": "2024-06-19T14:45:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 33,
+    "fields": {
+      "title": "Event MC/Presenter",
+      "location": "Cape Town",
+      "description": "<p>Host team building events, ensuring energy and participation from start to finish.</p>",
+      "requirements": "<ul><li>Public speaking</li><li>Performance/acting background</li><li>Charismatic</li></ul>",
+      "created_at": "2024-06-20T09:30:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 34,
+    "fields": {
+      "title": "IT Support Technician",
+      "location": "Johannesburg",
+      "description": "<p>Support staff with hardware, software, and network issues at venues and offices.</p>",
+      "requirements": "<ul><li>IT troubleshooting</li><li>Patience</li><li>Technical certifications</li></ul>",
+      "created_at": "2024-06-21T10:20:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 35,
+    "fields": {
+      "title": "Brand Designer",
+      "location": "Cape Town",
+      "description": "<p>Design logos, color palettes, and brand guides for company projects and partners.</p>",
+      "requirements": "<ul><li>Portfolio required</li><li>Branding experience</li><li>Creativity</li></ul>",
+      "created_at": "2024-06-21T13:00:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 36,
+    "fields": {
+      "title": "Project Manager",
+      "location": "Pretoria",
+      "description": "<p>Coordinate cross-functional teams and manage project delivery from start to finish.</p>",
+      "requirements": "<ul><li>Project management certification</li><li>Leadership skills</li><li>Agile/Scrum a plus</li></ul>",
+      "created_at": "2024-06-22T14:30:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 37,
+    "fields": {
+      "title": "Safety & Risk Officer",
+      "location": "Cape Town",
+      "description": "<p>Assess event risk and ensure compliance with all safety protocols at venues.</p>",
+      "requirements": "<ul><li>Risk management experience</li><li>OSH certification</li><li>Safety-conscious</li></ul>",
+      "created_at": "2024-06-23T12:20:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 38,
+    "fields": {
+      "title": "Business Development Lead",
+      "location": "Remote",
+      "description": "<p>Identify growth opportunities, new markets, and strategic partners.</p>",
+      "requirements": "<ul><li>Growth mindset</li><li>B2B/B2C strategy</li><li>Networking</li></ul>",
+      "created_at": "2024-06-23T13:45:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 39,
+    "fields": {
+      "title": "Customer Onboarding Specialist",
+      "location": "Remote",
+      "description": "<p>Help new clients get started, training them to use the platform and services.</p>",
+      "requirements": "<ul><li>Teaching/training experience</li><li>Patient & clear communicator</li><li>Tech savvy</li></ul>",
+      "created_at": "2024-06-24T09:10:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 40,
+    "fields": {
+      "title": "Event Billing Administrator",
+      "location": "Johannesburg",
+      "description": "<p>Process event payments, send invoices, and track receipts.</p>",
+      "requirements": "<ul><li>Finance admin</li><li>QuickBooks/Xero</li><li>Detail-focused</li></ul>",
+      "created_at": "2024-06-25T10:00:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 41,
+    "fields": {
+      "title": "Sponsorship Coordinator",
+      "location": "Cape Town",
+      "description": "<p>Support the Partnerships team in finding and nurturing sponsorships for events.</p>",
+      "requirements": "<ul><li>Sponsorship admin</li><li>Negotiation skills</li><li>Persistent</li></ul>",
+      "created_at": "2024-06-25T12:20:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 42,
+    "fields": {
+      "title": "Market Research Analyst",
+      "location": "Remote",
+      "description": "<p>Gather and analyze industry trends, competitor activity, and customer feedback.</p>",
+      "requirements": "<ul><li>Research/data background</li><li>Report writing</li><li>Critical thinker</li></ul>",
+      "created_at": "2024-06-26T11:10:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 43,
+    "fields": {
+      "title": "User Experience (UX) Researcher",
+      "location": "Cape Town",
+      "description": "<p>Conduct user interviews, usability tests, and surveys to improve our platforms.</p>",
+      "requirements": "<ul><li>UX research skills</li><li>Empathy for users</li><li>Survey tools</li></ul>",
+      "created_at": "2024-06-26T14:00:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 44,
+    "fields": {
+      "title": "Data Entry Clerk",
+      "location": "Pretoria",
+      "description": "<p>Enter, review, and update large volumes of information with accuracy and speed.</p>",
+      "requirements": "<ul><li>Typing skills</li><li>Reliable</li><li>Accuracy</li></ul>",
+      "created_at": "2024-06-27T09:40:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 45,
+    "fields": {
+      "title": "Accounts Receivable Clerk",
+      "location": "Cape Town",
+      "description": "<p>Follow up on invoices, reconcile payments, and maintain financial records.</p>",
+      "requirements": "<ul><li>Accounts receivable experience</li><li>Bookkeeping</li><li>Excel proficiency</li></ul>",
+      "created_at": "2024-06-27T13:30:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 46,
+    "fields": {
+      "title": "Sustainability Officer",
+      "location": "Remote",
+      "description": "<p>Drive green initiatives and ensure eco-friendly best practices in all operations.</p>",
+      "requirements": "<ul><li>Sustainability background</li><li>Project management</li><li>Passion for environment</li></ul>",
+      "created_at": "2024-06-28T10:10:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 47,
+    "fields": {
+      "title": "Internal Communications Lead",
+      "location": "Cape Town",
+      "description": "<p>Keep staff updated and motivated with newsletters, Slack, and team meetings.</p>",
+      "requirements": "<ul><li>Excellent writing</li><li>Internal comms experience</li><li>Empathy for team needs</li></ul>",
+      "created_at": "2024-06-29T09:50:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 48,
+    "fields": {
+      "title": "Video Editor",
+      "location": "Remote",
+      "description": "<p>Edit event footage and create compelling video content for social, ads, and web.</p>",
+      "requirements": "<ul><li>Portfolio required</li><li>Adobe Premiere/Final Cut</li><li>Speed & creativity</li></ul>",
+      "created_at": "2024-06-29T11:30:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 49,
+    "fields": {
+      "title": "Chief Technology Officer (CTO)",
+      "location": "Cape Town",
+      "description": "<p>Oversee all technical direction, lead development teams, and shape the tech strategy for growth.</p>",
+      "requirements": "<ul><li>Leadership in tech</li><li>Full stack expertise</li><li>Strategic vision</li></ul>",
+      "created_at": "2024-06-30T10:10:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 50,
+    "fields": {
+      "title": "Event Setup Crew",
+      "location": "Johannesburg",
+      "description": "<p>Help physically set up and break down event spaces, signage, and activities.</p>",
+      "requirements": "<ul><li>Reliable and punctual</li><li>Physically fit</li><li>Team player</li></ul>",
+      "created_at": "2024-06-30T12:00:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 51,
+    "fields": {
+      "title": "Workshop Content Developer",
+      "location": "Remote",
+      "description": "<p>Design workshop materials, guides, and activities for our facilitators.</p>",
+      "requirements": "<ul><li>Instructional design experience</li><li>Creativity</li><li>Education sector a plus</li></ul>",
+      "created_at": "2024-07-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "careers.career",
+    "pk": 52,
+    "fields": {
+      "title": "Travel & Bookings Coordinator",
+      "location": "Pretoria",
+      "description": "<p>Book venues, flights, and accommodations for traveling staff and clients.</p>",
+      "requirements": "<ul><li>Travel agency or bookings background</li><li>Strong admin</li><li>Attention to detail</li></ul>",
+      "created_at": "2024-07-02T13:40:00Z"
     }
   }
 ]
