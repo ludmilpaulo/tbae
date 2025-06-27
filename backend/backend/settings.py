@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'venues',
     'bookings',
     'gallery',
+    'quotes',
     "django_filters",
     'core',
 ]
