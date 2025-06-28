@@ -138,42 +138,42 @@ export default function ContactPage() {
         <h2 className="text-xl font-bold my-6 text-blue-700">Connect with us</h2>
         <div className="flex flex-wrap gap-4 justify-center items-center mt-2">
           <SocialIcon
-            href="https://facebook.com/"
+            href="https://www.facebook.com/teambuildingandevents"
             ariaLabel="Facebook"
             className="bg-[#3b5998] hover:ring-[#3b5998]/40"
           >
             <FaFacebookF />
           </SocialIcon>
           <SocialIcon
-            href="https://instagram.com/"
+            href="https://instagram.com/tbaeza"
             ariaLabel="Instagram"
             className="bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:ring-pink-400/40"
           >
             <FaInstagram />
           </SocialIcon>
           <SocialIcon
-            href="https://tumblr.com/"
+            href="https://twitter.com/tbaesa"
             ariaLabel="Tumblr"
             className="bg-[#65c8fa] hover:ring-[#65c8fa]/40"
           >
             <FaTumblr />
           </SocialIcon>
           <SocialIcon
-            href="https://pinterest.com/"
+            href="http://www.pinterest.com/tbaeevents/"
             ariaLabel="Pinterest"
             className="bg-[#cb2027] hover:ring-[#cb2027]/40"
           >
             <FaPinterestP />
           </SocialIcon>
           <SocialIcon
-            href="https://linkedin.com/"
+            href="http://www.linkedin.com/company/tbae-team-building-and-events"
             ariaLabel="LinkedIn"
             className="bg-[#0077b5] hover:ring-[#0077b5]/40"
           >
             <FaLinkedinIn />
           </SocialIcon>
           <SocialIcon
-            href="https://youtube.com/"
+            href="https://www.youtube.com/user/TBAETeamBuilding"
             ariaLabel="YouTube"
             className="bg-[#ff0000] hover:ring-[#ff0000]/40"
           >

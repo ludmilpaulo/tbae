@@ -9,6 +9,7 @@ import { venuesApi } from "./services/venuesApi";
 import { faqApi } from "./services/faqApi";
 import { clientApi } from './services/clientApi';
 import { aboutApi } from "./services/aboutApi";
+import { contactApi } from "./services/contactApi";
 import { testimonialsApi } from "./services/testimonialsApi";
 
 export const store = configureStore({
@@ -17,6 +18,7 @@ export const store = configureStore({
     
     gallery: galleryReducer,
     homepage: homepageReducer,
+    [contactApi.reducerPath]: contactApi.reducer,
     [testimonialsApi.reducerPath]: testimonialsApi.reducer,
     [aboutApi.reducerPath]: aboutApi.reducer,
     [clientApi.reducerPath]: clientApi.reducer,
@@ -26,6 +28,7 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware()
+      .concat(contactApi.middleware)
       .concat(testimonialsApi.middleware)
       .concat(galleryApi.middleware)
       .concat(aboutApi.middleware)

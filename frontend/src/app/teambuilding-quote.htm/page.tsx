@@ -8,7 +8,7 @@ export default function QuotePage() {
         Fill in your details below and our team will get back to you with a personalized quote for your event, team building, or venue booking.
       </p>
       <div className="mt-10">
-        <h2 className="text-xl font-bold text-blue-700 mb-2">Prefer a quick online form?</h2>
+       
         <iframe
           title="TBAE Quote request"
           src="https://tbaeza.clientary.com/forms/139151/docview"

@@ -67,7 +67,7 @@ class TimelineEventAdmin(SortableAdminMixin, admin.ModelAdmin):
 
 
 @admin.register(TeamMember)
-class TeamMemberAdmin(SortableAdminMixin, admin.ModelAdmin):
+class TeamMemberAdmin(admin.ModelAdmin):
     list_display = ('name', 'role', 'order')
     search_fields = ('name', 'role', 'bio')
     ordering = ('order', 'name')
