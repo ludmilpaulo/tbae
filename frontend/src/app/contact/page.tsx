@@ -132,7 +132,7 @@ export default function ContactPage() {
             href="tel:+27117651693"
             className="text-blue-600 underline"
           >
-            +27 11 765 1693
+            +27 833990000
           </a>
         </div>
         <h2 className="text-xl font-bold my-6 text-blue-700">Connect with us</h2>

@@ -39,7 +39,7 @@ export default function HomePage() {
             <p className="mb-8 text-lg text-white/90 max-w-xl">
               Professional team building events and facilitation across South Africa — in-person and virtual, tailored for your company’s needs and success.
             </p>
-            <Link href="/contact" className="inline-block bg-green-400 hover:bg-green-500 text-blue-900 font-bold px-6 py-3 rounded-lg shadow-lg transition">
+            <Link href="/teambuilding-quote.htm" className="inline-block bg-green-400 hover:bg-green-500 text-blue-900 font-bold px-6 py-3 rounded-lg shadow-lg transition">
               Book Your Event
             </Link>
           </div>

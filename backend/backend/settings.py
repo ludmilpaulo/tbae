@@ -137,10 +137,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-DEFAULT_FROM_EMAIL = "info@tbae.co.za"   # Use your email
-EMAIL_HOST = "smtp.yourprovider.com"
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "info@tbae.co.za"
-EMAIL_HOST_PASSWORD = "your_password"
-EMAIL_USE_TLS = True
-
+DEFAULT_FROM_EMAIL = "support@tbae.co.za"  # Or info@tbae.co.za if you want to send as info@
+EMAIL_HOST = "uk71.siteground.eu"
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "support@tbae.co.za"
+EMAIL_HOST_PASSWORD = "Maitland@2025"  # Replace with your actual password
+EMAIL_USE_TLS = False   # Important! Use TLS for port 587, SSL for port 465
+EMAIL_USE_SSL = True    # Use SSL for port 465
