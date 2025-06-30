@@ -43,7 +43,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold">Help & Info</h3>
           <ul className="space-y-1 text-sm">
             <li><Link href="/about" className="hover:underline">About Us</Link></li>
-            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+            <li><Link href="/teambuilding-quote.htm" className="hover:underline">Contact</Link></li>
             <li><Link href="/faq" className="hover:underline">FAQs</Link></li>
             <li><Link href="/terms" className="hover:underline">Terms of Service</Link></li>
             <li><Link href="/privacy" className="hover:underline">Privacy Policy</Link></li>
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-2">
             <PhoneIcon className="w-5 h-5" />
-            <span>+27 (0)12 345 6789</span>
+            <span>+27 (0)83659 9911</span>
           </div>
           <div className="flex items-start gap-2">
             <MapPinIcon className="w-5 h-5 mt-1" />

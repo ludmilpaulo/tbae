@@ -136,7 +136,7 @@ export default function HomePage() {
             Get in touch for a free consultation or quote. Let’s build your next unforgettable team event together!
           </p>
           <Link
-            href="/contact"
+            href="/teambuilding-quote.htm"
             className="inline-block bg-green-400 hover:bg-green-500 text-blue-900 font-bold px-8 py-3 rounded-lg shadow-lg transition"
           >
             Contact Us
