@@ -80,11 +80,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* ShareThis */}
-        <Script src="https://w.sharethis.com/button/buttons.js" strategy="afterInteractive" />
-        <Script src="https://s.sharethis.com/loader.js" strategy="afterInteractive" />
-        {/* Pinterest */}
-        <Script src="//assets.pinterest.com/js/pinit.js" strategy="afterInteractive" async />
-        {/* Google Analytics UA (old) */}
+       
         <Script id="google-analytics-ua" strategy="afterInteractive">
           {`
             (function(){
