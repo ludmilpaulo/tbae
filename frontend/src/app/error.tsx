@@ -8,7 +8,7 @@ export default function GlobalError() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      router.push("/");
+      router.push("/teambuilding-quote.htm");
     }, 3000);
     return () => clearTimeout(timeout);
   }, [router]);
