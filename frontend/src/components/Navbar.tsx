@@ -8,8 +8,8 @@ import {
   MapPinIcon,
   PhotoIcon,
   StarIcon,
-  UserCircleIcon,
-  Cog6ToothIcon,
+ // UserCircleIcon,
+ // Cog6ToothIcon,
   HomeIcon,
 } from "@heroicons/react/24/outline";
 
@@ -17,14 +17,15 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navItems = [
-    { href: "/", label: "Home", icon: HomeIcon },
-    { href: "/events.htm", label: "Events", icon: CalendarDaysIcon },
-    { href: "/venues", label: "Venues", icon: MapPinIcon },
-    { href: "/gallery", label: "Gallery", icon: PhotoIcon },
-    { href: "/success", label: "Success Stories", icon: StarIcon }, // new
-    { href: "/dashboard", label: "My Dashboard", icon: UserCircleIcon },
-    { href: "/admin", label: "Admin", icon: Cog6ToothIcon, special: true },
+    { href: "/", label: "Home", icon: HomeIcon, special: false },
+    { href: "/events.htm", label: "Events", icon: CalendarDaysIcon, special: false },
+    { href: "/venues", label: "Venues", icon: MapPinIcon, special: false },
+    { href: "/gallery", label: "Gallery", icon: PhotoIcon, special: false },
+    { href: "/success", label: "Success Stories", icon: StarIcon, special: false }, // new
+   // { href: "/dashboard", label: "My Dashboard", icon: UserCircleIcon, special: false },
+  //  { href: "/admin", label: "Admin", icon: Cog6ToothIcon, special: true },
   ];
+  
 
   return (
     <nav className="bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-400 shadow-lg sticky top-0 z-50">
