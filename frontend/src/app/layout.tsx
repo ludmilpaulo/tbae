@@ -78,23 +78,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* ShareThis */}
-       
-        <Script id="google-analytics-ua" strategy="afterInteractive">
-          {`
-            (function(){
-              var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-              document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-              try {
-                var pageTracker = _gat._getTracker("UA-11207940-1");
-                pageTracker._trackPageview();
-              } catch(err) {}
-            })();
-          `}
-        </Script>
-        {/* Add GA4 with new code instead if migrating */}
-      </head>
+     
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
