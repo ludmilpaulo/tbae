@@ -4,6 +4,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Script from "next/script";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,22 +24,21 @@ export const metadata: Metadata = {
   },
   description:
     "TBAE provides fun, professional team building events and corporate activities across South Africa. Browse top venues, request quotes, and view our gallery.",
-  keywords: [
-    "Team Building",
-    "Corporate Events",
-    "Venues",
-    "South Africa",
-    "Group Activities",
-    "Outdoor Events",
-    "Indoor Events",
-    "TBAE",
-    "Teamwork",
-    "Event Gallery",
-    "Request Quote",
-    "Company Retreats",
-    "Johannesburg",
-    "Cape Town",
-    "Durban",
+ keywords: [
+    "team building Cape Town",
+    "team Building Johannesburg",
+    "team building pretoria",
+    "team building activities",
+    "team building coordinators",
+    "team building facilitators",
+    "teambuilding venues",
+    "events management",
+    "teambuilding",
+    "team building",
+    "teambuilding events",
+    "corporate events",
+    "corporate teambuilding",
+    "events management south africa"
   ],
   icons: [
     { rel: "icon", url: "/favicon.ico" },
@@ -77,6 +78,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* ShareThis */}
+        <Script src="https://w.sharethis.com/button/buttons.js" strategy="afterInteractive" />
+        <Script src="https://s.sharethis.com/loader.js" strategy="afterInteractive" />
+        {/* Pinterest */}
+        <Script src="//assets.pinterest.com/js/pinit.js" strategy="afterInteractive" async />
+        {/* Google Analytics UA (old) */}
+        <Script id="google-analytics-ua" strategy="afterInteractive">
+          {`
+            (function(){
+              var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+              document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+              try {
+                var pageTracker = _gat._getTracker("UA-11207940-1");
+                pageTracker._trackPageview();
+              } catch(err) {}
+            })();
+          `}
+        </Script>
+        {/* Add GA4 with new code instead if migrating */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
