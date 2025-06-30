@@ -18,7 +18,7 @@ export default function Navbar() {
 
   const navItems = [
     { href: "/", label: "Home", icon: HomeIcon },
-    { href: "/events", label: "Events", icon: CalendarDaysIcon },
+    { href: "/events.htm", label: "Events", icon: CalendarDaysIcon },
     { href: "/venues", label: "Venues", icon: MapPinIcon },
     { href: "/gallery", label: "Gallery", icon: PhotoIcon },
     { href: "/success", label: "Success Stories", icon: StarIcon }, // new

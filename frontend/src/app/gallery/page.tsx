@@ -13,6 +13,7 @@ import {
   GalleryPhoto,
   GalleryVideo,
 } from "@/types/gallery";
+import { useRouter } from "next/navigation";
 
 // Helper for YouTube thumbnail
 function getYouTubeId(url: string): string | null {
@@ -29,6 +30,7 @@ type ModalState =
   | { type: "video"; url: string; caption?: string };
 
 export default function GalleryPage() {
+    const router = useRouter();
   // Filters
   const [category, setCategory] = useState<string>("all");
   const [year, setYear] = useState<number | "all">("all");
@@ -49,6 +51,7 @@ const { data: years = [] } = useGetGalleryYearsQuery();
     { event_type: category !== "all" ? category : undefined, year: year !== "all" ? year : undefined, page },
     { skip: false }
   );
+
 
   // Merge new pages
   useEffect(() => {
@@ -97,7 +100,7 @@ const { data: years = [] } = useGetGalleryYearsQuery();
         <h1 className="text-4xl font-bold text-blue-700">Event Gallery</h1>
         <button
           className="bg-gradient-to-r from-green-400 via-blue-600 to-cyan-400 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition text-lg"
-          onClick={() => setShowQuote(true)}
+          onClick={() =>  router.push(`/teambuilding-quote.htm`)}
         >
           Request Team Building Quote
         </button>
