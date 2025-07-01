@@ -9,7 +9,7 @@ export default function ActivityCard({ activity }: { activity: Activity }) {
         {activity.image && (
           <div className="relative h-48 w-full">
             <Image
-              src={activity.image.startsWith("http") ? activity.image : `/activities/${activity.image}`}
+              src={activity.image ? activity.image : `/activities/${activity.image}`}
               alt={activity.title}
               fill
               className="object-cover transition group-hover:scale-105 duration-500"
