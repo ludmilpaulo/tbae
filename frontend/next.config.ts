@@ -1,7 +1,9 @@
+// next.config.ts
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-images: {
+  images: {
     remotePatterns: [
       {
         protocol: 'https',
@@ -9,15 +11,9 @@ images: {
         pathname: '/api/**'
       },
       {
-        protocol: 'http',
-        hostname: '127.0.0.1',
-        port: '8000',           // Add the port if you serve from 8000
-        pathname: '/media/**'
-      },
-      {
         protocol: 'https',
-        hostname: 'img.youtube.com',
-        pathname: '/vi/**',
+        hostname: 'your-production-django-domain.com', // Replace with your real domain
+        pathname: '/media/**'
       },
       {
         protocol: 'https',
@@ -25,10 +21,15 @@ images: {
         pathname: '/media/**'
       },
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '8000',
+        protocol: 'https',
+        hostname: 'africarise.pythonanywhere.com',
         pathname: '/media/**'
+      },
+
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        pathname: '/vi/**',
       }
     ]
   }
