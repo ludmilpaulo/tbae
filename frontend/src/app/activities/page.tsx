@@ -16,7 +16,7 @@ export default function ActivitiesPage() {
   const { data: categories = [] } = useGetActivityCategoriesQuery();
   const { data: allActivities = [], isLoading } = useGetActivitiesQuery(); // fetch everything
 
-  // Step 1: Filter by category (if any)
+
   const filteredActivities = useMemo(() => {
     if (!selected) return allActivities;
     return allActivities.filter(
