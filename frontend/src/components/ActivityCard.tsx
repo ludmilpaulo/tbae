@@ -8,7 +8,7 @@ export default function ActivityCard({ activity }: { activity: Activity }) {
       <div className="rounded-2xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition border border-blue-50 flex flex-col h-full">
         <div className="relative h-48 w-full">
           <Image
-            src={activity.image ? activity.image : "/logo.png"}
+            src={activity.image ? `https://africarise.pythonanywhere.com${activity.image}` : "/logo.png"}
             alt={activity.title}
             fill
             className="object-cover transition group-hover:scale-105 duration-500"

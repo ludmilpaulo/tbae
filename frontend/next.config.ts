@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
         pathname: '/media/**'
       },
       {
-        protocol: 'https',
+        protocol: 'http',
         hostname: 'africarise.pythonanywhere.com',
         pathname: '/media/**'
       },
