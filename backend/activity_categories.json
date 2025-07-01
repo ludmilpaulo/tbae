@@ -1,0 +1,9 @@
+[
+  { "model": "activities.activitycategory", "pk": 1, "fields": { "name": "Outdoor", "order": 1 } },
+  { "model": "activities.activitycategory", "pk": 2, "fields": { "name": "Indoor", "order": 2 } },
+  { "model": "activities.activitycategory", "pk": 3, "fields": { "name": "Virtual", "order": 3 } },
+  { "model": "activities.activitycategory", "pk": 4, "fields": { "name": "Charity & CSR", "order": 4 } },
+  { "model": "activities.activitycategory", "pk": 5, "fields": { "name": "Creative", "order": 5 } },
+  { "model": "activities.activitycategory", "pk": 6, "fields": { "name": "Adventure", "order": 6 } },
+  { "model": "activities.activitycategory", "pk": 7, "fields": { "name": "Problem Solving", "order": 7 } }
+]
