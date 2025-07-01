@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'quotes',
     "django_filters",
     'core',
+    'activities',
 ]
 
 # settings.py

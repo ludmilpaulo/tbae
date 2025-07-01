@@ -11,6 +11,7 @@ urlpatterns = [
     path('api/', include('core.urls')),
     path('careers/', include('careers.urls')),
     path("quotes/", include("quotes.urls")),
+    path("activities/", include("activities.urls")),
     path('venues/', include('venues.urls')),  # Add this line for the venues API
 ]
 

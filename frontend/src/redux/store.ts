@@ -11,6 +11,7 @@ import { clientApi } from './services/clientApi';
 import { aboutApi } from "./services/aboutApi";
 import { contactApi } from "./services/contactApi";
 import { testimonialsApi } from "./services/testimonialsApi";
+import { activitiesApi } from "./services/activitiesApi";
 
 export const store = configureStore({
   reducer: {
@@ -18,6 +19,7 @@ export const store = configureStore({
     
     gallery: galleryReducer,
     homepage: homepageReducer,
+    [activitiesApi.reducerPath]: activitiesApi.reducer,
     [contactApi.reducerPath]: contactApi.reducer,
     [testimonialsApi.reducerPath]: testimonialsApi.reducer,
     [aboutApi.reducerPath]: aboutApi.reducer,
@@ -34,6 +36,7 @@ export const store = configureStore({
       .concat(aboutApi.middleware)
       .concat(clientApi.middleware)
       .concat(venuesApi.middleware)
+      .concat(activitiesApi.middleware)
       .concat(faqApi.middleware),
 });
 
