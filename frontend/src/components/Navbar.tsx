@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-//import Image from "next/image";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   CalendarDaysIcon,
@@ -34,15 +34,13 @@ export default function Navbar() {
     <nav className="bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-400 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
         <Link href="/" className="flex items-center gap-2">
-          <img
+         <Image
             src="/logo.png"
             alt="TBAE Logo"
             width={120}
             height={50}
             className="object-contain"
-            style={{ objectFit: "contain" }}
           />
-
         </Link>
 
         {/* Desktop */}
