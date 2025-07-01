@@ -44,6 +44,9 @@ mapping = {
 doc = fitz.open(PDF)
 
 for page_num, image_name in mapping.items():
+    if page_num > len(doc):
+        print(f"Page {page_num} does not exist in PDF, skipping {image_name}")
+        continue
     page = doc[page_num - 1]  # Pages are 0-indexed
     img_list = page.get_images(full=True)
     if not img_list:
