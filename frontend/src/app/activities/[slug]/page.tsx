@@ -62,7 +62,7 @@ export default function ActivityDetail({ params }: { params: { slug: string } })
       </div>
       <div className="mt-8">
         <Link
-          href="/quote"
+          href="/teambuilding-quote.htm"
           className="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold shadow hover:bg-blue-700 transition"
         >
           Request a Quote for this Activity

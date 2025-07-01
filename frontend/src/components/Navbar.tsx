@@ -11,6 +11,7 @@ import {
  // UserCircleIcon,
  // Cog6ToothIcon,
   HomeIcon,
+  Squares2X2Icon,
 } from "@heroicons/react/24/outline";
 
 export default function Navbar() {
@@ -22,6 +23,8 @@ export default function Navbar() {
     { href: "/venues", label: "Venues", icon: MapPinIcon, special: false },
     { href: "/gallery", label: "Gallery", icon: PhotoIcon, special: false },
     { href: "/success", label: "Success Stories", icon: StarIcon, special: false }, // new
+    { href: "/activities", label: "Activities", icon: Squares2X2Icon, special: false },
+
    // { href: "/dashboard", label: "My Dashboard", icon: UserCircleIcon, special: false },
   //  { href: "/admin", label: "Admin", icon: Cog6ToothIcon, special: true },
   ];
