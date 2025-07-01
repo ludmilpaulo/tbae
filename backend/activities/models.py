@@ -37,3 +37,12 @@ class Activity(models.Model):
 
     class Meta:
         ordering = ["order", "title"]
+        
+        
+class Brochure(models.Model):
+    file = models.FileField(upload_to="brochures/")
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    version = models.CharField(max_length=50, blank=True)
+
+    def __str__(self):
+        return f"Brochure {self.version or ''} ({self.uploaded_at.date()})"

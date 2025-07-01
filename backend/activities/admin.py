@@ -1,7 +1,9 @@
 # activities/admin.py
 
 from django.contrib import admin
-from .models import Activity, ActivityCategory
+from .models import Activity, ActivityCategory, Brochure
+
+admin.site.register(Brochure)
 
 @admin.register(ActivityCategory)
 class ActivityCategoryAdmin(admin.ModelAdmin):

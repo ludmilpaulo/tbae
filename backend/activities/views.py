@@ -1,8 +1,9 @@
-# activities/views.py
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 from rest_framework import viewsets
-from .models import Activity, ActivityCategory
-from .serializers import ActivitySerializer, ActivityCategorySerializer
+from .models import Activity, ActivityCategory, Brochure
+from .serializers import ActivitySerializer, ActivityCategorySerializer, BrochureSerializer
 
 class ActivityCategoryViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = ActivityCategory.objects.all()
@@ -19,3 +20,11 @@ class ActivityViewSet(viewsets.ReadOnlyModelViewSet):
         if cat:
             queryset = queryset.filter(category__slug=cat)
         return queryset
+    
+    
+class LatestBrochureView(APIView):
+    def get(self, request):
+        latest = Brochure.objects.order_by('-uploaded_at').first()
+        if latest:
+            return Response(BrochureSerializer(latest, context={'request': request}).data)
+        return Response({"detail": "No brochure found."}, status=404)

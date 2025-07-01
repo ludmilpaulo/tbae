@@ -1,9 +1,12 @@
 "use client";
+
 import { useGetActivityBySlugQuery } from "@/redux/services/activitiesApi";
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
-export default function ActivityDetail({ params }: { params: { slug: string } }) {
+export default function ActivityDetail() {
+  const params = useParams<{ slug: string }>();
   const { data: activity, isLoading, error } = useGetActivityBySlugQuery(params.slug);
 
   if (isLoading) return <div className="text-center text-gray-400 py-24">Loading…</div>;
@@ -14,6 +17,7 @@ export default function ActivityDetail({ params }: { params: { slug: string } })
     <main className="max-w-4xl mx-auto px-4 py-14">
       <h1 className="text-4xl font-extrabold text-blue-700 mb-4 drop-shadow">{activity.title}</h1>
       <div className="mb-6 text-lg text-gray-700">{activity.short_description}</div>
+
       {activity.image && (
         <div className="relative w-full h-64 mb-8 rounded-xl overflow-hidden shadow">
           <Image
@@ -26,10 +30,12 @@ export default function ActivityDetail({ params }: { params: { slug: string } })
           />
         </div>
       )}
+
       <div
         className="prose max-w-none mb-8"
         dangerouslySetInnerHTML={{ __html: activity.description }}
       />
+
       <div className="flex flex-wrap gap-4 text-sm mb-8">
         {activity.duration && (
           <div className="bg-blue-100 px-4 py-2 rounded-full font-bold">
@@ -60,6 +66,7 @@ export default function ActivityDetail({ params }: { params: { slug: string } })
           </a>
         )}
       </div>
+
       <div className="mt-8">
         <Link
           href="/teambuilding-quote.htm"
