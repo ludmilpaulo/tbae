@@ -30,7 +30,11 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'img.youtube.com',
         pathname: '/vi/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: '**', // Allow any hostname (in production, prefer explicit hostnames)
+      },
     ]
   }
 };
