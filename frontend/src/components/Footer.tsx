@@ -1,15 +1,52 @@
 import Link from "next/link";
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import { useGetAboutQuery } from "@/redux/services/aboutApi";
 import {
   FaFacebookF,
   FaInstagram,
-  FaTumblr,
   FaPinterestP,
   FaLinkedinIn,
   FaYoutube,
+  FaTiktok,
+  FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 
+type SocialKey =
+  | "facebook_url"
+  | "twitter_url"
+  | "instagram_url"
+  | "linkedin_url"
+  | "youtube_url"
+  | "tiktok_url"
+  | "whatsapp_url"
+  | "pinterest_url";
+
+const SOCIAL_ICON_MAP: Record<SocialKey, React.ReactNode> = {
+  facebook_url: <FaFacebookF className="w-6 h-6" />,
+  twitter_url: <FaTwitter className="w-6 h-6" />,
+  instagram_url: <FaInstagram className="w-6 h-6" />,
+  linkedin_url: <FaLinkedinIn className="w-6 h-6" />,
+  youtube_url: <FaYoutube className="w-6 h-6" />,
+  tiktok_url: <FaTiktok className="w-6 h-6" />,
+  whatsapp_url: <FaWhatsapp className="w-6 h-6" />,
+  pinterest_url: <FaPinterestP className="w-6 h-6" />,
+};
+
+// Colorful styles for each network:
+const SOCIAL_COLOR_MAP: Record<SocialKey, string> = {
+  facebook_url: "bg-[#3b5998] hover:ring-[#3b5998]/40",
+  twitter_url: "bg-[#1da1f2] hover:ring-[#1da1f2]/40",
+  instagram_url: "bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:ring-pink-400/40",
+  linkedin_url: "bg-[#0077b5] hover:ring-[#0077b5]/40",
+  youtube_url: "bg-[#ff0000] hover:ring-[#ff0000]/40",
+  tiktok_url: "bg-gradient-to-r from-black via-pink-600 to-gray-800 hover:ring-pink-400/40",
+  whatsapp_url: "bg-[#25d366] hover:ring-[#25d366]/40",
+  pinterest_url: "bg-[#cb2027] hover:ring-[#cb2027]/40",
+};
+
 export default function Footer() {
+   const { data: about } = useGetAboutQuery();
   return (
     <footer className="bg-gradient-to-r from-blue-700 via-blue-500 to-green-400 text-white py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
@@ -17,24 +54,24 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start justify-center space-y-4">
           <h2 className="text-xl font-bold mb-2">Connect with us</h2>
           <div className="flex gap-6 mt-2">
-            <Link href="https://facebook.com/" target="_blank" aria-label="Facebook">
-              <FaFacebookF className="w-10 h-10 rounded-full p-2 bg-[#3b5998] hover:scale-110 transition transform duration-200" />
-            </Link>
-            <Link href="https://instagram.com/" target="_blank" aria-label="Instagram">
-              <FaInstagram className="w-10 h-10 rounded-full p-2 bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:scale-110 transition transform duration-200" />
-            </Link>
-            <Link href="https://tumblr.com/" target="_blank" aria-label="Tumblr">
-              <FaTumblr className="w-10 h-10 rounded-full p-2 bg-[#65c8fa] hover:scale-110 transition transform duration-200" />
-            </Link>
-            <Link href="https://pinterest.com/" target="_blank" aria-label="Pinterest">
-              <FaPinterestP className="w-10 h-10 rounded-full p-2 bg-[#cb2027] hover:scale-110 transition transform duration-200" />
-            </Link>
-            <Link href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
-              <FaLinkedinIn className="w-10 h-10 rounded-full p-2 bg-[#0077b5] hover:scale-110 transition transform duration-200" />
-            </Link>
-            <Link href="https://youtube.com/" target="_blank" aria-label="YouTube">
-              <FaYoutube className="w-10 h-10 rounded-full p-2 bg-[#ff0000] hover:scale-110 transition transform duration-200" />
-            </Link>
+            {about &&
+            (Object.entries(about) as [SocialKey, string | null][])
+              .filter(([k, v]) => k.endsWith("_url") && v)
+              .map(([k, url]) =>
+                url ? (
+                  <a
+                    key={k}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-11 h-11 flex items-center justify-center rounded-full text-white shadow-md p-2 transition-all duration-200 text-2xl focus:outline-none focus:ring-2 focus:ring-blue-300 ${SOCIAL_COLOR_MAP[k]}`}
+                    aria-label={k.replace("_url", "")}
+                    tabIndex={0}
+                  >
+                    {SOCIAL_ICON_MAP[k]}
+                  </a>
+                ) : null
+              )}
           </div>
         </div>
 
