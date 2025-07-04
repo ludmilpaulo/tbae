@@ -65,10 +65,10 @@ export default function ContactPage() {
         <div>
           Tel:{" "}
           <a
-            href="tel:+27836599911"
+            href="tel:+27636590489"
             className="text-blue-600 underline font-semibold hover:text-blue-800"
           >
-            +27836599911
+            +27636590489
           </a>
         </div>
         <h2 className="text-xl font-bold my-6 text-blue-700">Connect with us</h2>
