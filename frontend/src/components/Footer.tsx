@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { useGetAboutQuery } from "@/redux/services/aboutApi";
@@ -10,7 +11,8 @@ import {
   FaTiktok,
   FaTwitter,
   FaWhatsapp,
-} from "react-icons/fa";
+} from "react-icons/fa6"; // v6 for best icons
+import { JSX } from "react";
 
 type SocialKey =
   | "facebook_url"
@@ -22,90 +24,103 @@ type SocialKey =
   | "whatsapp_url"
   | "pinterest_url";
 
-const SOCIAL_ICON_MAP: Record<SocialKey, React.ReactNode> = {
-  facebook_url: <FaFacebookF className="w-6 h-6" />,
-  twitter_url: <FaTwitter className="w-6 h-6" />,
-  instagram_url: <FaInstagram className="w-6 h-6" />,
-  linkedin_url: <FaLinkedinIn className="w-6 h-6" />,
-  youtube_url: <FaYoutube className="w-6 h-6" />,
-  tiktok_url: <FaTiktok className="w-6 h-6" />,
-  whatsapp_url: <FaWhatsapp className="w-6 h-6" />,
-  pinterest_url: <FaPinterestP className="w-6 h-6" />,
+const SOCIAL_ICON_MAP: Record<SocialKey, JSX.Element> = {
+  facebook_url: <FaFacebookF />,
+  twitter_url: <FaTwitter />,
+  instagram_url: <FaInstagram />,
+  linkedin_url: <FaLinkedinIn />,
+  youtube_url: <FaYoutube />,
+  tiktok_url: <FaTiktok />,
+  whatsapp_url: <FaWhatsapp />,
+  pinterest_url: <FaPinterestP />,
 };
 
-// Colorful styles for each network:
 const SOCIAL_COLOR_MAP: Record<SocialKey, string> = {
-  facebook_url: "bg-[#3b5998] hover:ring-[#3b5998]/40",
-  twitter_url: "bg-[#1da1f2] hover:ring-[#1da1f2]/40",
-  instagram_url: "bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:ring-pink-400/40",
-  linkedin_url: "bg-[#0077b5] hover:ring-[#0077b5]/40",
-  youtube_url: "bg-[#ff0000] hover:ring-[#ff0000]/40",
-  tiktok_url: "bg-gradient-to-r from-black via-pink-600 to-gray-800 hover:ring-pink-400/40",
-  whatsapp_url: "bg-[#25d366] hover:ring-[#25d366]/40",
-  pinterest_url: "bg-[#cb2027] hover:ring-[#cb2027]/40",
+  facebook_url: "bg-[#3b5998] hover:bg-[#2d4373]",
+  twitter_url: "bg-[#1da1f2] hover:bg-[#1482b3]",
+  instagram_url: "bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 hover:opacity-90",
+  linkedin_url: "bg-[#0077b5] hover:bg-[#005983]",
+  youtube_url: "bg-[#ff0000] hover:bg-[#b20000]",
+  tiktok_url: "bg-gradient-to-r from-black via-pink-600 to-gray-800 hover:opacity-90",
+  whatsapp_url: "bg-[#25d366] hover:bg-[#128c7e]",
+  pinterest_url: "bg-[#cb2027] hover:bg-[#7c111c]",
 };
 
 export default function Footer() {
-   const { data: about } = useGetAboutQuery();
+  const { data: about } = useGetAboutQuery();
+  const socialLinks =
+    about &&
+    (Object.entries(about) as [SocialKey, string | null][])
+      .filter(([k, v]) => k.endsWith("_url") && v)
+      .map(([k, url]) =>
+        url ? (
+          <a
+            key={k}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`w-12 h-12 flex items-center justify-center rounded-full text-white shadow-lg transition-all duration-200 text-2xl ${SOCIAL_COLOR_MAP[k]} ring-0 hover:ring-4 focus:outline-none focus:ring-4 focus:ring-blue-300`}
+            aria-label={k.replace("_url", "")}
+            tabIndex={0}
+          >
+            {SOCIAL_ICON_MAP[k]}
+          </a>
+        ) : null
+      );
+
   return (
-    <footer className="bg-gradient-to-r from-blue-700 via-blue-500 to-green-400 text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
-        {/* Social Media Section */}
-        <div className="flex flex-col items-center md:items-start justify-center space-y-4">
-          <h2 className="text-xl font-bold mb-2">Connect with us</h2>
-          <div className="flex gap-6 mt-2">
-            {about &&
-            (Object.entries(about) as [SocialKey, string | null][])
-              .filter(([k, v]) => k.endsWith("_url") && v)
-              .map(([k, url]) =>
-                url ? (
-                  <a
-                    key={k}
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`w-11 h-11 flex items-center justify-center rounded-full text-white shadow-md p-2 transition-all duration-200 text-2xl focus:outline-none focus:ring-2 focus:ring-blue-300 ${SOCIAL_COLOR_MAP[k]}`}
-                    aria-label={k.replace("_url", "")}
-                    tabIndex={0}
-                  >
-                    {SOCIAL_ICON_MAP[k]}
-                  </a>
-                ) : null
-              )}
+    <footer className="bg-gradient-to-tr from-blue-700 via-blue-500 to-cyan-400 text-white pt-10 pb-4">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-center md:items-start">
+        {/* Left: Socials */}
+        <div className="flex-1 flex flex-col items-center md:items-start">
+          <h2 className="text-2xl font-bold mb-3 tracking-tight">Connect with us</h2>
+          <div className="flex flex-wrap gap-5 mb-2">
+            {socialLinks}
           </div>
         </div>
 
-        {/* Help & Legal */}
-        <div className="space-y-2">
-          <h3 className="text-lg font-semibold">Help & Info</h3>
-          <ul className="space-y-1 text-sm">
-            <li><Link href="/about" className="hover:underline">About Us</Link></li>
-            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
-            <li><Link href="/faq" className="hover:underline">FAQs</Link></li>
-            <li><Link href="/terms" className="hover:underline">Terms of Service</Link></li>
-            <li><Link href="/privacy" className="hover:underline">Privacy Policy</Link></li>
+        {/* Middle: Help & Info */}
+        <div className="flex-1 flex flex-col items-center">
+          <h3 className="text-xl font-bold mb-3">Help & Info</h3>
+          <ul className="space-y-2 text-white/90 text-base">
+            <li>
+              <Link href="/about" className="hover:underline transition-colors">About Us</Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:underline transition-colors">Contact</Link>
+            </li>
+            <li>
+              <Link href="/faq" className="hover:underline transition-colors">FAQs</Link>
+            </li>
+            <li>
+              <Link href="/terms" className="hover:underline transition-colors">Terms of Service</Link>
+            </li>
+            <li>
+              <Link href="/privacy" className="hover:underline transition-colors">Privacy Policy</Link>
+            </li>
           </ul>
         </div>
 
-        {/* Contact Info */}
-        <div className="space-y-3 text-sm">
-          <h3 className="text-lg font-semibold">Get In Touch</h3>
-          <div className="flex items-center gap-2">
-            <EnvelopeIcon className="w-5 h-5" />
-            <span>info@tbae.co.za</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <PhoneIcon className="w-5 h-5" />
-            <span>+27 (0)636590489</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <MapPinIcon className="w-5 h-5 mt-1" />
-            <span>1st Floor, Trescoe House, Riverstone Rd, Kenilworth, Cape Town, 7945</span>
+        {/* Right: Contact Info */}
+        <div className="flex-1 flex flex-col items-center md:items-end mt-6 md:mt-0">
+          <h3 className="text-xl font-bold mb-3">Get In Touch</h3>
+          <div className="flex flex-col gap-3 text-white/90 text-base">
+            <div className="flex items-center gap-2">
+              <EnvelopeIcon className="w-5 h-5" />
+              <span>info@tbae.co.za</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <PhoneIcon className="w-5 h-5" />
+              <span>+27 (0)636590489</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <MapPinIcon className="w-5 h-5 mt-1" />
+              <span>1st Floor, Trescoe House, Riverstone Rd, Kenilworth, Cape Town, 7945</span>
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="mt-10 border-t border-white/20 pt-4 text-center text-sm">
+      <div className="mt-8 border-t border-white/20 pt-4 text-center text-sm">
         &copy; {new Date().getFullYear()} TBAE. All rights reserved.
       </div>
     </footer>
