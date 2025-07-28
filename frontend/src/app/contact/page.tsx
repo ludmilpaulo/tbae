@@ -59,7 +59,25 @@ export default function ContactPage() {
             href="mailto:info@tbae.co.za"
             className="text-blue-600 underline font-semibold hover:text-blue-800"
           >
-            info@tbae.co.za
+            evan@tbae.co.za
+          </a>
+        </div>
+         <div>
+        
+          <a
+            href="mailto:info@tbae.co.za"
+            className="text-blue-600 underline font-semibold hover:text-blue-800"
+          >
+            mandy@tbae.co.za
+          </a>
+        </div>
+         <div>
+         
+          <a
+            href="mailto:info@tbae.co.za"
+            className="text-blue-600 underline font-semibold hover:text-blue-800"
+          >
+            ian@tbae.co.za
           </a>
         </div>
         <div>
