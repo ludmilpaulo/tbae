@@ -1,5 +1,5 @@
 from django.db import models
-from adminsortable2.admin import SortableInlineAdminMixin
+
 
 
 class Province(models.Model):
