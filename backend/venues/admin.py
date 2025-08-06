@@ -5,8 +5,8 @@ from .models import Province, Town, Venue, VenueImage
 class VenueImageInline(admin.TabularInline):
     model = VenueImage
     extra = 1
-    fields = ('image', 'caption', 'order')
-    readonly_fields = ()
+    fields = ('image', 'caption')  # 'order' removed because it's non-editable
+    readonly_fields = ('order',)   # optional: display order as read-only
     ordering = ('order',)
 
 # Admin for Venue
@@ -36,3 +36,4 @@ class VenueImageAdmin(admin.ModelAdmin):
     list_display = ('venue', 'caption', 'order')
     list_filter = ('venue',)
     search_fields = ('caption',)
+    readonly_fields = ('order',)  # ensure no errors in forms
