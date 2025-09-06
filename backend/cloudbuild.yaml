@@ -1,0 +1,40 @@
+substitutions:
+  _SERVICE: "tbae"
+  _REGION: "africa-south1"
+
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build','-t','${_REGION}-docker.pkg.dev/$PROJECT_ID/django-repo/${_SERVICE}:${SHORT_SHA}','backend']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push','${_REGION}-docker.pkg.dev/$PROJECT_ID/django-repo/${_SERVICE}:${SHORT_SHA}']
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      [
+        'run','deploy','${_SERVICE}',
+        '--image','${_REGION}-docker.pkg.dev/$PROJECT_ID/django-repo/${_SERVICE}:${SHORT_SHA}',
+        '--region','${_REGION}',
+        '--platform','managed',
+        '--allow-unauthenticated',
+        '--service-account','django-runner@$PROJECT_ID.iam.gserviceaccount.com',
+        '--add-cloudsql-instances','$PROJECT_ID:africa-south1:django-mysql',
+        '--set-secrets',
+          'DJANGO_SECRET_KEY=DJANGO_SECRET_KEY:latest,'
+          'DATABASE_URL=DATABASE_URL:latest,'
+          'GS_BUCKET_NAME=GS_BUCKET_NAME:latest,'
+          'GS_LOCATION=GS_LOCATION:latest,'
+          'DEFAULT_FROM_EMAIL=DEFAULT_FROM_EMAIL:latest,'
+          'EMAIL_HOST=EMAIL_HOST:latest,'
+          'EMAIL_PORT=EMAIL_PORT:latest,'
+          'EMAIL_HOST_USER=EMAIL_HOST_USER:latest,'
+          'EMAIL_HOST_PASSWORD=EMAIL_HOST_PASSWORD:latest,'
+          'EMAIL_USE_TLS=EMAIL_USE_TLS:latest,'
+          'EMAIL_USE_SSL=EMAIL_USE_SSL:latest,'
+          'ALLOWED_HOSTS=ALLOWED_HOSTS:latest,'
+          'CSRF_EXTRA=CSRF_EXTRA:latest',
+        '--set-env-vars','DEBUG=false'
+      ]
+images:
+  - '${_REGION}-docker.pkg.dev/$PROJECT_ID/django-repo/${_SERVICE}:${SHORT_SHA}'
