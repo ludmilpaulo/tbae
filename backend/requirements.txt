@@ -3,3 +3,11 @@ djangorestframework
 django-cors-headers
 djangorestframework-simplejwt
 pillow
+gunicorn
+dj-database-url
+whitenoise
+django-storages
+google-cloud-storage
+google-cloud-secret-manager
+mysqlclient
+
