@@ -1,5 +1,4 @@
 from django.contrib import admin
-from adminsortable2.admin import SortableAdminMixin, SortableInlineAdminMixin
 
 from .models import (
     FAQCategory, FAQ, Testimonial, GalleryImage, Stat,
@@ -7,10 +6,8 @@ from .models import (
     Homepage, Client
 )
 
-
-
 # ========== ADMIN CLASSES ==========
-class FAQInline(SortableInlineAdminMixin, admin.TabularInline):
+class FAQInline(admin.TabularInline):
     model = FAQ
     extra = 1
     fields = ('question', 'is_active', 'order')
@@ -19,7 +16,7 @@ class FAQInline(SortableInlineAdminMixin, admin.TabularInline):
 
 
 @admin.register(FAQCategory)
-class FAQCategoryAdmin(SortableAdminMixin, admin.ModelAdmin):  # Must inherit SortableAdminMixin!
+class FAQCategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'order')
     inlines = [FAQInline]
     ordering = ('order', 'name')
@@ -27,11 +24,12 @@ class FAQCategoryAdmin(SortableAdminMixin, admin.ModelAdmin):  # Must inherit So
 
 
 @admin.register(FAQ)
-class FAQAdmin(SortableAdminMixin, admin.ModelAdmin):
+class FAQAdmin(admin.ModelAdmin):
     list_display = ('question', 'category', 'is_active', 'order')
     list_filter = ('category', 'is_active')
     search_fields = ('question', 'answer')
     ordering = ('category__order', 'order')
+
 
 @admin.register(Testimonial)
 class TestimonialAdmin(admin.ModelAdmin):
@@ -53,14 +51,14 @@ class GalleryImageAdmin(admin.ModelAdmin):
 
 
 @admin.register(Stat)
-class StatAdmin(SortableAdminMixin, admin.ModelAdmin):
+class StatAdmin(admin.ModelAdmin):
     list_display = ('label', 'value', 'order')
     ordering = ('order',)
     search_fields = ('label',)
 
 
 @admin.register(TimelineEvent)
-class TimelineEventAdmin(SortableAdminMixin, admin.ModelAdmin):
+class TimelineEventAdmin(admin.ModelAdmin):
     list_display = ('year', 'title', 'order')
     ordering = ('order', 'year')
     search_fields = ('title', 'desc')
@@ -102,8 +100,7 @@ class HomepageAdmin(admin.ModelAdmin):
 
 
 @admin.register(Client)
-class ClientAdmin(admin.ModelAdmin):  # remove SortableAdminMixin if not needed!
+class ClientAdmin(admin.ModelAdmin):
     list_display = ('name', 'website', 'order')
     ordering = ('order',)
     search_fields = ('name', 'website')
-
