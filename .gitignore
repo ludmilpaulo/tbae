@@ -52,3 +52,20 @@ dist/
 
 # Jupyter notebooks (if used)
 .ipynb_checkpoints/
+
+
+# Python
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+
+# Env / secrets
+.env
+*.env
+
