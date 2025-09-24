@@ -1,38 +1,46 @@
-# Python bytecode
+# Bytecode
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Django DB and settings
+# Django SQLite (local dev)
 *.sqlite3
-.venv
-*.venv
-venv
+db.sqlite3
+
+# Django settings (never commit secrets)
+settings.py
+**/settings.py
+!**/settings.example.py   # allow a safe example file
+
+# Virtual environments
+.venv/
+venv/
+*.venv/
+myenv/
 
 # macOS
 .DS_Store
 
-# VSCode and JetBrains IDEs
+# IDEs
 .vscode/
 .idea/
 
 # Logs
 *.log
 
-# Static and media files (collected/generated)
+# Static and media (generated)
 static_cdn/
 staticfiles/
-#media/
-#statics/
+media/
+statics/
 
-# Migrations (optional – if you don’t want to track them until stable)
+# Migrations (optional — if you don’t want them yet)
 */migrations/*.py
 */migrations/__pycache__/
 
-# Virtual environments
-venv/
-myenv/
-.env/
+# Env files
+.env
+*.env
 .envrc
 
 # Coverage reports
@@ -50,22 +58,10 @@ build/
 dist/
 *.egg-info/
 
-# Jupyter notebooks (if used)
+# Jupyter
 .ipynb_checkpoints/
-
-
-# Python
-venv/
-__pycache__/
-*.pyc
-db.sqlite3
 
 # Node / Next.js
 frontend/node_modules/
 frontend/.next/
 frontend/.env.local
-
-# Env / secrets
-.env
-*.env
-
