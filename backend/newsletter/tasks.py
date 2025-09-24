@@ -4,7 +4,18 @@ import csv
 import io
 from typing import Iterable, Optional
 
-from celery import shared_task
+# --- Celery is optional: fall back to a no-op decorator when not installed ---
+try:
+    from celery import shared_task  # type: ignore
+except Exception:
+    def shared_task(*dargs, **dkwargs):  # type: ignore
+        def _decorator(func):
+            # Return the plain function so `.delay(...)` is missing and your view
+            # will hit the except branch and call the function synchronously.
+            return func
+        return _decorator
+# ---------------------------------------------------------------------------
+
 from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
 from django.db import transaction
@@ -17,6 +28,10 @@ from .utils import render_email, inject_unsubscribe
 
 @shared_task(bind=True, ignore_result=True)
 def send_campaign_task(self, campaign_id: int, subscriber_ids: Optional[Iterable[int]] = None):
+    """
+    Sends a campaign. When Celery isn't installed, this runs synchronously
+    (your view's try/except around `.delay` already handles that).
+    """
     campaign = Campaign.objects.select_related("template", "list").get(id=campaign_id)
     Campaign.objects.filter(id=campaign.id).update(status=Campaign.SENDING)
 
@@ -35,6 +50,7 @@ def send_campaign_task(self, campaign_id: int, subscriber_ids: Optional[Iterable
         # Per-subscriber HTML: inject unsubscribe URL first
         html_source = inject_unsubscribe(campaign.template.html, s.unsubscribe_token)
 
+        # Inline CSS, add open pixel & tracked links
         html, text = render_email(html_source, delivery.token)
 
         msg = EmailMultiAlternatives(
@@ -48,6 +64,7 @@ def send_campaign_task(self, campaign_id: int, subscriber_ids: Optional[Iterable
         try:
             msg.send(fail_silently=False)
             delivery.sent_at = timezone.now()
+            delivery.bounce_reason = ""
         except Exception as e:
             delivery.bounce_reason = (str(e) or "")[:2000]
         finally:
@@ -63,8 +80,9 @@ def process_import_job(self, job_id: int, csv_text: str, confirm_all: bool = Tru
     """
     Minimal CSV importer:
     - Required: email
-    - Optional: first_name, last_name, tags (comma-separated), list_id/list_slug handled by caller (ImportCreateView)
-    Updates ImportJob counters and writes an error report CSV if needed.
+    - Optional: first_name, last_name, tags (comma-separated)
+    Uses ImportJob.list selected by the view.
+    Writes an error report CSV if any row fails and records per-row counters.
     """
     job = ImportJob.objects.get(id=job_id)
     job.status = "processing"
@@ -77,8 +95,14 @@ def process_import_job(self, job_id: int, csv_text: str, confirm_all: bool = Tru
     wrote_header = False
 
     reader = csv.DictReader(io.StringIO(csv_text))
-    # Figure out which list to use from job.list (the view ensures it)
     target_list: List = job.list
+
+    def write_err(row_num: int, error_msg: str, data: dict) -> None:
+        nonlocal wrote_header
+        if not wrote_header:
+            err_writer.writerow(["row", "error", "data"])
+            wrote_header = True
+        err_writer.writerow([row_num, error_msg, data])
 
     with transaction.atomic():
         for row in reader:
@@ -86,10 +110,7 @@ def process_import_job(self, job_id: int, csv_text: str, confirm_all: bool = Tru
             email = (row.get("email") or "").strip().lower()
             if not email:
                 rows_errors += 1
-                if not wrote_header:
-                    err_writer.writerow(["row", "error", "data"])
-                    wrote_header = True
-                err_writer.writerow([rows_total, "missing email", dict(row)])
+                write_err(rows_total, "missing email", dict(row))
                 continue
 
             first_name = (row.get("first_name") or "").strip()
@@ -120,6 +141,7 @@ def process_import_job(self, job_id: int, csv_text: str, confirm_all: bool = Tru
                         sub.tags = tags; changed = True
                     if confirm_all and not sub.is_confirmed:
                         sub.is_confirmed = True; changed = True
+
                     if changed:
                         sub.save(update_fields=["first_name", "last_name", "tags", "is_confirmed"])
                         rows_updated += 1
@@ -127,10 +149,7 @@ def process_import_job(self, job_id: int, csv_text: str, confirm_all: bool = Tru
                         rows_skipped += 1
             except Exception as e:
                 rows_errors += 1
-                if not wrote_header:
-                    err_writer.writerow(["row", "error", "data"])
-                    wrote_header = True
-                err_writer.writerow([rows_total, str(e), dict(row)])
+                write_err(rows_total, str(e), dict(row))
 
     # Persist error report if any
     error_report_url = None
@@ -149,10 +168,10 @@ def process_import_job(self, job_id: int, csv_text: str, confirm_all: bool = Tru
     job.rows_updated = rows_updated
     job.rows_skipped = rows_skipped
     job.rows_errors = rows_errors
-    job.status = "completed" if rows_errors == 0 else "completed"  # still completed; errors are per-row
+    job.status = "completed"  # completed even with per-row errors; see error_report
     job.finished_at = timezone.now()
     if error_report_url is not None and hasattr(job, "error_report"):
-        job.error_report = error_report_url  # field is optional in some schemas
+        job.error_report = error_report_url
         job.save(update_fields=[
             "rows_total", "rows_created", "rows_updated", "rows_skipped", "rows_errors",
             "status", "finished_at", "error_report",
@@ -162,6 +181,7 @@ def process_import_job(self, job_id: int, csv_text: str, confirm_all: bool = Tru
             "rows_total", "rows_created", "rows_updated", "rows_skipped", "rows_errors",
             "status", "finished_at",
         ])
+
     return {
         "rows_total": rows_total,
         "rows_created": rows_created,
