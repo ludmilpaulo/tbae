@@ -1,25 +1,44 @@
-
 import os
 from pathlib import Path
+
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
+# -----------------------------------------------------------------------------
+# Environment & Debug
+# -----------------------------------------------------------------------------
+DJANGO_ENV = os.getenv("DJANGO_ENV", "development").lower()
+DEBUG = DJANGO_ENV != "production"
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$ej^&@u+(igy6vun!7)=(s-92qc_#v##a0uu_a7ucpm$+j8wa6'
+SECRET_KEY = os.getenv(
+    "SECRET_KEY",
+    "django-insecure-$ej^&@u+(igy6vun!7)=(s-92qc_#v##a0uu_a7ucpm$+j8wa6"  # dev fallback
+)
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# -----------------------------------------------------------------------------
+# Hosts / CORS / CSRF
+# -----------------------------------------------------------------------------
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",") if not DEBUG else ["*"]
 
-ALLOWED_HOSTS = ['*']
+CORS_ALLOW_ALL_ORIGINS = DEBUG
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://www.tbae.co.za",
+]
+CORS_ALLOW_CREDENTIALS = True
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://www.tbae.co.za",
+]
 
-# Application definition
-
+# -----------------------------------------------------------------------------
+# Installed apps
+# -----------------------------------------------------------------------------
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,21 +59,22 @@ INSTALLED_APPS = [
     'newsletter',
     'tracking',
     "ingest",
-
 ]
 
-# settings.py
-
+# -----------------------------------------------------------------------------
+# DRF
+# -----------------------------------------------------------------------------
 REST_FRAMEWORK = {
-   
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 20,
     "DEFAULT_FILTER_BACKENDS": [
         "django_filters.rest_framework.DjangoFilterBackend"
-    ]
+    ],
 }
 
-
+# -----------------------------------------------------------------------------
+# Middleware / Templates / WSGI
+# -----------------------------------------------------------------------------
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -67,7 +87,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'backend.urls'
-CORS_ALLOW_ALL_ORIGINS = True
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -85,75 +105,90 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "https://www.tbae.co.za",
-]
-CORS_ALLOW_CREDENTIALS = True
-
-# Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# -----------------------------------------------------------------------------
+# Database: SQLite in Dev, PostgreSQL in Prod (Africarise$tbae / Maitland@2025)
+# -----------------------------------------------------------------------------
+if DEBUG:
+    # Development: SQLite
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+else:
+    # Production: PostgreSQL
+    # You can override via env vars; defaults match your request.
+    PROD_DB_NAME = os.getenv("PROD_DB_NAME", "Africarise$tbae")
+    PROD_DB_USER = os.getenv("PROD_DB_USER", "postgres")
+    PROD_DB_PASSWORD = os.getenv("PROD_DB_PASSWORD", "Maitland@2025")
+    PROD_DB_HOST = os.getenv("PROD_DB_HOST", "127.0.0.1")
+    PROD_DB_PORT = os.getenv("PROD_DB_PORT", "5432")
 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': PROD_DB_NAME,
+            'USER': PROD_DB_USER,
+            'PASSWORD': PROD_DB_PASSWORD,
+            'HOST': PROD_DB_HOST,
+            'PORT': PROD_DB_PORT,
+            'CONN_MAX_AGE': 60,  # keep-alive
+        }
+    }
 
+# -----------------------------------------------------------------------------
 # Password validation
-# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
-
+# -----------------------------------------------------------------------------
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-
+# -----------------------------------------------------------------------------
 # Internationalization
-# https://docs.djangoproject.com/en/5.2/topics/i18n/
-
+# -----------------------------------------------------------------------------
 LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+TIME_ZONE = os.getenv("TZ", "UTC")
 USE_I18N = True
-
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
-
+# -----------------------------------------------------------------------------
+# Static & Media
+# -----------------------------------------------------------------------------
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-
+# -----------------------------------------------------------------------------
+# Default PK
+# -----------------------------------------------------------------------------
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+# -----------------------------------------------------------------------------
+# Email (SiteGround)
+# -----------------------------------------------------------------------------
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-DEFAULT_FROM_EMAIL = "support@tbae.co.za"  # Or info@tbae.co.za if you want to send as info@
-EMAIL_HOST = "uk71.siteground.eu"
-EMAIL_PORT = 465
-EMAIL_HOST_USER = "support@tbae.co.za"
-EMAIL_HOST_PASSWORD = "Maitland@2025"  # Replace with your actual password
-EMAIL_USE_TLS = False   # Important! Use TLS for port 587, SSL for port 465
-EMAIL_USE_SSL = True    # Use SSL for port 465
+DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "support@tbae.co.za")
+EMAIL_HOST = os.getenv("EMAIL_HOST", "uk71.siteground.eu")
+EMAIL_PORT = int(os.getenv("EMAIL_PORT", "465"))
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "support@tbae.co.za")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "Maitland@2025")
+EMAIL_USE_TLS = False   # TLS for 587
+EMAIL_USE_SSL = True    # SSL for 465
+
+# -----------------------------------------------------------------------------
+# Production security hardening
+# -----------------------------------------------------------------------------
+if not DEBUG:
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+    SECURE_SSL_REDIRECT = os.getenv("SECURE_SSL_REDIRECT", "true").lower() == "true"
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_SECONDS = int(os.getenv("SECURE_HSTS_SECONDS", "31536000"))  # 1 year
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    X_FRAME_OPTIONS = "DENY"
