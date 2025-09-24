@@ -108,34 +108,21 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # -----------------------------------------------------------------------------
 # Database: SQLite in Dev, PostgreSQL in Prod (Africarise$tbae / Maitland@2025)
 # -----------------------------------------------------------------------------
-if DEBUG:
-    # Development: SQLite
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "Africarise$tbae",  # PA format: <username>$<dbname>
+        "USER": "Africarise",       # your PA DB username
+        "PASSWORD": "Maitland@2025",
+        "HOST": "Africarise.mysql.pythonanywhere-services.com",
+        "PORT": "3306",
+        "OPTIONS": {
+            "charset": "utf8mb4",
+            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
-else:
-    # Production: PostgreSQL
-    # You can override via env vars; defaults match your request.
-    PROD_DB_NAME = os.getenv("PROD_DB_NAME", "Africarise$tbae")
-    PROD_DB_USER = os.getenv("PROD_DB_USER", "postgres")
-    PROD_DB_PASSWORD = os.getenv("PROD_DB_PASSWORD", "Maitland@2025")
-    PROD_DB_HOST = os.getenv("PROD_DB_HOST", "127.0.0.1")
-    PROD_DB_PORT = os.getenv("PROD_DB_PORT", "5432")
+}
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': PROD_DB_NAME,
-            'USER': PROD_DB_USER,
-            'PASSWORD': PROD_DB_PASSWORD,
-            'HOST': PROD_DB_HOST,
-            'PORT': PROD_DB_PORT,
-            'CONN_MAX_AGE': 60,  # keep-alive
-        }
-    }
 
 # -----------------------------------------------------------------------------
 # Password validation
