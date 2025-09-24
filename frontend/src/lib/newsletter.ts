@@ -1,40 +1,82 @@
-import { apiBase } from '@/lib/api'
-import type { CampaignRow, ListRow, SubscriberRow } from '@/types/newsletter'
+'use client'
 
-const baseN = () => `${apiBase()}/n`
+import type {
+  ListRow,
+  SubscriberRow,
+  TemplateRow,
+  CampaignRow,
+} from "@/types/newsletter";
 
-export async function listCampaigns(): Promise<CampaignRow[]> {
-  const r = await fetch(`${baseN()}/campaigns/`, { cache: 'no-store' })
-  if (!r.ok) throw new Error('Failed to load campaigns')
-  const data = await r.json()
-  return Array.isArray(data) ? data : (data.results ?? [])
+const API = (process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8000/n").replace(/\/$/, "")
+
+async function json<T>(r: Response): Promise<T> {
+  if (!r.ok) {
+    const msg = await r.text()
+    throw new Error(msg || `HTTP ${r.status}`)
+  }
+  return r.json()
 }
 
 export async function listLists(): Promise<ListRow[]> {
-  const r = await fetch(`${baseN()}/lists/`, { cache: 'no-store' })
-  if (!r.ok) throw new Error('Failed to load lists')
+  const r = await fetch(`${API}/lists/?page_size=1000`, { cache: "no-store", credentials: "include" })
   const data = await r.json()
-  return Array.isArray(data) ? data : (data.results ?? [])
+  return data.results ?? data
+}
+
+export async function listCampaigns(): Promise<CampaignRow[]> {
+  const r = await fetch(`${API}/campaigns/?page_size=1000`, { cache: "no-store", credentials: "include" })
+  const data = await r.json()
+  return data.results ?? data
 }
 
 export async function listSubscribersByList(listId: number): Promise<SubscriberRow[]> {
-  const r = await fetch(`${baseN()}/subscribers/?list=${listId}`, { cache: 'no-store' })
-  if (!r.ok) throw new Error('Failed to load subscribers')
+  const r = await fetch(`${API}/subscribers/?list=${listId}&is_confirmed=true&page_size=10000`, { cache: "no-store", credentials: "include" })
   const data = await r.json()
-  return Array.isArray(data) ? data : (data.results ?? [])
+  return data.results ?? data
 }
 
-export async function sendCampaign(campaignId: number, mode: 'all' | 'selected', subscriberIds?: number[]) {
-  const body: { mode: 'all' | 'selected'; subscribers?: number[] } = { mode }
-  if (mode === 'selected' && subscriberIds && subscriberIds.length) body.subscribers = subscriberIds
-  const r = await fetch(`${baseN()}/campaigns/${campaignId}/send/`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
+export async function createTemplate(payload: { name: string; subject: string; html: string }): Promise<TemplateRow> {
+  const r = await fetch(`${API}/templates/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify(payload),
   })
-  if (!r.ok) {
-    const txt = await r.text().catch(() => '')
-    throw new Error(`Send failed: ${r.status} ${txt}`)
-  }
-  return r.json() as Promise<{ enqueued: boolean; campaign_id: number }>
+  return json<TemplateRow>(r)
+}
+
+export async function createCampaign(payload: {
+  name: string
+  list: number
+  template: number
+  from_email: string
+  scheduled_at?: string | null
+}): Promise<CampaignRow> {
+  const r = await fetch(`${API}/campaigns/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({
+      name: payload.name,
+      list: payload.list,
+      template: payload.template,
+      from_email: payload.from_email,
+      scheduled_at: payload.scheduled_at ?? null,
+    }),
+  })
+  return json<CampaignRow>(r)
+}
+
+export async function sendCampaign(
+  id: number,
+  mode: "all" | "selected",
+  subscribers?: number[]
+): Promise<{ enqueued: boolean; campaign_id: number }> {
+  const r = await fetch(`${API}/campaigns/${id}/send/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({ mode, subscribers }),
+  })
+  return json<{ enqueued: boolean; campaign_id: number }>(r)
 }

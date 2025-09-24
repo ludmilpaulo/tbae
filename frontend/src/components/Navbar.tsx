@@ -12,6 +12,7 @@ import {
  // Cog6ToothIcon,
   HomeIcon,
   Squares2X2Icon,
+  MapPinIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Navbar() {
@@ -20,7 +21,7 @@ export default function Navbar() {
   const navItems = [
     { href: "/", label: "Home", icon: HomeIcon, special: false },
     { href: "/events.htm", label: "Events", icon: CalendarDaysIcon, special: false },
-   // { href: "/venues", label: "Venues", icon: MapPinIcon, special: false },
+    { href: "/venues", label: "Venues", icon: MapPinIcon, special: false },
     { href: "/gallery", label: "Gallery", icon: PhotoIcon, special: false },
     { href: "/success", label: "Success Stories", icon: StarIcon, special: false }, // new
     { href: "/activities", label: "Activities", icon: Squares2X2Icon, special: false },

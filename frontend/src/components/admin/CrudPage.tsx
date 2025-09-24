@@ -71,7 +71,6 @@ export function CrudPage<T extends Record<string, unknown>>({
   }
 
   async function onDelete(row: T): Promise<void> {
-    // eslint-disable-next-line no-alert
     if (!confirm('Delete this record?')) return
     await apiDelete(`${listURL}${String(row[idKey])}/`)
     void load()

@@ -14,6 +14,8 @@ export default function GlobalError({
   const router = useRouter();
 
   useEffect(() => {
+    // log once for debugging
+    // eslint-disable-next-line no-console
     console.error("Global error:", error);
     const id = setTimeout(() => router.push("/teambuilding-quote.htm"), 3000);
     return () => clearTimeout(id);

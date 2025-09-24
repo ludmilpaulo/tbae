@@ -1,92 +1,69 @@
 from __future__ import annotations
-import uuid
-import builtins
+import uuid, builtins
 from django.contrib.auth import get_user_model
 from django.db import models
+from django.utils import timezone
 from slugify import slugify
 
 User = get_user_model()
 
 class List(models.Model):
     name = models.CharField(max_length=120)
-    slug = models.SlugField(unique=True, max_length=140)
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    slug = models.SlugField(unique=True, max_length=140, db_index=True)
+    created_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL, related_name="newsletter_lists")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
-    def save(self, *args, **kwargs):
+    def save(self, *a, **kw):
         if not self.slug:
             self.slug = slugify(f"{self.name}-{uuid.uuid4().hex[:6]}")
-        return super().save(*args, **kwargs)
-
-    def __str__(self) -> str:
-        return self.name
-
-    class Meta:
-        ordering = ["name"]
-
+        return super().save(*a, **kw)
+    class Meta: ordering = ["name"]
+    def __str__(self): return self.name
 
 class Subscriber(models.Model):
     list = models.ForeignKey(List, related_name="subscribers", on_delete=models.CASCADE)
-    email = models.EmailField()
+    email = models.EmailField(db_index=True)
     first_name = models.CharField(max_length=120, blank=True)
     last_name = models.CharField(max_length=120, blank=True)
-    # Use the built-in list callable explicitly to avoid the field name collision:
-    tags = models.JSONField(default=builtins.list, blank=True)   # <- change here
+    tags = models.JSONField(default=builtins.list, blank=True)
     is_confirmed = models.BooleanField(default=False)
-    confirm_token = models.CharField(max_length=64, default=uuid.uuid4, unique=True)
-    unsubscribe_token = models.CharField(max_length=64, default=uuid.uuid4, unique=True)
+    confirm_token = models.CharField(max_length=64, default=lambda: uuid.uuid4().hex, unique=True)
+    unsubscribe_token = models.CharField(max_length=64, default=lambda: uuid.uuid4().hex, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     unsubscribed_at = models.DateTimeField(null=True, blank=True)
-
     client_date_added = models.DateField(null=True, blank=True)
     contact_date_added = models.DateField(null=True, blank=True)
-
     class Meta:
-        unique_together = ("list", "email")
+        unique_together = ("list","email")
         ordering = ["email"]
-
-    def __str__(self) -> str:
-        return f"{self.email} [{self.list.slug}]"
+    def __str__(self): return f"{self.email} [{self.list.slug}]"
 
 class Template(models.Model):
     name = models.CharField(max_length=120)
     subject = models.CharField(max_length=240)
     html = models.TextField()
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    created_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL, related_name="newsletter_templates")
     updated_at = models.DateTimeField(auto_now=True)
-
-    def __str__(self) -> str:
-        return self.name
-
+    def __str__(self): return self.name
 
 class Campaign(models.Model):
-    DRAFT, SCHEDULED, SENDING, SENT, CANCELLED = ("draft", "scheduled", "sending", "sent", "cancelled")
-    STATUS_CHOICES = [
-        (DRAFT, "Draft"),
-        (SCHEDULED, "Scheduled"),
-        (SENDING, "Sending"),
-        (SENT, "Sent"),
-        (CANCELLED, "Cancelled"),
-    ]
-
-    name = models.CharField(max_length=160)
-    list = models.ForeignKey(List, on_delete=models.CASCADE)
-    template = models.ForeignKey(Template, on_delete=models.PROTECT)
+    DRAFT, SCHEDULED, SENDING, SENT, CANCELLED = ("draft","scheduled","sending","sent","cancelled")
+    STATUS_CHOICES = [(DRAFT,"Draft"),(SCHEDULED,"Scheduled"),(SENDING,"Sending"),(SENT,"Sent"),(CANCELLED,"Cancelled")]
+    name = models.CharField(max_length=160, db_index=True)
+    list = models.ForeignKey(List, on_delete=models.CASCADE, related_name="campaigns")
+    template = models.ForeignKey(Template, on_delete=models.PROTECT, related_name="campaigns")
     from_email = models.EmailField()
     scheduled_at = models.DateTimeField(null=True, blank=True)
-    status = models.CharField(max_length=16, choices=STATUS_CHOICES, default=DRAFT)
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    status = models.CharField(max_length=16, choices=STATUS_CHOICES, default=DRAFT, db_index=True)
+    created_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL, related_name="newsletter_campaigns")
     created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self) -> str:
-        return self.name
-
+    def is_scheduled_future(self): return bool(self.scheduled_at and self.scheduled_at > timezone.now())
+    def __str__(self): return self.name
 
 class Delivery(models.Model):
-    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
-    subscriber = models.ForeignKey(Subscriber, on_delete=models.CASCADE)
-    token = models.CharField(max_length=64, unique=True, default=uuid.uuid4)
+    campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE, related_name="deliveries")
+    subscriber = models.ForeignKey(Subscriber, on_delete=models.CASCADE, related_name="deliveries")
+    token = models.CharField(max_length=64, unique=True, default=lambda: uuid.uuid4().hex)
     message_id = models.CharField(max_length=255, blank=True)
     sent_at = models.DateTimeField(null=True, blank=True)
     opened_at = models.DateTimeField(null=True, blank=True)
@@ -94,6 +71,26 @@ class Delivery(models.Model):
     bounce_reason = models.TextField(blank=True)
     complaint_at = models.DateTimeField(null=True, blank=True)
     unique_clicks = models.IntegerField(default=0)
-
     class Meta:
-        unique_together = ("campaign", "subscriber")
+        unique_together = ("campaign","subscriber")
+        indexes = [models.Index(fields=["campaign","sent_at"]), models.Index(fields=["token"])]
+
+# --- CSV Import Jobs (to satisfy ImportCard + ImportHistoryTable UIs) ---
+class ImportJob(models.Model):
+    PENDING, VALIDATING, PROCESSING, COMPLETED, FAILED = ("pending","validating","processing","completed","failed")
+    STATUS_CHOICES = [(PENDING,"pending"),(VALIDATING,"validating"),(PROCESSING,"processing"),(COMPLETED,"completed"),(FAILED,"failed")]
+
+    list = models.ForeignKey(List, on_delete=models.CASCADE, related_name="import_jobs")
+    created_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL)
+    status = models.CharField(max_length=16, choices=STATUS_CHOICES, default=PENDING, db_index=True)
+    note = models.CharField(max_length=240, blank=True)
+    rows_total = models.IntegerField(default=0)
+    rows_created = models.IntegerField(default=0)
+    rows_updated = models.IntegerField(default=0)
+    rows_skipped = models.IntegerField(default=0)
+    rows_errors = models.IntegerField(default=0)
+    error_report = models.URLField(blank=True)  # could be a path in storage
+    created_at = models.DateTimeField(auto_now_add=True)
+    started_at = models.DateTimeField(null=True, blank=True)
+    finished_at = models.DateTimeField(null=True, blank=True)
+    def __str__(self): return f"ImportJob #{self.id} ({self.status})"

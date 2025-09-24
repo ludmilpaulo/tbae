@@ -14,9 +14,8 @@ urlpatterns = [
     path("activities/", include("activities.urls")),
     path('venues/', include('venues.urls')), 
     path("n/", include("newsletter.urls")),  # Newsletter CRUD + campaign actions
-    path("t/", include("tracking.urls")), 
+    path("t/", include("tracking.urls")),
     path("ingest/", include("ingest.urls")),
-      
 ]
 
 if settings.DEBUG:
