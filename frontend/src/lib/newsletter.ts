@@ -7,7 +7,7 @@ import type {
   CampaignRow,
 } from "@/types/newsletter";
 
-const API = (process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8000/n").replace(/\/$/, "")
+const API = "https://africarise.pythonanywhere.com/n"
 
 async function json<T>(r: Response): Promise<T> {
   if (!r.ok) {
