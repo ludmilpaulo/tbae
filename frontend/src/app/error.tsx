@@ -15,8 +15,8 @@ export default function GlobalError({
 
   useEffect(() => {
     console.error("Global error:", error);
-    const id = setTimeout(() => router.push("/teambuilding-quote.htm"), 3000);
-    return () => clearTimeout(id);
+    //const id = setTimeout(() => router.push("/teambuilding-quote.htm"), 3000);
+   // return () => clearTimeout(id);
   }, [error, router]);
 
   return (
