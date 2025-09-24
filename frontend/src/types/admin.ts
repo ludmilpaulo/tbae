@@ -18,8 +18,12 @@ export type FieldDef = {
   readOnly?: boolean
 }
 
+/**
+ * IMPORTANT: key is a plain string (not keyof T) so we can safely describe
+ * columns for different resource shapes without union-narrowing to only "id".
+ */
 export type ColumnDef<T extends Record<string, unknown>> = {
-  key: keyof T
+  key: string
   label?: string
   render?: (row: T) => React.ReactNode
   width?: string

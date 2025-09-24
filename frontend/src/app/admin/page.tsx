@@ -5,6 +5,9 @@ import type { MenuItem, MenuItemKey, Resource } from '@/types/admin'
 import { Sidebar } from '@/components/admin/Sidebar'
 import { CrudPage } from '@/components/admin/CrudPage'
 import { apiBase } from '@/lib/api'
+import { ImportCard } from '@/components/newsletter/ImportCard'
+import { SendCampaignCard } from '@/components/newsletter/SendCampaignCard'
+
 
 // ---- Resource Row Shapes (minimal keys you display/edit) ----
 type ActivityCategoryRow = { id: number; name: string; order?: number }
@@ -92,7 +95,7 @@ const resources: ReadonlyArray<
   {
     key: 'activity_categories',
     title: 'Activity Categories',
-    endpoint: '/activitycategories/',
+    endpoint: '/activity/categories/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -244,7 +247,7 @@ const resources: ReadonlyArray<
   {
     key: 'nl_lists',
     title: 'Mailing Lists',
-    endpoint: '/lists/',
+    endpoint: '/n/lists/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -258,7 +261,7 @@ const resources: ReadonlyArray<
   {
     key: 'nl_subscribers',
     title: 'Subscribers',
-    endpoint: '/subscribers/',
+    endpoint: '/n/subscribers/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'list', label: 'List ID' },
@@ -279,7 +282,7 @@ const resources: ReadonlyArray<
   {
     key: 'nl_templates',
     title: 'Templates',
-    endpoint: '/templates/',
+    endpoint: '/n/templates/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -294,7 +297,7 @@ const resources: ReadonlyArray<
   {
     key: 'nl_campaigns',
     title: 'Campaigns',
-    endpoint: '/campaigns/',
+    endpoint: '/n/campaigns/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -355,6 +358,10 @@ export default function AdminPage() {
               </code>
             </div>
           </header>
+
+           {/* Import card only on Subscribers */}
+        {current === 'nl_subscribers' && <ImportCard />}
+{current === 'nl_campaigns' && <SendCampaignCard />}
 
           {/* Generic CRUD for current resource */}
           <CrudPage resource={res} />

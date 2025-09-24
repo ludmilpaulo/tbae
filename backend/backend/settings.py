@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     "django_filters",
     'core',
     'activities',
+    'newsletter',
+    'tracking',
+    "ingest",
+
 ]
 
 # settings.py

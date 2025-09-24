@@ -12,7 +12,11 @@ urlpatterns = [
     path('careers/', include('careers.urls')),
     path("quotes/", include("quotes.urls")),
     path("activities/", include("activities.urls")),
-    path('venues/', include('venues.urls')),  # Add this line for the venues API
+    path('venues/', include('venues.urls')), 
+    path("n/", include("newsletter.urls")),  # Newsletter CRUD + campaign actions
+    path("t/", include("tracking.urls")), 
+    path("ingest/", include("ingest.urls")),
+      
 ]
 
 if settings.DEBUG:
