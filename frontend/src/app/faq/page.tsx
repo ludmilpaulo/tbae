@@ -11,7 +11,9 @@ import { FAQ, FAQCategory } from "@/types/faq";
 const PAGE_SIZE = 8;
 
 export default function FAQPage() {
-  const { data: categories = [] } = useGetFAQCategoriesQuery();
+  const { data: categoriesData = [] } = useGetFAQCategoriesQuery();
+  const categories: FAQCategory[] = Array.isArray(categoriesData) ? categoriesData : [];
+
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
   const { data: faqs = [], isLoading } = useGetFAQsQuery({
     category: selectedCategory ?? undefined,
@@ -19,12 +21,10 @@ export default function FAQPage() {
 
   const [page, setPage] = useState(1);
 
-  // Reset to page 1 on category change
   useEffect(() => {
     setPage(1);
   }, [selectedCategory]);
 
-  // Memoize the visible FAQs for pagination
   const totalPages = Math.ceil(faqs.length / PAGE_SIZE);
   const visibleFaqs = useMemo(
     () => faqs.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE),
@@ -36,6 +36,8 @@ export default function FAQPage() {
       <h1 className="text-4xl font-bold text-center text-blue-700 mb-8">
         Frequently Asked Questions
       </h1>
+
+      {/* Category Filters */}
       <div className="flex flex-wrap gap-3 mb-8 justify-center">
         <button
           className={`px-5 py-2 rounded-full font-semibold transition ${
@@ -72,11 +74,7 @@ export default function FAQPage() {
           </div>
         ) : (
           visibleFaqs.map((faq: FAQ, idx: number) => (
-            <FAQAccordion
-              key={faq.id}
-              faq={faq}
-              defaultOpen={idx === 0 && page === 1}
-            />
+            <FAQAccordion key={faq.id} faq={faq} defaultOpen={idx === 0 && page === 1} />
           ))
         )}
       </div>
@@ -91,7 +89,7 @@ export default function FAQPage() {
           >
             Prev
           </button>
-          {[...Array(totalPages)].map((_, i) => (
+          {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
               className={`px-3 py-1 rounded font-bold ${
@@ -119,7 +117,6 @@ export default function FAQPage() {
   );
 }
 
-// Accordion component for FAQ entries
 function FAQAccordion({
   faq,
   defaultOpen = false,
@@ -135,9 +132,7 @@ function FAQAccordion({
         onClick={() => setOpen((v) => !v)}
       >
         <h2 className="text-lg font-semibold text-blue-700">{faq.question}</h2>
-        <span
-          className={`transition-transform text-xl ${open ? "rotate-180" : ""}`}
-        >
+        <span className={`transition-transform text-xl ${open ? "rotate-180" : ""}`}>
           ▼
         </span>
       </div>
@@ -150,7 +145,6 @@ function FAQAccordion({
   );
 }
 
-// Ask Question Section at the bottom
 function AskQuestionSection() {
   const [form, setForm] = useState({ name: "", email: "", question: "" });
   const [send, { isLoading, isSuccess, isError }] = useAskQuestionMutation();

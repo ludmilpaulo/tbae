@@ -1,9 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useMemo, useState, Fragment } from 'react';
-
-import { Career } from '@/types/Career';
-import axios from 'axios';
+import { useEffect, useMemo, useState, Fragment } from "react";
+import { Career } from "@/types/Career";
+import axios from "axios";
 import {
   BriefcaseIcon,
   MapPinIcon,
@@ -11,95 +10,110 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   XMarkIcon,
-} from '@heroicons/react/24/solid';
-import { Transition, Dialog } from '@headlessui/react';
-import { fetchCareers } from '@/redux/services/careerService';
-import { baseAPI } from '@/utils/configs';
-
+} from "@heroicons/react/24/solid";
+import { Transition, Dialog } from "@headlessui/react";
+import { fetchCareers } from "@/redux/services/careerService";
+import { baseAPI } from "@/utils/configs";
 
 const ITEMS_PER_PAGE = 5;
+
+type UiLang = "en" | "pt";
+
+const LABELS: Record<UiLang, {
+  fullName: string;
+  email: string;
+  coverLetter: string;
+  resume: string;
+  submit: string;
+  language: string;
+  exploreHeader: string;
+  exploreSub: string;
+  searchPlaceholder: string;
+  allLocations: string;
+  sortNewest: string;
+  sortAZ: string;
+  viewDetails: string;
+  noMatches: string;
+  sending: string;
+  submitSuccess: string;
+  submitFail: string;
+}> = {
+  en: {
+    fullName: "Full Name",
+    email: "Email",
+    coverLetter: "Cover Letter",
+    resume: "Upload Resume (PDF)",
+    submit: "Submit Application",
+    language: "Preferred Language",
+    exploreHeader: "Explore Opportunities",
+    exploreSub:
+      "We’re looking for smart, passionate individuals ready to grow with us.",
+    searchPlaceholder: "Search by title or location...",
+    allLocations: "All Locations",
+    sortNewest: "Sort by Newest",
+    sortAZ: "Sort A–Z",
+    viewDetails: "View Details & Apply",
+    noMatches: "No jobs match your criteria.",
+    sending: "Sending...",
+    submitSuccess: "Application submitted!",
+    submitFail: "Submission failed.",
+  },
+  pt: {
+    fullName: "Nome Completo",
+    email: "Email",
+    coverLetter: "Carta de Apresentação",
+    resume: "Anexar Currículo (PDF)",
+    submit: "Enviar Candidatura",
+    language: "Idioma Preferido",
+    exploreHeader: "Explore Oportunidades",
+    exploreSub:
+      "Procuramos pessoas inteligentes e apaixonadas, prontas para crescer conosco.",
+    searchPlaceholder: "Pesquisar por título ou localização...",
+    allLocations: "Todas as Localizações",
+    sortNewest: "Ordenar por Mais Recente",
+    sortAZ: "Ordenar A–Z",
+    viewDetails: "Ver Detalhes e Candidatar",
+    noMatches: "Nenhuma vaga corresponde ao seu critério.",
+    sending: "Enviando...",
+    submitSuccess: "Candidatura enviada!",
+    submitFail: "Falha no envio.",
+  },
+};
 
 export default function CareersPage() {
   const [jobs, setJobs] = useState<Career[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedLocation, setSelectedLocation] = useState('');
-  const [sortOrder, setSortOrder] = useState<'newest' | 'az'>('newest');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("");
+  const [sortOrder, setSortOrder] = useState<"newest" | "az">("newest");
   const [selectedJob, setSelectedJob] = useState<Career | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const [language, setLanguage] = useState<'en' | 'pt'>('en'); // ✅ default language
+  const [language, setLanguage] = useState<UiLang>("en");
 
-  const [form, setForm] = useState({
-    full_name: '',
-    email: '',
-    cover_letter: '',
-    resume: null as File | null,
-    language: 'en',
+  const [form, setForm] = useState<{
+    full_name: string;
+    email: string;
+    cover_letter: string;
+    resume: File | null;
+    language: UiLang;
+  }>({
+    full_name: "",
+    email: "",
+    cover_letter: "",
+    resume: null,
+    language: "en",
   });
 
-  const labels = {
-    en: {
-      fullName: 'Full Name',
-      email: 'Email',
-      coverLetter: 'Cover Letter',
-      resume: 'Upload Resume (PDF)',
-      submit: 'Submit Application',
-      language: 'Preferred Language',
-    },
-    pt: {
-      fullName: 'Nome Completo',
-      email: 'Email',
-      coverLetter: 'Carta de Apresentação',
-      resume: 'Anexar Currículo (PDF)',
-      submit: 'Enviar Candidatura',
-      language: 'Idioma Preferido',
-    },
-  };
-  
-
   useEffect(() => {
-    const lang = navigator.language.toLowerCase();
-    const detected = lang.startsWith('pt') ? 'pt' : 'en';
+    const lang = typeof navigator !== "undefined" ? navigator.language.toLowerCase() : "en";
+    const detected: UiLang = lang.startsWith("pt") ? "pt" : "en";
     setLanguage(detected);
     setForm((prev) => ({ ...prev, language: detected }));
   }, []);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!selectedJob) return;
-
-    const formData = new FormData();
-    formData.append('career_id', String(selectedJob.id));
-    formData.append('full_name', form.full_name);
-    formData.append('email', form.email);
-    formData.append('cover_letter', form.cover_letter);
-    formData.append('language', form.language); // ✅ include language
-    if (form.resume) formData.append('resume', form.resume);
-
-    setLoading(true);
-    try {
-      await axios.post(`${baseAPI}/careers/job-applications/`, formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
-      alert('Application submitted!');
-      setSelectedJob(null);
-      setForm({
-        full_name: '',
-        email: '',
-        cover_letter: '',
-        resume: null,
-        language,
-      });
-    } catch {
-      alert('Submission failed.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
-    fetchCareers().then(setJobs);
+    fetchCareers().then(setJobs).catch(() => setJobs([]));
   }, []);
 
   const filteredJobs = useMemo(() => {
@@ -118,11 +132,12 @@ export default function CareersPage() {
       filtered = filtered.filter((job) => job.location === selectedLocation);
     }
 
-    if (sortOrder === 'az') {
+    if (sortOrder === "az") {
       filtered = [...filtered].sort((a, b) => a.title.localeCompare(b.title));
     } else {
       filtered = [...filtered].sort(
-        (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+        (a, b) =>
+          new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
       );
     }
 
@@ -135,22 +150,59 @@ export default function CareersPage() {
     currentPage * ITEMS_PER_PAGE
   );
 
-  const uniqueLocations = [...new Set(jobs.map((job) => job.location))];
+  const uniqueLocations = useMemo(
+    () => Array.from(new Set(jobs.map((j) => j.location))).filter(Boolean),
+    [jobs]
+  );
+
+  const L = LABELS[language];
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedJob) return;
+
+    const formData = new FormData();
+    formData.append("career_id", String(selectedJob.id));
+    formData.append("full_name", form.full_name);
+    formData.append("email", form.email);
+    formData.append("cover_letter", form.cover_letter);
+    formData.append("language", form.language);
+    if (form.resume) formData.append("resume", form.resume);
+
+    setLoading(true);
+    try {
+      // Let Axios set the proper multipart boundary automatically (don't set Content-Type manually)
+      await axios.post(`${baseAPI}/careers/job-applications/`, formData);
+      alert(L.submitSuccess);
+      setSelectedJob(null);
+      setForm({
+        full_name: "",
+        email: "",
+        cover_letter: "",
+        resume: null,
+        language,
+      });
+    } catch {
+      alert(L.submitFail);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <div className="text-center">
-        <h1 className="text-4xl font-extrabold mb-4 text-gray-900">Explore Opportunities</h1>
-        <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
-          We’re looking for smart, passionate individuals ready to grow with us.
-        </p>
+        <h1 className="text-4xl font-extrabold mb-4 text-gray-900">
+          {L.exploreHeader}
+        </h1>
+        <p className="text-gray-600 mb-10 max-w-2xl mx-auto">{L.exploreSub}</p>
       </div>
 
       {/* Filters */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <input
           type="text"
-          placeholder="Search by title or location..."
+          placeholder={L.searchPlaceholder}
           className="w-full sm:w-1/2 border p-2 rounded"
           value={searchQuery}
           onChange={(e) => {
@@ -168,7 +220,7 @@ export default function CareersPage() {
               setCurrentPage(1);
             }}
           >
-            <option value="">All Locations</option>
+            <option value="">{L.allLocations}</option>
             {uniqueLocations.map((loc) => (
               <option key={loc} value={loc}>
                 {loc}
@@ -180,12 +232,12 @@ export default function CareersPage() {
             className="border p-2 rounded"
             value={sortOrder}
             onChange={(e) => {
-              setSortOrder(e.target.value as 'newest' | 'az');
+              setSortOrder(e.target.value as "newest" | "az");
               setCurrentPage(1);
             }}
           >
-            <option value="newest">Sort by Newest</option>
-            <option value="az">Sort A–Z</option>
+            <option value="newest">{L.sortNewest}</option>
+            <option value="az">{L.sortAZ}</option>
           </select>
         </div>
       </div>
@@ -212,7 +264,7 @@ export default function CareersPage() {
                 onClick={() => setSelectedJob(job)}
                 className="inline-flex items-center gap-1 text-blue-600 hover:underline font-medium"
               >
-                View Details & Apply
+                {L.viewDetails}
                 <ArrowRightIcon className="h-4 w-4" />
               </button>
             </div>
@@ -221,7 +273,7 @@ export default function CareersPage() {
       </ul>
 
       {filteredJobs.length === 0 && (
-        <p className="text-center text-gray-500 mt-12">No jobs match your criteria.</p>
+        <p className="text-center text-gray-500 mt-12">{L.noMatches}</p>
       )}
 
       {/* Pagination */}
@@ -282,77 +334,100 @@ export default function CareersPage() {
                     <Dialog.Title className="text-2xl font-bold">
                       {selectedJob?.title}
                     </Dialog.Title>
-                    <button onClick={() => setSelectedJob(null)} className="text-gray-500">
+                    <button
+                      onClick={() => setSelectedJob(null)}
+                      className="text-gray-500"
+                      aria-label="Close"
+                    >
                       <XMarkIcon className="w-5 h-5" />
                     </button>
                   </div>
 
                   <div className="prose max-w-none mb-6">
                     <h3>Description</h3>
-                    <div dangerouslySetInnerHTML={{ __html: selectedJob?.description || '' }} />
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: selectedJob?.description || "",
+                      }}
+                    />
                     <h3>Requirements</h3>
-                    <div dangerouslySetInnerHTML={{ __html: selectedJob?.requirements || '' }} />
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: selectedJob?.requirements || "",
+                      }}
+                    />
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-4 mt-6">
-  <label className="block text-sm font-medium">{labels[language].language}</label>
-  <select
-    className="border p-2 rounded w-full"
-    value={form.language}
-    onChange={(e) => {
-      const lang = e.target.value as 'en' | 'pt';
-      setForm((prev) => ({ ...prev, language: lang }));
-      setLanguage(lang);
-    }}
-  >
-    <option value="en">English</option>
-    <option value="pt">Português</option>
-  </select>
+                    <label className="block text-sm font-medium">{L.language}</label>
+                    <select
+                      className="border p-2 rounded w-full"
+                      value={form.language}
+                      onChange={(e) => {
+                        const lang = e.target.value as UiLang;
+                        setForm((prev) => ({ ...prev, language: lang }));
+                        setLanguage(lang);
+                      }}
+                    >
+                      <option value="en">English</option>
+                      <option value="pt">Português</option>
+                    </select>
 
-  <label className="block text-sm font-medium">{labels[language].fullName}</label>
-  <input
-    type="text"
-    className="w-full border p-2 rounded"
-    value={form.full_name}
-    onChange={(e) => setForm({ ...form, full_name: e.target.value })}
-    required
-  />
+                    <label className="block text-sm font-medium">{L.fullName}</label>
+                    <input
+                      type="text"
+                      className="w-full border p-2 rounded"
+                      value={form.full_name}
+                      onChange={(e) =>
+                        setForm((prev) => ({ ...prev, full_name: e.target.value }))
+                      }
+                      required
+                    />
 
-  <label className="block text-sm font-medium">{labels[language].email}</label>
-  <input
-    type="email"
-    className="w-full border p-2 rounded"
-    value={form.email}
-    onChange={(e) => setForm({ ...form, email: e.target.value })}
-    required
-  />
+                    <label className="block text-sm font-medium">{L.email}</label>
+                    <input
+                      type="email"
+                      className="w-full border p-2 rounded"
+                      value={form.email}
+                      onChange={(e) =>
+                        setForm((prev) => ({ ...prev, email: e.target.value }))
+                      }
+                      required
+                    />
 
-  <label className="block text-sm font-medium">{labels[language].coverLetter}</label>
-  <textarea
-    className="w-full border p-2 rounded"
-    rows={5}
-    value={form.cover_letter}
-    onChange={(e) => setForm({ ...form, cover_letter: e.target.value })}
-    required
-  />
+                    <label className="block text-sm font-medium">{L.coverLetter}</label>
+                    <textarea
+                      className="w-full border p-2 rounded"
+                      rows={5}
+                      value={form.cover_letter}
+                      onChange={(e) =>
+                        setForm((prev) => ({ ...prev, cover_letter: e.target.value }))
+                      }
+                      required
+                    />
 
-  <label className="block text-sm font-medium">{labels[language].resume}</label>
-  <input
-    type="file"
-    accept="application/pdf"
-    className="w-full border p-2 rounded"
-    onChange={(e) => setForm({ ...form, resume: e.target.files?.[0] || null })}
-    required
-  />
+                    <label className="block text-sm font-medium">{L.resume}</label>
+                    <input
+                      type="file"
+                      accept="application/pdf"
+                      className="w-full border p-2 rounded"
+                      onChange={(e) =>
+                        setForm((prev) => ({
+                          ...prev,
+                          resume: e.target.files?.[0] ?? null,
+                        }))
+                      }
+                      required
+                    />
 
-  <button
-    type="submit"
-    className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
-  >
-    {labels[language].submit}
-  </button>
-</form>
-
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 disabled:opacity-60"
+                    >
+                      {loading ? L.sending : L.submit}
+                    </button>
+                  </form>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -360,7 +435,7 @@ export default function CareersPage() {
         </Dialog>
       </Transition>
 
-      {/* Loader */}
+      {/* Loader overlay */}
       <Transition
         show={loading}
         enter="transition-opacity duration-300"
@@ -370,7 +445,7 @@ export default function CareersPage() {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50">
+        <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black/50">
           <div className="w-16 h-16 border-t-4 border-b-4 border-white rounded-full animate-spin" />
         </div>
       </Transition>
