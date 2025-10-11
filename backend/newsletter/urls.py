@@ -25,7 +25,7 @@ urlpatterns = [
     path("import/create/", ImportCreateView.as_view(), name="nl-import-create"),
 
     # Public tracking/unsubscribe endpoints (names must match utils.py)
-    path("nl/unsubscribe/<str:token>/", unsubscribe_public, name="nl-unsubscribe"),
-    path("nl/open/<str:token>/",        track_open,        name="nl-open"),
-    path("nl/click/<str:token>/",       track_click,       name="nl-click"),
+    path("unsubscribe/<str:token>/", unsubscribe_public, name="nl-unsubscribe"),
+    path("open/<str:token>/",        track_open,        name="nl-open"),
+    path("click/<str:token>/",       track_click,       name="nl-click"),
 ]
