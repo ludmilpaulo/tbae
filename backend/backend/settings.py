@@ -181,7 +181,7 @@ EMAIL_USE_SSL = True  # SSL for 465
 # -----------------------------------------------------------------------------
 NEWSLETTER_PUBLIC_BASE_URL = os.getenv(
     "NEWSLETTER_PUBLIC_BASE_URL",
-    "https://africarise.pythonanywhere.com" if not DEBUG else "http://localhost:8000"
+    "https://africarise.pythonanywhere.com" if not DEBUG else "http://localhost:8000",
 )
 
 # -----------------------------------------------------------------------------
