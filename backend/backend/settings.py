@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
 
@@ -17,7 +18,7 @@ DEBUG = DJANGO_ENV != "production"
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv(
     "SECRET_KEY",
-    "django-insecure-$ej^&@u+(igy6vun!7)=(s-92qc_#v##a0uu_a7ucpm$+j8wa6"  # dev fallback
+    "django-insecure-$ej^&@u+(igy6vun!7)=(s-92qc_#v##a0uu_a7ucpm$+j8wa6",  # dev fallback
 )
 
 # -----------------------------------------------------------------------------
@@ -40,24 +41,24 @@ CSRF_TRUSTED_ORIGINS = [
 # Installed apps
 # -----------------------------------------------------------------------------
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'rest_framework',
-    'corsheaders',
-    'careers',
-    'venues',
-    'bookings',
-    'gallery',
-    'quotes',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "rest_framework",
+    "corsheaders",
+    "careers",
+    "venues",
+    "bookings",
+    "gallery",
+    "quotes",
     "django_filters",
-    'core',
-    'activities',
-    'newsletter',
-    'tracking',
+    "core",
+    "activities",
+    "newsletter",
+    "tracking",
     "ingest",
 ]
 
@@ -67,77 +68,85 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 90000,
-    "DEFAULT_FILTER_BACKENDS": [
-        "django_filters.rest_framework.DjangoFilterBackend"
-    ],
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
 }
 
 # -----------------------------------------------------------------------------
 # Middleware / Templates / WSGI
 # -----------------------------------------------------------------------------
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
     "corsheaders.middleware.CorsMiddleware",
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = 'backend.urls'
+ROOT_URLCONF = "backend.urls"
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
             ],
         },
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+WSGI_APPLICATION = "backend.wsgi.application"
 
 # -----------------------------------------------------------------------------
-# Database: SQLite in Dev, PostgreSQL in Prod (Africarise$tbae / Maitland@2025)
+# Database: SQLite in Dev, MySQL in Prod (Africarise$tbae / Maitland@2025)
 # -----------------------------------------------------------------------------
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "Africarise$tbae",  # PA format: <username>$<dbname>
-        "USER": "Africarise",       # your PA DB username
-        "PASSWORD": "Maitland@2025",
-        "HOST": "Africarise.mysql.pythonanywhere-services.com",
-        "PORT": "3306",
-        "OPTIONS": {
-            "charset": "utf8mb4",
-            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+if DEBUG:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": "Africarise$tbae",  # PA format: <username>$<dbname>
+            "USER": "Africarise",  # your PA DB username
+            "PASSWORD": "Maitland@2025",
+            "HOST": "Africarise.mysql.pythonanywhere-services.com",
+            "PORT": "3306",
+            "OPTIONS": {
+                "charset": "utf8mb4",
+                "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+            },
+        }
+    }
 
 
 # -----------------------------------------------------------------------------
 # Password validation
 # -----------------------------------------------------------------------------
 AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
-    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
-    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
-    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
+    },
+    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
+    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
+    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
 # -----------------------------------------------------------------------------
 # Internationalization
 # -----------------------------------------------------------------------------
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "en-us"
 TIME_ZONE = os.getenv("TZ", "UTC")
 USE_I18N = True
 USE_TZ = True
@@ -145,7 +154,7 @@ USE_TZ = True
 # -----------------------------------------------------------------------------
 # Static & Media
 # -----------------------------------------------------------------------------
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
@@ -153,7 +162,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 # -----------------------------------------------------------------------------
 # Default PK
 # -----------------------------------------------------------------------------
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # -----------------------------------------------------------------------------
 # Email (SiteGround)
@@ -164,8 +173,8 @@ EMAIL_HOST = os.getenv("EMAIL_HOST", "uk71.siteground.eu")
 EMAIL_PORT = int(os.getenv("EMAIL_PORT", "465"))
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "support@tbae.co.za")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "Maitland@2025")
-EMAIL_USE_TLS = False   # TLS for 587
-EMAIL_USE_SSL = True    # SSL for 465
+EMAIL_USE_TLS = False  # TLS for 587
+EMAIL_USE_SSL = True  # SSL for 465
 
 # -----------------------------------------------------------------------------
 # Production security hardening

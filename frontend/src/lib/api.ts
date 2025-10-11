@@ -1,4 +1,6 @@
-const API_BASE ='https://africarise.pythonanywhere.com'
+const API_BASE = process.env.NODE_ENV === 'production' 
+  ? 'https://africarise.pythonanywhere.com'
+  : 'http://localhost:8000'
 
 export function apiBase(): string {
   return API_BASE

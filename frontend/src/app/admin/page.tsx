@@ -95,7 +95,7 @@ const resources: ReadonlyArray<
   {
     key: 'activity_categories',
     title: 'Activity Categories',
-    endpoint: '/activity/categories/',
+    endpoint: '/activities/categories/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -109,7 +109,7 @@ const resources: ReadonlyArray<
   {
     key: 'activities',
     title: 'Activities',
-    endpoint: '/activities/',
+    endpoint: '/activities/activities/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'title', label: 'Title' },
@@ -135,7 +135,7 @@ const resources: ReadonlyArray<
   {
     key: 'brochures',
     title: 'Brochures',
-    endpoint: '/brochures/',
+    endpoint: '/activities/brochures/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'file', label: 'File' },
@@ -152,7 +152,7 @@ const resources: ReadonlyArray<
   {
     key: 'provinces',
     title: 'Provinces',
-    endpoint: '/provinces/',
+    endpoint: '/venues/provinces/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -162,7 +162,7 @@ const resources: ReadonlyArray<
   {
     key: 'towns',
     title: 'Towns',
-    endpoint: '/towns/',
+    endpoint: '/venues/towns/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -176,7 +176,7 @@ const resources: ReadonlyArray<
   {
     key: 'venues',
     title: 'Venues',
-    endpoint: '/venues/',
+    endpoint: '/venues/venues/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'name', label: 'Name' },
@@ -186,8 +186,8 @@ const resources: ReadonlyArray<
     ],
     form: [
       { name: 'name', required: true },
-      { name: 'province', label: 'Province ID', type: 'number', required: true },
-      { name: 'town', label: 'Town ID', type: 'number', required: true },
+      { name: 'province_id', label: 'Province ID', type: 'number', required: true },
+      { name: 'town_id', label: 'Town ID', type: 'number', required: true },
       { name: 'price', type: 'number' },
       { name: 'description', type: 'textarea' },
       { name: 'details', type: 'textarea' },
@@ -198,7 +198,7 @@ const resources: ReadonlyArray<
   {
     key: 'venue_images',
     title: 'Venue Images',
-    endpoint: '/venueimages/',
+    endpoint: '/venues/venueimages/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'venue', label: 'Venue ID' },
@@ -218,7 +218,7 @@ const resources: ReadonlyArray<
   {
     key: 'bookings',
     title: 'Bookings',
-    endpoint: '/bookings/',
+    endpoint: '/bookings/bookings/',
     columns: [
       { key: 'id', label: 'ID' },
       { key: 'venue', label: 'Venue ID' },

@@ -7,7 +7,9 @@ import type {
   CampaignRow,
 } from "@/types/newsletter";
 
-const API = "https://africarise.pythonanywhere.com/n"
+const API = process.env.NODE_ENV === 'production' 
+  ? "https://africarise.pythonanywhere.com/n"
+  : "http://localhost:8000/n"
 
 async function json<T>(r: Response): Promise<T> {
   if (!r.ok) {
