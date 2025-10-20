@@ -33,7 +33,8 @@ export default function VenuesPage() {
     isLoading: loadingVenues,
     error: errorVenues
   } = useGetVenuesQuery({ provinceId: province ?? undefined, townId: town ?? undefined }, {
-    skip: !province || !town,
+    // Fetch as soon as a province is selected; town is optional
+    skip: !province,
   });
 
   // UI state
@@ -50,11 +51,7 @@ export default function VenuesPage() {
     }
   }, [provinces, province]);
 
-  useEffect(() => {
-    if (towns.length && (town === null || !towns.some(t => t.id === town))) {
-      setTown(towns[0].id);
-    }
-  }, [towns, town]);
+  // Do not auto-select a town; let users optionally narrow down
 
   // Optional: Scroll to top when opening details modal (great for mobile)
   useEffect(() => {
