@@ -4,7 +4,7 @@ import { baseAPI } from '../../utils/configs';
 
 export const venuesApi = createApi({
   reducerPath: 'venuesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: `${baseAPI}/venues` }),
+  baseQuery: fetchBaseQuery({ baseUrl: `${baseAPI}/venues/` }),
   endpoints: (builder) => ({
     getProvinces: builder.query<Province[], void>({
       query: () => `provinces/`,
@@ -14,10 +14,11 @@ export const venuesApi = createApi({
     }),
     getVenues: builder.query<Venue[], { provinceId?: number; townId?: number }>({
       query: ({ provinceId, townId }: { provinceId?: number; townId?: number }) => {
-        let url = 'venues/?';
-        if (provinceId) url += `province=${provinceId}`;
-        if (townId) url += `&town=${townId}`;
-        return url;
+        const params: string[] = [];
+        if (provinceId) params.push(`province=${provinceId}`);
+        if (townId) params.push(`town=${townId}`);
+        const qs = params.length ? `?${params.join('&')}` : '';
+        return qs; // resolves to /venues/ with optional query string
       },
     }),
     // ------ ADD THIS ------
