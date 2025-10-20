@@ -31,11 +31,14 @@ export default function VenuesPage() {
   const {
     data: venues = [],
     isLoading: loadingVenues,
-    error: errorVenues
-  } = useGetVenuesQuery({ provinceId: province ?? undefined, townId: town ?? undefined }, {
-    // Fetch as soon as a province is selected; town is optional
-    skip: !province,
-  });
+    error: errorVenues,
+  } = useGetVenuesQuery(
+    { provinceId: province ?? undefined, townId: town ?? undefined },
+    {
+      skip: !province,
+      refetchOnMountOrArgChange: true,
+    }
+  );
 
   // UI state
   const [search, setSearch] = useState("");
@@ -72,9 +75,9 @@ export default function VenuesPage() {
   };
 
   // Loading and error
-  if (loadingProvinces || loadingTowns || loadingVenues)
+  if (loadingProvinces || loadingVenues)
     return <div className="text-center text-gray-500 py-12">Loading venues...</div>;
-  if (errorProvinces || errorTowns || errorVenues)
+  if (errorProvinces || errorVenues)
     return <div className="text-center text-red-600 py-12">Failed to load data.</div>;
 
   return (
