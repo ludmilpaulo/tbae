@@ -24,7 +24,7 @@ export default function VenuesPage() {
   const [province, setProvince] = useState<number | null>(null);
 
   // Fetch towns only when a province is selected
-  const { data: towns = [], isLoading: loadingTowns, error: errorTowns } = useGetTownsQuery(province ?? undefined);
+  const { data: towns = [] } = useGetTownsQuery(province ?? undefined);
   const [town, setTown] = useState<number | null>(null);
 
   // Fetch venues for current province/town
@@ -39,6 +39,22 @@ export default function VenuesPage() {
       refetchOnMountOrArgChange: true,
     }
   );
+
+  // Debug logging for production
+  console.log('Venues Debug:', {
+    province,
+    town,
+    provinces: provinces.length,
+    towns: towns.length,
+    venues: venues.length,
+    loadingVenues,
+    errorVenues,
+    filteredVenues: venues.filter(
+      v =>
+        v.name.toLowerCase().includes(search.toLowerCase()) ||
+        v.description.toLowerCase().includes(search.toLowerCase())
+    ).length
+  });
 
   // UI state
   const [search, setSearch] = useState("");

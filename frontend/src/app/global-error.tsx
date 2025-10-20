@@ -12,7 +12,6 @@ export default function GlobalError({
 }) {
   useEffect(() => {
     // Helpful in prod too (you enabled prod source maps)
-    // eslint-disable-next-line no-console
     console.error("Global error:", error);
   }, [error]);
 
