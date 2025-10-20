@@ -8,9 +8,11 @@ export const venuesApi = createApi({
   endpoints: (builder) => ({
     getProvinces: builder.query<Province[], void>({
       query: () => `provinces/`,
+      transformResponse: (resp: any): Province[] => (resp?.results ?? resp) as Province[],
     }),
     getTowns: builder.query<Town[], number | undefined>({
       query: (provinceId: number | undefined) => provinceId ? `towns/?province=${provinceId}` : `towns/`,
+      transformResponse: (resp: any): Town[] => (resp?.results ?? resp) as Town[],
     }),
     getVenues: builder.query<Venue[], { provinceId?: number; townId?: number }>({
       query: ({ provinceId, townId }: { provinceId?: number; townId?: number }) => {
@@ -20,6 +22,7 @@ export const venuesApi = createApi({
         const qs = params.length ? `?${params.join('&')}` : '';
         return `venues/${qs}`; // DRF viewset path: /venues/venues/
       },
+      transformResponse: (resp: any): Venue[] => (resp?.results ?? resp) as Venue[],
     }),
     // ------ ADD THIS ------
     getVenueById: builder.query<Venue, number>({
