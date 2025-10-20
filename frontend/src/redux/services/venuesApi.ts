@@ -18,7 +18,7 @@ export const venuesApi = createApi({
         if (provinceId) params.push(`province=${provinceId}`);
         if (townId) params.push(`town=${townId}`);
         const qs = params.length ? `?${params.join('&')}` : '';
-        return qs; // resolves to /venues/ with optional query string
+        return `venues/${qs}`; // DRF viewset path: /venues/venues/
       },
     }),
     // ------ ADD THIS ------
