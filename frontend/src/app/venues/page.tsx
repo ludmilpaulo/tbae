@@ -60,13 +60,6 @@ export default function VenuesPage() {
     apiBase: process.env.NODE_ENV === 'production' ? 'PROD' : 'DEV'
   });
 
-  // Log API calls
-  console.log('API Calls Debug:', {
-    provincesQuery: useGetProvincesQuery.getState?.() || 'not available',
-    townsQuery: useGetTownsQuery.getState?.(province ?? undefined) || 'not available',
-    venuesQuery: useGetVenuesQuery.getState?.({ provinceId: province ?? undefined, townId: town ?? undefined }) || 'not available'
-  });
-
   // UI state
   const [search, setSearch] = useState("");
   const [selectedVenue, setSelectedVenue] = useState<Venue | null>(null);
