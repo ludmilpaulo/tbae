@@ -67,6 +67,11 @@ export default function VenuesPage() {
       venuesData: venues.slice(0, 2), // First 2 venues for inspection
       apiBase: process.env.NODE_ENV === 'production' ? 'PROD' : 'DEV'
     });
+    
+    // Log errors in detail
+    if (errorVenues) {
+      console.error('Venues Error Details:', errorVenues);
+    }
   }, [province, town, provinces, towns, venues, loadingVenues, errorVenues, search]);
 
   // Handle auto-select of first province/town

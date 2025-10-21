@@ -44,6 +44,10 @@ export const venuesApi = createApi({
         console.log('Venues API Response:', resp);
         return Array.isArray(resp) ? resp : resp.results;
       },
+      transformErrorResponse: (response) => {
+        console.error('Venues API Error:', response);
+        return response;
+      },
     }),
     // ------ ADD THIS ------
     getVenueById: builder.query<Venue, number>({
