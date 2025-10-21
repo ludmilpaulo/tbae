@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import {
   useGetProvincesQuery,
   useGetTownsQuery,
@@ -40,32 +41,34 @@ export default function VenuesPage() {
     }
   );
 
-  // Debug logging for production
-  console.log('Venues Debug:', {
-    province,
-    town,
-    provinces: provinces.length,
-    towns: towns.length,
-    venues: venues.length,
-    loadingVenues,
-    errorVenues,
-    filteredVenues: venues.filter(
-      v =>
-        v.name.toLowerCase().includes(search.toLowerCase()) ||
-        v.description.toLowerCase().includes(search.toLowerCase())
-    ).length,
-    // Additional debugging
-    provincesData: provinces,
-    venuesData: venues.slice(0, 2), // First 2 venues for inspection
-    apiBase: process.env.NODE_ENV === 'production' ? 'PROD' : 'DEV'
-  });
-
   // UI state
   const [search, setSearch] = useState("");
   const [selectedVenue, setSelectedVenue] = useState<Venue | null>(null);
   const [quoteVenue, setQuoteVenue] = useState<Venue | null>(null);
 
   const router = useRouter();
+
+  // Debug logging for production
+  useEffect(() => {
+    console.log('Venues Debug:', {
+      province,
+      town,
+      provinces: provinces.length,
+      towns: towns.length,
+      venues: venues.length,
+      loadingVenues,
+      errorVenues,
+      filteredVenues: venues.filter(
+        v =>
+          v.name.toLowerCase().includes(search.toLowerCase()) ||
+          v.description.toLowerCase().includes(search.toLowerCase())
+      ).length,
+      // Additional debugging
+      provincesData: provinces,
+      venuesData: venues.slice(0, 2), // First 2 venues for inspection
+      apiBase: process.env.NODE_ENV === 'production' ? 'PROD' : 'DEV'
+    });
+  }, [province, town, provinces, towns, venues, loadingVenues, errorVenues, search]);
 
   // Handle auto-select of first province/town
   useEffect(() => {
