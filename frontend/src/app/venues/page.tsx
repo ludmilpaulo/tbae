@@ -36,7 +36,7 @@ export default function VenuesPage() {
   } = useGetVenuesQuery(
     { provinceId: province ?? undefined, townId: town ?? undefined },
     {
-      skip: !province,
+      skip: !province, // Only skip if no province selected
       refetchOnMountOrArgChange: true,
     }
   );

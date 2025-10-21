@@ -36,10 +36,14 @@ export const venuesApi = createApi({
         if (provinceId) params.push(`province=${provinceId}`);
         if (townId) params.push(`town=${townId}`);
         const qs = params.length ? `?${params.join('&')}` : '';
-        return `venues/${qs}`; // DRF viewset path: /venues/venues/
+        const url = `venues/${qs}`;
+        console.log('Venues API Query:', { provinceId, townId, url });
+        return url; // DRF viewset path: /venues/venues/
       },
-      transformResponse: (resp: VenueResponse): Venue[] =>
-        Array.isArray(resp) ? resp : resp.results,
+      transformResponse: (resp: VenueResponse): Venue[] => {
+        console.log('Venues API Response:', resp);
+        return Array.isArray(resp) ? resp : resp.results;
+      },
     }),
     // ------ ADD THIS ------
     getVenueById: builder.query<Venue, number>({
