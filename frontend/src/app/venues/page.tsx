@@ -17,7 +17,6 @@ import QuoteModal from "@/components/QuoteModal";
 
 import { Venue } from "@/types/venue";
 import { useRouter } from "next/navigation";
-import { baseAPI } from "@/utils/configs";
 import { venuesApi } from "@/redux/services/venuesApi";
 
 export default function VenuesPage() {
