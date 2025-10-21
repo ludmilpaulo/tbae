@@ -17,6 +17,7 @@ import QuoteModal from "@/components/QuoteModal";
 
 import { Venue } from "@/types/venue";
 import { useRouter } from "next/navigation";
+import { baseAPI } from "@/utils/configs";
 
 export default function VenuesPage() {
   // Redux queries
@@ -44,6 +45,10 @@ export default function VenuesPage() {
   const [search, setSearch] = useState("");
   const [selectedVenue, setSelectedVenue] = useState<Venue | null>(null);
   const [quoteVenue, setQuoteVenue] = useState<Venue | null>(null);
+  
+  // Fallback venues state for direct API calls
+  const [fallbackVenues, setFallbackVenues] = useState<Venue[]>([]);
+  const [loadingFallback, setLoadingFallback] = useState(false);
 
   const router = useRouter();
 
@@ -72,6 +77,24 @@ export default function VenuesPage() {
     if (errorVenues) {
       console.error('Venues Error Details:', errorVenues);
     }
+    
+    // Test direct API call and use as fallback
+    if (province && venues.length === 0 && !loadingVenues) {
+      console.log('RTK Query returned 0 venues, trying direct API call...');
+      setLoadingFallback(true);
+      fetch(`${baseAPI}/venues/venues/?province=${province}`)
+        .then(res => res.json())
+        .then(data => {
+          console.log('Direct API Response:', data);
+          console.log('Direct API Results Count:', data.results?.length || 0);
+          if (data.results && data.results.length > 0) {
+            setFallbackVenues(data.results);
+            console.log('Using fallback venues:', data.results.length);
+          }
+        })
+        .catch(err => console.error('Direct API Error:', err))
+        .finally(() => setLoadingFallback(false));
+    }
   }, [province, town, provinces, towns, venues, loadingVenues, errorVenues, search]);
 
   // Handle auto-select of first province/town
@@ -88,8 +111,11 @@ export default function VenuesPage() {
     if (selectedVenue) window.scrollTo({ top: 0, behavior: "smooth" });
   }, [selectedVenue]);
 
+  // Use fallback venues if RTK Query fails
+  const displayVenues = venues.length > 0 ? venues : fallbackVenues;
+  
   // Filter by search
-  const filteredVenues = venues.filter(
+  const filteredVenues = displayVenues.filter(
     v =>
       v.name.toLowerCase().includes(search.toLowerCase()) ||
       v.description.toLowerCase().includes(search.toLowerCase())
@@ -102,7 +128,7 @@ export default function VenuesPage() {
   };
 
   // Loading and error
-  if (loadingProvinces || loadingVenues)
+  if (loadingProvinces || loadingVenues || loadingFallback)
     return <div className="text-center text-gray-500 py-12">Loading venues...</div>;
   if (errorProvinces || errorVenues)
     return <div className="text-center text-red-600 py-12">Failed to load data.</div>;
