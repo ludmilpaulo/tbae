@@ -68,14 +68,14 @@ export default function VenuesPage() {
       venues: venues.length,
       loadingVenues,
       errorVenues,
-      filteredVenues: venues.filter(
+      filteredVenues: venues?.filter(
         v =>
-          v.name.toLowerCase().includes(search.toLowerCase()) ||
-          v.description.toLowerCase().includes(search.toLowerCase())
-      ).length,
+          v?.name?.toLowerCase().includes(search.toLowerCase()) ||
+          v?.description?.toLowerCase().includes(search.toLowerCase())
+      )?.length || 0,
       // Additional debugging
       provincesData: provinces,
-      venuesData: venues.slice(0, 2), // First 2 venues for inspection
+      venuesData: venues?.slice(0, 2) || [], // First 2 venues for inspection
       apiBase: process.env.NODE_ENV === 'production' ? 'PROD' : 'DEV'
     });
     
@@ -110,11 +110,11 @@ export default function VenuesPage() {
   const displayVenues = venues;
   
   // Filter by search
-  const filteredVenues = displayVenues.filter(
+  const filteredVenues = venues?.filter(
     v =>
-      v.name.toLowerCase().includes(search.toLowerCase()) ||
-      v.description.toLowerCase().includes(search.toLowerCase())
-  );
+      v?.name?.toLowerCase().includes(search.toLowerCase()) ||
+      v?.description?.toLowerCase().includes(search.toLowerCase())
+  ) || [];
 
   // Book Venue handler
   const handleBookVenue = (venue: Venue) => {
