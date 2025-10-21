@@ -11,7 +11,7 @@ interface GalleryState {
 const initialState: GalleryState = { data: [], loading: false, error: null };
 
 export const fetchGallery = createAsyncThunk("gallery/fetchGallery", async () => {
-  const { data } = await axios.get("http://localhost:8000/api/gallery/");
+  const { data } = await axios.get(`${baseAPI}/gallery/items/`);
   return data;
 });
 

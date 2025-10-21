@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { baseAPI } from "@/utils/configs";
 
 const EVENT_TYPES = [
   "Team Building",
@@ -34,22 +35,48 @@ export default function QuotePage() {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate success (replace with real API call)
-    setTimeout(() => {
-      setSent(true);
-      setLoading(false);
-      setForm({
-        name: "",
-        company: "",
-        email: "",
-        phone: "",
-        eventType: "",
-        venue: "",
-        date: "",
-        message: "",
-        spam: ""
+    try {
+      const response = await fetch(`${baseAPI}/quotes/request/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          company: form.company,
+          email: form.email,
+          phone: form.phone,
+          event_type: form.eventType,
+          venue: form.venue,
+          date: form.date,
+          message: form.message,
+          spam: form.spam
+        }),
       });
-    }, 1200);
+
+      if (response.ok) {
+        setSent(true);
+        setForm({
+          name: "",
+          company: "",
+          email: "",
+          phone: "",
+          eventType: "",
+          venue: "",
+          date: "",
+          message: "",
+          spam: ""
+        });
+      } else {
+        console.error('Quote submission failed:', response.statusText);
+        alert('Failed to submit quote request. Please try again.');
+      }
+    } catch (error) {
+      console.error('Quote submission error:', error);
+      alert('Failed to submit quote request. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (sent) {

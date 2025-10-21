@@ -37,12 +37,14 @@ export const venuesApi = createApi({
         if (townId) params.push(`town=${townId}`);
         const qs = params.length ? `?${params.join('&')}` : '';
         const url = `venues/${qs}`;
-        console.log('Venues API Query:', { provinceId, townId, url });
+        console.log('Venues API Query:', { provinceId, townId, url, fullUrl: `${baseAPI}/venues/${url}` });
         return url; // DRF viewset path: /venues/venues/
       },
       transformResponse: (resp: VenueResponse): Venue[] => {
         console.log('Venues API Response:', resp);
-        return Array.isArray(resp) ? resp : resp.results;
+        const result = Array.isArray(resp) ? resp : resp.results;
+        console.log('Venues API Transformed:', result);
+        return result;
       },
       transformErrorResponse: (response) => {
         console.error('Venues API Error:', response);

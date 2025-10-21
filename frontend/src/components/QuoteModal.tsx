@@ -1,6 +1,7 @@
 "use client";
 import { Venue } from "@/types/venue";
 import { useState, useEffect } from "react";
+import { baseAPI } from "@/utils/configs";
 
 // Use your actual Venue type from your project for perfect type safety!
 
@@ -21,10 +22,37 @@ export default function QuoteModal({ open, venue, onClose }: QuoteModalProps) {
     message: "",
   });
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: Integrate your backend/email sending here
-    setSent(true);
+    try {
+      const response = await fetch(`${baseAPI}/quotes/request/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          company: '',
+          email: form.email,
+          phone: form.phone,
+          event_type: 'Team Building',
+          venue: venue?.name || '',
+          date: '',
+          message: form.message,
+          spam: ''
+        }),
+      });
+
+      if (response.ok) {
+        setSent(true);
+      } else {
+        console.error('Quote submission failed:', response.statusText);
+        alert('Failed to submit quote request. Please try again.');
+      }
+    } catch (error) {
+      console.error('Quote submission error:', error);
+      alert('Failed to submit quote request. Please try again.');
+    }
   }
 
   useEffect(() => { if (!open) setSent(false); }, [open]);
