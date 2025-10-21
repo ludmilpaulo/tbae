@@ -46,9 +46,7 @@ export default function VenuesPage() {
   const [selectedVenue, setSelectedVenue] = useState<Venue | null>(null);
   const [quoteVenue, setQuoteVenue] = useState<Venue | null>(null);
   
-  // Fallback venues state for direct API calls
-  const [fallbackVenues, setFallbackVenues] = useState<Venue[]>([]);
-  const [loadingFallback, setLoadingFallback] = useState(false);
+  // Simplified approach - remove complex fallback that might cause 500 errors
 
   const router = useRouter();
 
@@ -78,22 +76,9 @@ export default function VenuesPage() {
       console.error('Venues Error Details:', errorVenues);
     }
     
-    // Test direct API call and use as fallback
-    if (province && venues.length === 0 && !loadingVenues) {
-      console.log('RTK Query returned 0 venues, trying direct API call...');
-      setLoadingFallback(true);
-      fetch(`${baseAPI}/venues/venues/?province=${province}`)
-        .then(res => res.json())
-        .then(data => {
-          console.log('Direct API Response:', data);
-          console.log('Direct API Results Count:', data.results?.length || 0);
-          if (data.results && data.results.length > 0) {
-            setFallbackVenues(data.results);
-            console.log('Using fallback venues:', data.results.length);
-          }
-        })
-        .catch(err => console.error('Direct API Error:', err))
-        .finally(() => setLoadingFallback(false));
+    // Simple debug logging only - no complex fallback
+    if (province) {
+      console.log('Province selected:', province, 'Venues count:', venues.length);
     }
   }, [province, town, provinces, towns, venues, loadingVenues, errorVenues, search]);
 
@@ -104,6 +89,8 @@ export default function VenuesPage() {
     }
   }, [provinces, province]);
 
+  // Removed complex fallback logic that was causing 500 errors
+
   // Do not auto-select a town; let users optionally narrow down
 
   // Optional: Scroll to top when opening details modal (great for mobile)
@@ -111,8 +98,8 @@ export default function VenuesPage() {
     if (selectedVenue) window.scrollTo({ top: 0, behavior: "smooth" });
   }, [selectedVenue]);
 
-  // Use fallback venues if RTK Query fails
-  const displayVenues = venues.length > 0 ? venues : fallbackVenues;
+  // Use venues directly from RTK Query
+  const displayVenues = venues;
   
   // Filter by search
   const filteredVenues = displayVenues.filter(
@@ -128,7 +115,7 @@ export default function VenuesPage() {
   };
 
   // Loading and error
-  if (loadingProvinces || loadingVenues || loadingFallback)
+  if (loadingProvinces || loadingVenues)
     return <div className="text-center text-gray-500 py-12">Loading venues...</div>;
   if (errorProvinces || errorVenues)
     return <div className="text-center text-red-600 py-12">Failed to load data.</div>;
