@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import CacheClearer from "@/components/CacheClearer";
 
 
 
@@ -83,6 +84,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
        <Providers>
+          <CacheClearer />
           <Navbar />
           <main>{children}</main>
           <Footer />

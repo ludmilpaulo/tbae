@@ -18,6 +18,7 @@ import QuoteModal from "@/components/QuoteModal";
 import { Venue } from "@/types/venue";
 import { useRouter } from "next/navigation";
 import { baseAPI } from "@/utils/configs";
+import { venuesApi } from "@/redux/services/venuesApi";
 
 export default function VenuesPage() {
   // Redux queries
@@ -49,6 +50,13 @@ export default function VenuesPage() {
   // Simplified approach - remove complex fallback that might cause 500 errors
 
   const router = useRouter();
+
+  // Clear RTK Query cache on venues page load
+  useEffect(() => {
+    // Reset venues API cache to ensure fresh data
+    venuesApi.util.resetApiState();
+    console.log('RTK Query cache cleared for venues');
+  }, []);
 
   // Debug logging for production
   useEffect(() => {
@@ -114,6 +122,28 @@ export default function VenuesPage() {
     router.push(`/venues/${venue.id}/book`);
   };
 
+  // Manual cache clear function for debugging
+  const clearAllCaches = () => {
+    // Clear RTK Query cache
+    venuesApi.util.resetApiState();
+    
+    // Clear browser storage
+    localStorage.clear();
+    sessionStorage.clear();
+    
+    // Clear service worker cache
+    if ('serviceWorker' in navigator && 'caches' in window) {
+      caches.keys().then(cacheNames => {
+        cacheNames.forEach(cacheName => {
+          caches.delete(cacheName);
+        });
+      });
+    }
+    
+    // Force reload
+    window.location.reload();
+  };
+
   // Loading and error
   if (loadingProvinces || loadingVenues)
     return <div className="text-center text-gray-500 py-12">Loading venues...</div>;
@@ -135,6 +165,16 @@ export default function VenuesPage() {
       <p className="text-center text-lg text-gray-600 mb-8">
         Find the perfect venue for your next event. Search by province, town, or keyword.
       </p>
+      
+      {/* Debug cache clear button */}
+      <div className="text-center mb-4">
+        <button
+          onClick={clearAllCaches}
+          className="bg-red-500 text-white px-4 py-2 rounded text-sm hover:bg-red-600"
+        >
+          Clear Cache & Reload (Debug)
+        </button>
+      </div>
 
       {/* Selectors and search */}
       <div className="grid md:grid-cols-3 gap-6 mb-10">
