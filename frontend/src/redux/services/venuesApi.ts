@@ -11,7 +11,14 @@ type VenueResponse = Paginated<Venue> | Venue[];
 
 export const venuesApi = createApi({
   reducerPath: 'venuesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: `${baseAPI}/venues/` }),
+  baseQuery: fetchBaseQuery({ 
+    baseUrl: `${baseAPI}/venues/`,
+    // Add debugging
+    prepareHeaders: (headers) => {
+      console.log('API Request to:', `${baseAPI}/venues/`);
+      return headers;
+    }
+  }),
   endpoints: (builder) => ({
     getProvinces: builder.query<Province[], void>({
       query: () => `provinces/`,

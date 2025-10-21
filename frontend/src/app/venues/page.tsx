@@ -53,7 +53,18 @@ export default function VenuesPage() {
       v =>
         v.name.toLowerCase().includes(search.toLowerCase()) ||
         v.description.toLowerCase().includes(search.toLowerCase())
-    ).length
+    ).length,
+    // Additional debugging
+    provincesData: provinces,
+    venuesData: venues.slice(0, 2), // First 2 venues for inspection
+    apiBase: process.env.NODE_ENV === 'production' ? 'PROD' : 'DEV'
+  });
+
+  // Log API calls
+  console.log('API Calls Debug:', {
+    provincesQuery: useGetProvincesQuery.getState?.() || 'not available',
+    townsQuery: useGetTownsQuery.getState?.(province ?? undefined) || 'not available',
+    venuesQuery: useGetVenuesQuery.getState?.({ provinceId: province ?? undefined, townId: town ?? undefined }) || 'not available'
   });
 
   // UI state
