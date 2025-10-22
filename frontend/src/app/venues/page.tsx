@@ -137,7 +137,26 @@ export default function VenuesPage() {
 
   // Loading and error
   if (loadingProvinces || loadingVenues)
-    return <div className="text-center text-gray-500 py-12">Loading venues...</div>;
+    return (
+      <main className="max-w-6xl mx-auto px-4 py-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="animate-pulse rounded-xl overflow-hidden bg-white shadow-sm ring-1 ring-gray-100">
+              <div className="h-48 w-full bg-gray-200" />
+              <div className="p-4 space-y-3">
+                <div className="h-4 bg-gray-200 rounded w-3/4" />
+                <div className="h-3 bg-gray-200 rounded w-1/2" />
+                <div className="h-3 bg-gray-200 rounded w-full" />
+                <div className="flex gap-3 pt-2">
+                  <div className="h-8 bg-gray-200 rounded-full w-28" />
+                  <div className="h-8 bg-gray-200 rounded-full w-36" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+    );
   if (errorProvinces || errorVenues)
     return <div className="text-center text-red-600 py-12">Failed to load data.</div>;
 
@@ -189,8 +208,18 @@ export default function VenuesPage() {
           ))}
         </div>
       ) : (
-        <div className="text-gray-500 text-center py-12 text-lg">
-          No venues available matching your search.
+        <div className="text-center py-16">
+          <div className="mx-auto w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center mb-4">
+            <span className="text-2xl">🏙️</span>
+          </div>
+          <h3 className="text-xl font-bold text-blue-700 mb-2">No venues found</h3>
+          <p className="text-gray-600 mb-4">Try adjusting your filters or search terms.</p>
+          <button
+            className="px-4 py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700"
+            onClick={() => { setSearch(""); setTown(null); }}
+          >
+            Clear filters
+          </button>
         </div>
       )}
 
