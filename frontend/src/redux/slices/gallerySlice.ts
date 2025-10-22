@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { GalleryImage } from "@/types";
+import { baseAPI } from "@/utils/configs";
 
 interface GalleryState {
   data: GalleryImage[];

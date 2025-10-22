@@ -105,9 +105,6 @@ export default function VenuesPage() {
     if (selectedVenue) window.scrollTo({ top: 0, behavior: "smooth" });
   }, [selectedVenue]);
 
-  // Use venues directly from RTK Query
-  const displayVenues = venues;
-  
   // Filter by search
   const filteredVenues = venues?.filter(
     v =>

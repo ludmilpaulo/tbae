@@ -54,7 +54,7 @@ export default function VenueTabs({ regions, venues }: VenueTabsProps) {
                   />
                 </div>
                 <h3 className="text-lg font-bold text-blue-700 mb-1">{venue.name}</h3>
-                <p className="text-sm text-gray-500 mb-2">{venue.address}</p>
+                <p className="text-sm text-gray-500 mb-2">{venue.town.name}, {venue.province.name}</p>
                 {venue.description && (
                   <p className="text-xs text-gray-400 text-center">{venue.description}</p>
                 )}
