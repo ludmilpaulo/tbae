@@ -36,7 +36,7 @@ export default function VenuesPage() {
   } = useGetVenuesQuery(
     { provinceId: province ?? undefined, townId: town ?? undefined },
     {
-      skip: !province, // Only skip if no province selected
+      skip: false, // Always fetch; backend supports unfiltered list
       refetchOnMountOrArgChange: true,
     }
   );
@@ -50,12 +50,7 @@ export default function VenuesPage() {
 
   const router = useRouter();
 
-  // Clear RTK Query cache on venues page load
-  useEffect(() => {
-    // Reset venues API cache to ensure fresh data
-    venuesApi.util.resetApiState();
-    console.log('RTK Query cache cleared for venues');
-  }, []);
+  // Removed RTK Query cache reset to avoid unnecessary refetch loops
 
   // Debug logging for production
   useEffect(() => {
