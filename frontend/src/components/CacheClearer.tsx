@@ -4,11 +4,21 @@ import { useEffect } from "react";
 
 export default function CacheClearer() {
   useEffect(() => {
-    // Clear browser cache and storage on app load/refresh
-    const clearCacheAndStorage = () => {
+    // Check if we've already cleared cache in this session
+    const cacheClearedFlag = localStorage.getItem('tbae_cache_cleared');
+    
+    if (!cacheClearedFlag) {
       try {
-        // Clear localStorage
-        localStorage.clear();
+        console.log('Clearing browser caches and storage...');
+        
+        // Clear localStorage (but keep our flag)
+        const keysToKeep = ['tbae_cache_cleared'];
+        const allKeys = Object.keys(localStorage);
+        allKeys.forEach(key => {
+          if (!keysToKeep.includes(key)) {
+            localStorage.removeItem(key);
+          }
+        });
         
         // Clear sessionStorage
         sessionStorage.clear();
@@ -33,24 +43,13 @@ export default function CacheClearer() {
           }).catch(console.error);
         }
         
-        // Clear RTK Query cache by dispatching reset action
-        if (typeof window !== 'undefined') {
-          // Force reload to clear all caches
-          window.location.reload();
-        }
+        // Set flag to prevent future clearing
+        localStorage.setItem('tbae_cache_cleared', 'true');
         
         console.log('Cache and storage cleared successfully');
       } catch (error) {
         console.error('Error clearing cache:', error);
       }
-    };
-
-    // Only clear cache on first load or if explicitly requested
-    const shouldClearCache = sessionStorage.getItem('cacheCleared') !== 'true';
-    
-    if (shouldClearCache) {
-      sessionStorage.setItem('cacheCleared', 'true');
-      clearCacheAndStorage();
     }
   }, []);
 
